@@ -52,15 +52,16 @@ ensure_repo_initialized() {
 # - 不删除 .git/modules/*（如需删除：PURGE_GIT_MODULES=1）
 # - 清理完成后自动提交一笔 "chore: reset submodules"
 purge_all_submodules() {
-  info_echo "清理子模块目录 + 索引 gitlink，并重置 .gitmodules..."
+  info_echo "清理子模块目录 + 索引 gitlink + .gitmodules + .git/modules"
 
-  # --- 收集子模块路径 ---
   local paths=()
+  # --- 从 .gitmodules 收集路径 ---
   if [[ -f .gitmodules ]]; then
     while IFS= read -r p; do
       [[ -n "$p" ]] && paths+=("$p")
     done < <(git config -f .gitmodules --get-regexp '^submodule\..*\.path$' 2>/dev/null | awk '{print $2}')
   fi
+  # --- 从索引收集 gitlink ---
   while IFS= read -r p; do
     [[ -n "$p" ]] && paths+=("$p")
   done < <(git ls-files -s 2>/dev/null | awk '$1==160000 {print $4}')
@@ -72,66 +73,64 @@ purge_all_submodules() {
     [[ -z "${__seen[$_p]:-}" ]] && uniq_paths+=("$_p") && __seen[$_p]=1
   done
 
-  info_echo "将处理子模块目录（共 ${#uniq_paths[@]} 个）：${uniq_paths[*]:-<none>}"
+  local removed=0 cleared=0 failed=0
+  local removed_list=()
 
-  # --- 删除目录 & 清理索引 ---
-  set +e
-  local removed=0 failed=0 cleared=0 modules_removed=0
+  # --- 删除逻辑 ---
   for _p in "${uniq_paths[@]:-}"; do
     if [[ -e "$_p" ]]; then
       warn_echo "删除子模块目录：$_p"
       rm -rf -- "$_p"
-      [[ -e "$_p" ]] && { error_echo "删除失败：$_p"; ((failed++)); } || ((removed++))
+      if [[ -e "$_p" ]]; then
+        error_echo "删除失败：$_p"; ((failed++))
+      else
+        ((removed++))
+        removed_list+=("$_p")
+      fi
     else
       info_echo "目录不存在（跳过）：$_p"
     fi
 
+    # 清理索引 gitlink
     if git ls-files -s -- "$_p" | awk '$1==160000 {exit 0} {exit 1}'; then
       warn_echo "清理索引 gitlink：$_p"
-      git rm -f --cached -- "$_p" >/dev/null 2>&1
-      if git ls-files -s -- "$_p" | awk '$1==160000 {exit 0} {exit 1}'; then
-        error_echo "索引清理失败：$_p"; ((failed++))
-      else
-        ((cleared++))
-      fi
+      git rm -f --cached -- "$_p" >/dev/null 2>&1 || true
+      ((cleared++))
     fi
 
-    if [[ "${PURGE_GIT_MODULES:-0}" == "1" ]]; then
-      local name
-      name="$(git config -f .gitmodules --get-regexp "^submodule\..*\.path$" 2>/dev/null \
-              | awk -v p="$_p" '$2==p{print $1}' | sed -E 's/^submodule\.([^.]*)\.path/\1/')"
-      [[ -z "$name" ]] && name="$_p"
-      name="${name#/}"
-      if [[ -d ".git/modules/$name" ]]; then
-        warn_echo "删除 .git/modules/$name"
-        rm -rf -- ".git/modules/$name"
-        [[ -d ".git/modules/$name" ]] || ((modules_removed++))
-      fi
+    # 清理 .git/modules 对应仓库
+    local modpath=".git/modules/$_p"
+    if [[ -d "$modpath" ]]; then
+      warn_echo "删除子模块仓库：$modpath"
+      rm -rf -- "$modpath"
     fi
   done
-  set -e
 
   # --- 重置 .gitmodules ---
-  if [[ -f .gitmodules ]]; then
-    : > .gitmodules
-    info_echo "已清空 .gitmodules 内容"
-  else
-    printf "# Auto-created by purge_all_submodules on %s\n" "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" > .gitmodules
-    info_echo "已新建空的 .gitmodules"
-  fi
-  git add .gitmodules 2>/dev/null || true
+  printf "# Reset by purge_all_submodules on %s\n" "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" > .gitmodules
+  git add .gitmodules
 
-  # --- 自动提交 ---
+  # --- 提交 ---
   git add -A || true
   if ! git diff --cached --quiet; then
-    git commit -m "chore: reset submodules" || true
+    git commit -m "chore: reset submodules"
     success_echo "已提交：chore: reset submodules"
   else
     info_echo "无变更可提交，跳过 commit"
   fi
 
-  success_echo "清理完成：删除目录 $removed；清理索引 $cleared；.git/modules 清理 $modules_removed；失败 $failed。"
+  # --- 汇总打印 ---
+  if (( removed > 0 )); then
+    success_echo "✅ 清理完成：删除目录 $removed 个："
+    for d in "${removed_list[@]}"; do
+      echo "   - $d"
+    done
+  else
+    info_echo "没有目录被删除"
+  fi
+  info_echo "索引清理 $cleared 个；失败 $failed 个。"
 }
+
 
 # 4) 确保 .gitmodules 在“当前脚本运行目录”（且该目录就是仓库根）
 ensure_gitmodules_here() {
