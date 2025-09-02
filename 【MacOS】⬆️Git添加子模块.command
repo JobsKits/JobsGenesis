@@ -183,6 +183,7 @@ add_submodules() {
   git submodule add -b main https://github.com/295060456/JobsCommand-Gits.git     ./JobsGenesis@JobsCommand.Gits
   git submodule add -b main https://github.com/295060456/JobsCommand-Others.git   ./JobsGenesis@JobsCommand.Others
   git submodule add -b main https://github.com/295060456/JobsSh.git               ./JobsGenesis@JobsSh
+  git submodule add -b main https://github.com/295060456/SourceTree.sh            ./JobsGenesis@JobsCommand.SourceTree
 }
 
 # 6) 同步子模块记录
