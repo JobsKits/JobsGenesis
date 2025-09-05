@@ -2,11 +2,11 @@
 set -euo pipefail
 
 # ============================== 全局配置 ==============================
-SUBMODULE_BRANCH="${SUBMODULE_BRANCH:-main}"   # 统一子模块分支
-REMOTE_NAME="${REMOTE_NAME:-origin}"           # 父仓远端名
-DRY_RUN="${DRY_RUN:-0}"                        # 1=干跑，只打印动作不执行
-ONLY_PATHS="${ONLY_PATHS:-}"                   # 仅更新这些子模块路径（空格分隔）；空=全部
-FORCE_DELETE="${FORCE_DELETE:-0}"              # 1=直接删除冲突目录；0=移动到备份目录
+SUBMODULE_BRANCH="${SUBMODULE_BRANCH:-main}"     # 统一子模块分支👉Github默认建仓分支名：main
+REMOTE_NAME="${REMOTE_NAME:-origin}"             # 父仓远端名
+DRY_RUN="${DRY_RUN:-0}"                          # 1=干跑，只打印动作不执行
+ONLY_PATHS="${ONLY_PATHS:-}"                     # 仅更新这些子模块路径（空格分隔）；空=全部
+FORCE_DELETE="${FORCE_DELETE:-0}"                # 1=直接删除冲突目录；0=移动到备份目录
 
 SCRIPT_BASENAME=$(basename "$0" | sed 's/\.[^.]*$//')
 LOG_FILE="/tmp/${SCRIPT_BASENAME}.log"
