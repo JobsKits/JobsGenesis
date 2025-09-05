@@ -19,7 +19,3 @@
 	path = JobsGenesis@JobsCommand.SourceTree
 	url = https://github.com/295060456/SourceTree.sh
 	branch = main
-[submodule "JobsGenesis@JobsSh"]
-	path = JobsGenesis@JobsSh
-	url = https://github.com/295060456/JobsSh.git
-	branch = main
