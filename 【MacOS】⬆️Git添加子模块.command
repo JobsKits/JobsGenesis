@@ -184,12 +184,12 @@ pre_clean_conflicting_dirs() {
 add_submodules() {
   local b="$SUBMODULE_BRANCH"
   info_echo "添加子模块（分支：$b）"
-  _do_or_echo "git submodule add -b \"$b\" https://github.com/295060456/JobsCommand-Flutter.git  ./JobsGenesis@JobsCommand.Flutter"
-  _do_or_echo "git submodule add -b \"$b\" https://github.com/295060456/JobsCommand-Gits.git     ./JobsGenesis@JobsCommand.Gits"
-  _do_or_echo "git submodule add -b \"$b\" https://github.com/295060456/JobsCommand-iOS.git      ./JobsGenesis@JobsCommand.iOS"
-  _do_or_echo "git submodule add -b \"$b\" https://github.com/295060456/JobsCommand-Others.git   ./JobsGenesis@JobsCommand.Others"
-  _do_or_echo "git submodule add -b \"$b\" https://github.com/295060456/SourceTree.sh            ./JobsGenesis@JobsCommand.SourceTree"
-  _do_or_echo "git submodule add -b \"$b\" https://github.com/295060456/JobsSh.git               ./JobsGenesis@JobsSh"
+  _do_or_echo "git submodule add -b \"$b\" https://github.com/JobsKits/JobsCommand-Flutter.git  ./JobsGenesis@JobsCommand.Flutter"
+  _do_or_echo "git submodule add -b \"$b\" https://github.com/JobsKits/JobsCommand-Gits.git     ./JobsGenesis@JobsCommand.Gits"
+  _do_or_echo "git submodule add -b \"$b\" https://github.com/JobsKits/JobsCommand-iOS.git      ./JobsGenesis@JobsCommand.iOS"
+  _do_or_echo "git submodule add -b \"$b\" https://github.com/JobsKits/JobsCommand-Others.git   ./JobsGenesis@JobsCommand.Others"
+  _do_or_echo "git submodule add -b \"$b\" https://github.com/JobsKits/SourceTree.sh            ./JobsGenesis@JobsCommand.SourceTree"
+  _do_or_echo "git submodule add -b \"$b\" https://github.com/JobsKits/JobsSh.git               ./JobsGenesis@JobsSh"
 }
 
 sync_and_init_submodules() {
