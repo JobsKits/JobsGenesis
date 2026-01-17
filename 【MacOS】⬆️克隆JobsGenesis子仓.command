@@ -13,6 +13,30 @@ PARALLEL="${PARALLEL:-4}"      # 并行作业数（仅在 foreach 简单并行�
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" && pwd)"
 cd "$script_dir"
 
+# ===== 清理：删除脚本同级的空目录（不递归） =====
+cleanup_empty_dirs_in_script_dir() {
+  local base_dir="$1"
+  local deleted_count=0
+  local d
+
+  while IFS= read -r -d '' d; do
+    # 空目录判断：目录内（含隐藏文件）没有任何条目
+    if [[ -z "$(ls -A "$d" 2>/dev/null || true)" ]]; then
+      rm -rf "$d"
+      echo "🧹 删除空目录：$(basename "$d")"
+      ((deleted_count++)) || true
+    fi
+  done < <(find "$base_dir" -mindepth 1 -maxdepth 1 -type d -print0 2>/dev/null)
+
+  if (( deleted_count > 0 )); then
+    echo "✅ 已清理 ${deleted_count} 个空目录"
+  else
+    echo "ℹ️  未发现需要清理的空目录"
+  fi
+}
+
+cleanup_empty_dirs_in_script_dir "$script_dir"
+
 # ===== 基础检查 =====
 command -v git >/dev/null || { echo "❌ 未找到 git"; exit 1; }
 git rev-parse --is-inside-work-tree >/dev/null 2>&1 || { echo "❌ 当前不在 Git 仓库内"; exit 1; }
