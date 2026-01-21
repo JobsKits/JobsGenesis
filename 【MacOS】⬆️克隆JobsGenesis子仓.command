@@ -7,7 +7,7 @@ set -euo pipefail
 
 # ===== 可调参数 =====
 DEPTH="${DEPTH:-0}"            # 0=完整克隆；>0 则浅克隆（如 1）
-TRACK_BRANCH="${TRACK_BRANCH:-0}"  # 1=把子模块切到 main 并拉最新；0=保持父仓记录的提交
+TRACK_BRANCH="${TRACK_BRANCH:-1}"  # 1=把子模块切到 main 并拉最新；0=保持父仓记录的提交
 PARALLEL="${PARALLEL:-4}"      # 并行作业数（仅在 foreach 简单并行时使用）
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" && pwd)"
@@ -61,14 +61,53 @@ if [[ "$TRACK_BRANCH" == "1" ]]; then
   # 如果子模块配置了别的分支，可以改成 set-branch
   git submodule foreach --recursive '
     set -e
-    branch="main"
-    # 尝试 main，不行就 master
-    if ! git show-ref --verify --quiet refs/heads/$branch; then
-      [[ -n "$(git branch -a | grep remotes/.*/main)" ]] || branch="master"
-    fi
+
+    # 1) 优先读取父仓 .gitmodules 为该子模块指定的分支（如果有）
+    branch="$(git config -f "$toplevel/.gitmodules" "submodule.$name.branch" 2>/dev/null || true)"
+    branch="${branch:-main}"
+
+    # 2) 兜底：main 不存在则尝试 master（同时支持仅存在远端分支的情况）
+    pick_branch() {
+      local b="$1"
+      if git show-ref --verify --quiet "refs/remotes/origin/$b"; then
+        echo "$b"; return 0
+      fi
+      if git show-ref --verify --quiet "refs/heads/$b"; then
+        echo "$b"; return 0
+      fi
+      return 1
+    }
+
     git fetch --all --tags --prune
-    git checkout "$branch" || true
-    git pull --ff-only || true
+
+    if ! pick_branch "$branch" >/dev/null 2>&1; then
+      if pick_branch "main" >/dev/null 2>&1; then
+        branch="main"
+      elif pick_branch "master" >/dev/null 2>&1; then
+        branch="master"
+      else
+        echo "⚠️  [$name] 未找到可用分支（main/master 或 .gitmodules 指定分支均不存在），跳过追分支，仅保持当前检出：$(git rev-parse --short HEAD)"
+        exit 0
+      fi
+    fi
+
+    echo "➡️  [$name] 使用分支: $branch"
+
+    # 3) 从 origin/<branch> 创建/切换到本地分支，避免 detached HEAD
+    if git show-ref --verify --quiet "refs/heads/$branch"; then
+      git checkout "$branch"
+    else
+      if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+        git checkout -b "$branch" "origin/$branch"
+      else
+        # 极端兜底：远端也没有（理论上上面 pick_branch 已拦住）
+        git checkout "$branch" || true
+      fi
+    fi
+
+    # 4) 拉取最新（严格快进）
+    git pull --ff-only origin "$branch" || true
+
     echo "✅ $(basename "$name"): on $(git rev-parse --abbrev-ref HEAD) @ $(git rev-parse --short HEAD)"
   '
   echo "⚠️  父仓现在可能处于“已修改的子模块指针”状态："
