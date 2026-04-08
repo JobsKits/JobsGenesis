@@ -13,12 +13,12 @@ LOG_FILE="/tmp/${SCRIPT_BASENAME}.log"
 
 # 你图里这些目录（将先处理冲突）
 CONFLICT_PATHS=(
-  "JobsGenesis@JobsCommand.Flutter"
-  "JobsGenesis@JobsCommand.Gits"
-  "JobsGenesis@JobsCommand.iOS"
-  "JobsGenesis@JobsCommand.Others"
-  "JobsGenesis@JobsCommand.SourceTree"
-  "JobsGenesis@JobsSh"
+    "JobsGenesis@JobsCommand.Flutter"
+    "JobsGenesis@JobsCommand.Gits"
+    "JobsGenesis@JobsCommand.iOS"
+    "JobsGenesis@JobsCommand.Others"
+    "JobsGenesis@JobsCommand.SourceTree"
+    "JobsGenesis@JobsSh"
 )
 
 # ============================== 输出 & 工具 ==============================
