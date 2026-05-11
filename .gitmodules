@@ -23,3 +23,27 @@
 	path = JobsGenesis@JobsSh
 	url = https://github.com/295060456/JobsSh.git
 	branch = main
+[submodule "JobsCommand@Flutter"]
+	path = JobsCommand@Flutter
+	url = https://github.com/JobsKits/JobsCommand-Flutter.git
+	branch = main
+[submodule "JobsCommand@Gits"]
+	path = JobsCommand@Gits
+	url = https://github.com/JobsKits/JobsCommand-Gits.git
+	branch = main
+[submodule "JobsCommand@iOS"]
+	path = JobsCommand@iOS
+	url = https://github.com/JobsKits/JobsCommand-iOS.git
+	branch = main
+[submodule "JobsCommand@Others"]
+	path = JobsCommand@Others
+	url = https://github.com/JobsKits/JobsCommand-Others.git
+	branch = main
+[submodule "SourceTree.sh"]
+	path = SourceTree.sh
+	url = https://github.com/JobsKits/SourceTree.sh.git
+	branch = main
+[submodule "JobsSh"]
+	path = JobsSh
+	url = https://github.com/JobsKits/JobsSh.git
+	branch = main
