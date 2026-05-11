@@ -30,12 +30,12 @@ export LC_CTYPE="${LC_CTYPE:-UTF-8}"
 # 新增子仓：往 SUBMODULE_REPO_URLS 里加一行浏览器页面地址。
 # 删除子仓：从 SUBMODULE_REPO_URLS 里删掉对应页面地址；默认只查漏补缺，不删除 .gitmodules 旧配置。
 SUBMODULE_REPO_URLS=(
-  "https://github.com/JobsKits/JobsCommand-Flutter|JobsCommand@Flutter"
-  "https://github.com/JobsKits/JobsCommand-Gits|JobsCommand@Gits"
-  "https://github.com/JobsKits/JobsCommand-iOS|JobsCommand@iOS"
-  "https://github.com/JobsKits/JobsCommand-Others|JobsCommand@Others"
-  "https://github.com/JobsKits/SourceTree.sh|SourceTree.sh"
-  "https://github.com/JobsKits/JobsSh|JobsSh"
+  "https://github.com/JobsKits/JobsCommand-Flutter|JobsGenesis@JobsCommand@Flutter"
+  "https://github.com/JobsKits/JobsCommand-Gits|JobsGenesis@JobsCommand@Gits"
+  "https://github.com/JobsKits/JobsCommand-iOS|JobsGenesis@JobsCommand@iOS"
+  "https://github.com/JobsKits/JobsCommand-Others|JobsGenesis@JobsCommand@Others"
+  "https://github.com/JobsKits/SourceTree.sh|JobsGenesis@SourceTree.sh"
+  "https://github.com/JobsKits/JobsSh|JobsGenesis@JobsSh"
   # 以后新增仓库，只写浏览器页面地址即可。
   # "https://github.com/JobsKits/xxx"
 )

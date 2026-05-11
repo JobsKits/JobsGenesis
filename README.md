@@ -1,142 +1,57 @@
-# AI策略
+# JobsGenesis 脚本升级优化版
 
 ![Jobs倾情奉献](https://picsum.photos/1500/400 "Jobs出品，必属精品")
 
 [toc]
 
-## 一、脚本策略
+## 🔥 <font id=前言>前言</font>
 
-```
-1、运行脚本的时候，一定要经过用户确认
-	1.1、先打印自述，当前运行的这个脚本是做什么的
-	1.2、等待用户回车确认之后，方可往下执行，否则一直等待
-	
-2、一些现成的脚本片段代码参考：
-https://github.com/JobsKits/JobsDocs/blob/main/🔥Shell脚本代码片段.md/Shell脚本代码片段.md
+* 本包由原始脚本压缩包整理升级而来。
+* 共处理 `.command` 脚本：**135** 个。
+* 涉及 Homebrew 的脚本：**56** 个。
+* zsh 静态检查：**当前生成环境没有 zsh，未执行；请在 macOS 上复核**。
+* 输出结构保留原大类目录；每个脚本都被同名文件夹包裹，文件夹内包含脚本和 `README.md`。
 
-3、最后在main函数里面进行收口，main "$@"
-main函数里面同样要写好注释
+## 一、升级标准 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-4、每个方法都要写注释
+* 所有脚本统一为 `#!/bin/zsh`。
+* 双击运行先显示 `README.md`，并等待回车继续。
+* 统一彩色日志函数，日志落盘到 `/tmp/脚本名.log`。
+* 统一 `SCRIPT_DIR` / `SCRIPT_PATH` 路径写法。
+* 统一结构化入口：`main "$@"`。
+* 普通安装 / 更新 / 升级步骤统一为：**回车跳过，输入任意字符后回车执行**。
+* 危险操作必须明确确认，不做回车默认执行。
+* Homebrew 按健康标准处理：架构识别、shellenv 注入、当前会话生效、可选健康更新。
 
-5、为了更好的兼容性，用#!/bin/zsh
+## 二、目录统计 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-6、自检的定义：如果存在则升级、没有监测到已经安装则安装最新版本
-```
+| 原始大类 | 脚本数量 |
+|---|---:|
+| `JobsGenesis@JobsCommand.Flutter` | 57 |
+| `JobsGenesis@JobsCommand.Gits` | 15 |
+| `JobsGenesis@JobsCommand.SourceTree` | 20 |
+| `JobsGenesis@JobsCommand.iOS` | 43 |
 
-## 二、代码策略
 
-```swift
-1、用代码块+懒加载的形式
+## 三、使用方式 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-2、用snapkit来做约束
-	2.1、约束写进我自己封装的一个Api里面：byAddTo
-	     举例：
-      x.byAddTo(view) { [unowned self] make in
-                  if view.jobs_hasVisibleTopBar() {
-                      make.top.equalTo(self.gk_navigationBar.snp.bottom).offset(10)
-                      make.left.right.bottom.equalToSuperview()
-                  } else {
-                      make.edges.equalToSuperview()
-                  }
-              }
-	2.2、外层用xxx..byVisible(YES) 来调用唤醒
+进入任意脚本同名文件夹后，双击 `.command` 文件即可。终端方式：
 
-3、导航栏用我自己写的Api：
-	3.1、简单配置（只关心标题）
-	jobsSetupGKNav(title: "这里写标题")
-	3.2、复杂配置（完整配置）
-  jobsSetupGKNav(
-      title: "Demo 列表",
-      leftButton:UIButton.sys()
-          .byFrame(CGRect(x: 0, y: 0, width: 32.w, height: 32.h))
-          /// 按钮图片@图文关系
-          .byImage("list.bullet".sysImg, for: .normal)
-          .byImage("list.bullet".sysImg, for: .selected)
-          /// 普通@点按事件触发
-          .onTap {[weak self] sender in
-              guard let self else { return }
-              sender.isSelected.toggle()
-              self.jobsSideDrawer?.toggleDrawer()
-//                    let cell = tableView[section: 0, row: 3]
-//                    let cell1 = tableView[section: 12, row: 3]
-              print("")
-          }
-          /// 追加@点按事件触发
-          .onTapAppend{ sender in
-              print("追加的点按事件")
-          }
-          /// 普通@长按事件触发
-          .onLongPress(minimumPressDuration: 0.8) { btn, gr in
-               if gr.state == .began {
-                   btn.alpha = 0.6
-                   print("长按开始 on \(btn)")
-               } else if gr.state == .ended || gr.state == .cancelled {
-                   btn.alpha = 1.0
-                   print("长按结束")
-               }
-          }
-          /// 追加@长按事件触发
-          .onLongPressAppend(minimumPressDuration: 0.8) { btn, gr in
-              print("追加的长按事件")
-          },
-      rightButtons: [
-          UIButton.sys()
-              /// 按钮图片@图文关系
-              .byImage("moon.circle.fill".sysImg, for: .normal)
-              .byImage("moon.circle.fill".sysImg, for: .selected)
-              /// 事件触发@点按
-              .onTap { sender in
-                  sender.isSelected.toggle()
-                  guard let ws = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                        let win = ws.windows.first else { return }
-                  win.overrideUserInterfaceStyle =
-                      (win.overrideUserInterfaceStyle == .dark) ? .light : .dark
-                  print("🌓 主题已切换 -> \(win.overrideUserInterfaceStyle == .dark ? "Dark" : "Light")")
-              },
-          UIButton.sys()
-              /// 按钮图片@图文关系
-              .byImage("globe".sysImg, for: .normal)
-              .byImage("globe".sysImg, for: .selected)
-              /// 事件触发@点按
-              .onTap { [weak self] sender in
-                  guard let self else { return }
-                  sender.isSelected.toggle()
-                  let to = (LanguageManager.shared.currentLanguageCode == "zh-Hans") ? "en" : "zh-Hans"
-                  LanguageManager.shared.switchTo(to)
-//                        var s = "🔑 注册登录".tr
-                  tableView.reloadData()
-                  print("🌐 切换语言 tapped（占位）")
-              },
-          UIButton.sys()
-              /// 按钮图片@图文关系
-              .byImage("stop.circle.fill".sysImg, for: .normal)
-              .byImage("stop.circle.fill".sysImg, for: .selected)
-              /// 事件触发@点按
-              .onTap { [weak self] sender in
-                  guard let self else { return }
-                  sender.isSelected.toggle()
-                  print("🛑 手动停止刷新")
-                  isPullRefreshing = false
-                  isLoadingMore    = false
-              }
-      ]
-  )
-  
-4、控制器统一继承于 BaseVC 
-
-5、最顶上的系统基础框架
-#if os(OSX)
-import AppKit
-#elseif os(iOS) || os(tvOS)
-import UIKit
-#endif
-
-6、我自己封装的，并且本地pod化的框架，需要引入
-import JobsByUIKit
-
-import JobsSwiftBlock
+```shell
+chmod +x './脚本名.command'
+'./脚本名.command'
 ```
 
+每个脚本文件夹内的 `README.md` 都已经按统一格式生成，可以先看用途、风险和流程图。
 
+## 四、未执行声明 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
+生成过程中只做文件重组、代码结构升级和 `zsh -n` 静态检查；没有实际执行 `brew`、`pod`、`flutter`、`xcodebuild`、`osascript`、`sudo`、模拟器、Git 远程写入等 macOS 专属或有副作用的命令。
+
+## 五、静态检查结果 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+
+当前生成环境没有 `zsh`，所以没有执行 `zsh -n`。脚本文件已经完成结构化重组与权限设置，建议你在 macOS 上先抽样运行 2～3 个高频脚本，再批量替换旧版本。
+
+详见：`升级报告.json`。
+
+<a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>
