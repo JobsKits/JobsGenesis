@@ -47,3 +47,23 @@
 	path = JobsSh
 	url = https://github.com/JobsKits/JobsSh.git
 	branch = main
+[submodule "JobsGenesis@JobsCommand@iOS"]
+	path = JobsGenesis@JobsCommand@iOS
+	url = https://github.com/JobsKits/JobsCommand-iOS.git
+	branch = main
+[submodule "JobsGenesis@JobsCommand@Flutter"]
+	path = JobsGenesis@JobsCommand@Flutter
+	url = https://github.com/JobsKits/JobsCommand-Flutter.git
+	branch = main
+[submodule "JobsGenesis@JobsCommand@Gits"]
+	path = JobsGenesis@JobsCommand@Gits
+	url = https://github.com/JobsKits/JobsCommand-Gits.git
+	branch = main
+[submodule "JobsGenesis@JobsCommand@Others"]
+	path = JobsGenesis@JobsCommand@Others
+	url = https://github.com/JobsKits/JobsCommand-Others.git
+	branch = main
+[submodule "JobsMockTool"]
+	path = JobsMockTool
+	url = https://github.com/JobsKits/JobsMockTool.git
+	branch = main
