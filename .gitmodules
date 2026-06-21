@@ -23,6 +23,6 @@
 	url = git@github.com:JobsKits/JobsSh.git
 	branch = main
 [submodule "SourceTree.sh"]
-	path = SourceTree.sh
+	path = SourceTree.command
 	url = git@github.com:JobsKits/SourceTree.sh.git
 	branch = main
