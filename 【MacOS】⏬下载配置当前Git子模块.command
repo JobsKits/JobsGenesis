@@ -36,9 +36,10 @@ SUBMODULE_REPO_URLS=(
   "https://github.com/JobsKits/JobsCommand-Gits|JobsCommand@Gits"
   "https://github.com/JobsKits/JobsCommand-Others|JobsCommand@Others"
 
-  "https://github.com/JobsKits/SourceTree.sh|SourceTree.command"
+  "https://github.com/JobsKits/SourceTree.command|SourceTree.command"
   "https://github.com/JobsKits/JobsSh|JobsSh"
   "https://github.com/JobsKits/JobsMockTool|JobsMockTool"
+  "https://github.com/JobsKits/JobsAppTrafficMonitor|JobsAppTrafficMonitor"
   # 以后新增仓库，只写浏览器页面地址即可。
   # "https://github.com/JobsKits/xxx"
 )

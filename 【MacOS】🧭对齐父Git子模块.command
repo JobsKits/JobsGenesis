@@ -5,7 +5,6 @@
 # - 影响范围：可能修改当前仓库、工作区、分支、菜单配置或 Git 索引。
 # - 运行提示：运行后会先打印内置自述；终端模式按回车确认后继续，按 Ctrl+C 可取消。
 
-
 SCRIPT_SOURCE="$0"
 SCRIPT_DIR="$(cd "$(dirname "$SCRIPT_SOURCE")" && pwd)"
 SCRIPT_PATH="${SCRIPT_DIR}/$(basename -- "$SCRIPT_SOURCE")"
