@@ -7,7 +7,6 @@
 
 import AppKit
 
-@main
 final class AppDelegate: NSObject, NSApplicationDelegate {
     private let extensionIdentifier = "com.jobs.JobsTerminalOpener.FinderSyncExtension"
     private let logURL = URL(fileURLWithPath: "/tmp/JobsTerminalOpener.log")
@@ -15,10 +14,30 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private let finderRefreshDelay: TimeInterval = 2.5
     private let finderRefreshRetryDelay: TimeInterval = 1.0
     private let finderRefreshRetryLimit = 12
+    private lazy var terminalOpener = TerminalOpener { [weak self] message in
+        self?.writeLog(message)
+    }
+    private var didHandleTerminalOpenRequest = false
     private var window: NSWindow?
+
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        registerTerminalOpenURLHandler()
+        writeLog("applicationWillFinishLaunching")
+    }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         writeLog("applicationDidFinishLaunching begin")
+        if finishURLRequestLaunchIfNeeded() {
+            writeLog("applicationDidFinishLaunching end")
+            return
+        }
+
+        showMainWindow()
+        scheduleFinderRefreshIfNeeded()
+        writeLog("applicationDidFinishLaunching end")
+    }
+
+    func showMainWindow() {
         let viewController = MainViewController()
         _ = viewController.view
         writeLog("main view loaded")
@@ -35,8 +54,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         window.makeKeyAndOrderFront(nil)
         self.window = window
         NSApp.activate(ignoringOtherApps: true)
-        scheduleFinderRefreshIfNeeded()
-        writeLog("applicationDidFinishLaunching end")
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
@@ -46,9 +63,75 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         true
     }
+
+    func application(_ application: NSApplication, open urls: [URL]) {
+        writeLog("application open urls=\(urls.map(\.absoluteString).joined(separator: " | "))")
+        urls.forEach(handleTerminalOpenRequest)
+    }
 }
 
 private extension AppDelegate {
+    func registerTerminalOpenURLHandler() {
+        NSAppleEventManager.shared().setEventHandler(
+            self,
+            andSelector: #selector(handleTerminalOpenAppleEvent(_:withReplyEvent:)),
+            forEventClass: AEEventClass(kInternetEventClass),
+            andEventID: AEEventID(kAEGetURL)
+        )
+    }
+
+    @objc func handleTerminalOpenAppleEvent(_ event: NSAppleEventDescriptor, withReplyEvent replyEvent: NSAppleEventDescriptor) {
+        guard let urlString = event.paramDescriptor(forKeyword: keyDirectObject)?.stringValue,
+              let url = URL(string: urlString) else {
+            writeLog("invalid terminal open AppleEvent")
+            return
+        }
+
+        writeLog("application AppleEvent url=\(url.absoluteString)")
+        handleTerminalOpenRequest(url)
+    }
+
+    func handleTerminalOpenRequest(_ url: URL) {
+        guard url.scheme == "jobsterminalopener",
+              url.host == "open",
+              let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+              let path = components.queryItems?.first(where: { $0.name == "path" })?.value,
+              !path.isEmpty else {
+            writeLog("invalid terminal open url=\(url.absoluteString)")
+            return
+        }
+
+        didHandleTerminalOpenRequest = true
+        do {
+            let fileURL = URL(fileURLWithPath: path)
+            let directoryURL = try terminalOpener.openTerminal(from: fileURL)
+            writeLog("open terminal from host \(directoryURL.path)")
+        } catch {
+            writeLog("open terminal from host failed path=\(path), error=\(error.localizedDescription)")
+            showTerminalOpenFailure(error.localizedDescription)
+        }
+    }
+
+    func finishURLRequestLaunchIfNeeded() -> Bool {
+        guard didHandleTerminalOpenRequest else { return false }
+
+        NSApp.setActivationPolicy(.accessory)
+        scheduleFinderRefreshIfNeeded()
+        writeLog("skip main window after terminal open request")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            NSApp.terminate(nil)
+        };return true
+    }
+
+    func showTerminalOpenFailure(_ message: String) {
+        let alert = NSAlert()
+        alert.alertStyle = .warning
+        alert.messageText = "用终端打开失败"
+        alert.informativeText = message
+        alert.addButton(withTitle: "好")
+        alert.runModal()
+    }
+
     func scheduleFinderRefreshIfNeeded() {
         guard FileManager.default.fileExists(atPath: finderRefreshMarkerURL.path) else {
             writeLog("finder refresh marker missing")

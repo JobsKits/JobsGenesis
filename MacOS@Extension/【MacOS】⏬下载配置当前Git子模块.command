@@ -31,8 +31,9 @@ export LC_CTYPE="${LC_CTYPE:-UTF-8}"
 # 新增子仓：往 SUBMODULE_REPO_URLS 里加一行浏览器页面地址。
 # 删除子仓：从 SUBMODULE_REPO_URLS 里删掉对应页面地址；默认只查漏补缺，不删除 .gitmodules 旧配置。
 SUBMODULE_REPO_URLS=(
-  "https://github.com/JobsKits/JobsGitRemoteOpener|JobsGitRemoteOpener"
   "https://github.com/JobsKits/JobsPathCopier|JobsPathCopier"
+  "https://github.com/JobsKits/JobsTerminalOpener|JobsTerminalOpener"
+  "https://github.com/JobsKits/JobsGitRemoteOpener|JobsGitRemoteOpener"
   # 以后新增仓库，只写浏览器页面地址即可。
   # "https://github.com/JobsKits/xxx"
 )

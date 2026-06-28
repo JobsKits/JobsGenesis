@@ -8,6 +8,12 @@
 import AppKit
 
 struct TerminalOpener {
+    private let writeLog: (String) -> Void
+
+    init(writeLog: @escaping (String) -> Void = { _ in }) {
+        self.writeLog = writeLog
+    }
+
     func openTerminal(from fileURL: URL) throws -> URL {
         let standardizedURL = fileURL.standardizedFileURL
         guard standardizedURL.isFileURL else {
@@ -15,16 +21,8 @@ struct TerminalOpener {
         }
 
         let directoryURL = terminalWorkingDirectory(from: standardizedURL)
-        let commandURL = try temporaryCommandURL(directoryURL: directoryURL)
-        let terminalURL = try terminalApplicationURL()
-        let configuration = NSWorkspace.OpenConfiguration()
-        configuration.activates = true
-        NSWorkspace.shared.open(
-            [commandURL],
-            withApplicationAt: terminalURL,
-            configuration: configuration,
-            completionHandler: nil
-        );return directoryURL
+        try runTerminalCommand(directoryURL: directoryURL)
+        return directoryURL
     }
 }
 
@@ -32,7 +30,7 @@ private extension TerminalOpener {
     enum TerminalOpenError: LocalizedError {
         case unsupportedURL(URL)
         case missingTerminal
-        case commandScriptFailed(String)
+        case terminalCommandFailed(String)
 
         var errorDescription: String? {
             switch self {
@@ -40,7 +38,7 @@ private extension TerminalOpener {
                 return "不是本地文件路径：\(url.absoluteString)"
             case .missingTerminal:
                 return "没有找到系统 Terminal.app"
-            case .commandScriptFailed(let message):
+            case .terminalCommandFailed(let message):
                 return message
             }
         }
@@ -52,6 +50,15 @@ private extension TerminalOpener {
            values.isPackage != true {
             return fileURL
         };return fileURL.deletingLastPathComponent()
+    }
+
+    func runTerminalCommand(directoryURL: URL) throws {
+        let terminalURL = try terminalApplicationURL()
+
+        writeLog("terminal target directory=\(directoryURL.path)")
+        writeLog("terminal app=\(terminalURL.path)")
+        try openDirectoryInTerminal(directoryURL)
+        activateTerminalWhenAvailable()
     }
 
     func terminalApplicationURL() throws -> URL {
@@ -71,35 +78,59 @@ private extension TerminalOpener {
         throw TerminalOpenError.missingTerminal
     }
 
-    func temporaryCommandURL(directoryURL: URL) throws -> URL {
-        let directory = FileManager.default.temporaryDirectory
-            .appendingPathComponent("JobsTerminalOpener", isDirectory: true)
+    func terminalRunningApplication() -> NSRunningApplication? {
+        NSRunningApplication.runningApplications(withBundleIdentifier: "com.apple.Terminal").first
+    }
+
+    func openDirectoryInTerminal(_ directoryURL: URL) throws {
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/osascript")
+        process.arguments = [
+            "-e",
+            terminalOpenAppleScript(),
+            directoryURL.path
+        ]
+
+        let outputPipe = Pipe()
+        process.standardOutput = outputPipe
+        process.standardError = outputPipe
 
         do {
-            try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+            try process.run()
+            process.waitUntilExit()
         } catch {
-            throw TerminalOpenError.commandScriptFailed("创建临时脚本目录失败：\(error.localizedDescription)")
+            throw TerminalOpenError.terminalCommandFailed("请求 Terminal.app 执行 cd 失败：\(error.localizedDescription)")
         }
 
-        let commandURL = directory
-            .appendingPathComponent(UUID().uuidString)
-            .appendingPathExtension("command")
-        let command = """
-        #!/bin/zsh
-        cd \(shellQuoted(directoryURL.path)) || exit 1
-        exec "${SHELL:-/bin/zsh}" -l
-        """
-
-        do {
-            try command.write(to: commandURL, atomically: true, encoding: .utf8)
-            try FileManager.default.setAttributes([.posixPermissions: 0o755], ofItemAtPath: commandURL.path)
-            return commandURL
-        } catch {
-            throw TerminalOpenError.commandScriptFailed("写入临时启动脚本失败：\(error.localizedDescription)")
+        let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: outputData, encoding: .utf8) ?? ""
+        writeLog("terminal cd directory exit=\(process.terminationStatus), output=\(output)")
+        guard process.terminationStatus == 0 else {
+            throw TerminalOpenError.terminalCommandFailed("Terminal.app 执行 cd 失败：\(output)")
         }
     }
 
-    func shellQuoted(_ value: String) -> String {
-        "'\(value.replacingOccurrences(of: "'", with: "'\\''"))'"
+    func terminalOpenAppleScript() -> String {
+        """
+        on run argv
+            set targetPath to item 1 of argv
+            tell application "Terminal"
+                activate
+                do script "cd " & quoted form of targetPath
+            end tell
+        end run
+        """
+    }
+
+    func activateTerminalWhenAvailable() {
+        for attempt in 1...20 {
+            if let runningApplication = terminalRunningApplication() {
+                let didActivate = runningApplication.activate(options: [.activateAllWindows])
+                writeLog("terminal activate attempt=\(attempt), success=\(didActivate)")
+                return
+            }
+            Thread.sleep(forTimeInterval: 0.1)
+        }
+        writeLog("terminal activate skipped, running app not found")
     }
 }

@@ -11,6 +11,7 @@ LOG_FILE="/tmp/JobsTerminalOpenerBuildPhase.log"
 REFRESH_MARKER="/tmp/JobsTerminalOpenerNeedsFinderRestart"
 EXTENSION_ID="com.jobs.JobsTerminalOpener.FinderSyncExtension"
 APP_PROCESS_NAME="JobsTerminalOpener"
+EXTENSION_PROCESS_NAME="JobsTerminalFinderSync"
 APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
 EXTENSION_PATH="${APP_PATH}/Contents/PlugIns/JobsTerminalFinderSync.appex"
 
@@ -27,10 +28,59 @@ status_line() {
 
   print -r -- "${lines}" | /usr/bin/head -n 1
 }
+# 判断外层安装脚本是否已经接管扩展注册和启用。
+should_skip_build_phase_enable() {
+  [[ "${JOBS_SKIP_FINDER_EXTENSION_BUILD_PHASE:-0}" == "1" ]]
+}
+# 外层安装脚本接管时跳过 Build Phase 内的注册副作用。
+skip_enable_when_requested() {
+  if should_skip_build_phase_enable; then
+    echo "skip build phase enable: outer installer will register and enable Finder Sync extension"
+    exit 0
+  fi
+}
 # 停止上一轮 Xcode 调试残留的宿主 App。
 stop_stale_host_app() {
   /usr/bin/pkill -x "${APP_PROCESS_NAME}" 2>/dev/null || true
   echo "stop stale host app exit=$?"
+}
+# 停止上一轮 Finder 挂住的扩展进程，避免 Finder 继续跑旧二进制。
+stop_stale_extension_process() {
+  /usr/bin/pkill -x "${EXTENSION_PROCESS_NAME}" 2>/dev/null || true
+  echo "stop stale extension process exit=$?"
+}
+# 注册宿主 App 到 LaunchServices，让 jobsterminalopener:// 能立刻找到处理程序。
+register_host_app_for_url_scheme() {
+  local lsregister="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+  if [[ -x "${lsregister}" && -d "${APP_PATH}" ]]; then
+    unregister_stale_host_apps "${lsregister}"
+    "${lsregister}" -f "${APP_PATH}"
+    echo "lsregister host app exit=$?"
+    return 0
+  fi
+
+  echo "lsregister host app skipped"
+}
+# 注销旧构建产物里的宿主 App，避免 URL Scheme 被旧 App 接管。
+unregister_stale_host_apps() {
+  local lsregister="$1"
+  local current_path=""
+  local workspace_root=""
+  local search_root=""
+  local candidate_path=""
+  current_path="$(cd "${APP_PATH}" 2>/dev/null && pwd -P)"
+  workspace_root="$(cd "${SRCROOT}/.." 2>/dev/null && pwd -P)"
+
+  for search_root in "${HOME}/Library/Developer/Xcode/DerivedData" "${workspace_root}/work"; do
+    [[ -d "${search_root}" ]] || continue
+    while IFS= read -r -d '' candidate_path; do
+      candidate_path="$(cd "${candidate_path}" 2>/dev/null && pwd -P)"
+      [[ -n "${candidate_path}" ]] || continue
+      [[ "${candidate_path}" == "${current_path}" ]] && continue
+      "${lsregister}" -u "${candidate_path}" 2>/dev/null || true
+      echo "lsregister unregister stale host app=${candidate_path} exit=$?"
+    done < <(/usr/bin/find "${search_root}" -path '*/JobsTerminalOpener.app' -type d -print0 2>/dev/null)
+  done
 }
 # 注册当前构建产物里的 Finder Sync 扩展。
 register_extension() {
@@ -84,6 +134,8 @@ run_enable_flow() {
   before_line="$(status_line)"
   echo "before=${before_line}"
   stop_stale_host_app
+  stop_stale_extension_process
+  register_host_app_for_url_scheme
 
   if [[ ! -d "${EXTENSION_PATH}" ]]; then
     echo "missing extension path"
@@ -107,6 +159,7 @@ run_enable_flow() {
 }
 # 编排 Xcode Build Phase 自动启用扩展流程。
 main() {
+  skip_enable_when_requested # 外层安装脚本接管时，避免 Build Phase 重复注册并卡住构建。
   run_enable_flow # 注册并启用 Finder Sync 扩展，成功后刷新 Finder 缓存。
 }
 

@@ -16,6 +16,7 @@ FINAL_EXIT_STATUS=0
 SELECTED_KEYS=()
 SUCCEEDED_FEATURES=()
 FAILED_FEATURES=()
+REGISTERED_PATHS=()
 
 FEATURE_KEYS=(git_remote path_copier terminal_opener)
 typeset -A FEATURE_TITLE
@@ -32,7 +33,7 @@ FEATURE_SCHEME[git_remote]="JobsGitRemoteOpener"
 FEATURE_APP_NAME[git_remote]="JobsGitRemoteOpener"
 FEATURE_EXTENSION_NAME[git_remote]="JobsGitRemoteFinderSync.appex"
 FEATURE_EXTENSION_ID[git_remote]="com.jobs.JobsGitRemoteOpener.FinderSyncExtension"
-FEATURE_KEY_BY_TITLE["${FEATURE_TITLE[git_remote]}"]="git_remote"
+FEATURE_KEY_BY_TITLE[${FEATURE_TITLE[git_remote]}]="git_remote"
 
 FEATURE_TITLE[path_copier]="复制绝对路径"
 FEATURE_PROJECT_DIR[path_copier]="JobsPathCopier"
@@ -40,7 +41,7 @@ FEATURE_SCHEME[path_copier]="JobsPathCopier"
 FEATURE_APP_NAME[path_copier]="JobsPathCopier"
 FEATURE_EXTENSION_NAME[path_copier]="JobsPathCopyFinderSync.appex"
 FEATURE_EXTENSION_ID[path_copier]="com.jobs.JobsPathCopier.FinderSyncExtension"
-FEATURE_KEY_BY_TITLE["${FEATURE_TITLE[path_copier]}"]="path_copier"
+FEATURE_KEY_BY_TITLE[${FEATURE_TITLE[path_copier]}]="path_copier"
 
 FEATURE_TITLE[terminal_opener]="用终端打开"
 FEATURE_PROJECT_DIR[terminal_opener]="JobsTerminalOpener"
@@ -48,7 +49,7 @@ FEATURE_SCHEME[terminal_opener]="JobsTerminalOpener"
 FEATURE_APP_NAME[terminal_opener]="JobsTerminalOpener"
 FEATURE_EXTENSION_NAME[terminal_opener]="JobsTerminalFinderSync.appex"
 FEATURE_EXTENSION_ID[terminal_opener]="com.jobs.JobsTerminalOpener.FinderSyncExtension"
-FEATURE_KEY_BY_TITLE["${FEATURE_TITLE[terminal_opener]}"]="terminal_opener"
+FEATURE_KEY_BY_TITLE[${FEATURE_TITLE[terminal_opener]}]="terminal_opener"
 
 # 判断当前终端是否适合输出 ANSI 彩色文本。
 supports_color() {
@@ -158,6 +159,12 @@ init_runtime() {
 get_cpu_arch() {
   [[ "$(uname -m)" == "arm64" ]] && print -r -- "arm64" || print -r -- "x86_64"
 }
+# 返回 LaunchServices 注册工具路径。
+lsregister_path() {
+  local tool_path="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+
+  [[ -x "$tool_path" ]] && print -r -- "$tool_path"
+}
 # 检查系统命令、MacOS 环境和工程结构是否满足安装要求。
 check_environment() {
   local missing_commands=()
@@ -171,7 +178,7 @@ check_environment() {
     exit 1
   fi
 
-  for command_name in fzf xcodebuild pluginkit open killall grep head mkdir tee sed; do
+  for command_name in fzf xcodebuild pluginkit open killall pkill grep head awk find mkdir tee sed; do
     if ! command -v "$command_name" >/dev/null 2>&1; then
       missing_commands+=("$command_name")
     fi
@@ -188,6 +195,11 @@ check_environment() {
   if ! /usr/bin/xcode-select -p >/dev/null 2>&1; then
     error_echo "未检测到 Xcode 命令行工具，请先安装或选择 Xcode。"
     gray_echo "可执行：xcode-select --install"
+    exit 1
+  fi
+
+  if [[ -z "$(lsregister_path)" ]]; then
+    error_echo "未找到 LaunchServices 注册工具 lsregister。"
     exit 1
   fi
 
@@ -291,6 +303,14 @@ extension_path_for_key() {
   app_path="$(app_path_for_key "$key")"
   print -r -- "${app_path}/Contents/PlugIns/${FEATURE_EXTENSION_NAME[$key]}"
 }
+# 返回指定功能构建目录下的散落 appex 路径。
+standalone_extension_path_for_key() {
+  local key="$1"
+  local derived_data_dir=""
+
+  derived_data_dir="$(derived_data_dir_for_key "$key")"
+  print -r -- "${derived_data_dir}/Build/Products/${BUILD_CONFIGURATION}/${FEATURE_EXTENSION_NAME[$key]}"
+}
 # 运行 xcodebuild 构建指定功能的宿主 App 和 Finder Sync Extension。
 build_feature() {
   local key="$1"
@@ -306,8 +326,9 @@ build_feature() {
   note_echo "开始构建：${FEATURE_TITLE[$key]}"
   gray_echo "工程路径：${project_file}"
   gray_echo "构建缓存：${derived_data_dir}"
+  gray_echo "注册策略：构建阶段跳过自动注册，构建完成后由当前安装脚本统一处理。"
 
-  /usr/bin/xcodebuild \
+  JOBS_SKIP_FINDER_EXTENSION_BUILD_PHASE=1 /usr/bin/xcodebuild \
     -project "$project_file" \
     -scheme "${FEATURE_SCHEME[$key]}" \
     -configuration "$BUILD_CONFIGURATION" \
@@ -361,6 +382,129 @@ wait_until_extension_enabled() {
 
   return 1
 }
+# 去重收集一个路径。
+append_unique_path_if_needed() {
+  local candidate_path="$1"
+  local existed_path=""
+
+  [[ -z "$candidate_path" ]] && return 0
+  for existed_path in "${REGISTERED_PATHS[@]}"; do
+    [[ "$existed_path" == "$candidate_path" ]] && return 0
+  done
+  REGISTERED_PATHS+=("$candidate_path")
+}
+# 从 LaunchServices / PlugInKit 里收集当前功能可能残留的注册路径。
+collect_registered_paths_for_feature() {
+  local key="$1"
+  local app_id="com.jobs.${FEATURE_APP_NAME[$key]}"
+  local extension_id="${FEATURE_EXTENSION_ID[$key]}"
+  local extension_name="${FEATURE_EXTENSION_NAME[$key]}"
+  local lsregister=""
+  local registered_path=""
+
+  REGISTERED_PATHS=()
+  lsregister="$(lsregister_path)"
+
+  while IFS= read -r registered_path; do
+    append_unique_path_if_needed "$registered_path"
+  done < <(
+    /usr/bin/pluginkit -m -i "$extension_id" -A -D -vv 2>/dev/null \
+      | /usr/bin/awk -F '= ' '/Path = / {print $2}'
+  )
+
+  while IFS= read -r registered_path; do
+    append_unique_path_if_needed "$registered_path"
+  done < <(
+    "$lsregister" -dump 2>/dev/null | /usr/bin/awk -v app_id="$app_id" -v extension_id="$extension_id" '
+      function flush_record() {
+        if ((bundle_id == app_id || bundle_id == extension_id) && bundle_path != "") {
+          print bundle_path
+        }
+        bundle_id = ""
+        bundle_path = ""
+      }
+      /^--------------------------------------------------------------------------------$/ {
+        flush_record()
+        next
+      }
+      /^path:[[:space:]]+/ {
+        bundle_path = $0
+        sub(/^path:[[:space:]]+/, "", bundle_path)
+        sub(/[[:space:]]+[(]0x[0-9a-fA-F]+[)].*$/, "", bundle_path)
+      }
+      /^identifier:[[:space:]]+/ {
+        bundle_id = $0
+        sub(/^identifier:[[:space:]]+/, "", bundle_id)
+      }
+      END {
+        flush_record()
+      }
+    '
+  )
+
+  append_unique_path_if_needed "$(standalone_extension_path_for_key "$key")"
+  while IFS= read -r registered_path; do
+    append_unique_path_if_needed "$registered_path"
+  done < <(
+    /usr/bin/find "${HOME}/Library/Developer/Xcode/DerivedData" \
+      \( -path "*/Build/Products/${BUILD_CONFIGURATION}/${extension_name}" -o -path "*/Index.noindex/Build/Products/${BUILD_CONFIGURATION}/${extension_name}" \) \
+      -type d \
+      -print 2>/dev/null
+  )
+}
+# 清理同 Bundle ID 的旧注册记录，避免 Finder 发现阶段跳过当前扩展。
+cleanup_stale_registration_records() {
+  local key="$1"
+  local app_path="$2"
+  local extension_path="$3"
+  local extension_id="${FEATURE_EXTENSION_ID[$key]}"
+  local lsregister=""
+  local registered_path=""
+
+  lsregister="$(lsregister_path)"
+  collect_registered_paths_for_feature "$key"
+
+  note_echo "清理旧扩展注册记录：${extension_id}"
+  for registered_path in "${REGISTERED_PATHS[@]}"; do
+    [[ -z "$registered_path" ]] && continue
+    if [[ "$registered_path" == "$app_path" || "$registered_path" == "$extension_path" ]]; then
+      continue
+    fi
+
+    gray_echo "移除旧 LaunchServices 记录：${registered_path}"
+    "$lsregister" -u "$registered_path" 2>&1 | tee -a "$LOG_FILE" || true
+
+    if [[ -e "$registered_path" ]]; then
+      /usr/bin/pluginkit -r "$registered_path" 2>&1 | tee -a "$LOG_FILE" || true
+    fi
+  done
+}
+# 先停止旧扩展进程，避免 Finder 持有旧构建产物。
+stop_feature_processes() {
+  local key="$1"
+  local app_name="${FEATURE_APP_NAME[$key]}"
+  local extension_process_name="${FEATURE_EXTENSION_NAME[$key]%.appex}"
+
+  /usr/bin/pkill -x "$app_name" 2>/dev/null || true
+  /usr/bin/pkill -f "${extension_process_name}.appex/Contents/MacOS/${extension_process_name}" 2>/dev/null || true
+}
+# 注册宿主 App 到 LaunchServices。
+register_app_with_launchservices() {
+  local app_path="$1"
+  local lsregister=""
+  local register_status=0
+
+  lsregister="$(lsregister_path)"
+  note_echo "注册宿主 App 到 LaunchServices：${app_path}"
+  "$lsregister" -f "$app_path" 2>&1 | tee -a "$LOG_FILE"
+  register_status=${pipestatus[1]}
+  if (( register_status != 0 )); then
+    error_echo "LaunchServices 注册失败：${app_path}"
+    return "$register_status"
+  fi
+
+  return 0
+}
 # 注册并启用构建产物中的 Finder Sync Extension。
 register_and_enable_feature() {
   local key="$1"
@@ -380,6 +524,13 @@ register_and_enable_feature() {
     error_echo "未找到构建后的 Finder Sync Extension：${extension_path}"
     return 1
   fi
+
+  stop_feature_processes "$key"
+  cleanup_stale_registration_records "$key" "$app_path" "$extension_path"
+  register_app_with_launchservices "$app_path" || return 1
+
+  note_echo "清除当前扩展旧登记：${extension_path}"
+  /usr/bin/pluginkit -r "$extension_path" 2>&1 | tee -a "$LOG_FILE" || true
 
   note_echo "注册扩展：${extension_id}"
   /usr/bin/pluginkit -a "$extension_path" 2>&1 | tee -a "$LOG_FILE"
@@ -444,6 +595,8 @@ restart_finder_after_install() {
   fi
 
   note_echo "重启 Finder，刷新 Finder Sync 右键菜单缓存。"
+  note_echo "重启 PlugInKit Daemon，刷新扩展发现索引。"
+  /usr/bin/pkill -x pkd 2>/dev/null || true
   /usr/bin/killall Finder 2>&1 | tee -a "$LOG_FILE" || true
 }
 # 输出安装结果、日志路径和后续排查提示。

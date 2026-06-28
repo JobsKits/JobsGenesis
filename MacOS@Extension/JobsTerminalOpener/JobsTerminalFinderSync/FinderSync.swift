@@ -9,7 +9,6 @@ import AppKit
 import FinderSync
 
 final class FinderSync: FIFinderSync {
-    private let terminalOpener = TerminalOpener()
     private let logURL: URL = {
         let baseURL = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first ?? FileManager.default.temporaryDirectory
         let directoryURL = baseURL.appendingPathComponent("JobsTerminalFinderSync", isDirectory: true)
@@ -58,8 +57,12 @@ private extension FinderSync {
             }
 
             do {
-                let directoryURL = try terminalOpener.openTerminal(from: url)
-                writeLog("open terminal \(directoryURL.path)")
+                let requestURL = try terminalOpenRequestURL(fileURL: url)
+                writeLog("request terminal open via \(requestURL.absoluteString)")
+                guard NSWorkspace.shared.open(requestURL) else {
+                    throw FinderSyncOpenError.requestFailed
+                }
+                writeLog("delegate terminal open request accepted \(url.path)")
                 return
             } catch {
                 writeLog("failed \(url.path): \(error.localizedDescription)")
@@ -68,6 +71,19 @@ private extension FinderSync {
         }
 
         showFailureAlert(messages: messages)
+    }
+
+    func terminalOpenRequestURL(fileURL: URL) throws -> URL {
+        var components = URLComponents()
+        components.scheme = "jobsterminalopener"
+        components.host = "open"
+        components.queryItems = [
+            URLQueryItem(name: "path", value: fileURL.path)
+        ]
+
+        guard let requestURL = components.url else {
+            throw FinderSyncOpenError.invalidRequestURL
+        };return requestURL
     }
 
     func candidateURLs() -> [URL] {
@@ -100,5 +116,19 @@ private extension FinderSync {
         }
 
         try? Data(line.utf8).write(to: logURL)
+    }
+}
+
+private enum FinderSyncOpenError: LocalizedError {
+    case invalidRequestURL
+    case requestFailed
+
+    var errorDescription: String? {
+        switch self {
+        case .invalidRequestURL:
+            return "创建用终端打开请求失败"
+        case .requestFailed:
+            return "无法唤起 JobsTerminalOpener 宿主 App"
+        }
     }
 }

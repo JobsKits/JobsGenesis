@@ -11,9 +11,10 @@
 		01B000000000000000000002 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000002 /* MainViewController.swift */; };
 		01B000000000000000000003 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000009 /* FinderSync.framework */; };
 		01B000000000000000000011 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000011 /* FinderSync.swift */; };
-		01B000000000000000000012 /* TerminalOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000012 /* TerminalOpener.swift */; };
 		01B000000000000000000013 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000009 /* FinderSync.framework */; };
 		01B000000000000000000014 /* JobsTerminalFinderSync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01E000000000000000000001 /* JobsTerminalFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01B000000000000000000015 /* TerminalOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000012 /* TerminalOpener.swift */; };
+		01B000000000000000000016 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A000000000000000000005 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		01A000000000000000000002 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01A000000000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A000000000000000000004 /* JobsTerminalOpener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JobsTerminalOpener.entitlements; sourceTree = "<group>"; };
+		01A000000000000000000005 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		01A000000000000000000009 /* FinderSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderSync.framework; path = System/Library/Frameworks/FinderSync.framework; sourceTree = SDKROOT; };
 		01A000000000000000000011 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		01A000000000000000000012 /* TerminalOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalOpener.swift; sourceTree = "<group>"; };
@@ -87,10 +89,11 @@
 		01G000000000000000000011 /* JobsTerminalOpener */ = {
 			isa = PBXGroup;
 			children = (
-				01A000000000000000000001 /* AppDelegate.swift */,
-				01A000000000000000000002 /* MainViewController.swift */,
-				01A000000000000000000003 /* Info.plist */,
-				01A000000000000000000004 /* JobsTerminalOpener.entitlements */,
+					01A000000000000000000001 /* AppDelegate.swift */,
+					01A000000000000000000002 /* MainViewController.swift */,
+					01A000000000000000000005 /* main.swift */,
+					01A000000000000000000003 /* Info.plist */,
+					01A000000000000000000004 /* JobsTerminalOpener.entitlements */,
 			);
 			path = JobsTerminalOpener;
 			sourceTree = "<group>";
@@ -227,9 +230,11 @@
 		01D000000000000000000010 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (
-				01B000000000000000000001 /* AppDelegate.swift in Sources */,
-				01B000000000000000000002 /* MainViewController.swift in Sources */,
+				files = (
+					01B000000000000000000016 /* main.swift in Sources */,
+					01B000000000000000000001 /* AppDelegate.swift in Sources */,
+					01B000000000000000000002 /* MainViewController.swift in Sources */,
+					01B000000000000000000015 /* TerminalOpener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B000000000000000000011 /* FinderSync.swift in Sources */,
-				01B000000000000000000012 /* TerminalOpener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +382,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_DEBUG_DYLIB = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -432,6 +437,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_DEBUG_DYLIB = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = JobsTerminalFinderSync/Info.plist;
