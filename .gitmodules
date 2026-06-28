@@ -6,23 +6,31 @@
 	path = JobsCommand@Gits
 	url = git@github.com:JobsKits/JobsCommand-Gits.git
 	branch = main
-[submodule "JobsCommand@Others"]
-	path = JobsCommand@Others
-	url = git@github.com:JobsKits/JobsCommand-Others.git
-	branch = main
 [submodule "JobsCommand@iOS"]
 	path = JobsCommand@iOS
 	url = git@github.com:JobsKits/JobsCommand-iOS.git
 	branch = main
-[submodule "JobsMockTool"]
-	path = JobsMockTool
-	url = git@github.com:JobsKits/JobsMockTool.git
+[submodule "JobsCommand@Others"]
+	path = JobsCommand@Others
+	url = git@github.com:JobsKits/JobsCommand-Others.git
+	branch = main
+[submodule "JobsPythonTools.py"]
+	path = JobsPythonTools.py
+	url = git@github.com:JobsKits/JobsPythonTools.git
 	branch = main
 [submodule "JobsSh"]
 	path = JobsSh
 	url = git@github.com:JobsKits/JobsSh.git
 	branch = main
-[submodule "SourceTree.sh"]
+[submodule "JobsSh.sh"]
+	path = JobsSh.sh
+	url = git@github.com:JobsKits/JobsSh.git
+	branch = main
+[submodule "MacOS@Extension"]
+	path = MacOS@Extension
+	url = git@github.com:JobsKits/MacOS_Extension.git
+	branch = main
+[submodule "SourceTree.command"]
 	path = SourceTree.command
 	url = git@github.com:JobsKits/SourceTree.sh.git
 	branch = main

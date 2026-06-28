@@ -14,9 +14,9 @@
 
 ## 一、升级标准 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-- 所有脚本统一为 `#!/bin/zsh`。
+- 所有脚本统一为 `# shell: zsh`。
 - 双击运行先显示 `README.md`，并等待回车继续。
-- 统一彩色日志函数，日志落盘到 `/tmp/脚本名.log`。
+- 统一彩色日志函数，日志落盘到 `$TMPDIR/脚本名.log`。
 - 统一 `SCRIPT_DIR` / `SCRIPT_PATH` 路径写法。
 - 统一结构化入口：`main "$@"`。
 - 普通安装 / 更新 / 升级步骤统一为：**回车跳过，输入任意字符后回车执行**。
