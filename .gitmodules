@@ -14,6 +14,10 @@
 	path = JobsCommand@Others
 	url = git@github.com:JobsKits/JobsCommand-Others.git
 	branch = main
+[submodule "JobsConfigOS"]
+	path = JobsConfigOS
+	url = git@github.com:JobsKits/JobsConfigOS.git
+	branch = main
 [submodule "JobsPythonTools.py"]
 	path = JobsPythonTools.py
 	url = git@github.com:JobsKits/JobsPythonTools.git

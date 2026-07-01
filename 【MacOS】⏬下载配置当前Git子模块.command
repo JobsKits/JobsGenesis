@@ -37,12 +37,10 @@ SUBMODULE_REPO_URLS=(
   "https://github.com/JobsKits/JobsCommand-Others|JobsCommand@Others"
 
   "https://github.com/JobsKits/SourceTree.command|SourceTree.command"
+  "https://github.com/JobsKits/JobsSh|JobsSh"
   "https://github.com/JobsKits/JobsSh|JobsSh.sh"
 
-  "https://github.com/JobsKits/JobsMockTool|JobsMockTool.py"
-  "https://github.com/JobsKits/JobsAppTrafficMonitor|JobsAppTrafficMonitor.py"
-  "https://github.com/JobsKits/JobsReverseIPA|JobsReverseIPA.py"
-
+  "https://github.com/JobsKits/JobsPythonTools|JobsPythonTools.py"
   "https://github.com/JobsKits/JobsConfigOS|JobsConfigOS"
 
   "https://github.com/JobsKits/MacOS_Extension|MacOS@Extension"
