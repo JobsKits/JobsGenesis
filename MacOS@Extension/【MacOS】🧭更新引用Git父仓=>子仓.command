@@ -58,12 +58,12 @@ show_script_intro_and_wait() {
   echo ""
   read -r "?👉 已了解脚本用途与影响，按回车继续；按 Ctrl+C 取消：" _
 }
-# 普通修复动作默认跳过，输入任意字符后才执行。
-ask_any_to_run() {
+# 修复动作默认执行，输入任意字符后跳过。
+ask_enter_to_run() {
   local message="$1"
   local answer=""
-  read -r "?${message}（直接回车跳过；输入任意字符后回车执行）：" answer
-  [[ -n "$answer" ]]
+  read -r "?${message}（直接回车执行；输入任意字符后回车跳过）：" answer
+  [[ -z "$answer" ]]
 }
 # 检查命令和父仓库环境是否满足修复条件。
 check_environment() {
@@ -405,7 +405,7 @@ run_business() {
   gray_echo "不会删除当前磁盘上的子 Git 目录；旧 gitlink 只会执行 git rm --cached。"
   echo ""
 
-  if ! ask_any_to_run "确认按当前磁盘子 Git 目录对齐父 Git 子模块吗？"; then
+  if ! ask_enter_to_run "确认按当前磁盘子 Git 目录对齐父 Git 子模块吗？"; then
     warn_echo "用户选择跳过修复。"
     return 0
   fi
