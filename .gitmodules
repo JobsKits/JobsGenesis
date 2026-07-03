@@ -37,5 +37,5 @@
 	branch = main
 [submodule "SourceTree.command"]
 	path = SourceTree.command
-	url = git@github.com:JobsKits/SourceTree.sh.git
+	url = git@github.com:JobsKits/SourceTree.command.git
 	branch = main
