@@ -13,7 +13,7 @@
 	branch = main
 [submodule "JobsCommand@Others"]
 	path = JobsCommand@Others
-	url = git@github.com:JobsKits/JobsCommand-Others.git
+	url = ../JobsCommand-Others.git
 	branch = main
 [submodule "JobsConfigOS"]
 	path = JobsConfigOS
