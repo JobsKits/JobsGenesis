@@ -23,10 +23,6 @@
 	path = JobsPythonTools.py
 	url = ../JobsPythonTools.git
 	branch = main
-[submodule "JobsSh"]
-	path = JobsSh
-	url = ../JobsSh.git
-	branch = main
 [submodule "JobsSh.sh"]
 	path = JobsSh.sh
 	url = ../JobsSh.git
