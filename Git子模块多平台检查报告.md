@@ -55,7 +55,7 @@
 
 ## 三、<span id="exceptions">例外与限制</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-- **CodeSnippets 两平台仓库异名**：GitHub 为 `JobsKits/JobsCodeSnippets.git`，Gitee 为 `JobsGo/jobs-code-snippetsJobsCodeSnippets.git`。不存在能同时代表这两个仓名的同一条兄弟仓相对 URL。当前共享配置保留已确认的 Gitee SSH 地址；其它部署线路需要按真实镜像地址明确配置，不能只替换域名。
+- **CodeSnippets 两平台仓库异名**：GitHub 为 `JobsKits/JobsCodeSnippets.git`，Gitee 为 `JobsGo/jobs-code-snippetsJobsCodeSnippets.git`。不存在能同时代表这两个仓名的同一条兄弟仓相对 URL。当前共享配置使用已确认的 Gitee HTTPS 地址；下载脚本也会在本次进程及递归子进程中，将 Gitee 标准 SSH 地址转为 HTTPS，兼容旧版本子仓清单。其它部署线路需要按真实镜像地址明确配置，不能只替换域名。
 
   仓名尚未统一时，可先不递归克隆父仓，在 `JobsConfigOS` 中为这一条子模块设置本地明确地址，再初始化。下面使用已确认的 GitHub 地址；其它平台改为其真实镜像 URL：
 
