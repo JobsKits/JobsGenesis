@@ -13,6 +13,25 @@
 - 原始整理阶段没有执行 zsh 检查；父子仓专项修改的 **21 份脚本已通过 `zsh -n`**，范围见检查报告。
 - 输出结构保留原大类目录；每个脚本都被同名文件夹包裹，文件夹内包含脚本和 `README.md`。
 
+<strong id="git-source-log">运行时先看这里：子 Git 从哪里拉取</strong>
+
+以父仓线路为 `https://gitee.com/JobsGo/JobsGenesis.git`、下载 `JobsCommand@iOS` 为例，终端会突出显示完整来源；提交号仅展示成功日志的格式：
+
+```text
+━━━━━━━━━━ Git 来源｜首次克隆 ━━━━━━━━━━
+📦 仓库：JobsCommand@iOS
+🌐 平台 / 主机：Gitee（gitee.com）
+📥 拉取地址：https://gitee.com/JobsGo/JobsCommand-iOS.git
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ℹ️  克隆分支：main
+... Git 原生下载进度 ...
+✅ JobsCommand@iOS 已浅同步到 origin/main：17b467d（来源：https://gitee.com/JobsGo/JobsCommand-iOS.git）
+```
+
+父仓线路、首次克隆和拉取更新各有来源块；已能读取 `.gitmodules` 的递归子仓，在更新前显示“递归来源核对”。首次原生递归克隆仍由 Git 输出注册 URL。平台按地址中的主机识别，不按本地目录名判断。
+
+若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录 `/tmp` 中的 `【MacOS】⏬下载配置当前Git子模块.log`，Git 原生进度仍以终端输出为准。
+
 <strong id="submodule-quick-look">先看例子：子仓地址跟随父仓的平台、账号和协议</strong>
 
 固定平台的写法：
@@ -65,7 +84,7 @@ url = https://github.com/JobsKits/JobsCommand-Flutter.git
 
 - 所有脚本统一为 `# shell: zsh`。
 - 双击运行先显示 `README.md`，并等待回车继续。
-- 统一彩色日志函数，日志落盘到 `$TMPDIR/脚本名.log`。
+- 统一彩色日志函数；下载子模块入口的来源日志写入系统临时目录 `/tmp`，文件名为 `【MacOS】⏬下载配置当前Git子模块.log`，其它入口以各自 `LOG_FILE` 为准。
 - 统一 `SCRIPT_DIR` / `SCRIPT_PATH` 路径写法。
 - 统一结构化入口：`main "$@"`。
 - 普通安装 / 更新 / 升级步骤统一为：**回车跳过，输入任意字符后回车执行**。
