@@ -37,3 +37,7 @@
 	path = SourceTree.command
 	url = ../SourceTree.sh.git
 	branch = main
+[submodule "Windows@Extension"]
+	path = Windows@Extension
+	url = ../WindowsOS_Extension.git
+	branch = main

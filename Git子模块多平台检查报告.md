@@ -2,7 +2,21 @@
 
 ![Jobs出品，必属精品](https://picsum.photos/1500/400)
 
-[toc]
+<!-- jobs-toc:start -->
+<!-- jobs-toc:source {"v":2,"token":"[toc]"} -->
+<details>
+<summary>📚 目录（点击展开 / 收起）</summary>
+
+- [🔥 前言](#%E5%89%8D%E8%A8%80)
+- [一、配置原理](#url-rule)
+- [二、仓库清单](#inventory)
+- [三、例外与限制](#exceptions)
+- [四、使用方法](#usage)
+- [五、脚本检查](#scripts)
+- [六、验证](#validation)
+
+</details>
+<!-- jobs-toc:end -->
 
 ---
 

@@ -2,9 +2,27 @@
 
 ![Jobs出品，必属精品](https://picsum.photos/1500/400)
 
-[toc]
+<!-- jobs-toc:start -->
+<!-- jobs-toc:source {"v":2,"token":"[toc]"} -->
+<details>
+<summary>📚 目录（点击展开 / 收起）</summary>
 
-## 🔥 <font id=前言>前言</font>
+- [🔥 前言](#jobs-toc-heading-1)
+- [一、升级标准](#jobs-toc-heading-2)
+- [二、目录统计](#jobs-toc-heading-3)
+- [三、使用方式](#jobs-toc-heading-4)
+- [四、未执行声明](#jobs-toc-heading-5)
+- [五、静态检查结果](#jobs-toc-heading-6)
+- [六、Git 子模块脚本](#submodule-scripts)
+  - [【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command](#jobs-toc-heading-8)
+  - [【MacOS】🧭更新引用Git父仓=\>子仓.command](#jobs-toc-heading-9)
+  - [【MacOS】🧾更新gitmodules.command](#jobs-toc-heading-10)
+- [七、目录结构](#repository-layout)
+
+</details>
+<!-- jobs-toc:end -->
+
+## <span id="jobs-toc-heading-1" data-jobs-toc="v2">🔥 <font id=前言>前言</font></span><!-- jobs-toc:heading-end -->
 
 - 子仓代码更新、增量登记和关联修复见[Git 子模块脚本](#submodule-scripts)。
 - 父子仓配置先看下面的[实际例子](#submodule-quick-look)，全目录检查结果与例外见 [Git 子模块多平台检查报告](./Git子模块多平台检查报告.md)。
@@ -29,9 +47,9 @@
 ✅ JobsCommand@iOS 已浅同步到 origin/main：17b467d（来源：https://gitee.com/JobsGo/JobsCommand-iOS.git）
 ```
 
-父仓线路、首次克隆和拉取更新各有来源块；已能读取 `.gitmodules` 的递归子仓，在更新前显示“递归来源核对”。首次原生递归克隆仍由 Git 输出注册 URL。平台按地址中的主机识别，不按本地目录名判断。
+父仓线路、首次克隆和拉取更新各有来源块；递归模式在取得每层 `.gitmodules` 后，先显示下层子仓来源，再逐项下载更新。每层都使用其直接父仓地址解析相对 URL。平台按地址中的主机识别，不按本地目录名判断。
 
-若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块.log`，Git 原生进度仍以终端输出为准。
+若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.log`，Git 原生进度仍以终端输出为准。
 
 <strong id="submodule-quick-look">先看例子：子仓地址跟随父仓的平台、账号和协议</strong>
 
@@ -69,6 +87,22 @@ url = https://github.com/JobsKits/JobsCommand-Flutter.git
     branch = main
 ```
 
+Windows 扩展同样保留本地目录与远端仓名的区别，实际登记为：
+
+```ini
+[submodule "Windows@Extension"]
+    path = Windows@Extension
+    url = ../WindowsOS_Extension.git
+    branch = main
+```
+
+| 当前父仓地址 | Windows 子仓解析地址 |
+| --- | --- |
+| `ssh://git@github.com/JobsKits/JobsGenesis.git` | `ssh://git@github.com/JobsKits/WindowsOS_Extension.git` |
+| `git@gitee.com:JobsGo/JobsGenesis.git` | `git@gitee.com:JobsGo/WindowsOS_Extension.git` |
+
+Windows 子仓自身保留 GitHub `origin`，新增 Gitee HTTPS `gitee`，两端目标均为 `main`；标准下载入口对 Gitee 使用下述 HTTPS 传输规则。独立功能包与安装入口见其 [README](./Windows@Extension/README.md#repository-link)。
+
 | 需要快速确认的事情 | 当前行为 |
 | --- | --- |
 | 更新清单、下载或修复引用 | 保留已有 URL、分支和扩展字段，不把相对地址覆盖成固定 GitHub 地址。 |
@@ -77,22 +111,22 @@ url = https://github.com/JobsKits/JobsCommand-Flutter.git
 
 **前提：目标平台已有对应子仓和父仓所引用的提交。** CodeSnippets 两平台仓名不同，当前仍保留明确的 Gitee 地址；具体处理见[报告中的例外说明](./Git子模块多平台检查报告.md#exceptions)。上表说明地址解析，不能替代远端实际克隆验证。
 
-**下载脚本的 Gitee 传输规则：** `【MacOS】⏬下载配置当前Git子模块.command` 在本次运行中，将 `git@gitee.com:`、`ssh://git@gitee.com/`、`ssh://git@gitee.com:22/` 开头的标准地址统一通过 `https://gitee.com/` 访问，保留账号、真实仓名和分支；即使设置 `GIT_URL_STYLE=ssh`，这类 Gitee 地址仍使用 HTTPS。首次 `clone --recurse-submodules` 和后续递归同步都继承该规则，历史子模块中的 SSH 地址无需新电脑先配置 SSH 密钥。
+**下载脚本的 Gitee 传输规则：** `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command` 在本次运行中，将 `git@gitee.com:`、`ssh://git@gitee.com/`、`ssh://git@gitee.com:22/` 开头的标准地址统一通过 `https://gitee.com/` 访问，保留账号、真实仓名和分支；即使设置 `GIT_URL_STYLE=ssh`，这类 Gitee 地址仍使用 HTTPS。各层首次克隆和后续拉取都继承该规则，历史子模块中的 SSH 地址无需新电脑先配置 SSH 密钥。
 
 规则通过追加进程级 `GIT_CONFIG_COUNT` / `url.https://gitee.com/.insteadOf` 配置传给子进程，不写入全局 Git 配置，也不依赖其它工程路径。GitHub、其它主机及非 `22` 的自定义 SSH 端口保持原规则。克隆或递归更新失败会返回非零状态，停止本轮同步并保留错误；不会再输出该项同步成功。各仓清单与浅克隆参数保留；全量删除重建须输入 `YES` 确认，范围限定为清单目标及对应旧仓名目录。
 
-## 一、升级标准 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+## <span id="jobs-toc-heading-2" data-jobs-toc="v2">一、升级标准 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 - 所有脚本统一为 `# shell: zsh`。
 - 双击运行先显示脚本内置自述，并等待回车继续；`README.md` 供运行前阅读。
-- 统一彩色日志函数；下载子模块入口的来源日志写入系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块.log`，其它入口以各自 `LOG_FILE` 为准。
+- 统一彩色日志函数；下载子模块入口的来源日志写入系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.log`，其它入口以各自 `LOG_FILE` 为准。
 - 统一 `SCRIPT_DIR` / `SCRIPT_PATH` 路径写法。
 - 统一结构化入口：`main "$@"`。
 - 普通安装 / 更新 / 升级步骤统一为：**回车跳过，输入任意字符后回车执行**。
 - 危险操作必须明确确认，不做回车默认执行。
 - Homebrew 按健康标准处理：架构识别、shellenv 注入、当前会话生效、可选健康更新。
 
-## 二、目录统计 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+## <span id="jobs-toc-heading-3" data-jobs-toc="v2">二、目录统计 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 | 原始大类 | 脚本数量 |
 |---|---:|
@@ -102,7 +136,7 @@ url = https://github.com/JobsKits/JobsCommand-Flutter.git
 | `JobsGenesis@JobsCommand.iOS` | 43 |
 
 
-## 三、使用方式 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+## <span id="jobs-toc-heading-4" data-jobs-toc="v2">三、使用方式 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 进入任意脚本同名文件夹后，双击 `.command` 文件即可。终端方式：
 
@@ -113,11 +147,11 @@ chmod +x './脚本名.command'
 
 每个脚本文件夹内的 `README.md` 都已经按统一格式生成，可以先看用途、风险和流程图。
 
-## 四、未执行声明 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+## <span id="jobs-toc-heading-5" data-jobs-toc="v2">四、未执行声明 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 生成过程中只做文件重组、代码结构升级和 `zsh -n` 静态检查；没有实际执行 `brew`、`pod`、`flutter`、`xcodebuild`、`osascript`、`sudo`、模拟器、Git 远程写入等 macOS 专属或有副作用的命令。
 
-## 五、静态检查结果 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+## <span id="jobs-toc-heading-6" data-jobs-toc="v2">五、静态检查结果 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 原始脚本整理阶段没有执行 `zsh -n`。父子仓多平台专项修改涉及的 21 份脚本已完成语法检查，地址解析与脚本隔离回归结果见 [Git 子模块多平台检查报告](./Git子模块多平台检查报告.md#validation)；其它脚本保留原验证范围。
 
@@ -131,13 +165,13 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 
 ## 六、<span id="submodule-scripts">Git 子模块脚本</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-### [【MacOS】⏬下载配置当前Git子模块.command](./【MacOS】⏬下载配置当前Git子模块.command)
+### <span id="jobs-toc-heading-8" data-jobs-toc="v2">[【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command](./【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command)</span><!-- jobs-toc:heading-end -->
 
-> **目的：** 将选中的直属子仓更新到远端目标分支最新版本，并维护父仓关联。
+> **目的：** 将选中的子仓及可选的后代子模块更新到各自远端目标分支最新版本，并维护入口父仓关联。
 
 * 确认自述后读取脚本清单、检查远端，尝试拉取父仓。
 * 父仓有未提交改动：跳过父仓拉取，继续处理子仓。
-* 在菜单中选择同步范围。
+* 在主菜单选择同步范围；“切换同步深度”可在默认“向下递归”和“仅直属子模块”之间切换，当前深度适用于各同步动作。
   * 全量同步：选择清单内全部目标重建，须输入 `YES` 执行，其它输入取消。
   * 只更新已有：更新清单内已存在的子仓；一个都没有时转全量同步。
   * 指定子模块：回车勾选或取消，空格确认开始。
@@ -146,13 +180,16 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
   * 全量模式：清洁检查通过后删除目标目录、对应仓名的旧目录及缓存，再重新克隆。
   * 其它模式：缺失的目标目录首次克隆，已有子仓继续更新。
   * 子仓有未提交改动：停止该项更新。
-* 拉取并强制对齐远端目标分支最新提交，默认优先 `main`，不存在时使用远端默认分支。
+* 拉取并强制对齐远端目标分支最新提交：优先使用该层 `.gitmodules` 显式 `branch`，`.` 继承直接父仓分支；未设置时优先 `main`，不存在则使用远端默认分支。
   * 使用 `checkout -B` 和 `reset --hard`：目标本地分支未推送的独有提交可能被覆盖。
-* 按子仓记录的提交同步更深层子模块，整理 Git 元数据与来源日志。
-* 默认自动提交父仓的关联变化，不自动推送。
+* 按当前深度同步：默认逐层读取所选子仓下的 `.gitmodules`，将已登记后代同步到各自远端目标分支最新提交；仅直属模式不下载或更新下层代码。
+  * 只处理本层所选子树，不向上扫描，也不接管未登记的嵌套仓库。
+  * 深层只下载更新，不自动暂存或提交其父仓的 gitlink；递归后这些父仓可能显示子模块指针改动，保留待审阅。
+* 整理入口父仓 Git 元数据与来源日志。
+* 默认自动提交入口父仓的关联变化，不自动推送。
   * 设置 `AUTO_PARENT_COMMIT=0`：跳过提交；`AUTO_PARENT_PUSH=1`：启用父仓推送。
 
-### [【MacOS】🧭更新引用Git父仓=>子仓.command](./【MacOS】🧭更新引用Git父仓=%3E子仓.command)
+### <span id="jobs-toc-heading-9" data-jobs-toc="v2">[【MacOS】🧭更新引用Git父仓=>子仓.command](./【MacOS】🧭更新引用Git父仓=%3E子仓.command)</span><!-- jobs-toc:heading-end -->
 
 > **目的：** 修复目录改名、旧路径残留或元数据指向错误，让父仓关联符合当前磁盘布局。
 
@@ -165,7 +202,7 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 * 修复可证明失效的工作树指向，暂存各子仓当前提交号，用官方命令归集元数据并补齐父仓本地登记。
 * 核对磁盘目录、清单和父仓子模块指针是否一致，输出状态；不拉取代码、不提交、不推送。
 
-### [【MacOS】🧾更新gitmodules.command](./【MacOS】🧾更新gitmodules.command)
+### <span id="jobs-toc-heading-10" data-jobs-toc="v2">[【MacOS】🧾更新gitmodules.command](./【MacOS】🧾更新gitmodules.command)</span><!-- jobs-toc:heading-end -->
 
 > **目的：** 将新放入的直属子仓完整纳入父仓子模块管理，保留已有登记与指针。
 
@@ -193,8 +230,9 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 | [JobsSh.sh/](./JobsSh.sh/README.md) | Shell 工具与环境安装脚本。 |
 | [MacOS@Extension/](./MacOS@Extension/README.md) | Finder 扩展工程及打包、安装入口。 |
 | [SourceTree.command/](./SourceTree.command/README.md) | Sourcetree 自定义动作、维护脚本及菜单资源。 |
+| [Windows@Extension/](./Windows@Extension/README.md) | Windows 资源管理器右键扩展；十个独立功能包及组合安装入口，远端仓名为 `WindowsOS_Extension`。 |
 | [.gitmodules](./.gitmodules) | 子仓路径、克隆地址和跟踪分支登记。 |
-| `【MacOS】⏬下载配置当前Git子模块.command` 等三个根脚本 | 本仓直接管理的下载更新、关联修复和增量登记入口，完整说明见[第六章](#submodule-scripts)。 |
+| `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command` 等三个根脚本 | 本仓直接管理的下载更新、关联修复和增量登记入口，完整说明见[第六章](#submodule-scripts)。 |
 | [Git子模块多平台检查报告.md](./Git子模块多平台检查报告.md) | 多平台配置、例外与静态验证记录。 |
 
 <a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>
