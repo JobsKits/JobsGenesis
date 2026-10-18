@@ -6,12 +6,13 @@
 
 ## 🔥 <font id=前言>前言</font>
 
+- 子仓代码更新、增量登记和关联修复见[Git 子模块脚本](#submodule-scripts)。
 - 父子仓配置先看下面的[实际例子](#submodule-quick-look)，全目录检查结果与例外见 [Git 子模块多平台检查报告](./Git子模块多平台检查报告.md)。
 - 本包由原始脚本压缩包整理升级而来。
 - 共处理 `.command` 脚本：**135** 个。
 - 涉及 Homebrew 的脚本：**56** 个。
 - 原始整理阶段没有执行 zsh 检查；父子仓专项修改的 **21 份脚本已通过 `zsh -n`**，范围见检查报告。
-- 输出结构保留原大类目录；每个脚本都被同名文件夹包裹，文件夹内包含脚本和 `README.md`。
+- 输出结构保留原大类目录；独立脚本包内保留脚本和 `README.md`，根目录的三个子模块入口直接放置，由本页集中说明。
 
 <strong id="git-source-log">运行时先看这里：子 Git 从哪里拉取</strong>
 
@@ -30,7 +31,7 @@
 
 父仓线路、首次克隆和拉取更新各有来源块；已能读取 `.gitmodules` 的递归子仓，在更新前显示“递归来源核对”。首次原生递归克隆仍由 Git 输出注册 URL。平台按地址中的主机识别，不按本地目录名判断。
 
-若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录 `/tmp` 中的 `【MacOS】⏬下载配置当前Git子模块.log`，Git 原生进度仍以终端输出为准。
+若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块.log`，Git 原生进度仍以终端输出为准。
 
 <strong id="submodule-quick-look">先看例子：子仓地址跟随父仓的平台、账号和协议</strong>
 
@@ -78,13 +79,13 @@ url = https://github.com/JobsKits/JobsCommand-Flutter.git
 
 **下载脚本的 Gitee 传输规则：** `【MacOS】⏬下载配置当前Git子模块.command` 在本次运行中，将 `git@gitee.com:`、`ssh://git@gitee.com/`、`ssh://git@gitee.com:22/` 开头的标准地址统一通过 `https://gitee.com/` 访问，保留账号、真实仓名和分支；即使设置 `GIT_URL_STYLE=ssh`，这类 Gitee 地址仍使用 HTTPS。首次 `clone --recurse-submodules` 和后续递归同步都继承该规则，历史子模块中的 SSH 地址无需新电脑先配置 SSH 密钥。
 
-规则通过追加进程级 `GIT_CONFIG_COUNT` / `url.https://gitee.com/.insteadOf` 配置传给子进程，不写入全局 Git 配置，也不依赖其它工程路径。GitHub、其它主机及非 `22` 的自定义 SSH 端口保持原规则。克隆或递归更新失败会返回非零状态，停止本轮同步并保留错误；不会再输出该项同步成功。原有清单、浅克隆参数和全量模式的删除重建策略保留。
+规则通过追加进程级 `GIT_CONFIG_COUNT` / `url.https://gitee.com/.insteadOf` 配置传给子进程，不写入全局 Git 配置，也不依赖其它工程路径。GitHub、其它主机及非 `22` 的自定义 SSH 端口保持原规则。克隆或递归更新失败会返回非零状态，停止本轮同步并保留错误；不会再输出该项同步成功。各仓清单与浅克隆参数保留；全量删除重建须输入 `YES` 确认，范围限定为清单目标及对应旧仓名目录。
 
 ## 一、升级标准 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 - 所有脚本统一为 `# shell: zsh`。
-- 双击运行先显示 `README.md`，并等待回车继续。
-- 统一彩色日志函数；下载子模块入口的来源日志写入系统临时目录 `/tmp`，文件名为 `【MacOS】⏬下载配置当前Git子模块.log`，其它入口以各自 `LOG_FILE` 为准。
+- 双击运行先显示脚本内置自述，并等待回车继续；`README.md` 供运行前阅读。
+- 统一彩色日志函数；下载子模块入口的来源日志写入系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块.log`，其它入口以各自 `LOG_FILE` 为准。
 - 统一 `SCRIPT_DIR` / `SCRIPT_PATH` 路径写法。
 - 统一结构化入口：`main "$@"`。
 - 普通安装 / 更新 / 升级步骤统一为：**回车跳过，输入任意字符后回车执行**。
@@ -124,8 +125,76 @@ chmod +x './脚本名.command'
 
 [**Homebrew**](https://brew.sh/) 安装路径由用户选择：已有可运行安装时复用；确实需要安装时先强提示，只有精确输入大写 `YES` 才选择系统标准目录，其它输入或直接回车选择当前用户的 `.local/homebrew`。`YES` 只表示选择路径，权限与密码由官方安装器实际处理；有管理员权限也可以选用户目录。选定路径失败立即停止，不自动切换；`Ctrl+C` / 输入结束取消整个任务。
 
-<a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>
-
 Homebrew 的发现、健康检查、安装路径选择与复检均封装在每个相关脚本自己的函数中。
 
 Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环境自检流程；独立复制脚本不需要额外的环境支持文件或同步工具。
+
+## 六、<span id="submodule-scripts">Git 子模块脚本</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+
+### [【MacOS】⏬下载配置当前Git子模块.command](./【MacOS】⏬下载配置当前Git子模块.command)
+
+> **目的：** 将选中的直属子仓更新到远端目标分支最新版本，并维护父仓关联。
+
+* 确认自述后读取脚本清单、检查远端，尝试拉取父仓。
+* 父仓有未提交改动：跳过父仓拉取，继续处理子仓。
+* 在菜单中选择同步范围。
+  * 全量同步：选择清单内全部目标重建，须输入 `YES` 执行，其它输入取消。
+  * 只更新已有：更新清单内已存在的子仓；一个都没有时转全量同步。
+  * 指定子模块：回车勾选或取消，空格确认开始。
+  * 添加地址：输入新仓地址，自动用仓名作为目录，本轮登记并同步。
+* 补齐关联配置，检查并处理目标子仓目录。
+  * 全量模式：清洁检查通过后删除目标目录、对应仓名的旧目录及缓存，再重新克隆。
+  * 其它模式：缺失的目标目录首次克隆，已有子仓继续更新。
+  * 子仓有未提交改动：停止该项更新。
+* 拉取并强制对齐远端目标分支最新提交，默认优先 `main`，不存在时使用远端默认分支。
+  * 使用 `checkout -B` 和 `reset --hard`：目标本地分支未推送的独有提交可能被覆盖。
+* 按子仓记录的提交同步更深层子模块，整理 Git 元数据与来源日志。
+* 默认自动提交父仓的关联变化，不自动推送。
+  * 设置 `AUTO_PARENT_COMMIT=0`：跳过提交；`AUTO_PARENT_PUSH=1`：启用父仓推送。
+
+### [【MacOS】🧭更新引用Git父仓=>子仓.command](./【MacOS】🧭更新引用Git父仓=%3E子仓.command)
+
+> **目的：** 修复目录改名、旧路径残留或元数据指向错误，让父仓关联符合当前磁盘布局。
+
+* 扫描父仓第一层实际带 `.git` 的子目录，读取远端和已有登记。
+  * 远端缺失、元数据归属不明或属于链接工作树：停止修复。
+* 展示磁盘目录、父仓状态与清理计划，确认后备份关联状态。
+  * 直接回车：跳过；输入任意字符后回车：执行；`--dry-run`：只预览。
+* 按现存目录对齐 `.gitmodules`，保留仍存在条目的 URL、分支及扩展字段。
+  * 目录缺失，包括尚未下载：移除旧登记和旧子模块指针，磁盘文件保留。
+* 修复可证明失效的工作树指向，暂存各子仓当前提交号，用官方命令归集元数据并补齐父仓本地登记。
+* 核对磁盘目录、清单和父仓子模块指针是否一致，输出状态；不拉取代码、不提交、不推送。
+
+### [【MacOS】🧾更新gitmodules.command](./【MacOS】🧾更新gitmodules.command)
+
+> **目的：** 将新放入的直属子仓完整纳入父仓子模块管理，保留已有登记与指针。
+
+* 读取已有登记，扫描直属子仓，预检远端、提交、索引和元数据冲突。
+  * 有冲突或缺少必要信息：停止，展示问题。
+* 生成增量计划，保留已有 URL、分支、扩展字段、子模块指针和暂缺目录登记。
+  * `--dry-run` 或 `DRY_RUN=1`：只预览，不执行关联写入。
+* 确认计划后备份关联配置和父仓索引。
+  * 直接回车：跳过；输入任意字符后回车：执行。
+* 补齐 `.gitmodules` 和缺失的子模块指针，初始化本地登记，将元数据归集到父仓。
+* 核验父子关系和子仓提交号；仅暂存必要关联，不联网拉取、不提交、不推送。
+
+## 七、<span id="repository-layout">目录结构</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+
+本仓根目录维护三个[子模块入口](#submodule-scripts)；各分类目录是独立 Git 子仓，脚本用途和执行流程在各自 README 中说明。
+
+| 路径 | 职责 |
+| --- | --- |
+| [JobsCommand@Flutter/](./JobsCommand@Flutter/README.md) | Flutter 环境、工程、构建与常用工具脚本。 |
+| [JobsCommand@Gits/](./JobsCommand@Gits/README.md) | Git 下载、关联、历史、迁移等操作脚本。 |
+| [JobsCommand@Others/](./JobsCommand@Others/README.md) | 通用文件处理与终端工具脚本。 |
+| [JobsCommand@iOS/](./JobsCommand@iOS/README.md) | iOS 开发环境、工程维护、安装与构建脚本。 |
+| [JobsConfigOS/](./JobsConfigOS/README.md) | 系统、编辑器、代码片段及 Codex 等配置子仓。 |
+| [JobsPythonTools.py/](./JobsPythonTools.py/README.md) | Python 工具子仓及跨平台运行、打包入口。 |
+| [JobsSh.sh/](./JobsSh.sh/README.md) | Shell 工具与环境安装脚本。 |
+| [MacOS@Extension/](./MacOS@Extension/README.md) | Finder 扩展工程及打包、安装入口。 |
+| [SourceTree.command/](./SourceTree.command/README.md) | Sourcetree 自定义动作、维护脚本及菜单资源。 |
+| [.gitmodules](./.gitmodules) | 子仓路径、克隆地址和跟踪分支登记。 |
+| `【MacOS】⏬下载配置当前Git子模块.command` 等三个根脚本 | 本仓直接管理的下载更新、关联修复和增量登记入口，完整说明见[第六章](#submodule-scripts)。 |
+| [Git子模块多平台检查报告.md](./Git子模块多平台检查报告.md) | 多平台配置、例外与静态验证记录。 |
+
+<a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>
