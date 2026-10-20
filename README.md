@@ -32,27 +32,27 @@
 - 原始整理阶段没有执行 zsh 检查；父子仓专项修改的 **21 份脚本已通过 `zsh -n`**，范围见检查报告。
 - 输出结构保留原大类目录；独立脚本包内保留脚本和 `README.md`，根目录的三个子模块入口直接放置，由本页集中说明。
 
-<strong id="readonly-submodule-mode">先选用途：只拉取电脑默认按父仓锁定版本同步</strong>
+<strong id="readonly-submodule-mode">先选用途：只拉取电脑默认跟随分支最新，子仓保持本地分支</strong>
 
 | 启动选择 | 版本依据 | 是否写入父仓提交 |
 | --- | --- | --- |
-| 只拉取，默认 | 获取当前父仓明确的远程上游，再逐层检出父仓 gitlink 记录的 SHA | 不暂存、不提交、不推送 |
+| 只拉取，默认 | 更新当前父仓明确的远程上游，再逐层跟随子仓目标分支最新提交，保持本地跟踪分支 | 不暂存、不提交、不推送 |
 | 维护子模块，显式选择 | 按本仓清单及原有菜单，把所选子树更新到各自远端目标分支最新 | 沿用 `AUTO_PARENT_COMMIT` / `AUTO_PARENT_PUSH` 原有开关 |
 
-只拉取模式从脚本所在仓库向下处理全部已登记子模块；不向上处理，不使用清单新增关联，也不把各子仓的分支最新提交回写父仓。每层相对 URL 随当前父仓的下载线路解析；子仓通常检出为游离 HEAD，属于固定版本消费的正常状态。只拉取模式只依赖系统 Git、zsh、Perl 等现有工具，不进入维护模式的 Homebrew / fzf 安装流程。
+只拉取模式从脚本所在仓库向下递归处理全部已登记子模块；不向上处理，不使用清单新增关联，也不把子仓最新提交自动提交回父仓。各层优先使用直接父仓 `.gitmodules` 的显式 `branch`，`.` 继承该层计划更新后的直接父仓分支；未配置时读取该子仓远端默认分支。首次下载和已有游离 HEAD 都会恢复或创建对应本地跟踪分支，获取最新提交并快进；成功结束时子仓显示实际分支名。每层相对 URL 随当前父仓的下载线路解析。只拉取模式只依赖系统 Git、zsh、Perl 等现有工具，不进入维护模式的 Homebrew / fzf 安装流程。
 
-纯子仓 HEAD 漂移自动对齐；子仓源码、未跟踪内容、已暂存 gitlink、未完成操作和无法保护的独有游离提交会报出具体路径并停止，父仓 `YES` 不扩散到子仓。当前父仓自己的源码改动或本地独有提交，仍须红字列明并精确输入 `YES` 才舍弃。遇到 `not our ref`，先在有权限的发布电脑补齐同一平台的子仓提交；删库重拉、提交旧指针和在只拉取电脑 push 都不能补出服务端缺失的对象。
+子仓源码、未跟踪内容、已暂存 gitlink、未完成操作或本地独有提交会报出具体路径并停止；不会强制覆盖或丢弃独有的游离提交，父仓 `YES` 不扩散到子仓。当前父仓自己的源码改动或本地独有提交，仍须红字列明并精确输入 `YES` 才舍弃。目标分支不存在、远端默认分支无法确定或最新提交获取失败时，停止并报告对应仓库与来源；不会把旧 gitlink SHA 当作最新分支结果。
 
 只拉取模式要求当前父仓已有明确上游；`REMOTE_NAME` 等原有清单参数只用于维护模式。设置 `DRY_RUN=1` 时，默认只拉取会停止并提示选择维护演练，不能忽略演练标志后执行真实更新。未初始化但存在旧 Git 缓存的空工作树须先恢复，脚本不会覆盖缓存内索引或独有提交。
 
-下文关于清单新增、多选、同步深度、追踪分支最新、目录清理及自动提交的既有流程，均指显式选择的**维护模式**。只拉取模式默认向下递归固定版本，不使用这些写入父仓的开关。两种模式都保留各仓独立清单和来源显示；只拉取日志带运行时间与进程号，终端会输出实际路径。
+下文关于清单新增、多选、可切换同步深度、目录清理及自动提交的既有流程，均指显式选择的**维护模式**。只拉取模式默认向下递归到分支最新，不使用这些写入父仓的开关；子仓最新提交与父仓 gitlink 可能不同，父仓会显示待审阅的子模块指针改动。两种模式都保留各仓独立清单和来源显示；只拉取日志带运行时间与进程号，终端会输出实际路径。
 
 <strong id="sync-worktree-states">维护模式全量同步先看目录状态</strong>
 
 | 本地状态 | 执行结果 | 需要怎样处理 |
 | --- | --- | --- |
 | 目录为空或缺失，且无既有 Git 缓存 | 首次克隆该子仓，再按所选深度同步。 | 核对清单后开始同步。 |
-| 已有有效 Git 工作区，且没有未提交内容 | 复用原目录与缓存，`fetch` 后对齐远端目标分支最新提交。 | 核对本地独有提交；远端对齐仍可能覆盖这些提交。 |
+| 已有有效 Git 工作区，且没有未提交内容 | 复用原目录与缓存，`fetch` 后快进目标本地分支。 | 本地领先远端或分叉时停止并保留提交，外部整合后重试。 |
 | 当前仓或递归模式下所选子树的已有后代存在未提交、已暂存或未跟踪内容 | 红字加粗显示对应仓库绝对路径，暂停并循环复检。 | 精确输入 `YES` 只放弃该仓自己的内容，或在外部处理后回车复检；其它输入继续等待。 |
 
 全量同步默认保留已有多层子树、旧仓名目录与 Git 缓存。空或缺失目录已有缓存时，先核验并按原索引恢复工作区；非 Git 非空目录、缓存归属不明或缺少索引时保护现场并停止。`YES` 使用 `reset --hard HEAD` 与 `clean -fd`，忽略文件和独立嵌套 Git 仓继续保留；无交互或输入结束时停止。
@@ -115,8 +115,8 @@ url = https://github.com/JobsKits/JobsCommand-Flutter.git
 Windows 扩展同样保留本地目录与远端仓名的区别，实际登记为：
 
 ```ini
-[submodule "Windows@Extension"]
-    path = Windows@Extension
+[submodule "WindowsOS@Extension"]
+    path = OS@Extension/WindowsOS@Extension
     url = ../WindowsOS_Extension.git
     branch = main
 ```
@@ -126,7 +126,7 @@ Windows 扩展同样保留本地目录与远端仓名的区别，实际登记为
 | `ssh://git@github.com/JobsKits/JobsGenesis.git` | `ssh://git@github.com/JobsKits/WindowsOS_Extension.git` |
 | `git@gitee.com:JobsGo/JobsGenesis.git` | `git@gitee.com:JobsGo/WindowsOS_Extension.git` |
 
-Windows 子仓自身保留 GitHub `origin`，新增 Gitee HTTPS `gitee`，两端目标均为 `main`；标准下载入口对 Gitee 使用下述 HTTPS 传输规则。独立功能包与安装入口见其 [README](./Windows@Extension/README.md#repository-link)。
+Windows 子仓自身保留 GitHub `origin`，新增 Gitee HTTPS `gitee`，两端目标均为 `main`；标准下载入口对 Gitee 使用下述 HTTPS 传输规则。独立功能包与安装入口见其 [README](./OS@Extension/WindowsOS@Extension/README.md#repository-link)。
 
 | 需要快速确认的事情 | 当前行为 |
 | --- | --- |
@@ -193,9 +193,9 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 ### <span id="jobs-toc-heading-8" data-jobs-toc="v2">[【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command](./【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command)</span><!-- jobs-toc:heading-end -->
 
 
-> **目的：** 默认只拉取父仓锁定的完整子模块版本；显式维护模式保留清单、追踪分支和登记能力。
+> **目的：** 默认递归拉取已登记子模块目标分支的最新提交，保持本地跟踪分支；显式维护模式保留清单与登记能力。
 
-- 启动时回车默认进入[只拉取模式](#readonly-submodule-mode)，先预检完整目标提交树，再更新当前父仓并逐层检出固定版本；不提交、不推送。
+- 启动时回车默认进入[只拉取模式](#readonly-submodule-mode)，先预检本地状态，再更新当前父仓并逐层快进到子仓目标分支最新提交；恢复已有游离 HEAD，不提交、不推送。
 - 显式选择维护模式后，按以下原有清单和菜单流程处理。
 
 * 确认自述后读取脚本清单、检查远端，尝试拉取父仓。
@@ -209,8 +209,8 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
   * 目录为空或缺失：首次克隆；已有有效 Git 工作区：保留目录、缓存及后代，直接更新。
   * 已有 `modules/` 缓存时先核验并恢复空工作区；非 Git 非空目录保护并停止。
   * 子仓有未提交、已暂存或未跟踪内容：红字加粗显示该仓绝对路径并循环等待；精确输入 `YES` 只放弃当前仓自己的未提交内容，或在外部处理后回车复检。其它输入继续复检；无交互或输入结束则停止。
-* 拉取并强制对齐远端目标分支最新提交：优先使用该层 `.gitmodules` 显式 `branch`，`.` 继承直接父仓分支；未设置时优先 `main`，不存在则使用远端默认分支。
-  * 使用 `checkout -B` 和 `reset --hard`：目标本地分支未推送的独有提交可能被覆盖。
+* 拉取并快进到远端目标分支最新提交：优先使用该层 `.gitmodules` 显式 `branch`，`.` 继承直接父仓分支；未设置时优先 `main`，不存在则使用远端默认分支。
+  * 已有目标本地分支只允许快进，领先远端或发生分叉时停止并保留本地提交；缺少目标分支时创建本地跟踪分支。
 * 按当前深度同步：默认逐层读取所选子仓下的 `.gitmodules`，将已登记后代同步到各自远端目标分支最新提交；仅直属模式不下载或更新下层代码。
   * 只处理本层所选子树，不向上扫描，也不接管未登记的嵌套仓库。
   * 递归更新本层前先检查当前已有后代；各仓单独确认，子模块 HEAD 与父仓 gitlink 的普通差异不作为源码未提交反复提示。
@@ -249,7 +249,7 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 
 ## 七、<span id="repository-layout">目录结构</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-本仓根目录维护三个[子模块入口](#submodule-scripts)；各分类目录是独立 Git 子仓，脚本用途和执行流程在各自 README 中说明。
+本仓根目录维护三个[子模块入口](#submodule-scripts)；各工具子仓的脚本用途和执行流程在各自 README 中说明。`OS@Extension/` 是普通分类目录，没有独立 Git；其中两个扩展仓仍由本仓直接登记和管理。
 
 | 路径 | 职责 |
 | --- | --- |
@@ -260,9 +260,9 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 | [JobsConfigOS/](./JobsConfigOS/README.md) | 系统、编辑器、代码片段及 Codex 等配置子仓。 |
 | [JobsPythonTools.py/](./JobsPythonTools.py/README.md) | Python 工具子仓及跨平台运行、打包入口。 |
 | [JobsSh.sh/](./JobsSh.sh/README.md) | Shell 工具与环境安装脚本。 |
-| [MacOS@Extension/](./MacOS@Extension/README.md) | Finder 扩展工程及打包、安装入口。 |
+| [OS@Extension/MacOS@Extension/](./OS@Extension/MacOS@Extension/README.md) | Finder 扩展工程及打包、安装入口。 |
 | [SourceTree.command/](./SourceTree.command/README.md) | Sourcetree 自定义动作、维护脚本及菜单资源。 |
-| [Windows@Extension/](./Windows@Extension/README.md) | Windows 资源管理器右键扩展；十个独立功能包及组合安装入口，远端仓名为 `WindowsOS_Extension`。 |
+| [OS@Extension/WindowsOS@Extension/](./OS@Extension/WindowsOS@Extension/README.md) | Windows 资源管理器右键扩展；十个独立功能包及组合安装入口，远端仓名为 `WindowsOS_Extension`。 |
 | [.gitmodules](./.gitmodules) | 子仓路径、克隆地址和跟踪分支登记。 |
 | `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command` 等三个根脚本 | 本仓直接管理的下载更新、关联修复和增量登记入口，完整说明见[第六章](#submodule-scripts)。 |
 | [Git子模块多平台检查报告.md](./Git子模块多平台检查报告.md) | 多平台配置、例外与静态验证记录。 |

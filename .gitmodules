@@ -30,14 +30,14 @@
 	url = ../JobsSh.git
 	branch = main
 [submodule "MacOS@Extension"]
-	path = MacOS@Extension
+	path = OS@Extension/MacOS@Extension
 	url = ../MacOS_Extension.git
 	branch = main
 [submodule "SourceTree.command"]
 	path = SourceTree.command
 	url = ../SourceTree.sh.git
 	branch = main
-[submodule "Windows@Extension"]
-	path = Windows@Extension
+[submodule "WindowsOS@Extension"]
+	path = OS@Extension/WindowsOS@Extension
 	url = ../WindowsOS_Extension.git
 	branch = main
