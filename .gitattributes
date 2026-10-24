@@ -3,4 +3,7 @@
 "/.jobs-markdown-toc/README.md" filter=jobs-markdown-toc
 "/Git\345\255\220\346\250\241\345\235\227\345\244\232\345\271\263\345\217\260\346\243\200\346\237\245\346\212\245\345\221\212.md" filter=jobs-markdown-toc
 "/README.md" filter=jobs-markdown-toc
+"/OS@Extension/README.md" filter=jobs-markdown-toc
+"/Tests/README.md" filter=jobs-markdown-toc
+"/脚本审计与升级报告.md" filter=jobs-markdown-toc
 # jobs-markdown-toc:end

@@ -1,4 +1,4 @@
-# JobsGenesis 脚本升级优化版
+# JobsGenesis 脚本与开发工具
 
 ![Jobs出品，必属精品](https://picsum.photos/1500/400)
 
@@ -8,41 +8,50 @@
 <summary>📚 目录（点击展开 / 收起）</summary>
 
 - [🔥 前言](#jobs-toc-heading-1)
-- [一、升级标准](#jobs-toc-heading-2)
-- [二、目录统计](#jobs-toc-heading-3)
+- [一、运行与交互约定](#jobs-toc-heading-2)
+- [二、功能分类与入口导航](#feature-navigation)
 - [三、使用方式](#jobs-toc-heading-4)
-- [四、未执行声明](#jobs-toc-heading-5)
-- [五、静态检查结果](#jobs-toc-heading-6)
+- [四、执行范围与结果](#jobs-toc-heading-5)
+- [五、环境准备与排查](#jobs-toc-heading-6)
 - [六、Git 子模块脚本](#submodule-scripts)
   - [【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command](#jobs-toc-heading-8)
   - [【MacOS】🧭更新引用Git父仓=\>子仓.command](#jobs-toc-heading-9)
   - [【MacOS】🧾更新gitmodules.command](#jobs-toc-heading-10)
 - [七、目录结构](#repository-layout)
+- [八、拷贝前清理缓存与构建产物](#cache-cleanup)
+- [九、跨平台脚本审计](#script-audit)
 
 </details>
 <!-- jobs-toc:end -->
 
 ## <span id="jobs-toc-heading-1" data-jobs-toc="v2">🔥 <font id=前言>前言</font></span><!-- jobs-toc:heading-end -->
 
-- 子仓代码更新、增量登记和关联修复见[Git 子模块脚本](#submodule-scripts)。
-- 父子仓配置先看下面的[实际例子](#submodule-quick-look)，全目录检查结果与例外见 [Git 子模块多平台检查报告](./Git子模块多平台检查报告.md)。
-- 本包由原始脚本压缩包整理升级而来。
-- 共处理 `.command` 脚本：**135** 个。
-- 涉及 Homebrew 的脚本：**56** 个。
-- 原始整理阶段没有执行 zsh 检查；父子仓专项修改的 **21 份脚本已通过 `zsh -n`**，范围见检查报告。
-- 输出结构保留原大类目录；独立脚本包内保留脚本和 `README.md`，根目录的三个子模块入口直接放置，由本页集中说明。
+JobsGenesis 是 Jobs 自维护的开发与系统工具集合，覆盖 Git 子模块管理、Flutter / iOS 工程、系统配置、文件与媒体处理、Python 桌面工具和桌面右键扩展。先按下表选择功能，再阅读对应目录的 README 和脚本运行时自述。
+
+| 根目录功能 | 具体可以做什么 | 输入与结果 |
+| --- | --- | --- |
+| [下载与同步子模块](#submodule-scripts) | 默认向下递归拉取分支最新提交；维护模式可全量、仅已有、多选或新增仓库，并选择递归深度 | 读取父仓远端、`.gitmodules` 或维护清单；更新工作区与本地跟踪分支，维护模式可记录父仓指针 |
+| [对齐父子仓引用](#submodule-scripts) | 以磁盘现有直属子仓为准，对齐目录、登记、gitlink 和 Git 元数据指向 | 先预览再确认；暂存关联变化，保留备份，不拉取、不提交、不推送 |
+| [增量登记子仓](#submodule-scripts) | 将新放入的直属 Git 仓补登记为子模块，保留已有 URL、branch、扩展字段与指针 | 读取直属子仓真实远端和提交；补齐 `.gitmodules`、gitlink 与本地登记 |
+| [缓存与构建产物清理](#cache-cleanup) | 递归识别缓存 / 构建特征，显示逐项占用；支持仅预览、仅缓存及无人值守 | 从脚本目录向下扫描；确认后删除匹配项，保护 Git 元数据、符号链接和挂载点 |
+| [跨平台脚本审计](#script-audit) | 对 Shell、Python、JavaScript、PowerShell 做语法检查，标明无法验证的文件 | 默认只输出终端结果；可指定扫描目录、并发数、严格模式及 JSON 报告 |
+
+各工具分类的功能范围与入口见[功能导航](#feature-navigation)，真实目录关系见[目录结构](#repository-layout)。本仓直接维护的脚本由本页说明，子仓独立功能在其就近 README 展开参数、交互、产物和限制。
 
 <strong id="markdown-toc-sync">同步后文档目录：本地 `[toc]`，提交后发布折叠目录</strong>
 
-本地编辑保留独占行 `[toc]`；整文件暂存时由 [**Git**](https://git-scm.com/) 过滤器生成按标题层级缩进、默认收起的可折叠目录，正常提交推送后供远端展示。下载入口逐仓检查已生效的 `filter.jobs-markdown-toc` 配置，再决定是否恢复当前工作区；父仓配置不能代替子仓配置。
+本地编辑保留独占行 `[toc]`；整文件暂存时由 [**Git**](https://git-scm.com/) 过滤器生成按标题层级缩进、默认收起的可折叠目录，正常提交推送后供远端展示。下载入口先完成拉代码和向下递归，成功后才独立询问是否初始化全局 `filter.jobs-markdown-toc`；各仓继续维护自己的文档清单与精确属性。
+
+全局配置功能位于 `JobsConfigOS/🌍JobsMacEnvVarConfigs`，可单独运行[配置入口](./JobsConfigOS/🌍JobsMacEnvVarConfigs/scripts/【MacOS】⚙️配置全局Markdown目录过滤器.command/【MacOS】⚙️配置全局Markdown目录过滤器.command)。使用[下载入口](./【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command)时，附加提示要求**回车才安装，输入任意字符后回车就跳过**；跳过或附加配置失败都不改变代码拉取结果。仅选择安装时需要 Node.js 20+，安装成功后子模块共用全局驱动。完整命令、状态及卸载见[独立功能说明](./JobsConfigOS/🌍JobsMacEnvVarConfigs/scripts/【MacOS】⚙️配置全局Markdown目录过滤器.command/README.md)。
 
 | 本仓配置与工具 | 同步入口处理 | 结果与依赖 |
 | --- | --- | --- |
 | 已有有效目录过滤器 | 执行本仓 `.jobs-markdown-toc/MarkdownToc.mjs restore`，再执行 `verify`；已有工作树即使没有新提交，也显式恢复当前正文 | 需要可用的 [**Node.js**](https://nodejs.org) 和完整目录工具；保留正文及原暂存语义 |
-| 未配置有效目录过滤器 | 明确跳过目录恢复，不自动安装、注册或改写 Git 配置 | 不额外依赖 Node.js；跳过不代表已有生成目录已恢复为 `[toc]` |
+| 新电脑未配置目录过滤器 | 先正常拉取与递归；成功后单独询问，回车才安装，任意字符后回车跳过 | Node.js 20+ 只用于可选配置；安装失败不改变拉取成功结果 |
+| 仓库未携带目录工具 | 跳过已有文件恢复，不新增清单或属性 | 全局驱动只转换已由属性登记的文件 |
 | 已有有效过滤器，但缺少 Node.js / 工具，或还原、验证失败 | 报出具体仓库并停止本轮同步 | 处理该仓配置或工具后重试，不能将本轮视为全部成功 |
 
-默认只拉取的首次克隆先以 `--no-checkout` 复制已预检对象，记录真实远端地址后才首次安全检出，让按真实 URL 匹配的机器过滤器有机会生效；不会为此再次联网获取未经预检的提交。已有生成目录的恢复以当前磁盘正文为来源，不从旧 `HEAD` 或暂存区覆盖正文，也不自动暂存、提交或推送。当前机器尚未注册或换机后没有有效配置时，仍按表中“跳过”处理，不能承诺首次落盘已经是 `[toc]`。
+默认只拉取的首次克隆先以 `--no-checkout` 复制已预检对象，记录真实远端地址后才首次安全检出；不会为此再次联网获取未经预检的提交。已有生成目录的恢复以当前磁盘正文为来源，不从旧 `HEAD` 或暂存区覆盖正文，也不自动暂存、提交或推送。普通 `git clone` / `git pull` 不会执行安装脚本或给新电脑写配置；新电脑至少通过独立入口或下载后的可选提示完成一次安装，后续克隆 / 检出才会自动得到 `[toc]`。无更新的拉取不会重写旧文件；需要恢复时向独立入口显式传入目标仓库。
 
 <strong id="readonly-submodule-mode">先选用途：只拉取电脑默认跟随分支最新，子仓保持本地分支</strong>
 
@@ -51,9 +60,9 @@
 | 只拉取，默认 | 更新当前父仓明确的远程上游，再逐层跟随子仓目标分支最新提交，保持本地跟踪分支 | 不暂存、不提交、不推送 |
 | 维护子模块，显式选择 | 按本仓清单及原有菜单，把所选子树更新到各自远端目标分支最新 | 沿用 `AUTO_PARENT_COMMIT` / `AUTO_PARENT_PUSH` 原有开关 |
 
-启动第一屏显示同步策略版本 `2026.10.21-toc`。新电脑须先取得并运行带此版本号的入口；另一台电脑上的本地修改不会自动更新到新电脑。任一仓库拉取、分支切换或递归校验失败时，本轮不能视为全部完成；处理日志中的具体路径后重新运行。
+可选目录配置工具随环境配置子仓下载，缺失时只跳过附加配置；另一台电脑上的未提交或未推送修改不会自动更新到新电脑。任一仓库拉取、分支切换或递归校验失败时，本轮不能视为全部完成；处理日志中的具体路径后重新运行。
 
-只拉取模式从脚本所在仓库向下递归处理全部已登记子模块；不向上处理，不使用清单新增关联，也不把子仓最新提交自动提交回父仓。各层优先使用直接父仓 `.gitmodules` 的显式 `branch`，`.` 继承该层计划更新后的直接父仓分支；未配置时读取该子仓远端默认分支。首次下载和已有游离 HEAD 都会恢复或创建对应本地跟踪分支，获取最新提交并快进；成功结束时子仓显示实际分支名。每层相对 URL 随当前父仓的下载线路解析。只拉取模式使用系统 Git、zsh、Perl 等现有工具；仅命中有效目录过滤器时另需 Node.js 和该仓完整目录工具，不进入维护模式的 Homebrew / fzf 安装流程。
+只拉取模式从脚本所在仓库向下递归处理全部已登记子模块；不向上处理，不使用清单新增关联，也不把子仓最新提交自动提交回父仓。各层优先使用直接父仓 `.gitmodules` 的显式 `branch`，`.` 继承该层计划更新后的直接父仓分支；未配置时读取该子仓远端默认分支。首次下载和已有游离 HEAD 都会恢复或创建对应本地跟踪分支，获取最新提交并快进；成功结束时子仓显示实际分支名。每层相对 URL 随当前父仓的下载线路解析。只拉取模式使用系统 Git、zsh、Perl 等现有工具，不把全局过滤器安装或 Node.js 作为新电脑拉代码的前置条件。已安装并启用的过滤器仍按 Git 配置执行；只拉取不进入维护模式的 Homebrew / fzf 安装流程。
 
 子仓源码、未跟踪内容、已暂存 gitlink、未完成操作或本地独有提交会报出具体路径并停止；不会强制覆盖或丢弃独有的游离提交，父仓 `YES` 不扩散到子仓。当前父仓自己的源码改动或本地独有提交，仍须红字列明并精确输入 `YES` 才舍弃。目标分支不存在、远端默认分支无法确定或最新提交获取失败时，停止并报告对应仓库与来源；不会把旧 gitlink SHA 当作最新分支结果。
 
@@ -92,11 +101,11 @@
 
 父仓线路、首次克隆和拉取更新各有来源块；递归模式在取得每层 `.gitmodules` 后，先显示下层子仓来源，再逐项下载更新。每层都使用其直接父仓地址解析相对 URL。平台按地址中的主机识别，不按本地目录名判断。
 
-若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.log`，Git 原生进度仍以终端输出为准。
+若 `insteadOf` 改写了 URL，来源块同时列出“解析地址”和“拉取地址”；后者由 `git ls-remote --get-url` 在本地展开，未探测 HTTP 重定向或代理最终出口。首次克隆只读取系统、全局及本次进程的规则，不沿用父仓本地 `insteadOf`；已有子仓拉取读取自身配置，递归子仓也分别按未初始化 / 已初始化采用这两种作用域。新来源块在支持颜色的终端重点显示，写入日志时保留纯文本；URL 凭据与查询参数会脱敏。来源日志位于系统临时目录，文件名带随机后缀，权限为 600；以终端显示的“本次日志”路径为准，Git 原生进度仍以终端输出为准。
 
 <strong id="submodule-quick-look">先看例子：子仓地址跟随父仓的平台、账号和协议</strong>
 
-固定平台的写法：
+固定平台地址的解析示例：
 
 ```ini
 url = https://github.com/JobsKits/JobsCommand-Flutter.git
@@ -158,58 +167,67 @@ Windows 子仓自身保留 GitHub `origin`，新增 Gitee HTTPS `gitee`，两端
 
 规则通过追加进程级 `GIT_CONFIG_COUNT` / `url.https://gitee.com/.insteadOf` 配置传给子进程，不写入全局 Git 配置，也不依赖其它工程路径。GitHub、其它主机及非 `22` 的自定义 SSH 端口保持原规则。克隆或递归更新失败会返回非零状态，停止本轮同步并保留错误；不会再输出该项同步成功。各仓清单与浅克隆参数保留；全量同步默认逐仓复用已有工作区，空或缺失目录才首次克隆，不批量删除旧仓名目录、多层子树或缓存。未提交内容须逐仓处理，精确 `YES` 仅放弃当前仓自己的内容。
 
-## <span id="jobs-toc-heading-2" data-jobs-toc="v2">一、升级标准 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
+## <span id="jobs-toc-heading-2" data-jobs-toc="v2">一、运行与交互约定 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
-- 所有脚本统一为 `# shell: zsh`。
+- 根目录 `.command` 入口使用 macOS 的 zsh；跨平台审计入口使用已有 Python。
 - 双击运行先显示脚本内置自述，并等待回车继续；`README.md` 供运行前阅读。
-- 统一彩色日志函数；下载子模块入口的来源日志写入系统临时目录，文件名为 `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.log`，其它入口以各自 `LOG_FILE` 为准。
-- 统一 `SCRIPT_DIR` / `SCRIPT_PATH` 路径写法。
-- 统一结构化入口：`main "$@"`。
+- 子模块入口在终端显示来源和日志位置，日志位于系统临时目录，下载模式日志可带运行时间与进程号。清理与审计默认只输出终端，审计另存报告需显式使用 `--json`。
 - 普通安装 / 更新 / 升级步骤统一为：**回车跳过，输入任意字符后回车执行**。
-- 危险操作必须明确确认，不做回车默认执行。
+- 危险操作默认必须明确确认；[缓存清理脚本](#cache-cleanup)按其约定，展示清单后直接回车执行，输入任意字符取消。
 - Homebrew 按健康标准处理：架构识别、shellenv 注入、当前会话生效、可选健康更新。
 
-## <span id="jobs-toc-heading-3" data-jobs-toc="v2">二、目录统计 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
+## 二、<span id="feature-navigation">功能分类与入口导航</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-| 原始大类 | 脚本数量 |
-|---|---:|
-| `JobsGenesis@JobsCommand.Flutter` | 57 |
-| `JobsGenesis@JobsCommand.Gits` | 15 |
-| `JobsGenesis@JobsCommand.SourceTree` | 20 |
-| `JobsGenesis@JobsCommand.iOS` | 43 |
-
+| 功能目录 | 功能覆盖 | 运行入口 |
+| --- | --- | --- |
+| [Flutter](./JobsCommand@Flutter/README.md) | SDK / FVM 环境、项目创建与依赖、Android / iOS / 鸿蒙构建、资源与工程辅助 | 按 macOS / Windows 和功能分类选择脚本 |
+| [Git 工具](./JobsCommand@Gits/README.md) | 仓库下载、子模块登记与关联、历史与分支操作、远端地址及附件处理 | 对应功能目录内的脚本 |
+| [通用工具](./JobsCommand@Others/README.md) | 文件统计、搜索替换、权限与应用运行、时间戳、截图、键盘记录、计划任务 | `MacOS/` 内各独立功能包 |
+| [iOS](./JobsCommand@iOS/README.md) | CocoaPods 安装 / 源 / 发布、工程分析、模拟器、图标、打包及重签名 | CocoaPods、配置、其它和打包分类目录 |
+| [系统与开发配置](./JobsConfigOS/README.md) | 新系统初始化、终端命令、编辑器、代码片段、快捷键与 AI 工具配置 | 新系统入口或各配置子仓独立入口 |
+| [Python 桌面工具](./JobsPythonTools.py/README.md) | 用量 / 流量 / 系统监控、账号工具、Mock、远程主机、局域网文件服务与 IPA 工具 | 各工具运行或平台打包入口 |
+| [Shell 工具](./JobsSh.sh/README.md) | Shell 环境、开发工具安装及数据库等本机维护操作 | 平台目录内对应功能入口 |
+| [macOS Finder 扩展](./OS@Extension/MacOS@Extension/README.md) | 文件与路径操作、编辑器 / 终端启动、Git 与 Flutter 工作流、模拟器与代码地图 | 总安装器或独立功能目录的安装 / 卸载入口 |
+| [Windows 右键扩展](./OS@Extension/WindowsOS@Extension/README.md) | 资源管理器右键、项目运行与构建、SDK 管理、编辑器 / 终端和 Git 工具 | 总菜单或独立包的安装 / 卸载入口 |
+| [Sourcetree 动作](./SourceTree.command/README.md) | 自定义动作菜单、Git 操作、编辑器启动及 Flutter 工程运行 / 构建 | 安装菜单后使用动作，或直接运行对应脚本 |
 
 ## <span id="jobs-toc-heading-4" data-jobs-toc="v2">三、使用方式 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
-进入任意脚本同名文件夹后，双击 `.command` 文件即可。终端方式：
+macOS 功能包通常在同名文件夹内放置 `.command` 与 README；根目录子模块和清理入口直接放在本仓根部。双击入口，或从本仓根目录用 zsh 运行。先查看不写入的预览：
 
 ```shell
-chmod +x './脚本名.command'
-'./脚本名.command'
+zsh './【MacOS】🧾更新gitmodules.command' --dry-run
+zsh './【MacOS】🧭更新引用Git父仓=>子仓.command' --dry-run
+zsh './【MacOS】🧹清理缓存与构建产物.command' --dry-run
 ```
 
-每个脚本文件夹内的 `README.md` 都已经按统一格式生成，可以先看用途、风险和流程图。
+预览后需要执行时，按对应脚本说明去掉 `--dry-run` 并完成交互确认。下载入口默认会真实联网并更新仓库，使用前先读[两种同步模式](#readonly-submodule-mode)。Windows 工具在 Windows 上运行对应 `.cmd` / `.bat` / PowerShell 入口；Python 工具的环境和启动方式见各自 README。
 
-## <span id="jobs-toc-heading-5" data-jobs-toc="v2">四、未执行声明 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
+## <span id="jobs-toc-heading-5" data-jobs-toc="v2">四、执行范围与结果 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
-生成过程中只做文件重组、代码结构升级和 `zsh -n` 静态检查；没有实际执行 `brew`、`pod`、`flutter`、`xcodebuild`、`osascript`、`sudo`、模拟器、Git 远程写入等 macOS 专属或有副作用的命令。
+| 入口 | 联网与写入边界 | 结果如何确认 |
+| --- | --- | --- |
+| 默认只拉取 | 更新入口仓及已登记子树；不新增关联、不暂存、不提交、不推送 | 查看来源、分支、提交及递归校验；任一步失败须处理后重试 |
+| 维护模式 | 按选择下载或更新，可能写 `.gitmodules`、整理元数据并提交入口父仓；推送需启用开关 | 查看所选范围、父仓指针和日志；默认不推送 |
+| 对齐引用 / 增量登记 | 修改本地父子关联和索引，不联网、不提交、不推送 | 查看计划、关联备份及最终 Git 状态；`--dry-run` 不应用计划 |
+| 清理 | 只在脚本目录向下删除匹配项；不移动到废纸篓 | 查看逐项路径、原因、空间与最终删除 / 跳过 / 失败结果 |
+| 审计 | 不执行脚本业务；只有 `--json` 会写指定报告 | 查看通过 / 失败 / 未验证、退出码及可选逐文件报告 |
 
-## <span id="jobs-toc-heading-6" data-jobs-toc="v2">五、静态检查结果 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
+## <span id="jobs-toc-heading-6" data-jobs-toc="v2">五、环境准备与排查 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
-原始脚本整理阶段没有执行 `zsh -n`。父子仓多平台专项修改涉及的 21 份脚本已完成语法检查，地址解析与脚本隔离回归结果见 [Git 子模块多平台检查报告](./Git子模块多平台检查报告.md#validation)；其它脚本保留原验证范围。
+Git 入口依赖健康的 Git 与 macOS 系统工具。默认只拉取不安装 Homebrew / fzf；维护菜单需要的依赖按其提示处理。清理入口仅使用 zsh 与 Python 标准库，实际删除要求 Python 3.11+ 的安全目录删除能力；审计器使用本机已有解释器，缺失的检查器记为未验证。
 
-详见：`升级报告.json`。
+运行失败时先查看终端指出的仓库或文件路径与日志，再处理依赖、权限、分支或未提交状态。语法检查可以使用[跨平台审计器](#script-audit)，开发回归入口及隔离范围见 [Tests/README.md](./Tests/README.md)。语法通过不等于实际安装、构建、网络或 GUI 功能已经验收。
 
 [**Homebrew**](https://brew.sh/) 安装路径由用户选择：已有可运行安装时复用；确实需要安装时先强提示，只有精确输入大写 `YES` 才选择系统标准目录，其它输入或直接回车选择当前用户的 `.local/homebrew`。`YES` 只表示选择路径，权限与密码由官方安装器实际处理；有管理员权限也可以选用户目录。选定路径失败立即停止，不自动切换；`Ctrl+C` / 输入结束取消整个任务。
 
 Homebrew 的发现、健康检查、安装路径选择与复检均封装在每个相关脚本自己的函数中。
 
-Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环境自检流程；独立复制脚本不需要额外的环境支持文件或同步工具。
+负责安装 / 构建的 Python 启动入口在各自文件内封装完整的 Homebrew → Python → 虚拟环境自检流程；独立复制脚本不需要额外的环境支持文件或同步工具。[只读审计入口](#script-audit)直接使用已有 Python，不安装或升级环境。
 
 ## 六、<span id="submodule-scripts">Git 子模块脚本</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 ### <span id="jobs-toc-heading-8" data-jobs-toc="v2">[【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command](./【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command)</span><!-- jobs-toc:heading-end -->
-
 
 > **目的：** 默认递归拉取已登记子模块目标分支的最新提交，保持本地跟踪分支；显式维护模式保留清单与登记能力。
 
@@ -269,6 +287,8 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 
 本仓根目录维护三个[子模块入口](#submodule-scripts)；各工具子仓的脚本用途和执行流程在各自 README 中说明。`OS@Extension/` 是普通分类目录，没有独立 Git；其中两个扩展仓仍由本仓直接登记和管理。
 
+`JobsCommand@Flutter`、`JobsCommand@Gits`、`JobsCommand@Others`、`JobsSh.sh`、`SourceTree.command` 均按 `MacOS/` 与 `WindowsOS/` 分开：原 Shell 脚本与资源在 `MacOS/`，Windows 使用原生 PowerShell 与可双击 `.cmd`。iOS 模拟器、Xcode 与 Apple 专属工具链入口只保留在 macOS；各子仓 README 列出逐项功能对照、平台排除及验证边界。
+
 | 路径 | 职责 |
 | --- | --- |
 | [JobsCommand@Flutter/](./JobsCommand@Flutter/README.md) | Flutter 环境、工程、构建与常用工具脚本。 |
@@ -280,9 +300,106 @@ Python 入口在各自文件内封装完整的 Homebrew → Python → 虚拟环
 | [JobsSh.sh/](./JobsSh.sh/README.md) | Shell 工具与环境安装脚本。 |
 | [OS@Extension/MacOS@Extension/](./OS@Extension/MacOS@Extension/README.md) | Finder 扩展工程及打包、安装入口。 |
 | [SourceTree.command/](./SourceTree.command/README.md) | Sourcetree 自定义动作、维护脚本及菜单资源。 |
-| [OS@Extension/WindowsOS@Extension/](./OS@Extension/WindowsOS@Extension/README.md) | Windows 资源管理器右键扩展；十个独立功能包及组合安装入口，远端仓名为 `WindowsOS_Extension`。 |
+| [OS@Extension/WindowsOS@Extension/](./OS@Extension/WindowsOS@Extension/README.md) | Windows 资源管理器右键扩展及组合安装入口，远端仓名为 `WindowsOS_Extension`。 |
 | [.gitmodules](./.gitmodules) | 子仓路径、克隆地址和跟踪分支登记。 |
 | `【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command` 等三个根脚本 | 本仓直接管理的下载更新、关联修复和增量登记入口，完整说明见[第六章](#submodule-scripts)。 |
+| [【MacOS】🧹清理缓存与构建产物.command](./【MacOS】🧹清理缓存与构建产物.command) | 按缓存名称、后缀及构建标记递归清理，拷贝目录前使用；说明见[第八章](#cache-cleanup)。 |
+| [🔎审计脚本.py](./🔎审计脚本.py) | 独立跨平台审计入口，默认只输出终端结果；参数见[第九章](#script-audit)。 |
+| [Tests/](./Tests/README.md) | 隔离回归测试源码及留存报告；审计脚本运行时不依赖此目录，也不自动生成它。 |
 | [Git子模块多平台检查报告.md](./Git子模块多平台检查报告.md) | 多平台配置、例外与静态验证记录。 |
+
+## 八、<span id="cache-cleanup">拷贝前清理缓存与构建产物</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+
+入口：[【MacOS】🧹清理缓存与构建产物.command](./【MacOS】🧹清理缓存与构建产物.command)。从**脚本所在目录**向下递归，包括多层子仓；不依赖当前终端目录、仓库名、子模块清单或已知工程路径。整个目录复制或改名后仍可使用，也可把脚本放到其它待清理目录的根部。依赖 `zsh` 和 `python3` 标准库，不自动安装软件；实际删除要求 Python 3.11+ 且支持安全的 `rmtree(dir_fd=...)`，旧环境仍可预览。
+
+双击脚本，阅读自述后回车扫描；脚本逐项列出路径、识别原因、磁盘占用和预计释放空间。**直接回车清除，输入任意字符（包括空格）后回车取消。** 默认适合拷贝前精简，会删除识别到的缓存和构建产物；运行前先停止构建与调试，避免文件在扫描后继续变化。
+
+在脚本所在目录运行：
+
+```shell
+# 先查看将清理哪些内容；不会删除文件
+./【MacOS】🧹清理缓存与构建产物.command --dry-run
+
+# 拷贝前清理：展示清单后交互确认
+./【MacOS】🧹清理缓存与构建产物.command
+
+# 继续使用本机已构建的工具：仅清缓存，保留最终产物
+./【MacOS】🧹清理缓存与构建产物.command --cache-only
+
+# 自动化执行：明确跳过交互确认
+./【MacOS】🧹清理缓存与构建产物.command --yes
+```
+
+`--dry-run` 可与 `--cache-only` 组合；`DRY_RUN=1` 也表示只预览，并优先于 `--yes`。非交互运行必须显式选择预览或 `--yes`。清理前会复核预览时的文件快照；内容变化或删除失败返回非零状态，已完成的删除会如实列出。
+
+扫描过程中若文件或目录已被其它进程移走 / 删除，会提示并跳过该项，继续扫描；候选目录统计到一半有内容消失时，整项不加入清理清单。权限错误仍会报错。预览完成后整个目标已消失时计为跳过；内部内容变化或仅部分内容消失时仍停止。删除阶段逐层以 `O_NOFOLLOW` 打开父目录，并相对目录描述符删除，避免父目录被换成符号链接后越界；删除前再次比对目标身份与时间戳。隔离回归：`python3 -m unittest discover -s Tests -p 'test_cache_cleanup.py' -v`，仅操作临时夹具。
+
+| 识别类别 | 特征与范围 |
+| --- | --- |
+| Xcode 缓存 | `ModuleCache.noindex`、`Index.noindex`、`SDKStatCaches.noindex`、`CompilationCache.noindex`、`SDKExplicitPrecompiledModules`、`Intermediates.noindex`。 |
+| Python / 前端 / Gradle 缓存 | `__pycache__`、`.pytest_cache`、`.mypy_cache`、`.ruff_cache`、`.pytype`、`.cache`、`.parcel-cache`、`.turbo`、`.vite`、`.sass-cache`、`.gradle` 和 `.angular/cache`。 |
+| 明确的构建输出 | `*DerivedData`、`DerivedData-*`、`.build`、`.dart_tool`、`.next`、`.nuxt`、`.output`、`.svelte-kit`、`*.dSYM`；仅默认模式整目录删除，`--cache-only` 继续检查内部缓存。 |
+| 通用输出目录 | `build` / `Build` 同时有 CMake、Ninja、Xcode 或 Flutter 构建标记才匹配；`dist` 需有 `.vite/manifest.json`；`target` 需有 Rust 的 `.rustc_info.json`，或同级 `pom.xml` 与内部 `maven-status`。仅凭目录名不删除。 |
+| 带标准标记的缓存 | `CACHEDIR.TAG` 包含标准签名的目录。 |
+| 缓存文件 | `*.pyc`、`*.pyo`、`*.tsbuildinfo`、`.DS_Store`、`.eslintcache`、`.stylelintcache`。不会泛化删除所有 `.log`、`.tmp`、`.a`、`.pch` 或名称含 cache 的文件。 |
+
+目录规则命中时删除整个目录，保留范围之外的源码、文档和资源；不要在这些缓存目录内保存手写文件。脚本不跟随符号链接，跳过挂载点、不同设备上的目录，以及 `.git`、`.hg`、`.svn`、`.codegraph`。候选目录内部存在这些受保护内容时，会保留外层目录并继续检查其它内容。`node_modules`、`Pods`、虚拟环境不会被整目录清除，但它们内部匹配的缓存仍会清理。
+
+**Finder 扩展仍在本机使用时，请选 `--cache-only`。** 当前扩展安装器直接注册 DerivedData 中的 App / appex；默认清理会连同这些产物删除，可能导致右键扩展失效，需要重新安装。仅缓存模式保留最终产物，清掉 SDK、模块、索引和编译中间文件；下一次构建会按需重新生成缓存。
+
+**Git 跟踪不等于缓存保护。** 本脚本按文件特征识别，包括已提交的缓存。当前计划任务子仓的 `.build` 就存在已跟踪文件，默认清理后会在该子仓显示删除；脚本不改索引、不提交、不推送，也不重写历史。`.git` 中的对象、软件安装包和拆分测试用二进制仍会保留，因此清理后目录大小不会只剩文本源码大小。
+
+## 九、<span id="script-audit">跨平台脚本审计</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
+
+[🔎审计脚本.py](./🔎审计脚本.py)是独立单文件工具，只依赖 [**Python**](https://www.python.org) 标准库。可以单独复制到待检查目录；默认以脚本位置为根递归扫描，与启动时的终端目录无关。不需要配套 `Scripts/` 或 `Tests/`，不安装或升级环境，不执行被审计文件的业务代码。
+
+在本目录运行，macOS / Linux 使用：
+
+```shell
+python3 './🔎审计脚本.py'
+```
+
+Windows 使用 Python Launcher；没有 `py` 时可改用已经配置好的 `python`：
+
+```powershell
+py -3 './🔎审计脚本.py'
+```
+
+默认只显示终端汇总和失败明细，不创建产物目录或报告；需要持久化结果时显式指定 `--json`，会创建必要的父目录，并原子替换指定的普通报告文件。报告目标不得为脚本源码、源码的硬链接、符号链接或特殊文件：
+
+```shell
+python3 './🔎审计脚本.py' \
+  --json './审计结果.json'
+
+python3 './🔎审计脚本.py' \
+  --root './待检查目录' \
+  --require-all \
+  --jobs 4
+```
+
+`--root` 指定扫描目录；`--jobs` 为 1–32，默认 4。命令行显式传入的相对路径以当前终端目录解析。`--help` 可查看内置说明。
+
+| 类型 | 检查方式 | 是否执行被检查脚本 |
+| --- | --- | --- |
+| zsh / Bash / sh | 相应解释器的 `-n`，按 shebang 选择 | 否 |
+| Python | `compile`，不导入模块，不生成字节码文件 | 否 |
+| JavaScript / Node.js | `node --check` | 否 |
+| PowerShell | 优先 `pwsh`，否则尝试 Windows 内置 `powershell`；使用 `-NoProfile` 和 Parser API | 否 |
+| Windows `.cmd` / `.bat` | 标为未验证，需 Windows 隔离测试 | 否 |
+
+审计递归覆盖已经下载的子模块、隐藏工具目录和测试；排除 `.git`、`.codegraph`、`node_modules`、`Pods`、`PodsManual`、`ManualBy*Pods@Pods`、`DerivedData`、供应商目录、虚拟环境和构建目录，只读取普通文件，不跟随符号链接，也不自动下载缺失子模块。完整排除目录名和模式见脚本中的 `EXCLUDED`、`EXCLUDED_PATTERNS` 或 JSON 报告。不会加载用户的 Bash / Node 启动注入，缺少检查器时明确记为“未验证”。JSON 逐项记录相对路径、SHA-256、检查器、通过 / 失败 / 未验证及失败原因。
+
+退出码：`0` 表示已执行的语法检查无失败，`1` 表示发现失败，`2` 表示参数、目录扫描或报告写入错误；`--require-all` 还会把任何未验证项计为非零结果。权限错误、空目录、检查超时不能产生虚假的全绿结果。语法通过仅说明解析成功；安装 / 卸载、真实网络、Windows 注册表、GUI、发布和推送等副作用不由审计器运行。
+
+`Tests/` 保存开发时使用的回归测试，审计器运行不依赖此目录。审计器回归仅操作临时夹具：
+
+```shell
+python3 -B -m unittest discover \
+  -s Tests \
+  -p 'test_script_audit.py' \
+  -v
+```
+
+其它清理 / 安装回归及目录配置测试的范围见 [Tests/README.md](./Tests/README.md)；已执行范围、修复和未验证项见[脚本审计与升级报告](./脚本审计与升级报告.md)。
 
 <a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>

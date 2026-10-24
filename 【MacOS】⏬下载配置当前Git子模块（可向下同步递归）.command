@@ -5,7 +5,7 @@
 # - 下载协议：Gitee 标准 SSH 地址在本次进程改走 HTTPS，递归子模块继承，不写全局配置。
 # - 核心用途：回车默认只拉取明确上游并递归同步子仓分支最新；维护模式保留各仓清单、分支最新和登记流程。
 # - 影响范围：只拉取不暂存、不提交、不推送；维护模式沿用父仓登记、索引和提交开关。
-# - 文档目录：已配置目录过滤器才执行本仓 restore / verify，无配置跳过，不自动安装。
+# - 附加配置：递归拉取成功后单独询问全局目录过滤器；回车安装，任意字符后回车跳过，失败不影响拉取结果。
 # - 运行提示：先选择只拉取或维护，再阅读对应自述并回车确认；危险舍弃另需精确 YES，Ctrl+C 取消。
 
 # 仅渲染自述：标题红色加粗，编号正文蓝色常规字重；非彩色终端输出纯文本。
@@ -2385,7 +2385,7 @@ show_script_intro_and_wait() {
   print -r -- '递归边界：从运行脚本对应仓库向下，仅处理所选子树，各层读取自己的 .gitmodules；不向上处理。' | jobs_intro_style body
   print -r -- '影响范围：父仓登记和提交指针、子仓代码与分支；默认自动提交父仓，不自动推送。' | jobs_intro_style body
   print -r -- '同步策略：全量按清单逐仓处理；已有子仓复用更新，空目录首次初始化，不删除已有子树或旧仓名目录。' | jobs_intro_style body
-  print -r -- '文档目录：有已配置的目录过滤器才执行本仓 restore / verify；无配置跳过，不自动安装。' | jobs_intro_style body
+  print -r -- '文档目录：沿用已配置的过滤器；拉取成功后可选全局初始化，回车安装，任意字符后回车跳过。' | jobs_intro_style body
   print -r -- '关键风险：分支会对齐远端最新；未提交内容红字加粗标明仓库，循环等待 YES 放弃当前仓改动，或在外部处理后按回车复检。' | jobs_intro_style body
   print -r -- "日志文件：$LOG_FILE" | jobs_intro_style body
   print -r -- '取消方式：按 Ctrl+C 终止；自述确认前不执行真实业务。' | jobs_intro_style body
@@ -2449,7 +2449,9 @@ initialize_script_runtime() {
     print -u2 -r -- 'SUBMODULE_RECURSIVE 只支持 0（仅直属一层）或 1（向下递归）。'
     return 1
   fi
-  : > "$LOG_FILE"
+  umask 077
+  LOG_FILE="$(mktemp "${LOG_FILE}.XXXXXXXX")" || return 1
+  print -r -- "本次日志：$LOG_FILE"
 }
 # 编排脚本的高层业务流程。
 run_management_download() {
@@ -2467,7 +2469,7 @@ select_download_operation_mode() {
   initialize_script_paths || return 1
   local answer=""
   print -r -- '================ Git 子模块下载与同步 ================' | jobs_intro_style title
-  print -r -- '同步策略版本：2026.10.21-toc（分支最新；有目录过滤器才还原）' | jobs_intro_style body
+  print -r -- '同步策略版本：2026.10.23-optional-toc（先递归拉取；完成后独立选择过滤器配置）' | jobs_intro_style body
   print -r -- "目标父仓：$REPO_ROOT" | jobs_intro_style body
   print -r -- '1、只拉取（默认）：更新当前父仓明确上游，再向下同步各层目标分支最新并保持分支态；不暂存、不提交、不推送。' | jobs_intro_style body
   print -r -- '2、维护：保留原清单、分支最新、子树选择和直属深度；登记、提交和推送沿用原开关（默认提交、不推送）。' | jobs_intro_style body
@@ -2599,7 +2601,7 @@ show_script_intro_and_wait() {
   print -r -- "${COLOR_BLUE}2、先获取远程；本地改动、未跟踪文件和独有提交须精确输入 YES 才舍弃。${COLOR_RESET}"
   print -r -- "${COLOR_BLUE}3、子模块按 .gitmodules 分支（缺省为远端默认分支）更新并保持分支态；子仓源码、暂存指针、分叉和独有游离提交均停止。${COLOR_RESET}"
   print -r -- "${COLOR_BLUE}游离入口：先确定分支并获取远端，检查历史与工作区后才恢复本地跟踪分支；独有历史或脏源码停止。${COLOR_RESET}"
-  print -r -- "${COLOR_BLUE}4、已配置目录过滤器的仓库执行本仓 restore / verify；无配置跳过，不自动安装。${COLOR_RESET}"
+  print -r -- "${COLOR_BLUE}4、沿用已配置的目录过滤器；拉取成功后另问全局初始化，回车安装，任意字符后回车跳过，附加配置失败不改变拉取结果。${COLOR_RESET}"
   print -r -- "${COLOR_BLUE}5、SourceTree 打开独立终端；回车继续，Ctrl+C 取消；日志：${LOG_FILE}${COLOR_RESET}"
   if (( IS_SOURCETREE_RUNTIME )); then
     open_terminal_for_repository "$@"
@@ -2639,7 +2641,8 @@ initialize_runtime() {
   setopt NO_NOMATCH PIPE_FAIL
   unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_COMMON_DIR GIT_OBJECT_DIRECTORY GIT_ALTERNATE_OBJECT_DIRECTORIES
   umask 077
-  : > "$LOG_FILE" || { print -u2 -r -- "无法创建日志：${LOG_FILE}"; exit 1; }
+  LOG_FILE="$(mktemp "${LOG_FILE}.XXXXXXXX")" || { print -u2 -r -- "无法创建私有日志：${LOG_FILE}"; exit 1; }
+  print -r -- "本次日志：$LOG_FILE"
   configure_output_mode
   configure_gitee_https_transport
 }
@@ -3444,7 +3447,7 @@ main() {
   initialize_runtime # 确认后建立私有日志与退出清理。
   resolve_repository "$@" # 校验目标并防止同一动作并行运行。
   assert_repository_ready # 未完成 Git 操作和隐藏状态先停止。
-  restore_entry_markdown_toc # 已配置才还原当前文档，无配置不安装。
+  restore_entry_markdown_toc # 仅沿用已有配置，不在拉取前安装全局驱动。
   resolve_upstream # 仅使用当前分支明确配置的远程上游。
   fetch_target # 成功获取并固定提交后才考虑舍弃。
   assert_nested_repositories_safe # 预检各层最新分支，保护子仓和嵌套仓库。
@@ -3473,10 +3476,49 @@ run_selected_download_mode() {
     *) return 1 ;;
   esac
 }
-# 先选择只拉取或维护，再执行各自独立的确认与业务流程。
+# 附加配置只在成功拉取后询问；不安装依赖，不把失败传播给拉取流程。
+offer_global_markdown_toc_setup() {
+  if [[ "${DRY_RUN:-0}" != 0 ]]; then
+    print -r -- '演练模式：跳过全局 Markdown 目录过滤器配置。'
+    return 0
+  fi
+  local answer="" setup_result=0
+  local installer="${REPO_ROOT}/JobsConfigOS/🌍JobsMacEnvVarConfigs/scripts/【MacOS】⚙️配置全局Markdown目录过滤器.command/【MacOS】⚙️配置全局Markdown目录过滤器.command"
+  print -r -- '代码拉取与向下递归已完成。以下是可选的全局 Markdown 目录过滤器配置。'
+  print -r -- '此项需要 Node.js 20+，会写入本机用户级 Git 过滤器配置，并恢复已登记文档的 [toc]；不暂存、提交或推送。'
+  if ! IFS= read -r 'answer?➤ 回车安装；输入任意字符后回车跳过：'; then
+    print -r -- '未收到选择，跳过附加配置；代码拉取结果不变。'
+    return 0
+  fi
+  if [[ -n "$answer" ]]; then
+    print -r -- '已跳过全局过滤器配置；代码拉取结果不变。'
+    return 0
+  fi
+  if [[ ! -f "$installer" ]]; then
+    print -u2 -r -- "未找到独立配置入口，跳过附加配置：${installer}"
+    return 0
+  fi
+  if /bin/zsh "$installer" setup "$REPO_ROOT"; then
+    print -r -- '附加的全局过滤器配置完成。'
+  else
+    setup_result=$?
+    print -u2 -r -- "附加配置未完成（退出码 ${setup_result}）；代码拉取已完成，可稍后在 JobsMacEnvVarConfigs 中独立运行配置入口。"
+  fi
+  return 0
+}
+# 先完成所选拉取业务，再单独询问附加配置。
 main() {
-  select_download_operation_mode # 先显示双模式用途并选择，回车默认只拉取。
-  run_selected_download_mode "$@" # 只拉取走内嵌安全引擎，维护保留原菜单和清单。
+  select_download_operation_mode || return $? # 回车默认只拉取。
+  local pull_result=0
+  setopt LOCAL_OPTIONS
+  unsetopt ERR_EXIT
+  # 独立执行并保留业务里的 set -e，不能用 || 调用整条函数链而屏蔽其失败。
+  ( set -e; run_selected_download_mode "$@" )
+  pull_result=$?
+  if (( pull_result != 0 )); then
+    return "$pull_result" # 拉取失败保留真实退出码，不询问附加配置。
+  fi
+  offer_global_markdown_toc_setup # 回车才安装；跳过或失败均不影响已经完成的拉取。
 }
 
 main "$@"

@@ -3,6 +3,9 @@
   "files": [
     ".jobs-markdown-toc/README.md",
     "Git子模块多平台检查报告.md",
-    "README.md"
+    "README.md",
+    "OS@Extension/README.md",
+    "Tests/README.md",
+    "脚本审计与升级报告.md"
   ]
 }

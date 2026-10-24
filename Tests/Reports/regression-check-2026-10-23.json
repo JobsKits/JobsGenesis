@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "root": "/Users/jobs/Documents/Github/JobsGenesis",
+  "preserved_existing_changes": true,
+  "no_real_install_uninstall_cleanup_or_system_configuration": true,
+  "syntax_report": "script-audit-regression-2026-10-23.json",
+  "test_suites": [
+    {
+      "name": "root-safety",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Tests",
+        "-v"
+      ],
+      "test_count": 76,
+      "status": "passed"
+    },
+    {
+      "name": "flutter-setup",
+      "test_source": "JobsCommand@Flutter/MacOS/配置相关/【MacOS】⚙️一键配置Flutter项目至运行.command/Tests/test_flutter_setup.py",
+      "test_count": 35,
+      "status": "passed"
+    },
+    {
+      "name": "harmony-setup-binding",
+      "test_directory": "JobsCommand@Flutter/MacOS/配置相关/【MacOS】⚙️一键配置Flutter／鸿蒙项目至运行.command/Tests",
+      "test_count": 57,
+      "status": "passed"
+    },
+    {
+      "name": "harmony-simulator",
+      "test_source": "JobsCommand@Flutter/MacOS/配置相关/【MacOS】⚙️一键配置Flutter项目至运行.command/Tests/CreateHarmonySimulatorTests.rb",
+      "test_count": 58,
+      "assertion_count": 457,
+      "status": "passed"
+    },
+    {
+      "name": "cocoapods-wrappers",
+      "package_count": 6,
+      "test_count": 50,
+      "assertion_count": 222,
+      "status": "passed"
+    },
+    {
+      "name": "codegraph-installer-health",
+      "test_source": "JobsCommand@iOS/配置相关/【MacOS】⚙️安装代码地图CodeGraph.command/Tests/installer-health.zsh",
+      "mock_scenario_count": 20,
+      "status": "passed"
+    },
+    {
+      "name": "login-shell-switcher",
+      "test_source": "JobsCommand@Flutter/MacOS/小工具/【MacOS】🎈切换Shell.command/tests/shell_switcher.zsh",
+      "status": "passed"
+    },
+    {
+      "name": "git-network-and-source-inventory",
+      "test_count": 9,
+      "status": "passed"
+    },
+    {
+      "name": "git-dynamic-proxy-installer",
+      "assertion_count": 148,
+      "status": "passed"
+    },
+    {
+      "name": "gitmodule-association",
+      "test_count": 44,
+      "status": "passed"
+    },
+    {
+      "name": "git-markdown-first-checkout-and-gates",
+      "test_source": "JobsCommand@Gits/MacOS/【MacOS】⏬下载配置当前Git子模块（可向下同步递归）.command/tests/test_markdown_toc_checkout.py",
+      "test_count": 3,
+      "subscenario_count": 26,
+      "scope": [
+        "root entry",
+        "current Gits entry"
+      ],
+      "method": "in-memory scoped runner; retain seven-source inventory assertion",
+      "tests": [
+        "test_prepared_recursive_first_checkout_uses_real_remote_before_smudge_and_later_updates",
+        "test_configured_missing_tool_process_conflict_and_unfinished_git_stop_without_installing",
+        "test_unconfigured_missing_directory_skips_without_runtime_or_writes"
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "windows-JobsCommand@Flutter-Portable.Tests",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1"
+      ],
+      "assertion_count": 186,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    },
+    {
+      "name": "windows-JobsCommand@Gits-Regression",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "JobsCommand@Gits/WindowsOS/Tests/Regression.ps1"
+      ],
+      "assertion_count": 38,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    },
+    {
+      "name": "windows-JobsCommand@Gits-GitProxyConfigurator.Tests",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "JobsCommand@Gits/WindowsOS/Tests/GitProxyConfigurator.Tests.ps1"
+      ],
+      "assertion_count": 76,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    },
+    {
+      "name": "windows-SourceTree.command-SourceTree.Tests",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "SourceTree.command/WindowsOS/Tests/SourceTree.Tests.ps1"
+      ],
+      "assertion_count": 19,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    },
+    {
+      "name": "windows-SourceTree.command-Safety.Tests",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "SourceTree.command/WindowsOS/Tests/Safety.Tests.ps1"
+      ],
+      "assertion_count": 92,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    },
+    {
+      "name": "windows-JobsCommand@Others-Regression",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "JobsCommand@Others/WindowsOS/Tests/Regression.ps1"
+      ],
+      "assertion_count": 43,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    },
+    {
+      "name": "windows-JobsSh.sh-Regression",
+      "command": [
+        "pwsh",
+        "-NoLogo",
+        "-NoProfile",
+        "-File",
+        "JobsSh.sh/WindowsOS/Tests/Regression.ps1"
+      ],
+      "assertion_count": 35,
+      "runtime_platform": "macOS",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "191 CMD/BAT source files need native Windows validation",
+    "Windows PowerShell 5.1, native CMD branches, registry, desktop menus and real Docker/toolchain operations were not validated on Windows",
+    "Full seven-copy recursive test summary was not recovered; only root/current Gits scoped final results counted",
+    "Old report snapshots preserved; missing old Node entry and incomplete other historical suites are not counted as current passes"
+  ],
+  "no_workspace_commits_or_remote_pushes": true
+}

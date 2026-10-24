@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-23",
+  "workspace_changed_only": true,
+  "test_suites": [
+    {
+      "name": "safety",
+      "scope": "临时目录与替身下载器",
+      "result": "passed",
+      "log_tail": "y_configuration) ... ok\ntest_bad_syntax_is_failure (test_script_audit.AuditTests.test_bad_syntax_is_failure) ... ok\ntest_missing_checker_and_batch_are_explicitly_skipped (test_script_audit.AuditTests.test_missing_checker_and_batch_are_explicitly_skipped) ... ok\ntest_python_is_compiled_without_executing (test_script_audit.AuditTests.test_python_is_compiled_without_executing) ... ok\ntest_shell_is_parsed_without_executing (test_script_audit.AuditTests.test_shell_is_parsed_without_executing) ... ok\ntest_shell_startup_injection_is_removed (test_script_audit.AuditTests.test_shell_startup_injection_is_removed) ... ok\ntest_skipped_files_make_require_all_fail (test_script_audit.AuditTests.test_skipped_files_make_require_all_fail) ... ok\ntest_symlinks_and_generated_directories_are_not_followed (test_script_audit.AuditTests.test_symlinks_and_generated_directories_are_not_followed) ... ok\ntest_unknown_shebang_is_not_executed (test_script_audit.AuditTests.test_unknown_shebang_is_not_executed) ... ok\n\n----------------------------------------------------------------------\nRan 46 tests in 4.181s\n\nOK\n共 1 个文件：通过 0，失败 0，未验证 1。\n仅表示语法结果；未执行安装、卸载、Git 写入或脚本业务。\n存在未验证文件；--require-all 可将缺失检查器 / 不支持的类型设为失败。\n"
+    },
+    {
+      "name": "optional_toc",
+      "scope": "替身下载与安装编排",
+      "result": "passed",
+      "log_tail": "✔ Enter installs only after successful recursive download and passes the explicit repository (48.545583ms)\n✔ non-empty input or EOF skips setup: \"n\\n\" (21.511416ms)\n✔ non-empty input or EOF skips setup: \"YES\\n\" (21.753334ms)\n✔ non-empty input or EOF skips setup: \" \\n\" (24.403791ms)\n✔ non-empty input or EOF skips setup: \"任意字符\\n\" (28.602125ms)\n✔ non-empty input or EOF skips setup: \"\" (22.549541ms)\n✔ installer or dependency failure does not change the successful download exit code (45.887916ms)\n✔ missing environment-config bundle does not block a completed download (30.923958ms)\n✔ failed download retains its status and never asks to install (24.4295ms)\n✔ cancelled mode selection never starts download or setup (20.914708ms)\n✔ capturing download status does not suppress errexit inside the existing business flow (20.260708ms)\n✔ dry run does not ask to install or invoke the installer (20.919792ms)\n✔ download business phases contain no global installer invocation (0.812208ms)\nℹ tests 13\nℹ suites 0\nℹ pass 13\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 557.859584\n"
+    },
+    {
+      "name": "association",
+      "scope": "临时本地 Git 仓库",
+      "result": "passed",
+      "log_tail": "_without_writing_external_target (__main__.AssociationTests.test_symlink_gitmodules_is_refused_without_writing_external_target) ... ok\ntest_tracked_regular_child_files_are_not_replaced_by_gitlink (__main__.AssociationTests.test_tracked_regular_child_files_are_not_replaced_by_gitlink) ... ok\ntest_unborn_child_is_refused_without_partial_registration (__main__.AssociationTests.test_unborn_child_is_refused_without_partial_registration) ... ok\ntest_unknown_argument_fails_before_runtime_initialization_or_git_changes (__main__.AssociationTests.test_unknown_argument_fails_before_runtime_initialization_or_git_changes) ... ok\ntest_unrelated_staged_content_is_preserved (__main__.AssociationTests.test_unrelated_staged_content_is_preserved) ... ok\ntest_untracked_gitmodules_is_staged_when_every_other_association_is_complete (__main__.AssociationTests.test_untracked_gitmodules_is_staged_when_every_other_association_is_complete) ... ok\ntest_untracked_gitmodules_without_gitlink_is_staged_and_repaired (__main__.AssociationTests.test_untracked_gitmodules_without_gitlink_is_staged_and_repaired) ... ok\n\n----------------------------------------------------------------------\nRan 44 tests in 211.775s\n\nOK\n"
+    },
+    {
+      "name": "reference_repair",
+      "scope": "临时本地 Git 仓库",
+      "result": "passed",
+      "log_tail": "s_removed_but_disk_content_is_kept (__main__.ReferenceRepairTests.test_missing_registration_is_removed_but_disk_content_is_kept) ... ok\ntest_preview_and_skip_do_not_change_association (__main__.ReferenceRepairTests.test_preview_and_skip_do_not_change_association) ... ok\ntest_registered_nested_path_preserves_section_without_adopting_siblings (__main__.ReferenceRepairTests.test_registered_nested_path_preserves_section_without_adopting_siblings) ... ok\ntest_registered_nested_symlinks_and_intermediate_git_are_blocked (__main__.ReferenceRepairTests.test_registered_nested_symlinks_and_intermediate_git_are_blocked) ... ok\ntest_rename_preserves_original_section_metadata_and_fields (__main__.ReferenceRepairTests.test_rename_preserves_original_section_metadata_and_fields) ... ok\ntest_root_and_package_locate_target_parent_and_backup (__main__.ReferenceRepairTests.test_root_and_package_locate_target_parent_and_backup) ... ok\ntest_spaces_and_local_commits_branches_indexes_and_sources_survive (__main__.ReferenceRepairTests.test_spaces_and_local_commits_branches_indexes_and_sources_survive) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 92.969s\n\nOK\n"
+    },
+    {
+      "name": "download_entrypoint",
+      "scope": "取消选择行为，本目录 6 份入口",
+      "result": "passed",
+      "log_tail": "test_common_implementation_and_independent_configurations (test_downloaders_latest.DownloaderLatestTests.test_common_implementation_and_independent_configurations) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.192s\n\nOK\n"
+    }
+  ],
+  "incomplete": [
+    {
+      "name": "recursive_first_checkout",
+      "reason": "Initial restricted-source run hit a fixed 7-source inventory assertion; retry using original inventory was terminated with SIGKILL (-9) during local fixture preparation. Not retried after the no-push instruction."
+    }
+  ],
+  "download_suite": {
+    "total": 62,
+    "initial_passed": 60,
+    "outdated_contract_repaired_and_retested": 1,
+    "unverified": 1
+  }
+}
