@@ -19,14 +19,22 @@
 
 ## 🔥 <span id="前言">前言</span>
 
+**最低支持系统：Windows 10 64 位（x64）。** 这是当前最低支持目标；具体最低 build 尚未锁定，完整实机兼容性仍待验证。最低基线不等于所有功能已经实测通过。
+
 面向开发工作的桌面右键扩展分类目录；本目录没有独立 Git，各平台源码由各自仓库管理。
 
 ## <span id="jobs-toc-heading-2" data-jobs-toc="v2">一、平台与能力 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 | 平台 | 当前功能覆盖 |
 | --- | --- |
-| [macOS Finder](./MacOS@Extension/README.md) | IDE 打开、Git 拉取 / 远端地址、路径复制、运行授权、终端 / Pod / CodeGraph / 空白提交、Flutter 工具组，以及 iOS / Android / Harmony 模拟器。 |
-| [Windows 文件资源管理器](./WindowsOS@Extension/README.md) | IDE 打开、Git / 路径 / 终端、Flutter 工具组、Android / Harmony 模拟器与检测修复；没有 iOS 模拟器和 Xcode 构建。 |
+| [macOS Finder](./MacOS@Extension/README.md) | IDE 打开、Git 拉取 / 远端地址、路径复制、运行授权 / 解除运行授权、终端 / Pod / CodeGraph / 空白提交、Flutter 工具组，iOS / Android / Harmony 模拟器创建及 Android / Harmony 模拟器检测与修复。 |
+| [Windows 文件资源管理器](./WindowsOS@Extension/README.md) | IDE 打开、Git / 路径 / 终端、运行授权 / 解除运行授权、Flutter 工具组，Android / Harmony 模拟器创建及检测与修复；没有 iOS 模拟器和 Xcode 构建。 |
+
+**Windows 版本限制：** 资源管理器扩展当前以 Windows 10 / 11 图形桌面及系统 PowerShell 5.1 Desktop 为目标，完整实机验收尚未完成；XP / Vista / Windows 8 不支持当前入口。Windows 7 SP1 / 8.1 补装 WMF 5.1 后仅可探索基础静态菜单，不能视为支持承诺。Windows 11 在“显示更多选项”内使用；x86 / ARM64、原生菜单编译及 SDK / 模拟器业务另有限制，无统一最低 build 保证。测试前阅读 [Windows 版本矩阵与虚拟机边界](./WindowsOS@Extension/README.md#windows-compatibility)。
+
+两端安装面板均展开可执行的 Flutter 子菜单，支持逐项勾选及组内全选 / 全不选；同包只安装一次，重装时按本次 Flutter 选择更新菜单。macOS 提供十九项叶子功能；Windows 按其已实现的功能列出，平台差异见各自说明。
+
+两端桌面空白菜单均提供“Harmony 模拟器检测与修复”，仅操作精确选中的本机实例；普通单文件菜单同时提供“运行授权”和“解除运行授权”。macOS 清除 POSIX 执行位，Windows 按当前用户的文件执行权限处理，详细确认、回滚与限制见各包说明。
 
 ## <span id="jobs-toc-heading-3" data-jobs-toc="v2">二、目录与运行入口 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 

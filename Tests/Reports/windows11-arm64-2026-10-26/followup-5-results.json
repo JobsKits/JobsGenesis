@@ -1,0 +1,127 @@
+﻿{
+    "SchemaVersion":  1,
+    "RunKind":  "Targeted",
+    "FullRegressionReexecuted":  false,
+    "SourceFullPlan":  38,
+    "Scope":  "Four previously failing suites plus the separate Python BAT suite; not a full 38-suite rerun",
+    "StartedUtc":  "2026-10-25T18:17:29.5046934Z",
+    "FinishedUtc":  "2026-10-25T18:19:11.8925310Z",
+    "Status":  "Failed",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\s",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  5,
+    "TargetedSuiteIds":  [
+                             "Flutter.Portable",
+                             "Extension.Core",
+                             "Extension.HarmonyFlutterSdk",
+                             "Extension.FlutterDependencyExtractor",
+                             "Python.BAT"
+                         ],
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\g\\cmd\\git.exe",
+                      "GitVersion":  "git version 2.56.0.windows.3",
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ExpectedParsedFiles":  395,
+                      "ParsedFiles":  395,
+                      "Issues":  [
+
+                                 ]
+                  },
+    "Suites":  [
+                   {
+                       "Id":  "Flutter.Portable",
+                       "Path":  "JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  80.052,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Flutter.Portable.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Flutter.Portable.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Core",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Core.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  15.65,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Extension.Core.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Extension.Core.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HarmonyFlutterSdk",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HarmonyFlutterSdk.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  2.001,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Extension.HarmonyFlutterSdk.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Extension.HarmonyFlutterSdk.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDependencyExtractor",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyExtractor.Tests.ps1",
+                       "Status":  "Failed",
+                       "ExitCode":  1,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  2.355,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Extension.FlutterDependencyExtractor.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Extension.FlutterDependencyExtractor.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Python.BAT",
+                       "Path":  "Tests/PythonBat.Tests.ps1",
+                       "Status":  "Failed",
+                       "ExitCode":  1,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  1.392,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Python.BAT.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 baf10ba3be\\e\\run\\Python.BAT.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   }
+               ],
+    "Summary":  {
+                    "Passed":  3,
+                    "Partial":  0,
+                    "Failed":  2,
+                    "TimedOut":  0,
+                    "Completed":  5,
+                    "Planned":  5
+                }
+}

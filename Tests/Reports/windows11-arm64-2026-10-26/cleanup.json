@@ -1,0 +1,23 @@
+{
+  "FinishedUtc": "2026-10-25T18:53:58.958918+00:00",
+  "OwnedTemporaryProcesses": [
+    {
+      "PID": 13352,
+      "OwnedCommand": "/opt/homebrew/Cellar/python@3.15/3.15.1/Frameworks/Python.framework/Versions/3.15/Resources/Python.app/Contents/MacOS/Python -u /private/tmp/jobs-windows-vm-oIE89N/serve.py",
+      "TerminationRequested": true,
+      "Stopped": true
+    },
+    {
+      "PID": 14683,
+      "OwnedCommand": "caffeinate -diu -t 7200",
+      "TerminationRequested": true,
+      "Stopped": true
+    }
+  ],
+  "VmTransferListenerClosed": true,
+  "MacTemporaryKeepAwakeReleased": true,
+  "WindowsKeepAwakeRestored": true,
+  "WindowsProcessPathRestored": true,
+  "PersistentPowerOrLockSettingsChanged": false,
+  "GeneratedWindowsTempWorkspaces": "Retained for local inspection; no persistent tool installation or service was created."
+}

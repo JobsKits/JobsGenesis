@@ -1,0 +1,67 @@
+﻿{
+    "SchemaVersion":  1,
+    "RunKind":  "Targeted",
+    "FullRegressionReexecuted":  false,
+    "SourceFullPlan":  38,
+    "Scope":  "Retest only Python BAT console/encoding diagnostics and stderr tripwires; previously passing suites are not rerun; this is not a full 38-suite replay.",
+    "StartedUtc":  "2026-10-25T18:49:03.3017352Z",
+    "FinishedUtc":  "2026-10-25T18:49:10.0384049Z",
+    "Status":  "Passed",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 92f278a4b7\\s",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  1,
+    "TargetedSuiteIds":  [
+                             "Python.BAT"
+                         ],
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 92f278a4b7\\g\\cmd\\git.exe",
+                      "GitVersion":  "git version 2.56.0.windows.3",
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ExpectedParsedFiles":  395,
+                      "ParsedFiles":  395,
+                      "Issues":  [
+
+                                 ]
+                  },
+    "Suites":  [
+                   {
+                       "Id":  "Python.BAT",
+                       "Path":  "Tests/PythonBat.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  6.03,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 92f278a4b7\\e\\run\\Python.BAT.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 92f278a4b7\\e\\run\\Python.BAT.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   }
+               ],
+    "Summary":  {
+                    "Passed":  1,
+                    "Partial":  0,
+                    "Failed":  0,
+                    "TimedOut":  0,
+                    "Completed":  1,
+                    "Planned":  1
+                }
+}

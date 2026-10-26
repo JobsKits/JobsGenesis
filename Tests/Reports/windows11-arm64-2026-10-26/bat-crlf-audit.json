@@ -1,0 +1,102 @@
+[
+  {
+    "path": "JobsPythonTools.py/JobsAppTrafficMonitor.py/【Windows】📦生成exe.bat",
+    "before_sha256": "5013c9d06705ac61c00f505dfc3bd8a19d79baf8b0e6f513d477cfa669d0bc9d",
+    "after_sha256": "34b75a380c47498d9a3bb55b917ec0ad8b64ce457cf8bd550fc4a5d1502688c8",
+    "normalized_sha256": "5013c9d06705ac61c00f505dfc3bd8a19d79baf8b0e6f513d477cfa669d0bc9d",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 115,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsCodexAccountSwitcher.py/【Windows】📦生成exe.bat",
+    "before_sha256": "7225832249ddc83f7bcee5bf451d1d8f5f2356895613715aa0297d58b718c2df",
+    "after_sha256": "e73eef5c27f1f630f56f582b442eef8e9a22d63532b316c2098c352f1e666760",
+    "normalized_sha256": "7225832249ddc83f7bcee5bf451d1d8f5f2356895613715aa0297d58b718c2df",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 39,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsCodexTokenMonitor.py/【Windows】📦生成exe.bat",
+    "before_sha256": "cd1403e196958efc5c43b57bf97ad140cea1300c7c5046014502ed0caa79e2be",
+    "after_sha256": "e3de7aabce811de1f3bfa37f42dc150a49720a4d03bbaecdf3076a25041efa02",
+    "normalized_sha256": "cd1403e196958efc5c43b57bf97ad140cea1300c7c5046014502ed0caa79e2be",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 39,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsMockTool.py/build_windows.bat",
+    "before_sha256": "94dfeefacc0ed2a94a541ddd3157db755d3ed495cb7111d1a471dac508729f3c",
+    "after_sha256": "edd81473340e332b24982aaf8ad3382b72bcc387d1ecd03b32d950589512dc18",
+    "normalized_sha256": "94dfeefacc0ed2a94a541ddd3157db755d3ed495cb7111d1a471dac508729f3c",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 106,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsMockTool.py/【Windows】📦生成exe.bat",
+    "before_sha256": "b6f57af94e217a79f4d3b1e506927d0bb06a464beeb3f55a71e28ef3375877f1",
+    "after_sha256": "b6f57af94e217a79f4d3b1e506927d0bb06a464beeb3f55a71e28ef3375877f1",
+    "normalized_sha256": "39647fa0ca1d51e6c34df2b6455d5eaaf1c9c649cc442433690b3f84d45f9a9f",
+    "changed": false,
+    "before_crlf": 5,
+    "after_crlf": 5,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsRemoteHost.py/【Windows】📦生成exe.bat",
+    "before_sha256": "e048756c1e4f470adc3e63871e2bd32f7bd8283186672e22a87a0665486e2127",
+    "after_sha256": "edf146fd48880c2dd46712f3d31df9f9302440c0afbc9c252ddf0f8cb6f81fa9",
+    "normalized_sha256": "e048756c1e4f470adc3e63871e2bd32f7bd8283186672e22a87a0665486e2127",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 137,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsReverseIPA.py/【Windows】📦生成exe.bat",
+    "before_sha256": "4dc9f6f9208b76b8b71ca7b1096404f84259d024542a00d0846d5a2663e972bd",
+    "after_sha256": "d1d5ea3f94f1d571df9cd9e801921730923f8583cd22159cd2e91df29ab2e3a7",
+    "normalized_sha256": "4dc9f6f9208b76b8b71ca7b1096404f84259d024542a00d0846d5a2663e972bd",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 162,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/JobsSystemMonitor.py/【Windows】📦生成exe.bat",
+    "before_sha256": "03921283537b980be66e0dfae4724a98fe5f8f0a8c8c607aee2f9c4f6bc4330a",
+    "after_sha256": "6d3999c45c7c65f87d0ff68a32ece13655b7e14a93c94dc34885f9664639885c",
+    "normalized_sha256": "03921283537b980be66e0dfae4724a98fe5f8f0a8c8c607aee2f9c4f6bc4330a",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 39,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/LANFileServer.py/LANFileServer/启动LANFileServer.bat",
+    "before_sha256": "309d736d36b9f156f3ed8698ebd66b5f129a7a2b6e81c1cf594e6425189b79ff",
+    "after_sha256": "3e8e5f9c0dc27c9bf1c11c1f5e9984c1201efdcb5465af068a1f876315897b6f",
+    "normalized_sha256": "309d736d36b9f156f3ed8698ebd66b5f129a7a2b6e81c1cf594e6425189b79ff",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 190,
+    "bom_preserved": true
+  },
+  {
+    "path": "JobsPythonTools.py/LANFileServer.py/【Windows】📦生成exe.bat",
+    "before_sha256": "f3744b081bcf460db798654825599a8d12d6cb620c03e9c681fb72a0e44fcba0",
+    "after_sha256": "37aadc7aeed9793af3a7004efabe4a71b21260d6354aa874f1b7f72533c13394",
+    "normalized_sha256": "f3744b081bcf460db798654825599a8d12d6cb620c03e9c681fb72a0e44fcba0",
+    "changed": true,
+    "before_crlf": 0,
+    "after_crlf": 17,
+    "bom_preserved": true
+  }
+]

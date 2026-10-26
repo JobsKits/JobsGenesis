@@ -1,0 +1,4360 @@
+﻿{
+  "SchemaVersion": 1,
+  "BundleId": "3c245ff2f61246a7a1d08387b8a6d318",
+  "CreatedUtc": "2026-10-25T17:57:47.036205+00:00",
+  "PlannedSuites": 38,
+  "Roots": [
+    "JobsCommand@Gits/WindowsOS",
+    "JobsCommand@Flutter/WindowsOS",
+    "JobsCommand@Others/WindowsOS",
+    "JobsSh.sh/WindowsOS",
+    "SourceTree.command/WindowsOS",
+    "OS@Extension/WindowsOS@Extension"
+  ],
+  "ExtraFiles": [
+    "README.md",
+    "Tests/README.md",
+    "Tests/WindowsRegression.ps1",
+    "Tests/DoctorBuild.Tests.ps1",
+    "Tests/WindowsLaunchers.Tests.ps1",
+    "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+  ],
+  "FileCount": 867,
+  "Files": [
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/README.md",
+      "Bytes": 27556,
+      "SHA256": "f80b7e67e4b7c53aaee9370b02834ff4dfc480a58d9afb54646638a8978b1b23"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/ExtractFlutterDependencies.dart",
+      "Bytes": 28642,
+      "SHA256": "3c568499195921a62cc7ef1f6db45bd94ef2992cbb1c4bc4fe2ea8d93b2279b4"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Android/Action.psm1",
+      "Bytes": 30713,
+      "SHA256": "ce81320cf35f42a90f0f217f567ae315c1df7382afc04e4e675fa3631b25c3d1"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Android/Common.psm1",
+      "Bytes": 9220,
+      "SHA256": "10969699bfcdf953e055b1bb26bf156b7087139e014ba2c87ae4da3d3e3ecf68"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Codegen/Action.psm1",
+      "Bytes": 24271,
+      "SHA256": "4068e69738bde757f688e3be499097d17ed63c285f62807e9f9756a1d135315e"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Codegen/Common.psm1",
+      "Bytes": 9220,
+      "SHA256": "10969699bfcdf953e055b1bb26bf156b7087139e014ba2c87ae4da3d3e3ecf68"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Doctor/Action.psm1",
+      "Bytes": 16386,
+      "SHA256": "0e0dfc595cb13ebf88c461f44795bb1d7090fc99eb03b73aa0f2e0007998af59"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Doctor/Common.psm1",
+      "Bytes": 9220,
+      "SHA256": "10969699bfcdf953e055b1bb26bf156b7087139e014ba2c87ae4da3d3e3ecf68"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Harmony/Action.psm1",
+      "Bytes": 25122,
+      "SHA256": "6e0295a170fb605e8c8483460fd2f7298c2f4f5a7c9d393bf2ff6dcd90c7c3c1"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Harmony/Common.psm1",
+      "Bytes": 9220,
+      "SHA256": "10969699bfcdf953e055b1bb26bf156b7087139e014ba2c87ae4da3d3e3ecf68"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Harmony/HarmonyTools.ps1",
+      "Bytes": 9070,
+      "SHA256": "10a50dc319626e383d03db417f483aaacb00363c2132e142165bd3d200beef3f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Packager/Action.psm1",
+      "Bytes": 33694,
+      "SHA256": "ab4aa40b5c63943d7c73954fe89bb5b2a61210f19af33233ef675471d0450b1e"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/Features/Packager/Common.psm1",
+      "Bytes": 9220,
+      "SHA256": "10969699bfcdf953e055b1bb26bf156b7087139e014ba2c87ae4da3d3e3ecf68"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/FlutterTools.psm1",
+      "Bytes": 39911,
+      "SHA256": "1f4287283f31fe4d98cb376da2853638e32e98b97a360cd2ca65d089e250e510"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/README.md",
+      "Bytes": 998,
+      "SHA256": "ec5bdb0452d38c3405b024ce1fc205b4f5960f2ce3e233bf2b520c1cabeb9dcc"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1",
+      "Bytes": 7458,
+      "SHA256": "f59a3f6ab4c770f76d9bea74ab1fa4dc28b31144ee3ea535e7c3f68bf618f99c"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Tests/README.md",
+      "Bytes": 775,
+      "SHA256": "327f317c72f0f410bfd28093881071dc7007dc7bbe1181951fbcc7ef07e96eb4"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.ps1/README.md",
+      "Bytes": 3566,
+      "SHA256": "ced8018e8e4b6dfaf74f47697a6fda3c795e84285324093e7e7c05a323c75589"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.ps1/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.ps1/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.ps1",
+      "Bytes": 1608,
+      "SHA256": "9d2b12ad324403b2772f3bd6f60a7e845b3ca461e19db635eef4169bc6af85a9"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/功能映射.json",
+      "Bytes": 21226,
+      "SHA256": "ed82a0e7b3d87b2f610bb2c2f0f69bc3b0c03ee948e177311daef337ae654e42"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/README.md",
+      "Bytes": 4949,
+      "SHA256": "83d4686a5f63b1fca5dd0b22a2f9d5e061ff20cf5d231bd8b7d04cde47fcf10d"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️修复Flutter项目中文路径.ps1/README.md",
+      "Bytes": 3322,
+      "SHA256": "3855d71cfc6626985b78451d3c4b555ff3309ce59d8e41beb57560cfc6780fcc"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️修复Flutter项目中文路径.ps1/【WindowsOS】♻️修复Flutter项目中文路径.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️修复Flutter项目中文路径.ps1/【WindowsOS】♻️修复Flutter项目中文路径.ps1",
+      "Bytes": 1588,
+      "SHA256": "cd600447e2e1e33088aff40489f883867847bdb94618bbb378a854bd047c5e74"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.ps1/README.md",
+      "Bytes": 3756,
+      "SHA256": "2d7bbd9a099b459addb574c00485bfa34c25bf73551c6e3d82b916188f926ef1"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.ps1/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.ps1/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.ps1",
+      "Bytes": 1639,
+      "SHA256": "537f28f21073543b4e7845ade3a08d748a1874dda2c97a945ea7aff3afba698f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.ps1/README.md",
+      "Bytes": 3279,
+      "SHA256": "66affd129a1a486101f6eb3fb781f60f9f9ab4fd2649413721872871c9043465"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.ps1/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.ps1/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.ps1",
+      "Bytes": 1563,
+      "SHA256": "198f7da8da4a57515d2480e513ea7657b2356c86cb86ead3370d7b7acdb925fb"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️import =＞package💣.ps1/README.md",
+      "Bytes": 3410,
+      "SHA256": "df7ff1650af31238874621f6404e9397c4ae3481923758f12699be7eac1b974e"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️import =＞package💣.ps1/【WindowsOS】⚙️import =＞package💣.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️import =＞package💣.ps1/【WindowsOS】⚙️import =＞package💣.ps1",
+      "Bytes": 1532,
+      "SHA256": "509086695cbd4407a74b46b22dca59af94d35656ff9569f2b936af7955bcc7cd"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.ps1/README.md",
+      "Bytes": 3411,
+      "SHA256": "6ebd2ec55d4db611f5f0e15c469113b32ac94f374b322ff54eb89acfb4d6e427"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.ps1/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.ps1/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.ps1",
+      "Bytes": 1609,
+      "SHA256": "8d4931c1191a49fa8fbd6d257361a3edacd4bd67c8ce8181c5c49c5f821172f0"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️双击显示隐藏文件.ps1/README.md",
+      "Bytes": 3237,
+      "SHA256": "b4b2b03532cb677979875f2080e7867e49e11247179aebff94a41928164b7c2c"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️双击显示隐藏文件.ps1/【WindowsOS】⚙️双击显示隐藏文件.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️双击显示隐藏文件.ps1/【WindowsOS】⚙️双击显示隐藏文件.ps1",
+      "Bytes": 1507,
+      "SHA256": "c1c1e1698fed5defac33239ffaaf2d4fc7d47d0dc3f24df93c3bc978c875fa17"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️自动化替换Flutter图片资源.ps1/README.md",
+      "Bytes": 3499,
+      "SHA256": "0ed7ab910324c2e9f2dd0424df35c3bbf277c533d330aca796e2bbbb14a4a1b0"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️自动化替换Flutter图片资源.ps1/【WindowsOS】⚙️自动化替换Flutter图片资源.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️自动化替换Flutter图片资源.ps1/【WindowsOS】⚙️自动化替换Flutter图片资源.ps1",
+      "Bytes": 1595,
+      "SHA256": "c540803b7c73b315a98ce97971c60bac1096afde8389400cd9748af075cb8074"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️运行授权.ps1/README.md",
+      "Bytes": 3274,
+      "SHA256": "47c314e238483159a3b4adc4d51ddbdac4df4002aaac8d3c9d2cda71d630407f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️运行授权.ps1/【WindowsOS】⚙️运行授权.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️运行授权.ps1/【WindowsOS】⚙️运行授权.ps1",
+      "Bytes": 1534,
+      "SHA256": "03a473a6cf93095422219295e9fff323e4066bcff159d3902fc1d6564ad31e96"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🌞颜色格式的转换.ps1/README.md",
+      "Bytes": 3217,
+      "SHA256": "8dfbf88188a2e3f45caec5d829f31b80c9645957622f99fb0a0e33470ea593e2"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🌞颜色格式的转换.ps1/【WindowsOS】🌞颜色格式的转换.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🌞颜色格式的转换.ps1/【WindowsOS】🌞颜色格式的转换.ps1",
+      "Bytes": 1528,
+      "SHA256": "9d3d4386c127bf88560987aed47433ac6cdf086d37acb730687e36000b2e320f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈切换Shell.ps1/README.md",
+      "Bytes": 3136,
+      "SHA256": "3d03c4d23aa0dfcf7ace40cdf42c8b96301e9d2b0e40cd4f85e01a5eaf182da6"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈切换Shell.ps1/【WindowsOS】🎈切换Shell.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈切换Shell.ps1/【WindowsOS】🎈切换Shell.ps1",
+      "Bytes": 1474,
+      "SHA256": "47b3a2e69e51ec15f33c87856334fde8860b725dc31b4f07b6c63ac51217998e"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈双击打开当前路径终端.ps1/README.md",
+      "Bytes": 3151,
+      "SHA256": "f3e3d6ccb2408422c147d5b1b4f4f0ebdc4a40ffe6000daf9ba5415fc0bb1cff"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈双击打开当前路径终端.ps1/【WindowsOS】🎈双击打开当前路径终端.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈双击打开当前路径终端.ps1/【WindowsOS】🎈双击打开当前路径终端.ps1",
+      "Bytes": 1507,
+      "SHA256": "e3b422d574f3fd5d8dec0b068709342a8a34549cdd6470973298c7a47a4e5c22"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🏥双击自检Flutter.ps1/README.md",
+      "Bytes": 3245,
+      "SHA256": "cd515137e6a72f8465ea02505ed131fe118cc2709320d303606d88baecd2ce58"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🏥双击自检Flutter.ps1/【WindowsOS】🏥双击自检Flutter.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🏥双击自检Flutter.ps1/【WindowsOS】🏥双击自检Flutter.ps1",
+      "Bytes": 1523,
+      "SHA256": "15ab34eaed5f3843cfb98531f71418ac1cfa9e2f7bf8da9113c48b9f9cc1d298"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🐦Flutter自动化生产代码.ps1/README.md",
+      "Bytes": 3636,
+      "SHA256": "9260673a8067c9cd3eb7e64e036cf44a191b752824383dcb8e66939cdec020a0"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🐦Flutter自动化生产代码.ps1/【WindowsOS】🐦Flutter自动化生产代码.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🐦Flutter自动化生产代码.ps1/【WindowsOS】🐦Flutter自动化生产代码.ps1",
+      "Bytes": 1566,
+      "SHA256": "ecbd6eb920b2417b8e00eef765e3505628d41e836767e74606727d99cb2becde"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🔍查询Flutter依赖版本.ps1/README.md",
+      "Bytes": 3233,
+      "SHA256": "193bc9f69a72cb5ded8da6df3b9747855b82aabd416756bff86a98deb22e55cd"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🔍查询Flutter依赖版本.ps1/【WindowsOS】🔍查询Flutter依赖版本.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🔍查询Flutter依赖版本.ps1/【WindowsOS】🔍查询Flutter依赖版本.ps1",
+      "Bytes": 1513,
+      "SHA256": "732d009b50cb10c66b325cc04611f347401ba9bc62b0699dc355d6617e16e03b"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Android 模拟器一键检测与修复.ps1/README.md",
+      "Bytes": 3346,
+      "SHA256": "db508b4572c2302afb84e373a893bbf73c2a2f2e75578052f3432ebda346f271"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Android 模拟器一键检测与修复.ps1/【WindowsOS】🛠️Android 模拟器一键检测与修复.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Android 模拟器一键检测与修复.ps1/【WindowsOS】🛠️Android 模拟器一键检测与修复.ps1",
+      "Bytes": 1630,
+      "SHA256": "fc52deda50742bea722c5380f256f808a5626ab97ab96470485b7f5b80031c34"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.ps1/README.md",
+      "Bytes": 3522,
+      "SHA256": "9c24d8ab7eef55e3d9034f87c407547341e308b82c82a636dd80510bf78d1bcf"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.ps1/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.ps1/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.ps1",
+      "Bytes": 1596,
+      "SHA256": "2a69c5f5e4a195755b8f80107017156693eebbb875d7005d0cfefded20c41e49"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧪提取Flutter第三方依赖.ps1/README.md",
+      "Bytes": 3597,
+      "SHA256": "91c4c77567e1f85d05cff8977db52ebc742e495a876f8a605e2f2478e8b6fd2a"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧪提取Flutter第三方依赖.ps1/【WindowsOS】🧪提取Flutter第三方依赖.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧪提取Flutter第三方依赖.ps1/【WindowsOS】🧪提取Flutter第三方依赖.ps1",
+      "Bytes": 1633,
+      "SHA256": "4369ceaa1f4cc5caf8d68073fa45f87e9c16238659a16a6fc56aad84b77d24ab"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧹Flutter清理维护工具.ps1/README.md",
+      "Bytes": 3353,
+      "SHA256": "30c4503f6f804f017d1571b0c80f7ecc85325ab4bd2ad0fdfb4e337ce74e4886"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧹Flutter清理维护工具.ps1/【WindowsOS】🧹Flutter清理维护工具.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧹Flutter清理维护工具.ps1/【WindowsOS】🧹Flutter清理维护工具.ps1",
+      "Bytes": 1528,
+      "SHA256": "316c8e3d2cd2848c0e2dc1c3fcbedef288b76c6eb537138775dc2157166ebde6"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/屏幕录制/README.md",
+      "Bytes": 1417,
+      "SHA256": "62057d826e7d0a530e9ee07a762a4564451f0af8942a63d04b679538363f703a"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/屏幕录制/【WindowsOS】📹双击制作Android模拟器录屏Gif.ps1/README.md",
+      "Bytes": 3511,
+      "SHA256": "a4af09b62be0acc4842d3dee63e111c1375925e09e247ab55aa16b4faae52e2f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/屏幕录制/【WindowsOS】📹双击制作Android模拟器录屏Gif.ps1/【WindowsOS】📹双击制作Android模拟器录屏Gif.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/屏幕录制/【WindowsOS】📹双击制作Android模拟器录屏Gif.ps1/【WindowsOS】📹双击制作Android模拟器录屏Gif.ps1",
+      "Bytes": 1557,
+      "SHA256": "3c1dc33dba1e8e6027cca0992c08c2000b3d2065616043b67bc0b8af255ae9e3"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/打包相关/README.md",
+      "Bytes": 1467,
+      "SHA256": "f7ebccf413b5d52cd446239d23886ca58059e74e7ff863b02d6f576a524f4bbe"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/打包相关/【WindowsOS】📦双击打包Flutter.Android.ps1/README.md",
+      "Bytes": 3556,
+      "SHA256": "5838acad6ec0c79f84fc822d62130920da360518e9efe98717d97613f09b5402"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/打包相关/【WindowsOS】📦双击打包Flutter.Android.ps1/【WindowsOS】📦双击打包Flutter.Android.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/打包相关/【WindowsOS】📦双击打包Flutter.Android.ps1/【WindowsOS】📦双击打包Flutter.Android.ps1",
+      "Bytes": 1594,
+      "SHA256": "2bb998d3d706f88ca2ce20c8eca023fed09bfe6abac717ae42f5690dc2598668"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/README.md",
+      "Bytes": 1541,
+      "SHA256": "0c36e572ff8f0d823acb84ce7e96974be69a36835e5edd6676f733ec5c30699f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击升级Flutter.SDK.ps1/README.md",
+      "Bytes": 3247,
+      "SHA256": "9ac5fa017d5711c3455233242ceac72a245328b1e34a81f0d4eae71088d0cbbd"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击升级Flutter.SDK.ps1/【WindowsOS】⬆️双击升级Flutter.SDK.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击升级Flutter.SDK.ps1/【WindowsOS】⬆️双击升级Flutter.SDK.ps1",
+      "Bytes": 1494,
+      "SHA256": "0119a882e07b832a6e95578aa7767f247c8f899847e029c8921b344b2d428d16"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击更新Flutter依赖.ps1/README.md",
+      "Bytes": 3170,
+      "SHA256": "38a6f0f52e575b14c5457df900ba021fb15741786b0e4ff790e7c4b09f3297a4"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击更新Flutter依赖.ps1/【WindowsOS】⬆️双击更新Flutter依赖.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击更新Flutter依赖.ps1/【WindowsOS】⬆️双击更新Flutter依赖.ps1",
+      "Bytes": 1525,
+      "SHA256": "5e6a026091ec5bbbe596df474955043a280f24a80332a092156a521172e25fb7"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/README.md",
+      "Bytes": 1856,
+      "SHA256": "28021a0bf2e5e958062106f02304e52cd222e79f73be399746770e7ead15dbe6"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .ps1/README.md",
+      "Bytes": 3560,
+      "SHA256": "2b5c016a00c1a2cb52e2c0f288caf13c081a5cd06c68b7414348a625b2c9bb91"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .ps1/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .ps1/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .ps1",
+      "Bytes": 1595,
+      "SHA256": "d3f8ebb82f59d40370a288c1b36690e35781cbca4832dfa35728ff8e0848be08"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🎈双击真机运行项目.ps1/README.md",
+      "Bytes": 3366,
+      "SHA256": "48aa18448e13d9210fe59cd8d9a4bffc7e87c62899999fd7a906b4738f2d129e"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🎈双击真机运行项目.ps1/【WindowsOS】🎈双击真机运行项目.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🎈双击真机运行项目.ps1/【WindowsOS】🎈双击真机运行项目.ps1",
+      "Bytes": 1556,
+      "SHA256": "5519a5c9f2721a9c83c7ed473655c658cefc507a089ef5e4f2ef7ca7a4ca97f6"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🚀双击启动Android模拟器.ps1/README.md",
+      "Bytes": 3496,
+      "SHA256": "83dfcaebeaa2d5b5db28fe95d41761aec80295ee05640f68b73aad8a17604fe5"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🚀双击启动Android模拟器.ps1/【WindowsOS】🚀双击启动Android模拟器.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🚀双击启动Android模拟器.ps1/【WindowsOS】🚀双击启动Android模拟器.ps1",
+      "Bytes": 1565,
+      "SHA256": "a7829e37f546643265f7e567b86eae3c58cdbed40213a3ca352bd53141b30b36"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/README.md",
+      "Bytes": 4539,
+      "SHA256": "69d470c67f55f167025c4028c97d9452c9541e94204e08cf9639153373b07560"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】⏬双击配置VSCode.ps1/README.md",
+      "Bytes": 3367,
+      "SHA256": "5f31362cc963e69a609c29257bceb323bf7f125143c4fdc60dd062394753d3c7"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】⏬双击配置VSCode.ps1/【WindowsOS】⏬双击配置VSCode.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】⏬双击配置VSCode.ps1/【WindowsOS】⏬双击配置VSCode.ps1",
+      "Bytes": 1543,
+      "SHA256": "c208d7ae415265891ed59ab98e60661af763be252670f20212ea0fe3105c1219"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@全局.ps1/README.md",
+      "Bytes": 3366,
+      "SHA256": "8f3da60a9aeeea7b49bfe14419facfe1726022828b2bc9dbcba43ff2be790e70"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@全局.ps1/【WindowsOS】💉VSCode配置注入@全局.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@全局.ps1/【WindowsOS】💉VSCode配置注入@全局.ps1",
+      "Bytes": 1553,
+      "SHA256": "9f04bd1faed9f4f605817ad4b45f0d650653e72c8e6b03062d78bef200b71967"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.ps1/README.md",
+      "Bytes": 3440,
+      "SHA256": "f37831c91288a5d7b939dead6880f00a4884f3c92eca9119aa230ac5b55686f2"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.ps1",
+      "Bytes": 1580,
+      "SHA256": "fe19bd171a1c87e5039f277031d762a8521d0fe73abfc637af9ade040448228f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬下载配置系统环境变量.ps1/README.md",
+      "Bytes": 3550,
+      "SHA256": "3aa2cdd3b81c58da3bcdc015e233bfc2048632c7e3c11fe9c221fb76389ab191"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬下载配置系统环境变量.ps1/【WindowsOS】⏬下载配置系统环境变量.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬下载配置系统环境变量.ps1/【WindowsOS】⏬下载配置系统环境变量.ps1",
+      "Bytes": 1578,
+      "SHA256": "355bdeaa2906dd94d677ce1a61ff6aa8b787d93fa809fb53d07a15c08e6a1f77"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击下载SourceTree效率脚本.ps1/README.md",
+      "Bytes": 3324,
+      "SHA256": "017b014fd7bce45a3675f421b795d18681ea88a0018578ba413c50703653baff"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击下载SourceTree效率脚本.ps1/【WindowsOS】⏬双击下载SourceTree效率脚本.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击下载SourceTree效率脚本.ps1/【WindowsOS】⏬双击下载SourceTree效率脚本.ps1",
+      "Bytes": 1567,
+      "SHA256": "85db687c1dbd533a26a6c539d528e5734bf8e332a0cdd8d20ca2cf1b28ad46d9"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击配置VSCode.ps1/README.md",
+      "Bytes": 3364,
+      "SHA256": "6ab417ba347c388c8825eb161ac3f75c56612848b3e94e333f1dd1660042ad22"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击配置VSCode.ps1/【WindowsOS】⏬双击配置VSCode.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击配置VSCode.ps1/【WindowsOS】⏬双击配置VSCode.ps1",
+      "Bytes": 1543,
+      "SHA256": "c208d7ae415265891ed59ab98e60661af763be252670f20212ea0fe3105c1219"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️Flutter 项目组件预下载.ps1/README.md",
+      "Bytes": 3281,
+      "SHA256": "11fbdc7796b876a39f6a0e4824172a0b1b84f0cf9dbdb58d3226e1a06f03f710"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️Flutter 项目组件预下载.ps1/【WindowsOS】⚙️Flutter 项目组件预下载.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️Flutter 项目组件预下载.ps1/【WindowsOS】⚙️Flutter 项目组件预下载.ps1",
+      "Bytes": 1551,
+      "SHA256": "fc80be73dc4e993452e7c2e33349f9100f8b0cd543c0313c33236c15c5e8996f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter项目至运行.ps1/README.md",
+      "Bytes": 3596,
+      "SHA256": "f86bac200c58e66474251bb4ed83732ce5b0cac5c17125eff42b6e719f030f01"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter项目至运行.ps1/【WindowsOS】⚙️一键配置Flutter项目至运行.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter项目至运行.ps1/【WindowsOS】⚙️一键配置Flutter项目至运行.ps1",
+      "Bytes": 1634,
+      "SHA256": "76f087a3c3a82c3b3d8776e7372aa16bf16b39413d27e0f0d8d4ee0038f1ef2a"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.ps1/README.md",
+      "Bytes": 3745,
+      "SHA256": "4accd0670d4537d20773c737d7699e4701bacb1d170a5b7a3284aff029145387"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.ps1/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.ps1/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.ps1",
+      "Bytes": 1612,
+      "SHA256": "de4c5c980bddbe1f375c8b5a8154d05982090fa906d3cb9c6e5036a92b542832"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️下载配置系统环境变量.ps1/README.md",
+      "Bytes": 3559,
+      "SHA256": "0cc89853c5df964c97cc869338e6103d2ce3f8b9503a2e0c1c5e69174769a00b"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️下载配置系统环境变量.ps1/【WindowsOS】⚙️下载配置系统环境变量.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️下载配置系统环境变量.ps1/【WindowsOS】⚙️下载配置系统环境变量.ps1",
+      "Bytes": 1584,
+      "SHA256": "422ee53e8794b88d263bd5059d08a34c764e7f1f3be78112e914051ac74d4128"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装FVM.ps1/README.md",
+      "Bytes": 3329,
+      "SHA256": "06958c72daa2384a1ef19de9f26baa89fc66fa311a56e433cd8dfb4dec72a57b"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装FVM.ps1/【WindowsOS】⚙️双击安装FVM.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装FVM.ps1/【WindowsOS】⚙️双击安装FVM.ps1",
+      "Bytes": 1514,
+      "SHA256": "b41b381bf7f5963412c1c4b56d27229f1521ec37779e71cbe26d30fe57885a9f"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装Flutter.SDK.ps1/README.md",
+      "Bytes": 3436,
+      "SHA256": "13bc74fd101a2294d6c9bf41e47b72b691e204da396362e1458fefcea255c785"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装Flutter.SDK.ps1/【WindowsOS】⚙️双击安装Flutter.SDK.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装Flutter.SDK.ps1/【WindowsOS】⚙️双击安装Flutter.SDK.ps1",
+      "Bytes": 1588,
+      "SHA256": "818138cfdfbb384c4dcd4938960b5b82dd64ff9e3d15c424c7a05f8fec812654"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️收集当前Flutter工程的依赖.ps1/README.md",
+      "Bytes": 3581,
+      "SHA256": "ef7dca1891eaa669e06458e2df76738a777bc0c9363f0640551da35acee49ac2"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️收集当前Flutter工程的依赖.ps1/【WindowsOS】⚙️收集当前Flutter工程的依赖.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️收集当前Flutter工程的依赖.ps1/【WindowsOS】⚙️收集当前Flutter工程的依赖.ps1",
+      "Bytes": 1623,
+      "SHA256": "c01dc956108145e2fe787e15e136bcdc84cc3f8a9fc84a5eea47876406cf8545"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️配置Android Studio.ps1/README.md",
+      "Bytes": 3627,
+      "SHA256": "513792017af350232400df5470ae70d30cc2d135e37c61e8ae198bff308b4db8"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️配置Android Studio.ps1/【WindowsOS】⚙️配置Android Studio.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️配置Android Studio.ps1/【WindowsOS】⚙️配置Android Studio.ps1",
+      "Bytes": 1557,
+      "SHA256": "f2f12fa0d2e2a4ae78b9db17ef041fffa66ff173dddf4573786031f1e4b2b9fb"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】🎈双击打开系统配置文件.ps1/README.md",
+      "Bytes": 3115,
+      "SHA256": "94a6beef7b8d7ccc7c06836bed9cd20c03f592f953497762e97d056d93cdc1be"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】🎈双击打开系统配置文件.ps1/【WindowsOS】🎈双击打开系统配置文件.cmd",
+      "Bytes": 241,
+      "SHA256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】🎈双击打开系统配置文件.ps1/【WindowsOS】🎈双击打开系统配置文件.ps1",
+      "Bytes": 1602,
+      "SHA256": "d094546f96c3d2bdb21fec2022e4ba4ea67d23c903fa6eec310ab09bdfcfe58e"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/GitTools.psm1",
+      "Bytes": 53895,
+      "SHA256": "9b2b762f9a61c2e64d43cc9866efd0f85d938ddfdf1657ddc74357923bc71051"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/MarkdownLines.ps1",
+      "Bytes": 2100,
+      "SHA256": "fe378780b14af2c933fae383ebdfea3010274c566c3e9ed0e2f59344e5588cb3"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/README.md",
+      "Bytes": 7703,
+      "SHA256": "93028edf3ee579866410c97fbd6f6317e3f4cf43df2d35ceb635c21489214d44"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/Tests/GitProxyConfigurator.Tests.ps1",
+      "Bytes": 16078,
+      "SHA256": "f0b3642567e26c49e387e25ebb454222e0fbdbb983e777622bd2978b9ebde4cc"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/Tests/README.md",
+      "Bytes": 2490,
+      "SHA256": "bf2ee2ff6728f4b2ee403ca15c85adf3b91e72fc2bfcd2a28e31b8f49783f759"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/Tests/Regression.ps1",
+      "Bytes": 14809,
+      "SHA256": "e83ed1db6b304d4f75bcac9294586474ce53c33e5fe77fd6cc7095d7bb0e6081"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）/README.md",
+      "Bytes": 3435,
+      "SHA256": "f91f67b692d2e4c6ae43311343f9624051f84743ca2659420a95fd3159a68f52"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）.ps1",
+      "Bytes": 934,
+      "SHA256": "6fcbeaf328ca2bf580a7b58bedbb6cc5fa3a7bad003d6d9e4336b55144d31262"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬双击下载SourceTree效率脚本/README.md",
+      "Bytes": 2494,
+      "SHA256": "a0dba49aadac0a5b5fc97b5e47e0270de7fa3e26be3e07cd3c4a4bd2efd06d72"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬双击下载SourceTree效率脚本/【WindowsOS】⏬双击下载SourceTree效率脚本.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬双击下载SourceTree效率脚本/【WindowsOS】⏬双击下载SourceTree效率脚本.ps1",
+      "Bytes": 854,
+      "SHA256": "f5a934ceae3c20461880d8d54f1ba8d47952e8175ba4bd6ce8ba0a48cb620a69"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击Git 提交回退/README.md",
+      "Bytes": 2583,
+      "SHA256": "7e3235c0a642480242c0674ec55aeb637b6ef7b7e920ca03edd3e2b6d7be7a29"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击Git 提交回退/【WindowsOS】♻️双击Git 提交回退.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击Git 提交回退/【WindowsOS】♻️双击Git 提交回退.ps1",
+      "Bytes": 849,
+      "SHA256": "0610d1baa67e64935da8a845be1da64eb0e885c4964ae768f1a27cacfe482891"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料/README.md",
+      "Bytes": 2734,
+      "SHA256": "b8b5de2b6d0aa6e9dc13166e016689a62ffd8b7682f0484cb241bbacec7b0cff"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料.ps1",
+      "Bytes": 883,
+      "SHA256": "91ea09191eb130ef38a9b9feb16d2eada536a49ff3e11c3456d03f0d855ebef0"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️批量Git提交（不含推送）/README.md",
+      "Bytes": 2718,
+      "SHA256": "5830ad6053d053bd1aaab54cdbde547ee5c3a469da0852efcf1501353c75a7d8"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️批量Git提交（不含推送）/【WindowsOS】♻️批量Git提交（不含推送）.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️批量Git提交（不含推送）/【WindowsOS】♻️批量Git提交（不含推送）.ps1",
+      "Bytes": 857,
+      "SHA256": "64c8377877a330f13f53bce389cc1b873affa2819f618bc0b0978d58bf01526b"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️检测并转换为子Git/README.md",
+      "Bytes": 2700,
+      "SHA256": "2a471bd83d770aeb778241a38fc42e29f33677014c717d0a70ef1464dfd5918e"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️检测并转换为子Git/【WindowsOS】♻️检测并转换为子Git.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️检测并转换为子Git/【WindowsOS】♻️检测并转换为子Git.ps1",
+      "Bytes": 873,
+      "SHA256": "d5f471051858f2b7c8c860756ac07c34195d0d47a6b04abb65f31f48aefc7553"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）/README.md",
+      "Bytes": 2903,
+      "SHA256": "7b48f30bc9eeeafc99574690339041db83e141b50ecc08fb5502669f5ea363df"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）.ps1",
+      "Bytes": 995,
+      "SHA256": "cdab990878bc4238d565e0108e4b8b54c2f3b414e38f52975c4c14c9263285ec"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击生成Github远程仓库URL/README.md",
+      "Bytes": 2574,
+      "SHA256": "5b311cc11fea33c8e7ed835d076e4e6b29ae98ec74d4a917f45df977883dda50"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击生成Github远程仓库URL/【WindowsOS】⚙️双击生成Github远程仓库URL.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击生成Github远程仓库URL/【WindowsOS】⚙️双击生成Github远程仓库URL.ps1",
+      "Bytes": 858,
+      "SHA256": "0531499c614fc4930b3ca0cc8daeddc70181e735374b58ad6db5768e5621d20c"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⬆️Git添加子模块/README.md",
+      "Bytes": 3144,
+      "SHA256": "3faef51134531f6c4a5004f43dab4ea022be72e52227ba68b6b69d2b723571de"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⬆️Git添加子模块/【WindowsOS】⬆️Git添加子模块.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⬆️Git添加子模块/【WindowsOS】⬆️Git添加子模块.ps1",
+      "Bytes": 861,
+      "SHA256": "ab74793d1e219e002925e5cf40e2aba9c60676ce0c04f13683668c7a46e67a55"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/README.md",
+      "Bytes": 3060,
+      "SHA256": "29aaf2421a75167d4710a3fd1133b3fe9e8e0b71b414c3bc6c8ae8d7fee65140"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/Configure.ps1",
+      "Bytes": 1981,
+      "SHA256": "18979e682a414ac33a3376d4f340a1e8f5f4fc052bc415edd49ffe568a192e36"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/GitShim.cs",
+      "Bytes": 5658,
+      "SHA256": "92131ca32d01e20b560cdb28acb9272e33748df7107a43e5b9548b1087121641"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/NetworkPolicy.psm1",
+      "Bytes": 20623,
+      "SHA256": "82b2edbbb6ecbc82595513072faa094c6f7e6792dadeb93fc2249585db2a20f5"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/Policy.ps1",
+      "Bytes": 773,
+      "SHA256": "9ec99cc2a7e3bc1bb4988a13acc4898ba75a24a29d32a34130cc590818b75a56"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/ProxyInstaller.psm1",
+      "Bytes": 17987,
+      "SHA256": "7ad82a45ade24f740f8e47cd45bfe41fa87a4da9541602cab47224ba8f5d1563"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/README.md",
+      "Bytes": 1560,
+      "SHA256": "c6f13c1bf2474485bf83142544fe5fcbe8cf7f8af4d3e451c3158bd87af540d8"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/【WindowsOS】🌐双击配置Git动态代理.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/【WindowsOS】🌐双击配置Git动态代理.ps1",
+      "Bytes": 431,
+      "SHA256": "d2a7c372aa2bbbde936b9ea29532e31ab2e7c8f2352d793f6e526c9e3219653d"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🎬上传GitHub视频附件/README.md",
+      "Bytes": 2669,
+      "SHA256": "f47da9cfe5d96b2670d915550be8f5241a3bfcffbd426fd6ed7d12d748310917"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🎬上传GitHub视频附件/【WindowsOS】🎬上传GitHub视频附件.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🎬上传GitHub视频附件/【WindowsOS】🎬上传GitHub视频附件.ps1",
+      "Bytes": 837,
+      "SHA256": "2158a054514414691e54c59c7b0ddc7ba34d8437f9e8d5b3c85ce364ec1b53bf"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git依据提交日志关键字查找/README.md",
+      "Bytes": 2522,
+      "SHA256": "c62fb7676965557ca0de763af434331ab8b022bfe5e23f6577da6756cb0fec97"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git依据提交日志关键字查找/【WindowsOS】🔍Git依据提交日志关键字查找.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git依据提交日志关键字查找/【WindowsOS】🔍Git依据提交日志关键字查找.ps1",
+      "Bytes": 862,
+      "SHA256": "118691f15597254ef38c9ea9a64539ed432d08999a5f56f7682a0eb3f9d6ee83"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git寻找分支最近的一次原始切点/README.md",
+      "Bytes": 2634,
+      "SHA256": "350c4e3575b661cce0c255809dcc47613473360ddf93390b8f454cd4b176c277"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git寻找分支最近的一次原始切点/【WindowsOS】🔍Git寻找分支最近的一次原始切点.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git寻找分支最近的一次原始切点/【WindowsOS】🔍Git寻找分支最近的一次原始切点.ps1",
+      "Bytes": 871,
+      "SHA256": "50adadbd1ed34e2456dd979ee54f3bbaf38b57cb4501c5169a1d5124551799ca"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.Flutter/README.md",
+      "Bytes": 2262,
+      "SHA256": "b58b32f129053d245350b1008e3afad9ca6a1701e4be1bacd9624480c6342151"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.Flutter/【WindowsOS】🚪双击打开Github.Flutter.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.Flutter/【WindowsOS】🚪双击打开Github.Flutter.ps1",
+      "Bytes": 812,
+      "SHA256": "a9757225bcbd02c0e343345ca518fa7bf30da248ecac7501cf75b07134c59a9b"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo/README.md",
+      "Bytes": 2324,
+      "SHA256": "d96f873aa32644b5ff462b98c1ebe9881feec077203dbbce8217bbc18c16639a"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo.ps1",
+      "Bytes": 835,
+      "SHA256": "0fabf16de26d49c032213fa890a76f91c6a445de4c9b741c92899f5d9c62535b"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCKit/README.md",
+      "Bytes": 2261,
+      "SHA256": "c5f3209f6814a17353286e66ea9c8f4eeb005c41d5fcaca86908959e0ff81217"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCKit/【WindowsOS】🚪双击打开Github.JobsOCKit.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCKit/【WindowsOS】🚪双击打开Github.JobsOCKit.ps1",
+      "Bytes": 794,
+      "SHA256": "2df202150e293c22f5dabbaebdda665dd91ba23016b346b968481791b4d556ca"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧭更新引用Git父仓到子仓/README.md",
+      "Bytes": 2960,
+      "SHA256": "a0835857e4f73f77cbb494120b4c62abb96e9bb1bc6d8da548ca6c363fb8ba71"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧭更新引用Git父仓到子仓/【WindowsOS】🧭更新引用Git父仓到子仓.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧭更新引用Git父仓到子仓/【WindowsOS】🧭更新引用Git父仓到子仓.ps1",
+      "Bytes": 877,
+      "SHA256": "92a806132e869816b74ef36e5d436343d03ef5c9bfe57782a1605150ee628559"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧮双击统计MD文件的有效行数/README.md",
+      "Bytes": 2825,
+      "SHA256": "139ad010d1cef1184f43d1641e36fbee656a71856a5fb38ee461994f2667eac5"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧮双击统计MD文件的有效行数/【WindowsOS】🧮双击统计MD文件的有效行数.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧮双击统计MD文件的有效行数/【WindowsOS】🧮双击统计MD文件的有效行数.ps1",
+      "Bytes": 864,
+      "SHA256": "342a24424ae3761575262e62907f54742e42f6eb5e7a417d2ca6dbadeabace48"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧹清理Git子仓运行态记录/README.md",
+      "Bytes": 2732,
+      "SHA256": "733227de8c4ab2cf7b915c4598b5d66c8ee08d43d0c01e3d91f06a29fc1b0fd4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧹清理Git子仓运行态记录/【WindowsOS】🧹清理Git子仓运行态记录.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧹清理Git子仓运行态记录/【WindowsOS】🧹清理Git子仓运行态记录.ps1",
+      "Bytes": 875,
+      "SHA256": "1d5c92a5d6c67da6fdfc1d539095fda6296a1e4babe7dd6b98bd5501e7797139"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧾更新gitmodules/README.md",
+      "Bytes": 2924,
+      "SHA256": "2a2b56cef2b95ed5fcbdc95d17aac024ff271dc2684095e7f7d43ed6cbd7150c"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧾更新gitmodules/【WindowsOS】🧾更新gitmodules.cmd",
+      "Bytes": 240,
+      "SHA256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧾更新gitmodules/【WindowsOS】🧾更新gitmodules.ps1",
+      "Bytes": 835,
+      "SHA256": "8e0d59ed9ec05e4aa40795171d9e5caddd066a432e0ce5adb3c1f7bb7b56c438"
+    },
+    {
+      "Path": "JobsCommand@Gits/WindowsOS/功能映射.json",
+      "Bytes": 5777,
+      "SHA256": "9e725c908c47e323c4c9f070577c851a3085662febb82367907326b766ff037d"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/JobsTools.ps1",
+      "Bytes": 33256,
+      "SHA256": "90e58e2e197206d244f1bd2d1627d4b384401ed2a273e5c61e95fbd07f71dc0b"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/KeyboardRecorder.cs",
+      "Bytes": 9736,
+      "SHA256": "95564c4cac316f9b70afa88a2465f2d5a1694337d4961c94a95768edc1afca2b"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/MockServer.ps1",
+      "Bytes": 3360,
+      "SHA256": "946d97df7bf0b3591a0989adb2e607a6cf04d808ffcc155be507888186310e9f"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/README.md",
+      "Bytes": 12936,
+      "SHA256": "b01ac8dd7e2c917c8ff1f4c8795db731ede0e36a739d6698bf3e82ac9cf2b34b"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/Tests/README.md",
+      "Bytes": 1311,
+      "SHA256": "f78c1513a48c2b49d55d22615dad56e08f68d8855d900bb5b91fcda5774e7a02"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/Tests/Regression.ps1",
+      "Bytes": 6350,
+      "SHA256": "c2e673d231243219bf2c03da4c1bd2b9a31737b943eda0287298288deafcee1d"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】Caddy本地域名映射.cmd",
+      "Bytes": 314,
+      "SHA256": "c66e4e8de46f740256800a48183666fd26e849313970b3cd4c1638d50f21fb2b"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】Caddy本地域名映射.ps1",
+      "Bytes": 379,
+      "SHA256": "0dec92cff28c0b767c56664f24d9b2f6709db62ace4c4a35331c19b0bb55c825"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】JobsKeyboardRecorder.cmd",
+      "Bytes": 316,
+      "SHA256": "51f9c854f2f41c06d5c571d32ba5bbc8e4acd9697dfba61313f92d13bcc2f089"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】JobsKeyboardRecorder.ps1",
+      "Bytes": 393,
+      "SHA256": "e12e88a74f92eab2f832c8ce6b531cd57b32710b9fa55449f152b9278cf212e9"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】Jobs计划任务.cmd",
+      "Bytes": 307,
+      "SHA256": "10dc38e61716b4df18e1316b55c11d2bd1469564da7cb3fd2d112618e5bf304c"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】Jobs计划任务.ps1",
+      "Bytes": 376,
+      "SHA256": "deb712de826df5ec844ada4bd8a5375f42d07c7cb69d1467bca3cdaf78daef46"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】MD5.cmd",
+      "Bytes": 294,
+      "SHA256": "fd056a3e588e2198287d0035b848d595a84068cf285a051f7d157c23e9988d77"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】MD5.ps1",
+      "Bytes": 357,
+      "SHA256": "ead529cca5445c4412608c2a52af100f2afa5a2efc8eb5847c71524d26085c92"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】Mock服务.cmd",
+      "Bytes": 301,
+      "SHA256": "47ae7d7a7b3333e0398a3a9c69abb58ef5dfa5052484f84a0d92ae41f4fb3c28"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】Mock服务.ps1",
+      "Bytes": 365,
+      "SHA256": "e9daa82dff875033f9838c4c5d67861d1c33bef3e2731cc163888868ff87feab"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】StirlingPDF.cmd",
+      "Bytes": 302,
+      "SHA256": "03e02cd93980fd9cb8e42fbcfaf14995bacacdaeffcaa0b49bec267aeb261bcf"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】StirlingPDF.ps1",
+      "Bytes": 373,
+      "SHA256": "089e113d3e8813348c9ccf690434b10f951f89c58b9f78de7d2ccb0abc2501f8"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】URL去乱码.cmd",
+      "Bytes": 303,
+      "SHA256": "d6fe2cfc75c7a96ecce57230a935082f5bc316a9e7e46f2ab8ebca6f36ca5895"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】URL去乱码.ps1",
+      "Bytes": 372,
+      "SHA256": "d669989f3b2e4ff8e29f74419128bcb15467e84685354830d76a49d736d8a783"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】下载Mock数据.cmd",
+      "Bytes": 307,
+      "SHA256": "4f5597cbcab75de734605a3a7a98b74413a5e4e5761dd8af8a87dbca89fc1759"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】下载Mock数据.ps1",
+      "Bytes": 375,
+      "SHA256": "16bd12c538926bd2b2b8ada8af2e0c6bf7cd4e2dc60dffc959250b933eb79af4"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】全文件搜索文字替换.cmd",
+      "Bytes": 318,
+      "SHA256": "6cfc0a34d93d4b2d8f82c6e8b7b611a663c89c6f2b951e1d729e14273f156e73"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】全文件搜索文字替换.ps1",
+      "Bytes": 389,
+      "SHA256": "ee9364bcb3d10c03e4002445ff9571ebff7118dec1f1d597c9de601cf56525ea"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】唯一字符串写入.cmd",
+      "Bytes": 312,
+      "SHA256": "0c994d325f9fa9c8f334b83c399db42dc9af945d50afc2db70f19958be4520a3"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】唯一字符串写入.ps1",
+      "Bytes": 384,
+      "SHA256": "2172ff995a4330f79a69f96587f30f4563420de45a399ae33130615cf2822584"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】子卷合并.cmd",
+      "Bytes": 303,
+      "SHA256": "33933e4ff47d8d3c87213b1da39565702a02188bda5d5b7eea5b24163e1f86f2"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】子卷合并.ps1",
+      "Bytes": 372,
+      "SHA256": "f963a219b0235c5ca0c9ac008716128806796200da1a5c61582fbfc340aa70e8"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】打开当前路径终端.cmd",
+      "Bytes": 315,
+      "SHA256": "9dfc7889c371cc67e315373446cf787b0cefdc520d1f21a351712dc649ddaa7c"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】打开当前路径终端.ps1",
+      "Bytes": 387,
+      "SHA256": "b09de5176c82f133b1164ae82743ce71da8250a5354077af3071ef7c0ca7bb74"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】文件数统计.cmd",
+      "Bytes": 306,
+      "SHA256": "6d3ea5eec8e921190638fe82a3b52c6b4bfa772740e61f52033d56ffa03e7c1c"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】文件数统计.ps1",
+      "Bytes": 375,
+      "SHA256": "cb1d8f906b604b9354ceca850ea139d2f53957e9412b1dda08ff57ab84d5cfab"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】时间戳转换工具.cmd",
+      "Bytes": 312,
+      "SHA256": "4fedb75c61079ebe050906f1cabe337525db1f99576814df6b1b85336e5237c0"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】时间戳转换工具.ps1",
+      "Bytes": 381,
+      "SHA256": "81343b8d6b01a54defa569253010ab672a87b113acf46a2f29222fee79540e82"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】源文件压缩分卷.cmd",
+      "Bytes": 312,
+      "SHA256": "d602a9970d09fb1bb8780127bc8827dc8afe92ea797a9cbbb2f0cf4fce5653ff"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】源文件压缩分卷.ps1",
+      "Bytes": 381,
+      "SHA256": "6a3b33dcafb9bd9133c48a26c7aa9655496d8e3e018d0abc715691b27956577c"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】软件包安装升级.cmd",
+      "Bytes": 312,
+      "SHA256": "92335ed1eb651921063f9a5cccf4acf4704bf8b41f16af3bbac1eed6be69a018"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】软件包安装升级.ps1",
+      "Bytes": 386,
+      "SHA256": "97b06a910fa3f9e85829abb1b7ca15754827e16d28ad0e326fc42bef82cabfd8"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】静态网页截全图.cmd",
+      "Bytes": 312,
+      "SHA256": "092458610c30125b3a7c51337571ad2e4df568f0132758f0fc12540ccf7c8329"
+    },
+    {
+      "Path": "JobsCommand@Others/WindowsOS/【WindowsOS】静态网页截全图.ps1",
+      "Bytes": 382,
+      "SHA256": "bac3d888789a887c2bbdbd49d7612096e693efa67fc9abb1b68a26cb1da33b53"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1",
+      "Bytes": 1208,
+      "SHA256": "6121c091258f24577fede662aff16ec4f3a9e9eab20e4a28f7f633379359c399"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/JobsTools.ps1",
+      "Bytes": 31874,
+      "SHA256": "ab68339463fdb4fb3eb6e33a2041ed8b4ea719ca526872584516973e42ddeeec"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/README.md",
+      "Bytes": 11653,
+      "SHA256": "15a1ed596ce9327dbd373bd009cf58a5f6ef016793fa5a8b195f2962e446e339"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/Tests/README.md",
+      "Bytes": 1258,
+      "SHA256": "0c9ee6ec3f2a010af84eb319d1681c216c987d7721876ea8710351def72faa81"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/Tests/Regression.ps1",
+      "Bytes": 4848,
+      "SHA256": "2cbf03c57eddd780c5657e410c3abffb49bf732b257e9c72636fb9d5015b7694"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Docker配置.cmd",
+      "Bytes": 303,
+      "SHA256": "8d8fb4cc655ee79658ab60a24e18c6b0c032c273006d3ac2e31502e1a6824ce1"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Docker配置.ps1",
+      "Bytes": 371,
+      "SHA256": "d585f8823a700b032c6e7845b38d53aae091ccf05ae65a3692e2f8e425dcd017"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】GoProject.cmd",
+      "Bytes": 300,
+      "SHA256": "650744d053f5ffe86f40e549b294f620bd08d9c042de9848dee2d6775191d879"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】GoProject.ps1",
+      "Bytes": 371,
+      "SHA256": "1d13e4c1e5ebd0a6e424f7c32f8d433b3f8c5a0096384b115d5cadecea438d69"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】HEIC2Jpg.cmd",
+      "Bytes": 299,
+      "SHA256": "ced6596e58964d9c324708d20d59fbdeda40935ff6b6243b26e3964c5301d9c4"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】HEIC2Jpg.ps1",
+      "Bytes": 369,
+      "SHA256": "6aaef255125ba97da648c983bb697cb5491cecacd0680f5ea02a1c67c9816391"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Java环境配置.cmd",
+      "Bytes": 307,
+      "SHA256": "981ef84dd932946c4733803d92160faf63b102f8d49873b1787ff8a005c31c1b"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Java环境配置.ps1",
+      "Bytes": 373,
+      "SHA256": "56e2da678228258561345f4f9d8c010ec59d24ab168bbefcce3d0f76f399b365"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL卸载.cmd",
+      "Bytes": 302,
+      "SHA256": "6bf18891f21649bc142073f1646a4fccfc95fee4a1a93e436fb73b05d46cb1c3"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL卸载.ps1",
+      "Bytes": 375,
+      "SHA256": "d84523baeeebca07451c4d7a013f67d8f545edbb65f3a72e5301de7ada4906ad"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL管理.cmd",
+      "Bytes": 302,
+      "SHA256": "8e6b2a2372a79a5905379025ecdc6289cf6299e1b673e60b9da25d8bf57d946f"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL管理.ps1",
+      "Bytes": 369,
+      "SHA256": "6eaed13172793dc91bda3ffa568ff7f87965a14ed8875f82c87bc9c087992231"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL配置.cmd",
+      "Bytes": 302,
+      "SHA256": "99d73628c7aa5fef85812bdcd3580887049d728f733aa8c7b43df4b922db70e9"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL配置.ps1",
+      "Bytes": 375,
+      "SHA256": "b67e2a73f4224004a76ad4c7225843733b769eb5e0a68e8bf28eb88853c09d2b"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL重建空密码.cmd",
+      "Bytes": 311,
+      "SHA256": "3b0b79ac732968138f5d0b235385337a831894d64f112d171ac62c51bce184bc"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL重建空密码.ps1",
+      "Bytes": 383,
+      "SHA256": "8f893968befe7bb270fa1a39a82f8ea1030daf2e00e14e9db1e83f1ce0d1697c"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】PHP与Apache.cmd",
+      "Bytes": 303,
+      "SHA256": "06ca27ffcc6616cd2f1b99bbfa1b3a9da9f6bbd3772123b7b34b8d25b7bd8a6c"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】PHP与Apache.ps1",
+      "Bytes": 374,
+      "SHA256": "31d828c169812ef164a732431a7c88351ccc8014f606b57f94449f10c0e350a2"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】RubyGems.cmd",
+      "Bytes": 299,
+      "SHA256": "54e93a53005bfe56d2725dd1caf49b2b064cb8a39f83cfcc78876d3363763205"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】RubyGems.ps1",
+      "Bytes": 364,
+      "SHA256": "9f9ba665da72ece3b8e928b10ee6b49619cbcff0ba4c1961402118ad61e9d677"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Ruby环境升级.cmd",
+      "Bytes": 307,
+      "SHA256": "45bdec9ce3c493c56d44a3fa3ee7186a1bfe4e6b7706f0ca7111ba82fe433df2"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Ruby环境升级.ps1",
+      "Bytes": 373,
+      "SHA256": "cffbfc830896d149657318d76aa97e501f4584593d84076b018f392b7154e4c9"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Tomcat.cmd",
+      "Bytes": 297,
+      "SHA256": "ecd89ea1338598937e33020b20ad509a9d2ea13dff322c2ca2ea17c7e3404ab3"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】Tomcat.ps1",
+      "Bytes": 365,
+      "SHA256": "7dcb32e2f5a90e7dd09e1208ebb118c06b80bde5c34602f5ae3a4421b7b05f1c"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】受保护文件追加.cmd",
+      "Bytes": 312,
+      "SHA256": "99f95a0e7389c1ebfeeaf5de63e6acf24ba1fccc12ac0c78ac466ded85670343"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】受保护文件追加.ps1",
+      "Bytes": 389,
+      "SHA256": "430988b5b629181a712ac31cf92f54bae3ccf573203dbe820922f2a0f8c850d9"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】文件扩展名显示.cmd",
+      "Bytes": 312,
+      "SHA256": "9915a5ad8030a5ca860bd80cd10f146ecaf4bace32b6188a34065d8845e81d93"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】文件扩展名显示.ps1",
+      "Bytes": 388,
+      "SHA256": "f62ab5a115411a35dabf00bee92ea0ae74010db4cb7f3f8fd6cbb054c2872cb1"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】网页视频下载.cmd",
+      "Bytes": 309,
+      "SHA256": "9cd0c73904bce6de1688b986d4893a2bf7b32c68087f4cc02d3c34be6ac16bae"
+    },
+    {
+      "Path": "JobsSh.sh/WindowsOS/【WindowsOS】网页视频下载.ps1",
+      "Bytes": 384,
+      "SHA256": "efedc45a4dfb9a02e5d7daabfacaf1ea99e84ac8bc06e8e96949223f26c02f52"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/.gitattributes",
+      "Bytes": 4272,
+      "SHA256": "3ff7297d7387e65fb1d85423aeece9494ce3a540ff6faf5ecbde6e65c1a65626"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/.github/workflows/windows-tests.yml",
+      "Bytes": 6035,
+      "SHA256": "9efd651211f73df123c5d7cd274c5e1cf9842f1b5e6db35287c913f894565920"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/.gitignore",
+      "Bytes": 110,
+      "SHA256": "79c0651b0f2ba8d7870029288ca687c8b84d4f197fcdb6222a34718c977cf363"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/.jobs-markdown-toc/MarkdownToc.mjs",
+      "Bytes": 27126,
+      "SHA256": "10ee06bd277b2b739754d233764baf94fd5de733954c8ec6aeedb8448c6061f5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/.jobs-markdown-toc/README.md",
+      "Bytes": 9204,
+      "SHA256": "1706943671fd85de236a84c014e19e9d3811a7f41dc896db5ec4bd5c93eb79a0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/.jobs-markdown-toc/manifest.json",
+      "Bytes": 2841,
+      "SHA256": "b0d1e1791679b264014c8b07ded318d680e9211ad8ce233fd4996f6982ac17a9"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Configure.cmd",
+      "Bytes": 336,
+      "SHA256": "c73926ff389c983c95325494ba08250f8dfd73a23186e36256e8771a28109d99"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Extensions.json",
+      "Bytes": 1472,
+      "SHA256": "14c0dbaa55d2f9b63d345cd0e4b4b9d62da2aa45a23a19c7e413f9d6ec49e462"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Infrastructure/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Infrastructure/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Infrastructure/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Infrastructure/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Infrastructure/README.md",
+      "Bytes": 2334,
+      "SHA256": "9531f68966ddedc2a65e50c8277d762b39714d7df83e434fb889062e48a31a2f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Install.cmd",
+      "Bytes": 375,
+      "SHA256": "6d7279d14c3f427f0c41cc62706d736c339946a0d546e6a2eccb591cf9db731c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Extension.json",
+      "Bytes": 355,
+      "SHA256": "f023836e6d9c0c6d8ff43329da8373ba05b114a8e4969eba7a05aa2947107fdd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/README.md",
+      "Bytes": 10500,
+      "SHA256": "2bc3fc1caf5e2e4768abe5e9efe58d14bedcb74b7011cc3ef40c5ba1b334e162"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Run.cmd",
+      "Bytes": 336,
+      "SHA256": "b68aab45e64a2593f4d33013e073842db7b282880e4374517c8e9ce03089ad6a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/Action.psm1",
+      "Bytes": 30713,
+      "SHA256": "ce81320cf35f42a90f0f217f567ae315c1df7382afc04e4e675fa3631b25c3d1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/Build.ps1",
+      "Bytes": 5148,
+      "SHA256": "3d845b707d9c7869b2be31f20420562aecceada7d1f8775e799020cd2f0c649b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/ContextMenu.cpp",
+      "Bytes": 6757,
+      "SHA256": "e896c7fafcce2c343b2b54a8ed510c9c8f410180d4726da49e2a19207f908e52"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/ContextMenu.def",
+      "Bytes": 116,
+      "SHA256": "ff8f83a9f0c1cb7bf7f033d0714b869bbc936a7c5a1f93efa8155382c0fcf0d4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/CreateAndroidSimulator.ps1",
+      "Bytes": 1657,
+      "SHA256": "da25cc50f5e2cea0d85252fa8302094879aece0295e9276e618794947b23ff08"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/DesktopScope.h",
+      "Bytes": 677,
+      "SHA256": "92073a76718785a7f5f526b54a77c34ea2c241199b11e90acad5b84586988952"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/OpenCmd.ps1",
+      "Bytes": 1269,
+      "SHA256": "93dac00f58b7f1f596a3dbfa4781c25c2412cf75ebdbbee188451fe012147c5a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/PackageInstaller.psm1",
+      "Bytes": 20380,
+      "SHA256": "29333ae43d3d2c1b1f421d491bab30e2661e20e13f85fcf3b9c11f3c3862ea03"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Scripts/README.md",
+      "Bytes": 2650,
+      "SHA256": "64cfa9cc08d143e7d2aa0431274b9c93f06c3470fe4ed14b5be64a79a601128e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Extension.json",
+      "Bytes": 392,
+      "SHA256": "270acde0f3fe79b012bde5a44adec92e28a917df37fdb63028c959dedaa8f90a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/README.md",
+      "Bytes": 11123,
+      "SHA256": "0b0194ad25d78eba2f6e6fb5aa3873aeb6e82f2b23a72ab5f5f3c9af31738426"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Run.cmd",
+      "Bytes": 350,
+      "SHA256": "4e580628d13b06743f95310587015954f95339889fa813342bb8c174373ea1c0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/Action.psm1",
+      "Bytes": 28163,
+      "SHA256": "d46091ca632ffdfba96705376ffe7869db812cee7a1be1bbfd024f1bee7ab28b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/Build.ps1",
+      "Bytes": 5151,
+      "SHA256": "2c0da9ae7a694b50e4cd4d2b93b44bb4224c41f5be0f1551dd6f761de4c637c7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/ContextMenu.cpp",
+      "Bytes": 6761,
+      "SHA256": "1d8f99272fff62d3d22c18345f7d3d7efd76f16614315bcbb911f83f4b2ea151"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/ContextMenu.def",
+      "Bytes": 117,
+      "SHA256": "47bf77fb855c20f6ec2aefaaa91c88daf375917d5b7ddc5c52781a30b978bd7b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/DesktopScope.h",
+      "Bytes": 678,
+      "SHA256": "401e09461145f0c61cfed675862c19546c47106a93a793af6dcd7f392ebeaffc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/OpenCmd.ps1",
+      "Bytes": 1252,
+      "SHA256": "d2fd527924ca5ec33c75fb12c50f9c228e72cf41016493943dd5b1024d3dcb80"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/PackageInstaller.psm1",
+      "Bytes": 20381,
+      "SHA256": "fa20b2fa3245a316d4963836e1e48b4a89d4c9946af0b1c9b3e672830921e032"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/README.md",
+      "Bytes": 2780,
+      "SHA256": "f76f480aa27547609caf0b0d54e51734eb32106975f9908fbbd6f9671ece1e00"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Scripts/RepairAndroidSimulator.ps1",
+      "Bytes": 1029,
+      "SHA256": "0acfe4202df93cc50aa1248185a556db48b8fc888f9e6676a57992e9a6fd27c6"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Extension.json",
+      "Bytes": 211,
+      "SHA256": "ee6d11686bd072687809c2bfb354327a62970b1da0ac00e4be91e98fb7cf9183"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/README.md",
+      "Bytes": 7534,
+      "SHA256": "f49b2b77be5d591c37d1d381dccdf1f616aa23984a9fba5645c2de88c9db27df"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Scripts/Action.psm1",
+      "Bytes": 2182,
+      "SHA256": "e4fc6bf756c2308137c78ab4b24eb3f115e999d8f1dde68f1730cc5ab43c67ed"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Scripts/README.md",
+      "Bytes": 2464,
+      "SHA256": "213d39aa7fb4499b6c67647b93929f39cdbb17e00ab4fc1bf46c4ad4c76aa441"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Extension.json",
+      "Bytes": 264,
+      "SHA256": "aa2d4c8c82111802b3c42129e7cecd591a978e530ffd9c67deedee415a8d04ef"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/README.md",
+      "Bytes": 3816,
+      "SHA256": "cd828028d4456ee5393c5863a4bb756d493da3dbf8e39e58f32686645f274e81"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Scripts/Action.psm1",
+      "Bytes": 9168,
+      "SHA256": "b1f42c8876b0f815a9adf87b27a18246f643cf2a3a994e31c9f3361c4c088ceb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Scripts/README.md",
+      "Bytes": 463,
+      "SHA256": "845335cc14319f8b71a109a0f54b0dd566682238966f9170361ad6cc87dd471a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Extension.json",
+      "Bytes": 227,
+      "SHA256": "ccaf6227b9ee2b94d7f05220422fd85566707cbfad1f9be1cc075e8d5d4a1988"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/README.md",
+      "Bytes": 10657,
+      "SHA256": "59b59f6d0c01f68c218c4f611b509d78ad18474ad59842b80da0eef648ca46e8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Scripts/Action.psm1",
+      "Bytes": 23396,
+      "SHA256": "7dbb65f99f497188f32a03a7fd11450118115e0fd742b4e82340085384a56638"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Scripts/README.md",
+      "Bytes": 3653,
+      "SHA256": "882b26cdafdaf1e32f2f4dcc4e2124b93c71214693841c5285833ac0cd44d63f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Extension.json",
+      "Bytes": 370,
+      "SHA256": "68364c89e8415d22b2ca556502b3e59eb79131be0ffde1c7d0ddc3f0cd4ca0c5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/README.md",
+      "Bytes": 9615,
+      "SHA256": "eaa4ac6b130d92e5ffe81f01cafe25c500654bd6a2f0b3f3230c46622a94348b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/Action.psm1",
+      "Bytes": 24271,
+      "SHA256": "4068e69738bde757f688e3be499097d17ed63c285f62807e9f9756a1d135315e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/Build.ps1",
+      "Bytes": 5125,
+      "SHA256": "b13bb41bd0c3dc531c2f5d5caeab439eae53f94d3538f1e43068cc78e4650bc5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/Check.ps1",
+      "Bytes": 1145,
+      "SHA256": "ae626e00f6b9b827412cc4f2fddcc00d6662f2e9664377b2bab99f3c5c351eec"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/ContextMenu.cpp",
+      "Bytes": 8320,
+      "SHA256": "8a07de8e854b333574cf390c832efbeee69df10c92b4e6aeee49583c7fff129d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/ContextMenu.def",
+      "Bytes": 104,
+      "SHA256": "bea92dbab49633e3dcdff649032f0bfc3e5c0f1a7a77752570e10cd256a5f587"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/FlutterProject.h",
+      "Bytes": 6265,
+      "SHA256": "c3a62a1c355f202f5c7ffc587cb1c58914763cd80c749084455a39c6dc558c19"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/OpenCmd.ps1",
+      "Bytes": 1248,
+      "SHA256": "d4cd02faf445237c54eba9bee76e7d2c3066047ab5411d7efc69a779cc78b3d9"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/PackageInstaller.psm1",
+      "Bytes": 20385,
+      "SHA256": "188e266f0383a13ce33b98d1ae5a6efe4c901a4d71a5f1cd242c1b6304d66ea5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Scripts/README.md",
+      "Bytes": 2533,
+      "SHA256": "448d600e89289b2c5adb53e9def75b5faeb0bf1159f8f9d75d69a33835bb8262"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Extension.json",
+      "Bytes": 308,
+      "SHA256": "6889b6ba58121e15074a71343e064256c37cc64518b10aa82673d4c0d94cdc66"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/README.md",
+      "Bytes": 8023,
+      "SHA256": "4d09a3e124935bbd2a9ea032d0a08f0709b76ad879ce26c5193e2388645b2e6c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/Action.psm1",
+      "Bytes": 17121,
+      "SHA256": "f06f24cff932b10141779aa8fc685ade50586ae716a5d316708fb53ad6f7fbae"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/ExtractFlutterDependencies.dart",
+      "Bytes": 28642,
+      "SHA256": "3c568499195921a62cc7ef1f6db45bd94ef2992cbb1c4bc4fe2ea8d93b2279b4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Scripts/README.md",
+      "Bytes": 2812,
+      "SHA256": "d3cf990bbec37c2215b8315c9fcc487940cf890a8bfa352f08682b8af1f353bd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "1b96ab97f6eb8427a54907654ffb013110125ee2aa750d4f21cff1acbc5329ca"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Extension.json",
+      "Bytes": 346,
+      "SHA256": "5d5ce4d1e4989268ffb8950481e656f088f54d57d8d67649664b07d0798e4ef1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/README.md",
+      "Bytes": 7675,
+      "SHA256": "91e7a25027a4e09db618f7716739ae9ac91098a679ac04126aa8d26391338616"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/Action.psm1",
+      "Bytes": 16386,
+      "SHA256": "0e0dfc595cb13ebf88c461f44795bb1d7090fc99eb03b73aa0f2e0007998af59"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/Build.ps1",
+      "Bytes": 5110,
+      "SHA256": "28102bf209914765fea1c4d7e0390728d8437695a964566da113e2dbbe0859bb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/Check.ps1",
+      "Bytes": 803,
+      "SHA256": "2e042df38c2506d5a2273a3dec155e8e59dff0e786406e1109e83096d5562a5a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/ContextMenu.cpp",
+      "Bytes": 8308,
+      "SHA256": "8d0439a69214a476c69984bee9759423f8f54cfd8e1e9a5a2b8043a9196aa5fb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/ContextMenu.def",
+      "Bytes": 103,
+      "SHA256": "0c03ad3d42bc7ff054267d874c253b22c9cd4d4bb328e56c94a51a701c1cc4c9"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/FlutterProject.h",
+      "Bytes": 6265,
+      "SHA256": "c3a62a1c355f202f5c7ffc587cb1c58914763cd80c749084455a39c6dc558c19"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/OpenCmd.ps1",
+      "Bytes": 1241,
+      "SHA256": "3d0bc383590ab11631bfde2f050f516398232e7de609128ca4ded4f9a008eb57"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/PackageInstaller.psm1",
+      "Bytes": 20384,
+      "SHA256": "9af9c45593bd73c64e7af7bfdac9b572f5b9d3becfc7d3395230d3024ddeef99"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Scripts/README.md",
+      "Bytes": 2523,
+      "SHA256": "2a582ed0664ac06a11bd16d48eb7fa79e8b35033652f428cf6003f93367b23d3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Extension.json",
+      "Bytes": 371,
+      "SHA256": "de45f76abbe50f99c48fb5206efd88403aa5a2f03bec8a0fed604181141ba6a5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/README.md",
+      "Bytes": 10084,
+      "SHA256": "96f1f4b6dca82f19280d4bdc46fafd6075697d6e85d80704e0af86ceb6180ee3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/Action.psm1",
+      "Bytes": 33733,
+      "SHA256": "8905b326690574205a5f60e592d3e7c135f7b6b50fde7d153e39c42b3e4999d1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/Build.ps1",
+      "Bytes": 5116,
+      "SHA256": "67ef43402da8a57862795002cdd2f046d8e07e5afe37740a52b70c5c083bc4dc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/ContextMenu.cpp",
+      "Bytes": 8307,
+      "SHA256": "fd7ce5653a7e8b6aa522b79a0961e3dedffe308e5e55b28f3ec1c99d87676b29"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/ContextMenu.def",
+      "Bytes": 105,
+      "SHA256": "4e12ad0776c67517746f8ee4d47aa6a2e808aea7cac03b0567402e032b42e439"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/FlutterProject.h",
+      "Bytes": 6265,
+      "SHA256": "c3a62a1c355f202f5c7ffc587cb1c58914763cd80c749084455a39c6dc558c19"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/OpenCmd.ps1",
+      "Bytes": 1255,
+      "SHA256": "80393d1700eb45c9c8c2e3cb23325c71a4fec6809d4aa7faf8637059a106bf3d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/PackageInstaller.psm1",
+      "Bytes": 20386,
+      "SHA256": "c3aefb6112b1cb22856d20cdf41ef644ac35d63b9a13fa0562baeddcd314d604"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Scripts/README.md",
+      "Bytes": 2775,
+      "SHA256": "d47d0446c002e50b44b95a3d97815754475521089bfe1a66dfc9ed62a9dad659"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Extension.json",
+      "Bytes": 219,
+      "SHA256": "4a8fc45904b5e478d7613bf1c0d927c7f8e7f098af29d17e276dd2d0689fe987"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/README.md",
+      "Bytes": 8429,
+      "SHA256": "ec17672c2b16e384103ea13c32816a44437a2d70e2d8b519ec34276e5339d6cc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Scripts/Action.psm1",
+      "Bytes": 5980,
+      "SHA256": "25c4290f368381b7f8e86e1e2d3f95a1d8a79cbe2c04967864e167d8e0cd12ff"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Scripts/README.md",
+      "Bytes": 2495,
+      "SHA256": "8d28f8d12bd59399ccc7e3c5328e4b73f4904035ea72d5e75187749e1fe7d038"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Extension.json",
+      "Bytes": 327,
+      "SHA256": "2b2f1c408e8ff1d7204362ad4366c161d544eb1149a3a41f3924a6faeb67c7a0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/README.md",
+      "Bytes": 10178,
+      "SHA256": "965e19eeeec148f51f69f7e4e1dc6fa7154bb218aa4f5c2def999bd4b9fc236f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/Action.psm1",
+      "Bytes": 23714,
+      "SHA256": "71d0c4cc2c199db0fce83cc717903e2e2688022acf39dff4cdce3e87f4016f34"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/Build.ps1",
+      "Bytes": 5687,
+      "SHA256": "1a9c8375fd131ba4685ef491e472fc28753ec9656600312c50cc318a25dfc1ba"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/ContextMenu.cpp",
+      "Bytes": 8318,
+      "SHA256": "023acb110779e06ad461abe97fd55b268b184db5ac68bbc524d3f170dc4245e1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/ContextMenu.def",
+      "Bytes": 97,
+      "SHA256": "0fea4814e082b773620c2841ce9f95ff2ad308bd2f70c4fb7461d013ef7967d4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/FlutterProject.h",
+      "Bytes": 6265,
+      "SHA256": "c3a62a1c355f202f5c7ffc587cb1c58914763cd80c749084455a39c6dc558c19"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/OpenCmd.ps1",
+      "Bytes": 1241,
+      "SHA256": "106b74658d6998811969d8ce859f19c8136f116c852e36ff9701aa6f68ab1c85"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/PackageInstaller.psm1",
+      "Bytes": 20378,
+      "SHA256": "a395f029dde3c7d5c7346538be4625ba220aa37ad917be1c3cf22eb46d67441f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/README.md",
+      "Bytes": 3226,
+      "SHA256": "684bfb5b5d72cde5b0b00bcc6f5278b7f6d380bddfb47194dad287717045afce"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Scripts/RunnerHost.cs",
+      "Bytes": 16902,
+      "SHA256": "c004b25b9573e737fce33434029469c5147d99c8ed48f201945b3c90d8b37c0d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Extension.json",
+      "Bytes": 365,
+      "SHA256": "6679c44e04de6a997c2ae8b132e3fa90ed55f18635f33fac0b42decfcf22e633"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/README.md",
+      "Bytes": 10030,
+      "SHA256": "1c1acdaa712165154dfd15f6b30e13ab7dd703b0391dd5b7aaec90af413ad1e0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Scripts/Action.psm1",
+      "Bytes": 24252,
+      "SHA256": "877d19b936216c0012c17f2ef262ea4ccab6556d5a17fb967ffe473cd711fc5c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Scripts/README.md",
+      "Bytes": 2628,
+      "SHA256": "1d9f6e56f93f9e4e65941a9d16a01cb9de108dd03b763cadf422ddb82488d395"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Extension.json",
+      "Bytes": 382,
+      "SHA256": "1bdd9eaa19b5239baded658498cdd59fa4f6c8a34c8af1600012ab9ddb2792d2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Install.cmd",
+      "Bytes": 353,
+      "SHA256": "84169c8800f1e034e6bcc9ea1989627e05e7d9d5ad49308ed5929bcd039e8ee8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/README.md",
+      "Bytes": 12893,
+      "SHA256": "241a46d3c2663f64f6a48b74639b52dedc50982962e06389a5eb6f21c3a4c6df"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Action.psm1",
+      "Bytes": 8114,
+      "SHA256": "e9e84eaef9a7cf0e418349f2f388357949197f360750b7afec6ef4780192a71e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/android-support/Extension.json",
+      "Bytes": 344,
+      "SHA256": "41e1ca2c47e2c2044ecd131607fb6241c11af825124799f52571c703bd8e5984"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/android-support/Scripts/Action.psm1",
+      "Bytes": 30713,
+      "SHA256": "ce81320cf35f42a90f0f217f567ae315c1df7382afc04e4e675fa3631b25c3d1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/android-support/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/android-support/Scripts/README.md",
+      "Bytes": 2095,
+      "SHA256": "957796bc4f472ce4a2ace3bb374a748b73b9bcea639e88fd30147957e2b13644"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/codegen/Extension.json",
+      "Bytes": 368,
+      "SHA256": "c2f9bb8d13ae05ae9683ba9c80ee010409bf1e3c99db8f782386e4a66047491e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/codegen/Scripts/Action.psm1",
+      "Bytes": 24078,
+      "SHA256": "bcd09c44c068ff6d9fd1bccf7ebd0fab971af15e680f506b8d04fd2350aec650"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/codegen/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/codegen/Scripts/README.md",
+      "Bytes": 2059,
+      "SHA256": "fb9e75b46cf2d43811a990e7bf8f413ae75db8e4a730304ac3480cc4f82465a7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/extract/Extension.json",
+      "Bytes": 295,
+      "SHA256": "400e0c493f6369572e11e639d6bd104c1a9e70323e959bee721777a04d417a43"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/extract/Scripts/Action.psm1",
+      "Bytes": 15494,
+      "SHA256": "cb0738ebcc26bdb4445a44812bd57540abcd8e88b51518c33aeaef6781e63ab8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/extract/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/extract/Scripts/ExtractFlutterDependencies.dart",
+      "Bytes": 28642,
+      "SHA256": "3c568499195921a62cc7ef1f6db45bd94ef2992cbb1c4bc4fe2ea8d93b2279b4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/extract/Scripts/README.md",
+      "Bytes": 2187,
+      "SHA256": "f359edc80d14c13623df7038cebb291bab94c8c610382bb3561601cc5b32f715"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/package/Extension.json",
+      "Bytes": 369,
+      "SHA256": "e828bd825fa11ea92716ce65bd33afad2ee984c1fa940c1ee109953e800c63cb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/package/Scripts/Action.psm1",
+      "Bytes": 33177,
+      "SHA256": "bea7e49978fe1450f8b4b699e52bde9d62a7832880958b4b72b73b9461b589e8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/package/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/package/Scripts/README.md",
+      "Bytes": 2096,
+      "SHA256": "f5b023be1062f730209b5434f610c5d7265d8b2bae952a6397c4622b9905bcd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/pub-get/Extension.json",
+      "Bytes": 217,
+      "SHA256": "00f53fbb4ba09742a8e70113c1f33269006fc1abdb55e1edf875df9476f9f541"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/pub-get/Scripts/Action.psm1",
+      "Bytes": 5975,
+      "SHA256": "21035876ab126c1efc935265e433f85f07faae61df77d112cda13e9eafabc6c2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/pub-get/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/pub-get/Scripts/README.md",
+      "Bytes": 2068,
+      "SHA256": "8d74eaf88214931df98db2d115a81d8523dce6e5b323ddf83493f5680ee5f096"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/run/Extension.json",
+      "Bytes": 337,
+      "SHA256": "2e09ea20f97ed7fee82f306a485de470aa0163a9753192d48b0c8e591cab4256"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/run/Scripts/Action.psm1",
+      "Bytes": 23521,
+      "SHA256": "709b887263d5033fe8985795e6a866a4b58b1d9c8e4b11c5fa0ec97c28442380"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/run/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/run/Scripts/README.md",
+      "Bytes": 2234,
+      "SHA256": "602670119ccbad6e602fdd60b93a1c828b71717bb478b63570c5cd9a24e8744a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/run/Scripts/RunnerHost.cs",
+      "Bytes": 16902,
+      "SHA256": "c004b25b9573e737fce33434029469c5147d99c8ed48f201945b3c90d8b37c0d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-manage/Extension.json",
+      "Bytes": 273,
+      "SHA256": "7fd3b639f88ea657104a5cdfbb178bac34183a1e3f2962b16967dadd5926be25"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-manage/Scripts/Action.psm1",
+      "Bytes": 42904,
+      "SHA256": "12662d3cd3771a40951f3c71a3f0ec39243b439206e9b03f0304f6e1c931fb2b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-manage/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-manage/Scripts/README.md",
+      "Bytes": 2541,
+      "SHA256": "ac123a43bf8e4f2b26cef88c1029799c11c2b273eeb04e8651d81a1ee193c776"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-version/Extension.json",
+      "Bytes": 357,
+      "SHA256": "a5f47aff8d856df29f59769588e26eb1e7da698f85edea02d2142b2e9abae239"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-version/Scripts/Action.psm1",
+      "Bytes": 22900,
+      "SHA256": "f32162b573cf27856460ece55fcd4aa5a409d8e0ff727d86dc38b616d0cf419f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-version/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Actions/sdk-version/Scripts/README.md",
+      "Bytes": 2047,
+      "SHA256": "68e738739ee1069e9b8836344bd7c5639101b720e18ecc167b68608c0c47c13a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Build.ps1",
+      "Bytes": 5797,
+      "SHA256": "967b5767eca975865a617e3dbd58fed1dd758c5232279bdcec2476935e4729cc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Check.ps1",
+      "Bytes": 802,
+      "SHA256": "302b9582c1667716cdfff8ff1e056f0dcd810ef9e9793387dd3092bd5bd5db23"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/CheckHarmonySdk.ps1",
+      "Bytes": 560,
+      "SHA256": "0f30b590a3bc85947cfa8418f3cedb0fd454a81ae91d7a79f7f6a96e0d5f45fa"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/ContextMenu.cpp",
+      "Bytes": 13349,
+      "SHA256": "3c8097d5cddaf6f94bde86c7b35beecb7b32560c3b1acbe59ff3a5efbde9089a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/ContextMenu.def",
+      "Bytes": 102,
+      "SHA256": "64730e30f46b7aa870dfe75b8d5344585a51baef1f5cf9afec38eaaf180e8257"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/FeatureActions.psm1",
+      "Bytes": 2330,
+      "SHA256": "4cd4eb2479d49baf100502af3531c3319ad72c97435252f433525b91010d3b80"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/FlutterProject.h",
+      "Bytes": 6265,
+      "SHA256": "c3a62a1c355f202f5c7ffc587cb1c58914763cd80c749084455a39c6dc558c19"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/FlutterProjectTools.dart",
+      "Bytes": 25321,
+      "SHA256": "08c758cfd04bbac4c8dc8adfe7dc46fbc7f2c321b96317094693f6972734b94b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/FlutterToolsMenu.h",
+      "Bytes": 2711,
+      "SHA256": "64880ef2d8561daa3149dfbc16d75326e30f7db5683af26c842896203294637a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/HarmonySdk.psm1",
+      "Bytes": 32045,
+      "SHA256": "555b327641be0a7241224450dd72a418ffad2bb273b24c488591ee9b3ff49259"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Invoke.ps1",
+      "Bytes": 3116,
+      "SHA256": "b93570602f6b5d9ba5ace5ffb98b6fd4adb7487ada55fcce0b75300de2209c42"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/Manage.ps1",
+      "Bytes": 3673,
+      "SHA256": "d39cc0cf5e005fb631c3a05e74d3ad784bd46afd671891d633c12a5179a10aec"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/OpenCmd.ps1",
+      "Bytes": 1596,
+      "SHA256": "fcd3ffe2b672da09fc4a6ff87e828cb64ab9590eb596f06a93f23acd0557b5a8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/PackageInstaller.psm1",
+      "Bytes": 23498,
+      "SHA256": "3bcacd7335a76325d3023c5b0c021d502e2d82836c8b42b48b570b41e2be0ccd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/README.md",
+      "Bytes": 2237,
+      "SHA256": "7125dec072225be6c388e260b9819e93c01977a8dee1bbf03c3f9d15d342cb4f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/RunnerHost.cs",
+      "Bytes": 16902,
+      "SHA256": "c004b25b9573e737fce33434029469c5147d99c8ed48f201945b3c90d8b37c0d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Uninstall.cmd",
+      "Bytes": 355,
+      "SHA256": "81947f084883b76f924802e64e78a9325a947a12d7ce10c4c79fd149d8c44ff3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Extension.json",
+      "Bytes": 283,
+      "SHA256": "ac0f27f5f004293b0f0f03318fc3ab1baf8158fd6832929a7067a15610b19376"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Install.cmd",
+      "Bytes": 331,
+      "SHA256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/README.md",
+      "Bytes": 14717,
+      "SHA256": "270073c243f14164da91daf3b9289f9f3a73f470cf7dcdbd0eb82ec3e4d43d30"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Scripts/Action.psm1",
+      "Bytes": 42195,
+      "SHA256": "cd9ace7898e2ee5ea89f7239ba0edae0d96099e1a1af57fe2d9be0532b7d7a05"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Scripts/README.md",
+      "Bytes": 2631,
+      "SHA256": "252938b6acba3c340eaf6f0e24697f092e09bd9d7761ce5f2a690fbf5f2b3a0d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Extension.json",
+      "Bytes": 227,
+      "SHA256": "8fd005b5ded9d212eb45a3c8c6c7edabee8914383b071c7dfe660c87a47183b7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/README.md",
+      "Bytes": 7823,
+      "SHA256": "e34e7a93fc47dbbab514623a4501ab169a757c9eb9b15aefd29f8119a0951dfd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Scripts/Action.psm1",
+      "Bytes": 9144,
+      "SHA256": "cf32ef5f1d92fb6cae8eef2b777c038c312c3f776dfdaa969c6d97c91cd0ef90"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Scripts/README.md",
+      "Bytes": 2567,
+      "SHA256": "ea62bd438ff609aea4ed65184838567ab2f1a027ebff45f7a472e74cc0c7f49f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/ConfigureGit.cmd",
+      "Bytes": 350,
+      "SHA256": "744f5baae51f54f6ee36b59bb88ce043fd6b6422c08e669f02c15ea2b8caeaf3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Extension.json",
+      "Bytes": 349,
+      "SHA256": "9a065694a4a79901bcf6a6cb448bcc0670725ea162d4549a270086574060d14b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "21b6a02485a520ac1056ca379d9a30bc9c6b6e36039f63a46611d046dbc3d6d5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/README.md",
+      "Bytes": 10543,
+      "SHA256": "46d03276011ed503650ca6f9918e6b110ef24504f0d6a7d9aafb4e6f3d25228a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/Action.psm1",
+      "Bytes": 1231,
+      "SHA256": "555b2975d0a1e6d1e35a6df750de5f7dbc0015b2f83971cd8322719f4eabf3ee"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/Configure.ps1",
+      "Bytes": 1981,
+      "SHA256": "18979e682a414ac33a3376d4f340a1e8f5f4fc052bc415edd49ffe568a192e36"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/GitShim.cs",
+      "Bytes": 5658,
+      "SHA256": "92131ca32d01e20b560cdb28acb9272e33748df7107a43e5b9548b1087121641"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/NetworkPolicy.psm1",
+      "Bytes": 20623,
+      "SHA256": "82b2edbbb6ecbc82595513072faa094c6f7e6792dadeb93fc2249585db2a20f5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/PackageInstaller.psm1",
+      "Bytes": 20253,
+      "SHA256": "4a87fb5db119f08066cf62e0f6c4f6eabafd6dae537af60b62b6332a4b33b7d2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/Policy.ps1",
+      "Bytes": 773,
+      "SHA256": "9ec99cc2a7e3bc1bb4988a13acc4898ba75a24a29d32a34130cc590818b75a56"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/ProxyInstaller.psm1",
+      "Bytes": 17987,
+      "SHA256": "7ad82a45ade24f740f8e47cd45bfe41fa87a4da9541602cab47224ba8f5d1563"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/README.md",
+      "Bytes": 3780,
+      "SHA256": "3fcac717927d92100d5256fd6565a7990b46c700e4467b6127f4302a3f0079b0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "f80bb7a4497e65d6ea982518809128b9acada94ca6191a4760076cdfdf634bb3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/【Windows】卸载配置Git动态代理右键菜单.cmd",
+      "Bytes": 362,
+      "SHA256": "f80bb7a4497e65d6ea982518809128b9acada94ca6191a4760076cdfdf634bb3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/【Windows】安装配置Git动态代理右键菜单.cmd",
+      "Bytes": 360,
+      "SHA256": "21b6a02485a520ac1056ca379d9a30bc9c6b6e36039f63a46611d046dbc3d6d5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/【Windows】配置Git动态代理.cmd",
+      "Bytes": 350,
+      "SHA256": "744f5baae51f54f6ee36b59bb88ce043fd6b6422c08e669f02c15ea2b8caeaf3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Extension.json",
+      "Bytes": 235,
+      "SHA256": "99301f1fd08f8ca9b7c1ca28261745f0dc7a614ae2c666adb89424c7d7827f26"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "d477a8a316f757f5de826c1f03a8603953d212a4fa874b327a246efdad0ca510"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/README.md",
+      "Bytes": 9481,
+      "SHA256": "b483d42241ee27023908fd811ab930cac11fee6ebe13ec79dcde7538f87299ce"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Scripts/Action.psm1",
+      "Bytes": 26976,
+      "SHA256": "9c4f52a0d18b3c4c8a709648b0afd37f02f3d3233e7fb5b6ff4ba092d411ba32"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Scripts/README.md",
+      "Bytes": 2570,
+      "SHA256": "679c28c9b74311d26b0c5dcd93cda167d8ad0519d42fcc957d489e3e4fe71ba6"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "1b96ab97f6eb8427a54907654ffb013110125ee2aa750d4f21cff1acbc5329ca"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Extension.json",
+      "Bytes": 216,
+      "SHA256": "0f109594bf9c73db438c58acb0615894b84fbdcc8317cc29ec146b43e0d68329"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/README.md",
+      "Bytes": 7639,
+      "SHA256": "c38584167e29a1853e14130326aa7798b53496407ca52f079558581536c2c365"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Scripts/Action.psm1",
+      "Bytes": 3182,
+      "SHA256": "772159c13c36434b005022957fae377678d619b3f7f0294241777ee524147f50"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Scripts/README.md",
+      "Bytes": 2426,
+      "SHA256": "2c21903bbe27923de706be800f4b33741fb82e9733e0c94251b8ef59874e2c85"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Extension.json",
+      "Bytes": 218,
+      "SHA256": "4d851b7bd5c4eae8536837ea3aa4af97489e21c681b743ba784a0a4f04e63b35"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/README.md",
+      "Bytes": 7599,
+      "SHA256": "3157425ad2fc67b079412631a70c769775f51884df6edc72b08999995699664d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Scripts/Action.psm1",
+      "Bytes": 6739,
+      "SHA256": "5215656bd217ec0d14961d4505d34b0aba1ee296f1bcca592a5bdec74ae7af6e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Scripts/README.md",
+      "Bytes": 2443,
+      "SHA256": "f989c9b007a2d1d1d9a54ecddf2c79b20bcc6bf6a27aab22e46bf39cbd73c6ce"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Extension.json",
+      "Bytes": 447,
+      "SHA256": "de3251fa2072eb3832c59db97f6f6e3839c101bab4cc89aee69acf1a4eabd937"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/README.md",
+      "Bytes": 13787,
+      "SHA256": "709df85d4c503da9022e6c81bbbb39a544a80c9cbb345dbf7de050d6a043a1b1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Run.cmd",
+      "Bytes": 346,
+      "SHA256": "7af74d855f246542b94dd0080ad5d923959cadbe032c42dac35b0104e7c1ed20"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/Action.psm1",
+      "Bytes": 25122,
+      "SHA256": "6e0295a170fb605e8c8483460fd2f7298c2f4f5a7c9d393bf2ff6dcd90c7c3c1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/Build.ps1",
+      "Bytes": 5147,
+      "SHA256": "cff846d78712c506a057235dc72ec105f1614e1ff4d26d68b3a48edbf7f27266"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/ContextMenu.cpp",
+      "Bytes": 6917,
+      "SHA256": "53cf614b3293913bdd5f828d43c3669491bdfff27440daea31045c2684415e9e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/ContextMenu.def",
+      "Bytes": 116,
+      "SHA256": "280bba9e603649a55f413a68756983e886662bd86c5cc2620463f3b30bfddd83"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/CreateHarmonySimulator.ps1",
+      "Bytes": 1263,
+      "SHA256": "978b9b7c27c4eb41a8b264b0ae3e1c0279cd060bb09b8d58c087663eaea31494"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/DesktopScope.h",
+      "Bytes": 713,
+      "SHA256": "e960f2e6f994216a8f70f5a291deab4b40c493c97a00e72bca0932dcff837186"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/HarmonyTools.ps1",
+      "Bytes": 9120,
+      "SHA256": "24a14fdba2a7ed0803250072fa556fbe586d363553b023ce1cf5a9e6be525701"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/OpenCmd.ps1",
+      "Bytes": 1268,
+      "SHA256": "24e05b410e8dfd6e7cfa48b6a28d1996bde5553ab115960e083a6213c5783cfd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/PackageInstaller.psm1",
+      "Bytes": 20380,
+      "SHA256": "e3e4190934697d1bb60fdf68e54c4754ec97214150faaf478b309b0bb9752695"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/README.md",
+      "Bytes": 3628,
+      "SHA256": "dad15091c04585d7f6f501dcb58a30ab1d079663a803a727c8c406f4b1c87d4d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Extension.json",
+      "Bytes": 385,
+      "SHA256": "a6d7444e0a7c794d2c936c8c5dd82c0452cfff5b569a5b7be0399e3353efdf9b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/README.md",
+      "Bytes": 3806,
+      "SHA256": "3e3418203d87530988b8d3d647b413edb198a793af09662cea3bbe5a28163b41"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Run.cmd",
+      "Bytes": 350,
+      "SHA256": "d4bc52b67221ccaf1b87d42acd9b26b86f546e0a226561d17ce76d16ef230952"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/Action.psm1",
+      "Bytes": 23097,
+      "SHA256": "d569957463d5e17246f99875e42df563c7ccb3c56db13ee3d3d2bf767f8947c6"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/Build.ps1",
+      "Bytes": 5181,
+      "SHA256": "946e0ca720ed764324a85d93518ed70d50fa388476f8e0cbc78fee5c919cf02d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/ContextMenu.cpp",
+      "Bytes": 6770,
+      "SHA256": "3cb705d671667cce63c7bf6c7afe04b1c58b19fd61654ff6130b5a374a975b67"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/ContextMenu.def",
+      "Bytes": 117,
+      "SHA256": "45019b8eb150f6679f3d5dd2ed8fb46d8138a9f822d9053fcff74a7c3e94b5ad"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/DesktopScope.h",
+      "Bytes": 678,
+      "SHA256": "03666e139f9c0ecd85791486b55e2c37a8ea73dd13e991cb84b7a3732fc312dd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/HarmonyInstanceIdentity.cs",
+      "Bytes": 1738,
+      "SHA256": "13c90db49a9e1a7f3f1184f115a978bfbb877befcbac3a2e5b40df0fa5ddccb4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/OpenCmd.ps1",
+      "Bytes": 1254,
+      "SHA256": "3cc8c397dd80d5a8249ea1eb48cf0a956f59f7d16bc5b9e68ecfbdbe5f239d5d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/PackageInstaller.psm1",
+      "Bytes": 20381,
+      "SHA256": "c37e29f631d61085288dc498d7d3e93d6534834d157a22a21a26892f2ec5da72"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/README.md",
+      "Bytes": 2164,
+      "SHA256": "aea6d030107df531d00c55a116a16f2c74b00da209ee19c4ad3a6daef4f14191"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Scripts/RepairHarmonySimulator.ps1",
+      "Bytes": 946,
+      "SHA256": "79feee55e5494ee558bb792a670c7185504f73d57cee81c46305eb1e71b17afd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Extension.json",
+      "Bytes": 194,
+      "SHA256": "6ad1c37218b5ea0da8738d82fda3f3d2190b2f30f5478e6f7497a6fda0fc3253"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/README.md",
+      "Bytes": 7319,
+      "SHA256": "00043b222866777abeead405e0d8e93d68591d4f9fcd276433fb105d0d0c6d32"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Scripts/Action.psm1",
+      "Bytes": 463,
+      "SHA256": "c0234643f351b309b80024fc7c0c749465731a85a996802aa1291503723b8df8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Scripts/README.md",
+      "Bytes": 2401,
+      "SHA256": "f236606c65f4aed9be770feb995edaefb89597d0d62c3d97b033f21da0edc82f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Extension.json",
+      "Bytes": 367,
+      "SHA256": "19e8c3504282a23e06b7ce36e22f322859e00872088452b39b5d34b66a6c1e4f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/README.md",
+      "Bytes": 4296,
+      "SHA256": "9cb429bb22212e3af65e22b2e1a503288a7bd4ef56a0c405ff2715dfa6ef65dc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Run.cmd",
+      "Bytes": 332,
+      "SHA256": "70bd836d47c7c526d042cb0599d35745aa62f3caf6c321bf4956c14272fbf888"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/Action.psm1",
+      "Bytes": 584,
+      "SHA256": "292056e7ac33b40693dbd737312f09424392604c65d9408cca2328a43387bcbb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/Build.ps1",
+      "Bytes": 5150,
+      "SHA256": "e7ad95b3f772c9ea7c0909018bbe718dff462e3d2cc4a32445c5d80933488a9b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/ChangeRunPermission.ps1",
+      "Bytes": 502,
+      "SHA256": "fe77095d21bf4cfefd9bc92f2c5e01e6c2805725ee1e4b1d61e5b1e3d7bb3708"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/ContextMenu.cpp",
+      "Bytes": 6667,
+      "SHA256": "e009a38bd9a757c15d8fcf8e73b3c58d8706c0166f559f82db74981aaa858841"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/ContextMenu.def",
+      "Bytes": 116,
+      "SHA256": "edff977d0787e269af7e327492fa992456235f2d5c0398e3850c3a7724bf399a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/OpenCmd.ps1",
+      "Bytes": 701,
+      "SHA256": "bb062a197fec7fb94fa28a2c5fd50888c3826c7d364e7c727da5e9ecadebe228"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/PackageInstaller.psm1",
+      "Bytes": 20364,
+      "SHA256": "11094548b6db861ab7ba6f2606944bb9ab9af217a611acd4b9d86ec796f04cf9"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/README.md",
+      "Bytes": 2324,
+      "SHA256": "61556da4d6204ed593d79af7dc7fe1cd22a99ca14427ef45cc928c1655b53fad"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/RunPermissionFile.cs",
+      "Bytes": 7295,
+      "SHA256": "902dd4b404a5d1c7bc6f5d21d7ce01efcfc75f0bd264aa77c84f6ac46934c3ff"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/RunPermissions.ps1",
+      "Bytes": 7816,
+      "SHA256": "a33fc25264a16919f08f6881d9046969ef1f48d4ad7842ea57f2b30e5628dd3c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Scripts/TerminalLauncher.ps1",
+      "Bytes": 1304,
+      "SHA256": "5285aa721902357f4c9f3a983615aca3bc216a4f2daf61d1188f4fa51e40e4de"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Extension.json",
+      "Bytes": 340,
+      "SHA256": "e4f270423bcb9a2c007b326a1f52e625b89321e9165987fe2e6acb768701a89f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/README.md",
+      "Bytes": 4274,
+      "SHA256": "5da2acd17042f149d07e306317ba9a49234382e71f3042d39b94ee5561962c93"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Run.cmd",
+      "Bytes": 332,
+      "SHA256": "70bd836d47c7c526d042cb0599d35745aa62f3caf6c321bf4956c14272fbf888"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/Action.psm1",
+      "Bytes": 573,
+      "SHA256": "36aa7e019d8955eb28cf4d31f2e9aad7324a21d32fd38edd43c84f59e1a30023"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/Build.ps1",
+      "Bytes": 5108,
+      "SHA256": "9b5025f7bf4a330e9310c488d10f4e828ee474f3fd796f84b40f132f26f823b8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/ChangeRunPermission.ps1",
+      "Bytes": 492,
+      "SHA256": "30fb6c4dccfa0b271f8fd593712a0a5fe807e605a2f71db06bb713dafcfd353c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/ContextMenu.cpp",
+      "Bytes": 6631,
+      "SHA256": "43dbc8ce920d974407fa77bfcb439f693bb3c5495f324f962a42ffa5ee4d1b06"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/ContextMenu.def",
+      "Bytes": 106,
+      "SHA256": "12d26d2c851842b2321c6fd0f9291979cf4e77efc72cac3c19f8d7d91c7918e9"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/OpenCmd.ps1",
+      "Bytes": 691,
+      "SHA256": "09b5d32847d2d169a39bf52b8c813066fd2e237ede86daa96619a1b7bb102d26"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/PackageInstaller.psm1",
+      "Bytes": 20354,
+      "SHA256": "f82fb65cb43a4920967a88d54d8b577dc3aabad363d844241afda4a4c613ee56"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/README.md",
+      "Bytes": 2314,
+      "SHA256": "d2688a7626e45a242778758370d7253dcf71a6098143019ec50fdc9428aad438"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/RunPermissionFile.cs",
+      "Bytes": 7295,
+      "SHA256": "902dd4b404a5d1c7bc6f5d21d7ce01efcfc75f0bd264aa77c84f6ac46934c3ff"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/RunPermissions.ps1",
+      "Bytes": 7816,
+      "SHA256": "a33fc25264a16919f08f6881d9046969ef1f48d4ad7842ea57f2b30e5628dd3c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Scripts/TerminalLauncher.ps1",
+      "Bytes": 1304,
+      "SHA256": "5285aa721902357f4c9f3a983615aca3bc216a4f2daf61d1188f4fa51e40e4de"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Extension.json",
+      "Bytes": 209,
+      "SHA256": "ad61cae6e7bf83cf23d4d4a25eeb8a189c6b12d4e574d3ec752749313c56a740"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/README.md",
+      "Bytes": 7395,
+      "SHA256": "6a2b47b4314457139c62d83bf6dacd7dab63412b9372951d01a851d0a2f95fb9"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Scripts/Action.psm1",
+      "Bytes": 1439,
+      "SHA256": "8060ab7f491094d2e26392788f9e84251901f326d3574881d2d49ee606d7c682"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Scripts/README.md",
+      "Bytes": 2414,
+      "SHA256": "4256bccaee3288eb17af29c4d7d4b4b24af690158b1a5df9bfb82d933ece47b3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Extension.json",
+      "Bytes": 188,
+      "SHA256": "80c92f9652bc0c0c1d2f7bca98322afabf8f6885ae95d24a4212e022104987ad"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/README.md",
+      "Bytes": 7378,
+      "SHA256": "d53aaa1fb782ce6d8cf0e73a3910763fb46150eec7f03f1c3e5c159fe685343b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Scripts/Action.psm1",
+      "Bytes": 2321,
+      "SHA256": "f2eae7f291ef0dd52c1faf371c96e1c3d78c4e963b399a1cc3d56f0bd137d90d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Scripts/README.md",
+      "Bytes": 2413,
+      "SHA256": "a92214d0e8262fdb93ace97ade2bdbd63b7da14449cc3f6ac900931adf0005d1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Extension.json",
+      "Bytes": 223,
+      "SHA256": "ca34aa3f24049ab380a895879dd35316c3ccf458faa68c849e7e130a195f790f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Install.cmd",
+      "Bytes": 360,
+      "SHA256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/README.md",
+      "Bytes": 7616,
+      "SHA256": "5e24de85f8cacad718c58dc022e72b0c60b9e9c0b19760c117471b92823141e4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Scripts/Action.psm1",
+      "Bytes": 4153,
+      "SHA256": "4cacb2b77b704a8799428c6330a2ddf3122f4874f9510e9b7c935659c1fde6a6"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Scripts/Common.psm1",
+      "Bytes": 9867,
+      "SHA256": "8e5b9bddd62a57edac9f306741465c10bbcbef6f952d62452ac6e26d917e42e2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Scripts/Invoke.ps1",
+      "Bytes": 2204,
+      "SHA256": "997fe4eaac91d590d0b7b0928640b0d8fcf8d4ebda5a8adf3cbff153f3e7a7d0"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Scripts/Manage.ps1",
+      "Bytes": 3605,
+      "SHA256": "45dbe562327de321a20ed00b673ac8a56e3418b14946ea56dc54145d79c7ee0f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Scripts/PackageInstaller.psm1",
+      "Bytes": 20338,
+      "SHA256": "8fa76985d225216eb6d26326b5b0e3d4a3c678cf6ab0c2c8535be682f8fedd8b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Scripts/README.md",
+      "Bytes": 2449,
+      "SHA256": "967eb2df4e70df7499a65c1b0b791cb14be60943f888b9045f95e51521d02e6f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Uninstall.cmd",
+      "Bytes": 362,
+      "SHA256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/README.md",
+      "Bytes": 74142,
+      "SHA256": "9967a29e31e42aa537bc2c377e551ca2d4189fd7fdf57efb43acc4f8af65896b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Scripts/Catalog.psm1",
+      "Bytes": 6441,
+      "SHA256": "727b78a8d05b81042543f4fc2eca476a7791b580a7fdac633bf006e3335c2b4e"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Scripts/Installer.psm1",
+      "Bytes": 14537,
+      "SHA256": "b4ab9ea07c8ecf820629a1b45b6ca8c2be158f3a39e13e8090f73626b75251c7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Scripts/Manage.ps1",
+      "Bytes": 4376,
+      "SHA256": "c5ba44507628fcd3d11723489cdee3fc944350c2e9d8995db00c6cf54e2bc204"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Scripts/MarkdownToc.mjs",
+      "Bytes": 22408,
+      "SHA256": "049289aa273fbea05819542d37269f77857ca7efb440778b9becbd5dce8f28b2"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Scripts/README.md",
+      "Bytes": 14890,
+      "SHA256": "abcc04b54d62a65d21ef84fe6e8f3ebe2f0b960624a3add3b1ca58513d2945a5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Scripts/Sync-PackageInfrastructure.ps1",
+      "Bytes": 2408,
+      "SHA256": "b058fa3ac62a509b8cfe357dcca3344b1dfc27f2f8174524296a548fb61d071d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/ActionModules.Tests.ps1",
+      "Bytes": 10157,
+      "SHA256": "256f943403369b97ef1dcdd572785398c0169b5493b75c4fe28df2b6fc68724d"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidDesktopProbe.cpp",
+      "Bytes": 1146,
+      "SHA256": "3e5d30f175d8b720901c03c8cd86e2295b6ce6b38afb92a21081892f5dd64be8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidRepairDesktopProbe.cpp",
+      "Bytes": 1159,
+      "SHA256": "23033f4d3a4d3b45a9a1656f625f1e9ca55a7f16f73dbd90555d7728538323e3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorBootstrap.Tests.ps1",
+      "Bytes": 9162,
+      "SHA256": "be81483c35a75293ff61ad22ceb86fba41309b66365d5f1a4fa1bd907e2415c7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorCreator.Tests.ps1",
+      "Bytes": 13390,
+      "SHA256": "8b8dbcfec2f83eb49a1d61c5ff1677a0dbe55b7e22c92171f087f632ea073f96"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorRepair.Tests.ps1",
+      "Bytes": 11850,
+      "SHA256": "6b5ca8d6ccd71ae97f72d332e0e1c94b6597b415786fa7de44ad2453381eec1f"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorRepairer.Tests.ps1",
+      "Bytes": 21938,
+      "SHA256": "eef58c12f607ead2dca27eaf7939424d10d87327d4c3e94cad51e4d7110c7345"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Architecture.Tests.ps1",
+      "Bytes": 10733,
+      "SHA256": "54e9a8dd4607caaeccb42dd9827feb20a93840a361a0a543e9b5fe515210fc2c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/BuildArtifactCleaner.Tests.ps1",
+      "Bytes": 8888,
+      "SHA256": "c1e86323d6969c9877a6a34bc4964e3535b76632ddcd4982f07cfc780cf9e5dd"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Catalog.Tests.ps1",
+      "Bytes": 6172,
+      "SHA256": "dd5fee2044d937cdcec7378e1e20cc49ca5b07128bcecd9b82fc97bf22d4304c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Core.Tests.ps1",
+      "Bytes": 17144,
+      "SHA256": "14ffe7f89164881bad26370f38296234ca3bca93b7c8b0bc90d2d66ebfc28afb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Fixtures/FlutterRunnerPubspec.json",
+      "Bytes": 3287,
+      "SHA256": "777cbd5befd13dcd04774572ce5fac095c8256d4e766a0b332322d6aea9e94b1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyExtractor.Tests.ps1",
+      "Bytes": 12321,
+      "SHA256": "6393783e53004c5bd2138d8a3c042a8c6feb0cc58edbd0e6824d84bdc1185a75"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterDoctorCodegen.Tests.ps1",
+      "Bytes": 14001,
+      "SHA256": "0bb85faf66063a73d9870ac49d8d74e09dcebdbf2caef6b78b1f66a8320fb8b8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterFeatureSelection.Tests.ps1",
+      "Bytes": 6804,
+      "SHA256": "3606d5ae135caab4ec6cad9248b701a0e9124c54ee86c556975fb8e284138fea"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterPackager.Tests.ps1",
+      "Bytes": 33857,
+      "SHA256": "0fe797f82495669c6766f62f7a532e80492f7dbc3c37a9b6d091585993fd5711"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterRunner.Tests.ps1",
+      "Bytes": 12097,
+      "SHA256": "dce6d333ee83fc0980c86cbb9db26df75a8af417a57bf2c9e8d2d36feef6a12b"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterRunnerMenuProbe.cs",
+      "Bytes": 5790,
+      "SHA256": "242bd5f804cd6f107d3087dac9cbd76ba523c9d3be95a78b44dd798e97d5e2f4"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterRunnerProjectProbe.cpp",
+      "Bytes": 591,
+      "SHA256": "762bb9c69e21fa1ebb524a508ab429a358845c8655198248566cf3b9c902bb4a"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterSdkInspector.Tests.ps1",
+      "Bytes": 15280,
+      "SHA256": "ad7b3506026bbc56819a6ada84ec9c855d07ff558a0653ab534c0121ad1f6080"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterSelectionProbe.cpp",
+      "Bytes": 1446,
+      "SHA256": "e6e409135ff70e8ad01bb47387059e0751027d4d089087e7456c2f578778a2fb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterTools.Tests.ps1",
+      "Bytes": 4166,
+      "SHA256": "a2a4aa066af62e87446b3a86b25456fe4c4f0f9dc0a993bfe527abbbf3523dfb"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterVersionMgr.Tests.ps1",
+      "Bytes": 20754,
+      "SHA256": "79b5682d7aa134d95e685a29fa02432916e277059077fc46a4fbe7b265f05288"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/GitProxyConfigurator.Tests.ps1",
+      "Bytes": 17180,
+      "SHA256": "38e39a5cfaf3b466cc8fe0517a94a8f6138b1233fe36097cdce321ebbd6e048c"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/GitPuller.Tests.ps1",
+      "Bytes": 22514,
+      "SHA256": "e592a1481335be7f4c6bdaed2d37406d9b34726bc003c838fe7d3d08384bfd25"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonyDesktopProbe.cpp",
+      "Bytes": 1549,
+      "SHA256": "778eee09ccc0c65c50cd5e9a1522e589d518a5e97284a550d0cc56835c5d96f8"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonyFlutterSdk.Tests.ps1",
+      "Bytes": 20167,
+      "SHA256": "c180072701b0a76c3a1fb21c9fc9654d10849f8584754a151966315df81053df"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorBootstrap.Tests.ps1",
+      "Bytes": 8370,
+      "SHA256": "3997c9ac6b57208129e53f6311b71aaa033415ca7e3fe18e8dd2aa70aa8751b1"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorCreator.Tests.ps1",
+      "Bytes": 20849,
+      "SHA256": "09150b4e1bdc2b13eb5ca385d1df91c7bce6e8149dd238cfbc57799c140c3cd3"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorImages.Tests.ps1",
+      "Bytes": 5699,
+      "SHA256": "0224c7349a570de1e1d362da614596960aea77637833d2dc8542aba59b5297fc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorRepairer.Tests.ps1",
+      "Bytes": 7069,
+      "SHA256": "711b8aac9772eb0bb2b41e1bf7866a2e8d8d3ac3882cce7505d79be1d07911f7"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Installer.Tests.ps1",
+      "Bytes": 11307,
+      "SHA256": "4c88cbda8803e0f9ae6e767f101261f83990ae847a1f37814616f1bfcdb76344"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/MarkdownToc.Tests.mjs",
+      "Bytes": 29314,
+      "SHA256": "f9db94ca1ea4ec5d13674f7df6cb8193812a8ec9ee15d11abfbcc7779a8f9323"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/NativeFixtures.ps1",
+      "Bytes": 4243,
+      "SHA256": "d05ad96c7f805d2478b3927424b531f20bb1bf0a68c7f7f9ae1833223a1f2c37"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/PackageInstaller.Tests.ps1",
+      "Bytes": 22086,
+      "SHA256": "b041384d5ed5e90ec4eede634e2622c731d1b0499e46055c6ad2088a18de2317"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/RunPermissions.Tests.ps1",
+      "Bytes": 9880,
+      "SHA256": "5ade19962ff514350d33914b3357e9ef697a94c1fc90fbc92b0e9e5c791c56de"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/SelectionPanel.Tests.ps1",
+      "Bytes": 12181,
+      "SHA256": "382b7352cdac39c04a75f397bcdf39b5a59c235233061bb683d55f3133f48adf"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Worker.Tests.ps1",
+      "Bytes": 26801,
+      "SHA256": "fba341aa62e4f74cc20b3ec115c35cff767d8663d857f152c587266cf2569dbc"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Uninstall.cmd",
+      "Bytes": 336,
+      "SHA256": "6f79a8b4a3382b00cf0ea6fe25969d737cd64557036bf691c6b7116dd06d0ac5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/【Windows】🧩卸载资源管理器扩展.cmd",
+      "Bytes": 336,
+      "SHA256": "6f79a8b4a3382b00cf0ea6fe25969d737cd64557036bf691c6b7116dd06d0ac5"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/【Windows】🧩安装资源管理器扩展.cmd",
+      "Bytes": 375,
+      "SHA256": "6d7279d14c3f427f0c41cc62706d736c339946a0d546e6a2eccb591cf9db731c"
+    },
+    {
+      "Path": "README.md",
+      "Bytes": 42059,
+      "SHA256": "762042e81cec9e7f6ada99cffa10adfd2bb7e8f425cd1588861efb1225f3e09b"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Install-Menu.cmd",
+      "Bytes": 187,
+      "SHA256": "66855833cabe7970e106e746352d9c564671a61aa9c4f1012970acdf30c4aa54"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Install-Menu.ps1",
+      "Bytes": 5572,
+      "SHA256": "06d328f09c487ae3381c226c8ec4bbb738ac069f9810038ae112c4682de3f332"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/MacOS-Renames.json",
+      "Bytes": 135,
+      "SHA256": "d6c0e3d0b5e3f1c182e711475447e4fd62b1d808ad7be4791d18a3323978952a"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/README.md",
+      "Bytes": 9412,
+      "SHA256": "4216232b45f3bc30cb5e100e7633b134f66dc365848a2e2913af7c50689e0b33"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterCodegen/Extension.json",
+      "Bytes": 370,
+      "SHA256": "68364c89e8415d22b2ca556502b3e59eb79131be0ffde1c7d0ddc3f0cd4ca0c5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterCodegen/Scripts/Action.psm1",
+      "Bytes": 24271,
+      "SHA256": "4068e69738bde757f688e3be499097d17ed63c285f62807e9f9756a1d135315e"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterCodegen/Scripts/Common.psm1",
+      "Bytes": 9043,
+      "SHA256": "a3c235c88896667bff8165ea73456e3f9dd2c6ce9253bf53d8261c92dd16669f"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterCodegen/Scripts/README.md",
+      "Bytes": 2061,
+      "SHA256": "93e68e1d35e4449ea3b6afde513d60c62ff081a382f8bc02bad2e56fc939bf17"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDependencyExtractor/Extension.json",
+      "Bytes": 308,
+      "SHA256": "6889b6ba58121e15074a71343e064256c37cc64518b10aa82673d4c0d94cdc66"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDependencyExtractor/Scripts/Action.psm1",
+      "Bytes": 17121,
+      "SHA256": "f06f24cff932b10141779aa8fc685ade50586ae716a5d316708fb53ad6f7fbae"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDependencyExtractor/Scripts/Common.psm1",
+      "Bytes": 9043,
+      "SHA256": "a3c235c88896667bff8165ea73456e3f9dd2c6ce9253bf53d8261c92dd16669f"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDependencyExtractor/Scripts/ExtractFlutterDependencies.dart",
+      "Bytes": 28642,
+      "SHA256": "3c568499195921a62cc7ef1f6db45bd94ef2992cbb1c4bc4fe2ea8d93b2279b4"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDependencyExtractor/Scripts/README.md",
+      "Bytes": 2295,
+      "SHA256": "c2bac290546ce2e6e8839c779b66c4bca430f0689f1db9a16c1bd05b13ca39bb"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDoctor/Extension.json",
+      "Bytes": 346,
+      "SHA256": "5d5ce4d1e4989268ffb8950481e656f088f54d57d8d67649664b07d0798e4ef1"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDoctor/Scripts/Action.psm1",
+      "Bytes": 16386,
+      "SHA256": "0e0dfc595cb13ebf88c461f44795bb1d7090fc99eb03b73aa0f2e0007998af59"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDoctor/Scripts/Common.psm1",
+      "Bytes": 9043,
+      "SHA256": "a3c235c88896667bff8165ea73456e3f9dd2c6ce9253bf53d8261c92dd16669f"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterDoctor/Scripts/README.md",
+      "Bytes": 1981,
+      "SHA256": "b14599966f0635bc5960ea2ce58b3d7d6ed3cee12088e33b411f8e2360878f54"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterPackager/Extension.json",
+      "Bytes": 371,
+      "SHA256": "de45f76abbe50f99c48fb5206efd88403aa5a2f03bec8a0fed604181141ba6a5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterPackager/Scripts/Action.psm1",
+      "Bytes": 33694,
+      "SHA256": "ab4aa40b5c63943d7c73954fe89bb5b2a61210f19af33233ef675471d0450b1e"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterPackager/Scripts/Common.psm1",
+      "Bytes": 9043,
+      "SHA256": "a3c235c88896667bff8165ea73456e3f9dd2c6ce9253bf53d8261c92dd16669f"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/Features/JobsFlutterPackager/Scripts/README.md",
+      "Bytes": 2041,
+      "SHA256": "e66928a9d5f84a1f62a4e785970ef788b33acd46834c0a60e2e206d137353363"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/README.md",
+      "Bytes": 1128,
+      "SHA256": "08088e4f5983227e0b1fd43f3abd43f0c0bd4289eec1d20d5b71868937d20366"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Scripts/SourceTree.psm1",
+      "Bytes": 32406,
+      "SHA256": "794dd2fb8b95bdb5666d5896067d56db6e93a3244ae3a5591a4172895ac434fa"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Tests/README.md",
+      "Bytes": 1555,
+      "SHA256": "b122fe44ad24d909a5c54cfa63e264eb94507d9370c4a2deddcda0c7a970b738"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Tests/Safety.Tests.ps1",
+      "Bytes": 4766,
+      "SHA256": "00325f2790b3a3962d2e1cf0d5266f793a246c39c36e7cee8d8de0279b367784"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/Tests/SourceTree.Tests.ps1",
+      "Bytes": 10414,
+      "SHA256": "f4d7173cbc4edc7018c744f6ef1b3be6f38351710ff46339cba068961d2278bd"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/actions.json",
+      "Bytes": 6005,
+      "SHA256": "dc31a5f07135616557c6cf07944d17f7032021550cf5b2b5c31965c1485730b9"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本/README.md",
+      "Bytes": 2481,
+      "SHA256": "ef7e8b577059fd3efb7dae7c1beb20eafd271cb712e5d18051c7de1c35c8bd98"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本/Run.ps1",
+      "Bytes": 2474,
+      "SHA256": "e31c95bdb1712553e55483489976fa3016532260aaa0c6c07752e16f547e6340"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本/【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬只拉取远程代码/README.md",
+      "Bytes": 2781,
+      "SHA256": "8a23c1a1c3cff9d2595aa59c0f7c83bc1648ead657fd56ec617aa194eb55b4de"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬只拉取远程代码/Run.ps1",
+      "Bytes": 2480,
+      "SHA256": "37aa52caee543ea06f3abdd8c839b9bc54f94f1d29e7207e9e8321e3d634fbb6"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬只拉取远程代码/【WindowsOS@SourceTree】⏬只拉取远程代码.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️修复Flutter项目中文路径/README.md",
+      "Bytes": 2764,
+      "SHA256": "00dec839dd5a7f7d93c8cf84ff68d3cae9aae2d5d2d8e6dec45f6abb72631d65"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️修复Flutter项目中文路径/Run.ps1",
+      "Bytes": 2515,
+      "SHA256": "6d6f603ab50fec088fc7166397c878f3c30f6e935ecfc5d6c223dbd54f6d9c3c"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️修复Flutter项目中文路径/【WindowsOS@SourceTree】♻️修复Flutter项目中文路径.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️双击Git（识别子Git） 提交回退/README.md",
+      "Bytes": 2718,
+      "SHA256": "daeed4e09fac97d77a919b1f8ec504a3918ea45665132e0f57de908fed22cee8"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️双击Git（识别子Git） 提交回退/Run.ps1",
+      "Bytes": 2513,
+      "SHA256": "b66e512ad02b51910e2a0e785b69e34b8e4d45f244a52f610bd127f2c6e8a6a1"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️双击Git（识别子Git） 提交回退/【WindowsOS@SourceTree】♻️双击Git（识别子Git） 提交回退.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️收集当前Flutter工程的依赖/README.md",
+      "Bytes": 2596,
+      "SHA256": "2e8b8f94ec6f4e8dbd8b69a6c108cce30cd0d9c93e052d00a9cb6a0778f20875"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️收集当前Flutter工程的依赖/Run.ps1",
+      "Bytes": 2493,
+      "SHA256": "b7d69781f5612995e697d22222e3266c6c7deff8782a7038f01955b35abff2d8"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️收集当前Flutter工程的依赖/【WindowsOS@SourceTree】⚙️收集当前Flutter工程的依赖.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️运行授权/README.md",
+      "Bytes": 2528,
+      "SHA256": "31aca9a6fb12663b99186866e8462a2c632546259e525b419f7f9543c04cc39d"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️运行授权/Run.ps1",
+      "Bytes": 2444,
+      "SHA256": "6f7adcda3fe9f10cf1235bef0432b715611976617e80ff8e0bda49153e89ad20"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️运行授权/【WindowsOS@SourceTree】⚙️运行授权.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】同步edgetunnel代码后手动升级/README.md",
+      "Bytes": 2601,
+      "SHA256": "b1bd1044b609d71af58da026cddf8907d517ffa3fe9a0650c370ba2aa08bb0bc"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】同步edgetunnel代码后手动升级/Run.ps1",
+      "Bytes": 2488,
+      "SHA256": "3020d3583abb1dc8e23f4d70ad9da0cda2aaaf799a4cc23d61cc3fb380b9f76d"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】同步edgetunnel代码后手动升级/【WindowsOS@SourceTree】同步edgetunnel代码后手动升级.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开/README.md",
+      "Bytes": 2400,
+      "SHA256": "11eba37d67d38b88bfaa7433c8a65d9747caa680db94e0110cbcf1883fc9e7ed"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开/Run.ps1",
+      "Bytes": 2444,
+      "SHA256": "c2c616ff9c3d781259469d363504a4fb2135cdc0b27e9c155be062eecb8281ab"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开/【WindowsOS@SourceTree】用Android Studio打开.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开openjdk64-17.0.16/README.md",
+      "Bytes": 2690,
+      "SHA256": "456d38cddcb8e1f4bf09a694d8edc7f593b3d8a1537e4a8b79bacce31e3e24cd"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开openjdk64-17.0.16/Run.ps1",
+      "Bytes": 2495,
+      "SHA256": "3bca4850ab517a734ad3c2aab1909b072a3f4d5ec3977d65663b6528d1e28f72"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开openjdk64-17.0.16/【WindowsOS@SourceTree】用Android Studio打开openjdk64-17.0.16.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trae打开@openjdk64-17.0.16/README.md",
+      "Bytes": 2651,
+      "SHA256": "42f7b3f068269f24d5e4cf30ddcb56ae0b81cde0e1c83eab480e2600d651f63d"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trae打开@openjdk64-17.0.16/Run.ps1",
+      "Bytes": 2445,
+      "SHA256": "a6f8bbdf186e40bf188800226fc7a70c04f801d9d3c708923efd3e25410fdb9a"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trae打开@openjdk64-17.0.16/【WindowsOS@SourceTree】用Trae打开@openjdk64-17.0.16.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trea打开/README.md",
+      "Bytes": 2360,
+      "SHA256": "168081171f070fc17ffcbcef1fbcaca4c7f657e3f5062f56aca0aae300c351c2"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trea打开/Run.ps1",
+      "Bytes": 2392,
+      "SHA256": "98cbe85c64ad94a4f5358dac4d47798afd69e842ac9aef6278bf913d717423ea"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trea打开/【WindowsOS@SourceTree】用Trea打开.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开/README.md",
+      "Bytes": 2382,
+      "SHA256": "0d95d877f94e446a0e1c66dd7ca932f91e86346e8aac0f81c6bc7d52ef5a8a3d"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开/Run.ps1",
+      "Bytes": 2405,
+      "SHA256": "d6a689b8bdb44ae3b69606a506e357f7af4a0cc550c8856bfce3a55bc79f9b54"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开/【WindowsOS@SourceTree】用VSCode打开.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开@openjdk64-17.0.16/README.md",
+      "Bytes": 2673,
+      "SHA256": "2ab0e8cc2d51185bbbe5f511dfaee849433b971610089a61952fe21c96afcac0"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开@openjdk64-17.0.16/Run.ps1",
+      "Bytes": 2458,
+      "SHA256": "8f5d18098ddce2850b203e21031efa655595bdc585d0bb7a750b363a71a38d0f"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开@openjdk64-17.0.16/【WindowsOS@SourceTree】用VSCode打开@openjdk64-17.0.16.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用终端打开/README.md",
+      "Bytes": 2325,
+      "SHA256": "07fd54497b73e052284ad77f6887b25ac15a99f8424f73660f9f2644c0783425"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用终端打开/Run.ps1",
+      "Bytes": 2382,
+      "SHA256": "cc5389eece9722887fd2037de16f1196b500bbacc15f4f129c52e507d3bba5a9"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用终端打开/【WindowsOS@SourceTree】用终端打开.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】获取目标绝对地址/README.md",
+      "Bytes": 2357,
+      "SHA256": "dc00b766ec0759f1a1f150c1da17609a805d1a0dd8bcf1a6b9430cd7207bbab5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】获取目标绝对地址/Run.ps1",
+      "Bytes": 2399,
+      "SHA256": "45fa7d672360d79378fe6221e7fdc1addeac970ef278164e1695ebcba285aece"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】获取目标绝对地址/【WindowsOS@SourceTree】获取目标绝对地址.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🌐获取远程仓库地址/README.md",
+      "Bytes": 2402,
+      "SHA256": "e273fe2f7893badb97611609ae22fc0fc0a671e23b56ae13a93005dd876b4ed9"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🌐获取远程仓库地址/Run.ps1",
+      "Bytes": 2448,
+      "SHA256": "ff59891e5f85463b325499585daf752306b8691ece981a3f69f60fdaa7b1cfbb"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🌐获取远程仓库地址/【WindowsOS@SourceTree】🌐获取远程仓库地址.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter自动化生产代码/README.md",
+      "Bytes": 2773,
+      "SHA256": "151497f1ba0199d76410071215fea09baf5dcb4fd9079ce0d5f773973166981c"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter自动化生产代码/Run.ps1",
+      "Bytes": 2445,
+      "SHA256": "972a5b48cb7dd500ac85a0df204d09890a6c8497ad6e621b1444bf7b76b18310"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter自动化生产代码/【WindowsOS@SourceTree】🐦Flutter自动化生产代码.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter重新拉取第三方依赖/README.md",
+      "Bytes": 2543,
+      "SHA256": "87f7445d0600a56eb074b8bbba5da5b341649e54ef378761952a17e5d1aa9b0f"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter重新拉取第三方依赖/Run.ps1",
+      "Bytes": 2447,
+      "SHA256": "fa59e6b453f2b3cd116ba15f7ea9b996aa2d4adfbb8bd07a95d0c7c612061e1b"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter重新拉取第三方依赖/【WindowsOS@SourceTree】🐦Flutter重新拉取第三方依赖.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter项目体检/README.md",
+      "Bytes": 2596,
+      "SHA256": "f325152137ccbc2b554b6b3a8710e7863eb790ceadb67f90cfa129a61104a426"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter项目体检/Run.ps1",
+      "Bytes": 2456,
+      "SHA256": "b598f410e54f92ae1e03c65eac473440f2c277845c0dca07e19c213a5bd108e1"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter项目体检/【WindowsOS@SourceTree】🐦Flutter项目体检.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦打开：运行Flutter项目/README.md",
+      "Bytes": 2596,
+      "SHA256": "ad418d11527d13ed781ea4405a83fee34ecfbaf52c37138aa269fd33012e7e86"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦打开：运行Flutter项目/Run.ps1",
+      "Bytes": 2468,
+      "SHA256": "f533f4520ef5938325b5b8ceb37a178f321622b41b4a91643bd34acf57cbbf5a"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦打开：运行Flutter项目/【WindowsOS@SourceTree】🐦打开：运行Flutter项目.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📘用Typora打开蓝皮书/README.md",
+      "Bytes": 2410,
+      "SHA256": "2659c30a9091ec7367e6c04ae2ea1217aba9117becd7455372b583c23c5ee839"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📘用Typora打开蓝皮书/Run.ps1",
+      "Bytes": 2433,
+      "SHA256": "9bb46727b7c1463270a8d71529c1954b3afc3d4e6c81629d1dda30e6692bf4ab"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📘用Typora打开蓝皮书/【WindowsOS@SourceTree】📘用Typora打开蓝皮书.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Commit/README.md",
+      "Bytes": 2640,
+      "SHA256": "06436ba895689f6811df6702917ef21c8bdb150ef01133d68b341c8c8bbad274"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Commit/Run.ps1",
+      "Bytes": 2470,
+      "SHA256": "7e740fb05f280b557c019c80b847cbf8810ca9b7dde1afc567379c9904b1cb30"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Commit/【WindowsOS@SourceTree】📥修复Git无法Commit.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Fetch/README.md",
+      "Bytes": 2593,
+      "SHA256": "8aa6cda7e1da33ce8a848e4f68be742392be3c522d11993fa75301b8083ddc5c"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Fetch/Run.ps1",
+      "Bytes": 2461,
+      "SHA256": "609e455cadfe2c89897edca0b889defdd0cf2cd9d350ca078d83af52d94f3e95"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Fetch/【WindowsOS@SourceTree】📥修复Git无法Fetch.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.android/README.md",
+      "Bytes": 2678,
+      "SHA256": "2d87bb1e3b24d998d4cbba7e1f5257b87540d5e30aff7286910833c9762664a5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.android/Run.ps1",
+      "Bytes": 2446,
+      "SHA256": "6d464a1a78676317dbeab75632cebc2b498ef280993f5286ebdc31c004649c5a"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.android/【WindowsOS@SourceTree】📦双击打包Flutter.android.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.ohos/README.md",
+      "Bytes": 2630,
+      "SHA256": "f4ea3dccc88159fbaf41bac5936c592c397ff32b0fe94612d561b481fcd37af8"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.ohos/Run.ps1",
+      "Bytes": 2470,
+      "SHA256": "667179fd3aa20a4c8300e2b8e182fe7c12d251ab0d09f6528e221ec1a67d2835"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.ohos/【WindowsOS@SourceTree】📦双击打包Flutter.ohos.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🚀逐层空白提交并Push/README.md",
+      "Bytes": 2980,
+      "SHA256": "3b1de3ffdf2c172e03b5567a18bdc81d06b58a51e10e084f917d737b2a912ad6"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🚀逐层空白提交并Push/Run.ps1",
+      "Bytes": 2508,
+      "SHA256": "8f6d417789505007f25cddba0cc584199b3f3f9d7c40822006f0b84015893f7c"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🚀逐层空白提交并Push/【WindowsOS@SourceTree】🚀逐层空白提交并Push.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🪄配置并运行Magic Resume/README.md",
+      "Bytes": 2673,
+      "SHA256": "ccf890507a26fbf81390b03d608e07f57724cea0068343df3e9908db94db7728"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🪄配置并运行Magic Resume/Run.ps1",
+      "Bytes": 2504,
+      "SHA256": "67ef2f9f3e641036a7706f257032f0a6943a1df3721d87c1a50a9facca0aa232"
+    },
+    {
+      "Path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🪄配置并运行Magic Resume/【WindowsOS@SourceTree】🪄配置并运行Magic Resume.cmd",
+      "Bytes": 217,
+      "SHA256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5"
+    },
+    {
+      "Path": "Tests/DoctorBuild.Tests.ps1",
+      "Bytes": 3896,
+      "SHA256": "9e7de9970eb94457385ed72d2974df502e0b6a1172e71ac7a25c25ee52c21383"
+    },
+    {
+      "Path": "Tests/README.md",
+      "Bytes": 7846,
+      "SHA256": "123c4852ca003bb637de9aaf8a9df0411123d882a2c93ce04bbafe8daf982491"
+    },
+    {
+      "Path": "Tests/WindowsLaunchers.Tests.ps1",
+      "Bytes": 13826,
+      "SHA256": "6e4ab0512cba61e28e0b9932c38b7dceb8cb8a1ac964b435e7cf944155e278fb"
+    },
+    {
+      "Path": "Tests/WindowsRegression.ps1",
+      "Bytes": 18779,
+      "SHA256": "fa2ada3d311a1c6ef8428107817d2d629e0a76b5a5c26dd45ab29d89278d7f2c"
+    }
+  ]
+}

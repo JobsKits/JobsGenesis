@@ -1,0 +1,328 @@
+{
+  "Scope": "Only eight application .gitattributes locations; no configuration/index/staging/renormalization",
+  "Rule": "*.bat text eol=crlf",
+  "Applications": [
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsAppTrafficMonitor.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsAppTrafficMonitor.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsAppTrafficMonitor.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "ad35173ea401cc97e3b2c814270e538349fd12a46a090fa7696d159701184802",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9SRUFETUUubWQiIGZpbHRlcj1qb2JzLW1hcmtkb3duLXRvYwojIGpvYnMtbWFya2Rvd24tdG9jOmVuZAo=",
+      "AfterSHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "13b986ad27040ad922331880bcc92e37d33d1bc4480cccf9b12186a820e32e07",
+      "IndexSHA256AfterAudit": "13b986ad27040ad922331880bcc92e37d33d1bc4480cccf9b12186a820e32e07",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsCodexAccountSwitcher.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsCodexAccountSwitcher.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsCodexAccountSwitcher.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "ad35173ea401cc97e3b2c814270e538349fd12a46a090fa7696d159701184802",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9SRUFETUUubWQiIGZpbHRlcj1qb2JzLW1hcmtkb3duLXRvYwojIGpvYnMtbWFya2Rvd24tdG9jOmVuZAo=",
+      "AfterSHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "2ba2b23f0eba02cab3b847c4c76fb4aa0771d0b20308bf03464c62376d545672",
+      "IndexSHA256AfterAudit": "2ba2b23f0eba02cab3b847c4c76fb4aa0771d0b20308bf03464c62376d545672",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsCodexTokenMonitor.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsCodexTokenMonitor.py/.gitattributes",
+      "ExistedBefore": false,
+      "BeforeSHA256": null,
+      "BeforeBytesBase64": "",
+      "AfterSHA256": "65b1023623fb87849b0d7e7a39141bd9d2662d98dcd55fefc9e8bf1683d2d934",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "0f5da3f3184ad6ffe5a46eadfe0b68b2d3e41fb2c43f0bdd21aebb77b941f3a4",
+      "IndexSHA256AfterAudit": "0f5da3f3184ad6ffe5a46eadfe0b68b2d3e41fb2c43f0bdd21aebb77b941f3a4",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsMockTool.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsMockTool.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsMockTool.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "e5c3197962e1a691077e12f766dc86f172929bc19b00d42cc560f65dad293cea",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9SRUFETUUubWQiIGZpbHRlcj1qb2JzLW1hcmtkb3duLXRvYwoiL2J1aWxkX21hY29zLmNvbW1hbmQvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIyBqb2JzLW1hcmtkb3duLXRvYzplbmQK",
+      "AfterSHA256": "c142f20216603f43052bd538ebc3918667f403a471c0cde848fc6977b72b1a43",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "064153960bb4d31da042f50b2b4e8ab4dd0d4bbf035764803249626f4347ede8",
+      "IndexSHA256AfterAudit": "064153960bb4d31da042f50b2b4e8ab4dd0d4bbf035764803249626f4347ede8",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsRemoteHost.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsRemoteHost.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsRemoteHost.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "ad35173ea401cc97e3b2c814270e538349fd12a46a090fa7696d159701184802",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9SRUFETUUubWQiIGZpbHRlcj1qb2JzLW1hcmtkb3duLXRvYwojIGpvYnMtbWFya2Rvd24tdG9jOmVuZAo=",
+      "AfterSHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "a5100ac8a1723a8f27dd12444d0f21db287bb475559ff0df276692f0598f9e9f",
+      "IndexSHA256AfterAudit": "a5100ac8a1723a8f27dd12444d0f21db287bb475559ff0df276692f0598f9e9f",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsReverseIPA.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsReverseIPA.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsReverseIPA.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "ad35173ea401cc97e3b2c814270e538349fd12a46a090fa7696d159701184802",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9SRUFETUUubWQiIGZpbHRlcj1qb2JzLW1hcmtkb3duLXRvYwojIGpvYnMtbWFya2Rvd24tdG9jOmVuZAo=",
+      "AfterSHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "93d51055cab1f3195e669d88fa78ae62643acf4da84c6d86d69db4e4cd45ce57",
+      "IndexSHA256AfterAudit": "93d51055cab1f3195e669d88fa78ae62643acf4da84c6d86d69db4e4cd45ce57",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsSystemMonitor.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsSystemMonitor.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/JobsSystemMonitor.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "ad35173ea401cc97e3b2c814270e538349fd12a46a090fa7696d159701184802",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9SRUFETUUubWQiIGZpbHRlcj1qb2JzLW1hcmtkb3duLXRvYwojIGpvYnMtbWFya2Rvd24tdG9jOmVuZAo=",
+      "AfterSHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "7ea4a791970e5b2bf11db466bc1612d41f6548daaa0bb194ea646ccb0652666d",
+      "IndexSHA256AfterAudit": "7ea4a791970e5b2bf11db466bc1612d41f6548daaa0bb194ea646ccb0652666d",
+      "IndexStableDuringAudit": true
+    },
+    {
+      "ApplicationDirectory": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/LANFileServer.py",
+      "ActualRepository": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/LANFileServer.py",
+      "AttributesFile": "/Users/jobs/Documents/Github/JobsGenesis/JobsPythonTools.py/LANFileServer.py/.gitattributes",
+      "ExistedBefore": true,
+      "BeforeSHA256": "dbb0cd2b11befb69c904da6306d35681d6fc4d6c4d5f417c8abb6c83372445c6",
+      "BeforeBytesBase64": "CiMgam9icy1tYXJrZG93bi10b2M6c3RhcnQKIi8uam9icy1tYXJrZG93bi10b2MvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIi9MQU5GaWxlU2VydmVyL1JFQURNRS5tZCIgZmlsdGVyPWpvYnMtbWFya2Rvd24tdG9jCiIvUkVBRE1FLm1kIiBmaWx0ZXI9am9icy1tYXJrZG93bi10b2MKIyBqb2JzLW1hcmtkb3duLXRvYzplbmQK",
+      "AfterSHA256": "f1232c2adde56f9970a8a314102bb18bbbf0d30f6927e87ddaed004ca9051277",
+      "OriginalBytesPreserved": true,
+      "RuleAdded": "*.bat text eol=crlf",
+      "IndexSHA256BeforeAudit": "4a089fff8a89c9b831c3c8351cd9eea9cfbac9017a2401b1a82c053aee8f826c",
+      "IndexSHA256AfterAudit": "4a089fff8a89c9b831c3c8351cd9eea9cfbac9017a2401b1a82c053aee8f826c",
+      "IndexStableDuringAudit": true
+    }
+  ],
+  "BatFiles": [
+    {
+      "Path": "JobsPythonTools.py/JobsRemoteHost.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "edf146fd48880c2dd46712f3d31df9f9302440c0afbc9c252ddf0f8cb6f81fa9",
+      "CRLFCount": 137,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsAppTrafficMonitor.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "34b75a380c47498d9a3bb55b917ec0ad8b64ce457cf8bd550fc4a5d1502688c8",
+      "CRLFCount": 115,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsMockTool.py/build_windows.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "build_windows.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "build_windows.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "edd81473340e332b24982aaf8ad3382b72bcc387d1ecd03b32d950589512dc18",
+      "CRLFCount": 106,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsReverseIPA.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "d1d5ea3f94f1d571df9cd9e801921730923f8583cd22159cd2e91df29ab2e3a7",
+      "CRLFCount": 162,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsMockTool.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "b6f57af94e217a79f4d3b1e506927d0bb06a464beeb3f55a71e28ef3375877f1",
+      "CRLFCount": 5,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/LANFileServer.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "37aadc7aeed9793af3a7004efabe4a71b21260d6354aa874f1b7f72533c13394",
+      "CRLFCount": 17,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/LANFileServer.py/LANFileServer/启动LANFileServer.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "LANFileServer/启动LANFileServer.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "LANFileServer/启动LANFileServer.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "3e8e5f9c0dc27c9bf1c11c1f5e9984c1201efdcb5465af068a1f876315897b6f",
+      "CRLFCount": 190,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsCodexAccountSwitcher.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "e73eef5c27f1f630f56f582b442eef8e9a22d63532b316c2098c352f1e666760",
+      "CRLFCount": 39,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsCodexTokenMonitor.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "e3de7aabce811de1f3bfa37f42dc150a49720a4d03bbaecdf3076a25041efa02",
+      "CRLFCount": 39,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsSystemMonitor.py/【Windows】📦生成exe.bat",
+      "GitCheckAttrNulRecords": [
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "text",
+          "Value": "set"
+        },
+        {
+          "Path": "【Windows】📦生成exe.bat",
+          "Attribute": "eol",
+          "Value": "crlf"
+        }
+      ],
+      "SHA256": "6d3999c45c7c65f87d0ff68a32ece13655b7e14a93c94dc34885f9664639885c",
+      "CRLFCount": 39,
+      "BareLF": 0,
+      "BareCR": 0,
+      "UTF8BOM": false
+    }
+  ],
+  "Summary": {
+    "AttributeFilesUpdated": 8,
+    "BatFilesVerified": 10,
+    "EffectiveTextSet": 10,
+    "EffectiveEolCrlf": 10,
+    "CurrentCrlfBytesPassed": 10,
+    "IndexStableDuringAudit": 8
+  }
+}

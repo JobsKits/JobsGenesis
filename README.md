@@ -26,7 +26,11 @@
 
 ## <span id="jobs-toc-heading-1" data-jobs-toc="v2">🔥 <font id=前言>前言</font></span><!-- jobs-toc:heading-end -->
 
+**最低支持系统：** [**Windows**](https://www.microsoft.com/windows) **10 64 位（x64）**。这是当前最低支持目标；具体最低 build 尚未锁定，完整实机兼容性仍待验证。
+
 JobsGenesis 是 Jobs 自维护的开发与系统工具集合，覆盖 Git 子模块管理、Flutter / iOS 工程、系统配置、文件与媒体处理、Python 桌面工具和桌面右键扩展。先按下表选择功能，再阅读对应目录的 README 和脚本运行时自述。
+
+**平台与版本边界：** `WindowsOS/`、[**Windows**](https://www.microsoft.com/windows) 打包入口和 `.exe` 仅表示平台，不代表 XP 至 Windows 11 全版本兼容。[右键扩展](./OS@Extension/WindowsOS@Extension/README.md#windows-compatibility)以 Windows 10 / 11 为目标，要求 [**Windows PowerShell**](https://learn.microsoft.com/powershell/) 5.1 Desktop；[Python 桌面工具](./JobsPythonTools.py/README.md#windows-compatibility)多数采用 [**Qt 6**](https://doc.qt.io/qt-6/)，以 Windows 10 / 11 x64 为目标。旧系统、32 位和 ARM64 的限制分别见对应说明；目标系统及依赖要求不等于已经通过实机验收。
 
 | 根目录功能 | 具体可以做什么 | 输入与结果 |
 | --- | --- | --- |
@@ -54,6 +58,8 @@ JobsGenesis 是 Jobs 自维护的开发与系统工具集合，覆盖 Git 子模
 默认只拉取的首次克隆先以 `--no-checkout` 复制已预检对象，记录真实远端地址后才首次安全检出；不会为此再次联网获取未经预检的提交。已有生成目录的恢复以当前磁盘正文为来源，不从旧 `HEAD` 或暂存区覆盖正文，也不自动暂存、提交或推送。普通 `git clone` / `git pull` 不会执行安装脚本或给新电脑写配置；新电脑至少通过独立入口或下载后的可选提示完成一次安装，后续克隆 / 检出才会自动得到 `[toc]`。无更新的拉取不会重写旧文件；需要恢复时向独立入口显式传入目标仓库。
 
 <strong id="readonly-submodule-mode">先选用途：只拉取电脑默认跟随分支最新，子仓保持本地分支</strong>
+
+用途、维护菜单、子仓多选和同步深度统一使用 [**fzf**](https://formulae.brew.sh/formula/fzf)。启动前需有可用 fzf，缺失或损坏时安全停止并提示修复，不自动退回数字菜单。维护菜单按 `←` 返回用途页，子仓与深度页按 `←` 返回维护菜单；返回后保留当前深度并恢复菜单位置。子仓多选用回车勾选 / 取消、空格确认、`Ctrl+A` 全选、`Ctrl+D` 清空；空选不启动同步，`Esc` / `Ctrl+C` 取消本轮。返回只改变后续选择，已经完成的父仓更新不会撤销。
 
 | 启动选择 | 版本依据 | 是否写入父仓提交 |
 | --- | --- | --- |
@@ -401,5 +407,7 @@ python3 -B -m unittest discover \
 ```
 
 其它清理 / 安装回归及目录配置测试的范围见 [Tests/README.md](./Tests/README.md)；已执行范围、修复和未验证项见[脚本审计与升级报告](./脚本审计与升级报告.md)。
+
+Windows 虚拟机可使用 [WindowsRegression.ps1](./Tests/WindowsRegression.ps1) 在系统 PowerShell 5.1 中编排 38 套隔离回归，先做源码 Parser / BOM 与 Git 健康检查，再逐套保存日志、真实退出码和 JSON；环境要求、超时参数与跳过状态见[执行说明](./Tests/README.md#windows-native-regression)。该入口不安装依赖，也不把某一系统或架构的通过结果推广到其它平台。2026-10-26 的实际验证范围、定向重测与跳过项见[Windows 11 ARM 原生报告](./Tests/Reports/windows11-arm64-2026-10-26/summary.json)。
 
 <a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>

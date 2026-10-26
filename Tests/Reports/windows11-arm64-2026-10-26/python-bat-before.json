@@ -1,0 +1,55 @@
+{
+  "Probe": "Jobs Python BAT isolated semantics",
+  "CreatedUtc": "2026-10-25T18:08:07.7721711Z",
+  "PowerShellVersion": "5.1.26100.9711",
+  "StaleExitCodeDefectObserved": true,
+  "InitialEofGateDefectObserved": true,
+  "ForcedBangPathDefectObserved": true,
+  "Cases": [
+    {
+      "Name": "stale-percent-errorlevel",
+      "TimedOut": false,
+      "ExitCode": 0,
+      "Stdout": "CONTINUED_AFTER_FAILED_VENV\r\n",
+      "Stderr": "",
+      "CapturedPath": "",
+      "ExpectedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\stale-percent-errorlevel\\"
+    },
+    {
+      "Name": "runtime-errorlevel-control",
+      "TimedOut": false,
+      "ExitCode": 7,
+      "Stdout": "",
+      "Stderr": "",
+      "CapturedPath": "",
+      "ExpectedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\runtime-errorlevel-control\\"
+    },
+    {
+      "Name": "unconditional-notice-return",
+      "TimedOut": false,
+      "ExitCode": 0,
+      "Stdout": "Press Enter: \r\nCONTINUED_AFTER_EOF\r\n",
+      "Stderr": "",
+      "CapturedPath": "",
+      "ExpectedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\unconditional-notice-return\\"
+    },
+    {
+      "Name": "forced-delayed-expansion",
+      "TimedOut": false,
+      "ExitCode": 0,
+      "Stdout": "",
+      "Stderr": "",
+      "CapturedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\forced-delayed-expansion\\中文 root [x]\\",
+      "ExpectedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\forced-delayed-expansion\\中文! root [x]\\"
+    },
+    {
+      "Name": "disabled-delayed-control",
+      "TimedOut": false,
+      "ExitCode": 0,
+      "Stdout": "",
+      "Stderr": "",
+      "CapturedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\disabled-delayed-control\\中文! root [x]\\",
+      "ExpectedPath": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsPythonBatProbe-b4c0dd8ac0094748adfe9373facc7287\\disabled-delayed-control\\中文! root [x]\\"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+﻿{
+    "SchemaVersion":  1,
+    "RunKind":  "Targeted",
+    "FullRegressionReexecuted":  false,
+    "SourceFullPlan":  38,
+    "Scope":  "Retest only the remaining FlutterDependencyExtractor and Python BAT failures; previously passing suites are not rerun; this is not a full 38-suite replay.",
+    "StartedUtc":  "2026-10-25T18:35:20.1284797Z",
+    "FinishedUtc":  "2026-10-25T18:35:30.8746367Z",
+    "Status":  "Passed",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 9682c5ebcd\\s",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  2,
+    "TargetedSuiteIds":  [
+                             "Extension.FlutterDependencyExtractor",
+                             "Python.BAT"
+                         ],
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 9682c5ebcd\\g\\cmd\\git.exe",
+                      "GitVersion":  "git version 2.56.0.windows.3",
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ExpectedParsedFiles":  395,
+                      "ParsedFiles":  395,
+                      "Issues":  [
+
+                                 ]
+                  },
+    "Suites":  [
+                   {
+                       "Id":  "Extension.FlutterDependencyExtractor",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyExtractor.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  2.376,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 9682c5ebcd\\e\\run\\Extension.FlutterDependencyExtractor.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 9682c5ebcd\\e\\run\\Extension.FlutterDependencyExtractor.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Python.BAT",
+                       "Path":  "Tests/PythonBat.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  300,
+                       "DurationSeconds":  7.632,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 9682c5ebcd\\e\\run\\Python.BAT.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 9682c5ebcd\\e\\run\\Python.BAT.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   }
+               ],
+    "Summary":  {
+                    "Passed":  2,
+                    "Partial":  0,
+                    "Failed":  0,
+                    "TimedOut":  0,
+                    "Completed":  2,
+                    "Planned":  2
+                }
+}

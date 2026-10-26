@@ -1,0 +1,764 @@
+{
+  "SchemaVersion": 1,
+  "GeneratedUtc": "2026-10-25T18:51:41.531482+00:00",
+  "Title": "JobsGenesis Windows 11 ARM 原生脚本回归与修复",
+  "Environment": {
+    "Platform": "Windows 11 ARM64 virtual machine / VMware Fusion",
+    "OperatingSystem": "Microsoft Windows NT 10.0.26300.0",
+    "PowerShellVersion": "5.1.26100.9711",
+    "Architecture": "ARM64",
+    "GitVersion": "git version 2.56.0.windows.3"
+  },
+  "Conclusion": {
+    "Status": "Partial",
+    "MainPlanSuites": 38,
+    "LatestValidNativeResults": {
+      "Passed": 33,
+      "Partial": 5,
+      "Failed": 0,
+      "TimedOut": 0
+    },
+    "SupplementaryPythonBat": {
+      "Status": "Passed",
+      "Assertions": 202,
+      "SafeFragmentProcesses": 28,
+      "UnexpectedStderr": false,
+      "CommandParsingErrors": false,
+      "EvidenceReport": "final-python-bat-results.json"
+    },
+    "Interpretation": "先完整执行 38 套，再修复并只重跑失败项；33 Passed / 5 Partial 是各套最近一次有效原生结果合并，最终快照没有再次完整重跑 38 套。Partial 和未选原生分支不计作通过。"
+  },
+  "Preflight": {
+    "PowerShellParserAndBomFiles": 395,
+    "Issues": [],
+    "CmdStaticEntrypoints": 190,
+    "PythonBatEntrypoints": 10,
+    "LastSnapshotFiles": 878,
+    "LastSnapshotManifest": "final-manifest.json",
+    "CurrentCodeMatchesLastNativeSnapshot": true,
+    "DocumentationEditedAfterLastSnapshot": [
+      "README.md",
+      "Tests/README.md"
+    ]
+  },
+  "EffectiveMainSuites": [
+    {
+      "Id": "Launchers.CMD",
+      "Path": "Tests/WindowsLaunchers.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Gits.Regression",
+      "Path": "JobsCommand@Gits/WindowsOS/Tests/Regression.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Gits.GitProxyConfigurator",
+      "Path": "JobsCommand@Gits/WindowsOS/Tests/GitProxyConfigurator.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "SourceTree.Safety",
+      "Path": "SourceTree.command/WindowsOS/Tests/Safety.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "SourceTree.SourceTree",
+      "Path": "SourceTree.command/WindowsOS/Tests/SourceTree.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "JobsSh.Regression",
+      "Path": "JobsSh.sh/WindowsOS/Tests/Regression.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Others.Regression",
+      "Path": "JobsCommand@Others/WindowsOS/Tests/Regression.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Flutter.Portable",
+      "Path": "JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "followup-5-results.json"
+    },
+    {
+      "Id": "Doctor.Build",
+      "Path": "Tests/DoctorBuild.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.Core",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Core.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "followup-5-results.json"
+    },
+    {
+      "Id": "Extension.Catalog",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Catalog.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.Architecture",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Architecture.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.Installer",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Installer.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.PackageInstaller",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/PackageInstaller.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.SelectionPanel",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/SelectionPanel.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterFeatureSelection",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterFeatureSelection.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.ActionModules",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/ActionModules.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.Worker",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/Worker.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.RunPermissions",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/RunPermissions.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterTools",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterTools.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterSdkInspector",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterSdkInspector.Tests.ps1",
+      "Status": "Partial",
+      "ExitCode": 0,
+      "SkipEvidence": [
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsSdkInspector [中文] '& 100% ab3af982eeac4b5b84368c0ba1135a4d\\Linked project",
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsSdkInspector [中文] '& 100% ab3af982eeac4b5b84368c0ba1135a4d\\linked-config.json"
+      ],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterVersionMgr",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterVersionMgr.Tests.ps1",
+      "Status": "Partial",
+      "ExitCode": 0,
+      "SkipEvidence": [
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] & 100% ' 57050581f5e24153ad25c845cf88d2e6\\guard-project\\.fvm\\fvm_config.json",
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] & 100% ' 57050581f5e24153ad25c845cf88d2e6\\guard-project\\.fvm\\version",
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] & 100% ' 57050581f5e24153ad25c845cf88d2e6\\guard-project\\.fvm\\release",
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] & 100% ' 57050581f5e24153ad25c845cf88d2e6\\guard-project\\.fvm\\.gitignore",
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] & 100% ' 57050581f5e24153ad25c845cf88d2e6\\guard-project\\unsafe.code-workspace",
+        "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] & 100% ' 57050581f5e24153ad25c845cf88d2e6\\guard-project\\.fvm\\version"
+      ],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.HarmonyFlutterSdk",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonyFlutterSdk.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "followup-5-results.json"
+    },
+    {
+      "Id": "Extension.GitPuller",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/GitPuller.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterDependencyExtractor",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyExtractor.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "followup-2-results.json"
+    },
+    {
+      "Id": "Extension.FlutterRunner",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterRunner.Tests.ps1",
+      "Status": "Partial",
+      "ExitCode": 0,
+      "SkipEvidence": [
+        "SKIP: MSVC/.NET 编译、Win32 detached / Job 与真实菜单需要 Windows。可在 Windows 使用 -Native。"
+      ],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterPackager",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterPackager.Tests.ps1",
+      "Status": "Partial",
+      "ExitCode": 0,
+      "SkipEvidence": [
+        "SKIP: Windows PowerShell 5.1、MSVC DLL、真实 Explorer / CMD / fzf 与 Android / HarmonyOS 构建需 Windows 实机。"
+      ],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.FlutterDoctorCodegen",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterDoctorCodegen.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.BuildArtifactCleaner",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/BuildArtifactCleaner.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.AndroidSimulatorCreator",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorCreator.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.AndroidSimulatorRepair",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorRepair.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.AndroidSimulatorRepairer",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorRepairer.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.AndroidSimulatorBootstrap",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorBootstrap.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.GitProxyConfigurator",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/GitProxyConfigurator.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.HarmonySimulatorCreator",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorCreator.Tests.ps1",
+      "Status": "Partial",
+      "ExitCode": 0,
+      "SkipEvidence": [
+        "SKIP: Windows PowerShell 5.1、真实 Emulator.exe/详情格式、MSVC/Explorer、许可与真实创建启动需 Windows 实机。"
+      ],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.HarmonySimulatorRepairer",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorRepairer.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.HarmonySimulatorBootstrap",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorBootstrap.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    },
+    {
+      "Id": "Extension.HarmonySimulatorImages",
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorImages.Tests.ps1",
+      "Status": "Passed",
+      "ExitCode": 0,
+      "SkipEvidence": [],
+      "EvidenceReport": "full-38-results.json"
+    }
+  ],
+  "RunHistory": [
+    {
+      "Report": "full-38-results.json",
+      "Status": "Failed",
+      "Summary": {
+        "Passed": 29,
+        "Partial": 5,
+        "Failed": 4,
+        "TimedOut": 0,
+        "Completed": 38,
+        "Planned": 38
+      },
+      "StartedUtc": "2026-10-25T17:58:47.6571060Z",
+      "FinishedUtc": "2026-10-25T18:05:03.0795582Z",
+      "FullRegressionReexecuted": true
+    },
+    {
+      "Report": "followup-5-results.json",
+      "Status": "Failed",
+      "Summary": {
+        "Passed": 3,
+        "Partial": 0,
+        "Failed": 2,
+        "TimedOut": 0,
+        "Completed": 5,
+        "Planned": 5
+      },
+      "StartedUtc": "2026-10-25T18:17:29.5046934Z",
+      "FinishedUtc": "2026-10-25T18:19:11.8925310Z",
+      "FullRegressionReexecuted": false
+    },
+    {
+      "Report": "followup-2-results.json",
+      "Status": "Passed",
+      "Summary": {
+        "Passed": 2,
+        "Partial": 0,
+        "Failed": 0,
+        "TimedOut": 0,
+        "Completed": 2,
+        "Planned": 2
+      },
+      "StartedUtc": "2026-10-25T18:35:20.1284797Z",
+      "FinishedUtc": "2026-10-25T18:35:30.8746367Z",
+      "FullRegressionReexecuted": false,
+      "AcceptanceNote": "Extractor 38 项有效通过；Python.BAT 虽报告 136 通过，但日志含命令解析错误，人工复核拒绝该通过结论，改为严格 stderr 检查后单独重测。"
+    },
+    {
+      "Report": "final-python-bat-results.json",
+      "Status": "Passed",
+      "Summary": {
+        "Passed": 1,
+        "Partial": 0,
+        "Failed": 0,
+        "TimedOut": 0,
+        "Completed": 1,
+        "Planned": 1
+      },
+      "StartedUtc": "2026-10-25T18:49:03.3017352Z",
+      "FinishedUtc": "2026-10-25T18:49:10.0384049Z",
+      "FullRegressionReexecuted": false
+    }
+  ],
+  "ProductionAndTestFixes": [
+    {
+      "Files": [
+        "JobsCommand@Gits/WindowsOS/Scripts/GitTools.psm1",
+        "SourceTree.command/WindowsOS/Scripts/SourceTree.psm1"
+      ],
+      "Change": "原生 Git 以 UTF-8 解码中文路径，成功、失败与允许失败后恢复原编码；SourceTree 原生 CP437/CP936 检查通过。"
+    },
+    {
+      "Files": [
+        "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/Scripts/NetworkPolicy.psm1",
+        "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Scripts/NetworkPolicy.psm1"
+      ],
+      "Change": "显式选择 .NET Framework Split 重载，协议代理配置保留等号右侧完整内容。"
+    },
+    {
+      "Files": [
+        "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Scripts/HarmonySdk.psm1",
+        "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Scripts/HarmonyTools.ps1"
+      ],
+      "Change": "PS5.1 字面方括号链接目标兼容；显式加载 ZIP 程序集，保留目标校验与回滚。"
+    },
+    {
+      "Files": [
+        "JobsCommand@Flutter/WindowsOS/Scripts/FlutterTools.psm1"
+      ],
+      "Change": "依赖导出 ZIP 统一 / 条目路径，保留中文嵌套内容和空目录，避免 PS5.1 宿主的旧 ZIP 分隔符行为。"
+    },
+    {
+      "Files": [
+        "JobsCommand@Gits/WindowsOS/**/*.cmd",
+        "SourceTree.command/WindowsOS/**/*.cmd",
+        "JobsSh.sh/WindowsOS/**/*.cmd",
+        "JobsCommand@Others/WindowsOS/**/*.cmd",
+        "JobsCommand@Flutter/WindowsOS/**/*.cmd",
+        "OS@Extension/WindowsOS@Extension/**/*.cmd"
+      ],
+      "Change": "190 个 CMD 局部关闭延迟展开，保留 ! 路径；Sh/Others 转发补进程级 ExecutionPolicy Bypass，不改系统策略。190 为静态覆盖数，原生执行 7 种模板、Legacy 缺目标门禁及两个真实只读 -Check 代表入口。"
+    },
+    {
+      "Files": [
+        "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+      ],
+      "Change": "每个 Python 步骤检查退出码，只有非空 EXE 才报告成功；假 Python 六分支共 22 项原生断言通过。"
+    },
+    {
+      "Files": [
+        "JobsPythonTools.py/JobsRemoteHost.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsAppTrafficMonitor.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsMockTool.py/build_windows.bat",
+        "JobsPythonTools.py/JobsReverseIPA.py/【Windows】📦生成exe.bat"
+      ],
+      "Change": "修复 RemoteHost 模式退出码、括号内陈旧 errorlevel、初始 EOF 继续及清理确认大小写；空回车语义保留，清理只接受精确大写 YES。"
+    },
+    {
+      "Files": [
+        "JobsPythonTools.py/JobsAppTrafficMonitor.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsCodexAccountSwitcher.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsCodexTokenMonitor.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsMockTool.py/build_windows.bat",
+        "JobsPythonTools.py/JobsMockTool.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsRemoteHost.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsReverseIPA.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/JobsSystemMonitor.py/【Windows】📦生成exe.bat",
+        "JobsPythonTools.py/LANFileServer.py/LANFileServer/启动LANFileServer.bat",
+        "JobsPythonTools.py/LANFileServer.py/【Windows】📦生成exe.bat"
+      ],
+      "Change": "10 个自有 BAT 局部关闭延迟展开并使用 UTF-8 / CRLF；24 组真实 Windows 对照证明 LF 与无控制台会产生解析错误。8 个应用目录添加 *.bat text eol=crlf，避免 Git 检出退回 LF。"
+    },
+    {
+      "Files": [
+        "Tests/WindowsRegression.ps1",
+        "Tests/WindowsLaunchers.Tests.ps1",
+        "Tests/DoctorBuild.Tests.ps1",
+        "Tests/PythonBat.Tests.ps1"
+      ],
+      "Change": "新增可复用原生编排与隔离夹具，保留真实退出码、超时、原始日志及 SKIP；修正旧夹具的 PS5.1 模块作用域、原生引号、UTF-8 读取、JSON 数组枚举与 C# 编译路径兼容，不删减保护断言。"
+    }
+  ],
+  "CodeChangedOrAddedToCoverageAfterFullRun": [
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Scripts/FlutterTools.psm1",
+      "Reason": "Changed after full-38 run",
+      "SHA256": "6dd28efc5f8b7ae24268d10f34d9e3363047a5912f1d3c4d2c1675f378ace705"
+    },
+    {
+      "Path": "JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1",
+      "Reason": "Changed after full-38 run",
+      "SHA256": "7dd3577b542b00195c058f09d6cbfe70b7b2b9294e0e999b7c84f291aaa85399"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsAppTrafficMonitor.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "34b75a380c47498d9a3bb55b917ec0ad8b64ce457cf8bd550fc4a5d1502688c8"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsCodexAccountSwitcher.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "e73eef5c27f1f630f56f582b442eef8e9a22d63532b316c2098c352f1e666760"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsCodexTokenMonitor.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "e3de7aabce811de1f3bfa37f42dc150a49720a4d03bbaecdf3076a25041efa02"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsMockTool.py/build_windows.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "edd81473340e332b24982aaf8ad3382b72bcc387d1ecd03b32d950589512dc18"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsMockTool.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "b6f57af94e217a79f4d3b1e506927d0bb06a464beeb3f55a71e28ef3375877f1"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsRemoteHost.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "edf146fd48880c2dd46712f3d31df9f9302440c0afbc9c252ddf0f8cb6f81fa9"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsReverseIPA.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "d1d5ea3f94f1d571df9cd9e801921730923f8583cd22159cd2e91df29ab2e3a7"
+    },
+    {
+      "Path": "JobsPythonTools.py/JobsSystemMonitor.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "6d3999c45c7c65f87d0ff68a32ece13655b7e14a93c94dc34885f9664639885c"
+    },
+    {
+      "Path": "JobsPythonTools.py/LANFileServer.py/LANFileServer/启动LANFileServer.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "3e8e5f9c0dc27c9bf1c11c1f5e9984c1201efdcb5465af068a1f876315897b6f"
+    },
+    {
+      "Path": "JobsPythonTools.py/LANFileServer.py/【Windows】📦生成exe.bat",
+      "Reason": "Expanded test coverage",
+      "SHA256": "37aadc7aeed9793af3a7004efabe4a71b21260d6354aa874f1b7f72533c13394"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyExtractor.Tests.ps1",
+      "Reason": "Changed after full-38 run",
+      "SHA256": "ab9ec7e439d3996ba186a352ee0a2baef8569db27342f49aa444d18aeec11064"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/HarmonyFlutterSdk.Tests.ps1",
+      "Reason": "Changed after full-38 run",
+      "SHA256": "19b9c5ceca105eff13b4c486bbc4704bfc940f65f63178104b3265048b3efcee"
+    },
+    {
+      "Path": "OS@Extension/WindowsOS@Extension/Tests/NativeFixtures.ps1",
+      "Reason": "Changed after full-38 run",
+      "SHA256": "d8bf6d90b0a85895b80d8e4e16440f46cb440aa26e3e2bf2efddf566dd6a19a4"
+    },
+    {
+      "Path": "Tests/PythonBat.Tests.ps1",
+      "Reason": "Expanded test coverage",
+      "SHA256": "63d0f57228d3f875970c3c32d5cba30ec8ccb2e606e457abac506594af01a19d"
+    }
+  ],
+  "GitAttributes": {
+    "Rule": "*.bat text eol=crlf",
+    "ApplicationDirectories": 8,
+    "ActualBatFilesChecked": 10,
+    "IndexUnchangedDuringAudit": true,
+    "Files": [
+      {
+        "Path": "JobsPythonTools.py/JobsAppTrafficMonitor.py/.gitattributes",
+        "SHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026"
+      },
+      {
+        "Path": "JobsPythonTools.py/JobsCodexAccountSwitcher.py/.gitattributes",
+        "SHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026"
+      },
+      {
+        "Path": "JobsPythonTools.py/JobsCodexTokenMonitor.py/.gitattributes",
+        "SHA256": "65b1023623fb87849b0d7e7a39141bd9d2662d98dcd55fefc9e8bf1683d2d934"
+      },
+      {
+        "Path": "JobsPythonTools.py/JobsMockTool.py/.gitattributes",
+        "SHA256": "c142f20216603f43052bd538ebc3918667f403a471c0cde848fc6977b72b1a43"
+      },
+      {
+        "Path": "JobsPythonTools.py/JobsRemoteHost.py/.gitattributes",
+        "SHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026"
+      },
+      {
+        "Path": "JobsPythonTools.py/JobsReverseIPA.py/.gitattributes",
+        "SHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026"
+      },
+      {
+        "Path": "JobsPythonTools.py/JobsSystemMonitor.py/.gitattributes",
+        "SHA256": "17a792322703c6c9cfd48b270b61188dca466d966c9a352e9c160cebb1371026"
+      },
+      {
+        "Path": "JobsPythonTools.py/LANFileServer.py/.gitattributes",
+        "SHA256": "f1232c2adde56f9970a8a314102bb18bbbf0d30f6927e87ddaed004ca9051277"
+      }
+    ],
+    "Evidence": "git-bat-attributes.json"
+  },
+  "SourceTreeRuntimeCopy": {
+    "Path": "/Users/jobs/SourceTree.command/WindowsOS",
+    "MatchesRepositoryWindowsCodeFiles": 67,
+    "UnrelatedRunningCopyDocumentationPreserved": true,
+    "LatestReviewedSyncFiles": 32
+  },
+  "Limits": [
+    "本次仅 Windows 11 ARM64 / 系统 PowerShell 5.1；不能推广到 Windows 10 x64、XP 或其它旧系统。",
+    "5 个 Partial：FlutterSdkInspector / FlutterVersionMgr 对真实符号链接仅因 Win32 1314 缺权限局部跳过；FlutterRunner / FlutterPackager / HarmonySimulatorCreator 的可选原生编译、真实 SDK / CLI / Explorer / 许可与业务构建分支未执行。详见对应 SkipEvidence。",
+    "真实依赖安装、Python EXE / Flutter / Android / HarmonyOS 打包、生产远端、桌面菜单安装与完整业务流程未验。",
+    "测试仅创建隔离临时文件、GUID HKCU 注册表对象、临时 ACL 与本地 Git 仓；不以 Windows Runtime 通过代替所有实际工具链兼容性。"
+  ],
+  "TemporaryEnvironment": {
+    "WindowsPathRestored": true,
+    "WindowsKeepAwakeRestored": true,
+    "SystemExecutionPolicyChanged": false,
+    "PersistentProxyChanged": false,
+    "MacKeepAwakeAndTransportCleanup": "Released; see cleanup.json",
+    "MacTemporaryKeepAwakeReleased": true,
+    "VmTransferListenerClosed": true
+  },
+  "RepositoryActions": {
+    "UserRepositoryCommitCreated": false,
+    "UserRepositoryPushed": false,
+    "ExistingUserChangesPreserved": true
+  },
+  "Artifacts": [
+    {
+      "Path": "bat-console-eol-matrix.json",
+      "Bytes": 65595,
+      "SHA256": "52a75ae40cd5f21bb70033eb46ae9bd2b63290da3e7018fb694ef2858204ecc0"
+    },
+    {
+      "Path": "bat-console-eol-matrix.zip",
+      "Bytes": 9197,
+      "SHA256": "4a1fc473bee8b6477e5aa6f47b79d475a367bef914f76f6378d00cca50d5b95b"
+    },
+    {
+      "Path": "bat-crlf-audit.json",
+      "Bytes": 4553,
+      "SHA256": "02b805281b26504b8cc79108d092a0789190f5ae8665285412861a4879d19f9a"
+    },
+    {
+      "Path": "before-fixes-37.zip",
+      "Bytes": 124182,
+      "SHA256": "b80e129c9e9161e798cf955601e04995af8bdbd4408c204dd852608be49cae8c"
+    },
+    {
+      "Path": "cleanup.json",
+      "Bytes": 846,
+      "SHA256": "521d35f48d5dfe5a45f18cb717886138a86f454e4b34bf76e828a2e46a9daafc"
+    },
+    {
+      "Path": "cmd-change-audit.json",
+      "Bytes": 71806,
+      "SHA256": "a59de350a057b0dc469ec7c2c313b3a5f7c42398d1bba23ca76bc5f5d7b4cde5"
+    },
+    {
+      "Path": "cmd-delay-before.json",
+      "Bytes": 3017,
+      "SHA256": "1f3f414b057cdd0f859651f410c9f13ca29c2f7012803cbaa11da35d9878011c"
+    },
+    {
+      "Path": "final-manifest.json",
+      "Bytes": 196593,
+      "SHA256": "adf17c8a0b9fdc142a5e48ce02b02599a08a5b19233541cc77477a26d6e4601d"
+    },
+    {
+      "Path": "final-python-bat-results.json",
+      "Bytes": 3339,
+      "SHA256": "aa2e07f04e904ccdb9390e083662dbc2eb75c129dc77883342f6927aebd82755"
+    },
+    {
+      "Path": "final-python-bat.zip",
+      "Bytes": 40818,
+      "SHA256": "df92d12c5a6fd309c6b847547aeb9fd9c97a3367a2d02705856e5a32a2fbf18d"
+    },
+    {
+      "Path": "followup-2-manifest.json",
+      "Bytes": 196798,
+      "SHA256": "4f923ff10e3c3091da7dee7bc145a148f6f2cb06398a25b09f1543d05499a31e"
+    },
+    {
+      "Path": "followup-2-results.json",
+      "Bytes": 4264,
+      "SHA256": "faf8d29f44d7814577742f2b5f01814c84a5345ab59284dd05f305f4d8487a98"
+    },
+    {
+      "Path": "followup-2.zip",
+      "Bytes": 42062,
+      "SHA256": "d33e81ba2f960cb97bc9b02c95cdc06fb56f0bc60625e565b5b93c880301b775"
+    },
+    {
+      "Path": "followup-5-manifest.json",
+      "Bytes": 195370,
+      "SHA256": "6d57b779bd2f572e81f4fb41475b101c7a771ef3af59127f0c22d444d5999e56"
+    },
+    {
+      "Path": "followup-5-results.json",
+      "Bytes": 6707,
+      "SHA256": "43c42fcedd65299168be136af1d40bb5c7ebba03d23bf558754d7d445c7f2a7c"
+    },
+    {
+      "Path": "followup-5.zip",
+      "Bytes": 44282,
+      "SHA256": "91cdd532db3746f3139bd42d969e335a445350b198bf6d926e722d3a63f1047d"
+    },
+    {
+      "Path": "full-38-manifest.json",
+      "Bytes": 193068,
+      "SHA256": "16c3d57a1c790e4cd3bf3610f0dab01313a3ace976c4ceab60ebf5b942dd86af"
+    },
+    {
+      "Path": "full-38-results.json",
+      "Bytes": 35328,
+      "SHA256": "4f9ff43d6c29eccf399f5da315b3694a78e8805fbc2f31272f70094d16136b36"
+    },
+    {
+      "Path": "full-38.zip",
+      "Bytes": 75181,
+      "SHA256": "8f8912e17cb966ec65f1040bbc4c02e9186cc35ebe974428a133ad5881d95730"
+    },
+    {
+      "Path": "git-bat-attributes.json",
+      "Bytes": 14808,
+      "SHA256": "6b8833de2767066d118c8ddc30030557cfd35d93c1e0d4887a56a19b00b19eb3"
+    },
+    {
+      "Path": "python-bat-before.json",
+      "Bytes": 2222,
+      "SHA256": "fd8179287ebb89ab62b6543ebbcc467da3b038640b51c8e2182104c2bff607dc"
+    }
+  ]
+}

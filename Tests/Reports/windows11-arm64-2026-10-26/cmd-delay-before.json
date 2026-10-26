@@ -1,0 +1,50 @@
+﻿{
+    "Probe":  "SourceTree CMD inherited delayed expansion",
+    "CreatedUtc":  "2026-10-25T17:41:45.8695952Z",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Source":  "embedded exact SourceTree action wrapper",
+    "SourceTemplateSha256":  "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+    "SetupControlPassed":  true,
+    "FixedCopyPassed":  true,
+    "DefectObserved":  true,
+    "Cases":  [
+                  {
+                      "Name":  "control-fixed-ordinary-path",
+                      "TimedOut":  false,
+                      "ExitCode":  7,
+                      "ExpectedRunPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsCmdDelayProbe-64b2403f9df048fbb626c832b1ed3c79\\ordinary\\Run.ps1",
+                      "ExpectedTarget":  "argument! bang [y]",
+                      "RawArguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsCmdDelayProbe-64b2403f9df048fbb626c832b1ed3c79\\ordinary\\Run.ps1\" -SourceTree -Target \"argument! bang [y]\"",
+                      "RunPathPreserved":  true,
+                      "TargetPreserved":  true,
+                      "Stdout":  "",
+                      "Stderr":  ""
+                  },
+                  {
+                      "Name":  "original-bang-path",
+                      "TimedOut":  false,
+                      "ExitCode":  7,
+                      "ExpectedRunPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsCmdDelayProbe-64b2403f9df048fbb626c832b1ed3c79\\original\\中文! bang [x]\\Run.ps1",
+                      "ExpectedTarget":  "argument! bang [y]",
+                      "RawArguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsCmdDelayProbe-64b2403f9df048fbb626c832b1ed3c79\\original\\中文 bang [y]\"",
+                      "RunPathPreserved":  false,
+                      "TargetPreserved":  false,
+                      "Stdout":  "",
+                      "Stderr":  ""
+                  },
+                  {
+                      "Name":  "fixed-bang-path",
+                      "TimedOut":  false,
+                      "ExitCode":  7,
+                      "ExpectedRunPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsCmdDelayProbe-64b2403f9df048fbb626c832b1ed3c79\\fixed\\中文! bang [x]\\Run.ps1",
+                      "ExpectedTarget":  "argument! bang [y]",
+                      "RawArguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsCmdDelayProbe-64b2403f9df048fbb626c832b1ed3c79\\fixed\\中文! bang [x]\\Run.ps1\" -SourceTree -Target \"argument! bang [y]\"",
+                      "RunPathPreserved":  true,
+                      "TargetPreserved":  true,
+                      "Stdout":  "",
+                      "Stderr":  ""
+                  }
+              ],
+    "FixtureCleanupRequested":  true
+}

@@ -1,0 +1,1334 @@
+{
+  "changed": [
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.ps1/【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️修复Flutter项目中文路径.ps1/【WindowsOS】♻️修复Flutter项目中文路径.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.ps1/【WindowsOS】♻️双击修复：找不到 Android SDK 或 platforms 目录为空.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.ps1/【WindowsOS】♻️当前脚本所在目录的快捷方式放到桌面.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️import =＞package💣.ps1/【WindowsOS】⚙️import =＞package💣.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.ps1/【WindowsOS】⚙️保存系统环境配置（运行后输入jobs）.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️双击显示隐藏文件.ps1/【WindowsOS】⚙️双击显示隐藏文件.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️自动化替换Flutter图片资源.ps1/【WindowsOS】⚙️自动化替换Flutter图片资源.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】⚙️运行授权.ps1/【WindowsOS】⚙️运行授权.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🌞颜色格式的转换.ps1/【WindowsOS】🌞颜色格式的转换.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈切换Shell.ps1/【WindowsOS】🎈切换Shell.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🎈双击打开当前路径终端.ps1/【WindowsOS】🎈双击打开当前路径终端.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🏥双击自检Flutter.ps1/【WindowsOS】🏥双击自检Flutter.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🐦Flutter自动化生产代码.ps1/【WindowsOS】🐦Flutter自动化生产代码.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🔍查询Flutter依赖版本.ps1/【WindowsOS】🔍查询Flutter依赖版本.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Android 模拟器一键检测与修复.ps1/【WindowsOS】🛠️Android 模拟器一键检测与修复.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.ps1/【WindowsOS】🛠️Flutter 插件 namespace 修复工具＂.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧪提取Flutter第三方依赖.ps1/【WindowsOS】🧪提取Flutter第三方依赖.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/小工具/【WindowsOS】🧹Flutter清理维护工具.ps1/【WindowsOS】🧹Flutter清理维护工具.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/屏幕录制/【WindowsOS】📹双击制作Android模拟器录屏Gif.ps1/【WindowsOS】📹双击制作Android模拟器录屏Gif.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/打包相关/【WindowsOS】📦双击打包Flutter.Android.ps1/【WindowsOS】📦双击打包Flutter.Android.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击升级Flutter.SDK.ps1/【WindowsOS】⬆️双击升级Flutter.SDK.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/更新升级/【WindowsOS】⬆️双击更新Flutter依赖.ps1/【WindowsOS】⬆️双击更新Flutter依赖.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .ps1/【WindowsOS】☀️双击运行Flutter项目（Android 模拟器） .cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🎈双击真机运行项目.ps1/【WindowsOS】🎈双击真机运行项目.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/运行/【WindowsOS】🚀双击启动Android模拟器.ps1/【WindowsOS】🚀双击启动Android模拟器.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】⏬双击配置VSCode.ps1/【WindowsOS】⏬双击配置VSCode.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@全局.ps1/【WindowsOS】💉VSCode配置注入@全局.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】VSCode.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.ps1/【WindowsOS】💉VSCode配置注入@当前Flutter项目.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬下载配置系统环境变量.ps1/【WindowsOS】⏬下载配置系统环境变量.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击下载SourceTree效率脚本.ps1/【WindowsOS】⏬双击下载SourceTree效率脚本.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⏬双击配置VSCode.ps1/【WindowsOS】⏬双击配置VSCode.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️Flutter 项目组件预下载.ps1/【WindowsOS】⚙️Flutter 项目组件预下载.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter项目至运行.ps1/【WindowsOS】⚙️一键配置Flutter项目至运行.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.ps1/【WindowsOS】⚙️一键配置Flutter／鸿蒙项目至运行.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️下载配置系统环境变量.ps1/【WindowsOS】⚙️下载配置系统环境变量.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装FVM.ps1/【WindowsOS】⚙️双击安装FVM.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️双击安装Flutter.SDK.ps1/【WindowsOS】⚙️双击安装Flutter.SDK.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️收集当前Flutter工程的依赖.ps1/【WindowsOS】⚙️收集当前Flutter工程的依赖.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】⚙️配置Android Studio.ps1/【WindowsOS】⚙️配置Android Studio.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Flutter/WindowsOS/配置相关/【WindowsOS】🎈双击打开系统配置文件.ps1/【WindowsOS】🎈双击打开系统配置文件.cmd",
+      "operation": "insert-setlocal",
+      "before_sha256": "25261f4ef7b16f187d7c9a3d0cdf4fa22fd62792e69a10491d700bf429bb16d5",
+      "after_sha256": "b6573babde746f1d428994552d894683575208ae6dfbad3e91b5022c906b5290",
+      "bytes_added": 34
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）/【WindowsOS】⏬下载配置当前Git子模块（可向下同步递归）.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⏬双击下载SourceTree效率脚本/【WindowsOS】⏬双击下载SourceTree效率脚本.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击Git 提交回退/【WindowsOS】♻️双击Git 提交回退.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料/【WindowsOS】♻️双击恢复误删本地Git已储藏的资料.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️批量Git提交（不含推送）/【WindowsOS】♻️批量Git提交（不含推送）.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】♻️检测并转换为子Git/【WindowsOS】♻️检测并转换为子Git.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）/【WindowsOS】⚙️双击为私人账户生成 SSH 密钥（加密手段_RSA 4096 + ED25519 二选一）.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⚙️双击生成Github远程仓库URL/【WindowsOS】⚙️双击生成Github远程仓库URL.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】⬆️Git添加子模块/【WindowsOS】⬆️Git添加子模块.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🌐双击配置Git动态代理/【WindowsOS】🌐双击配置Git动态代理.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🎬上传GitHub视频附件/【WindowsOS】🎬上传GitHub视频附件.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git依据提交日志关键字查找/【WindowsOS】🔍Git依据提交日志关键字查找.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🔍Git寻找分支最近的一次原始切点/【WindowsOS】🔍Git寻找分支最近的一次原始切点.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.Flutter/【WindowsOS】🚪双击打开Github.Flutter.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo/【WindowsOS】🚪双击打开Github.JobsOCBaseConfigDemo.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🚪双击打开Github.JobsOCKit/【WindowsOS】🚪双击打开Github.JobsOCKit.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧭更新引用Git父仓到子仓/【WindowsOS】🧭更新引用Git父仓到子仓.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧮双击统计MD文件的有效行数/【WindowsOS】🧮双击统计MD文件的有效行数.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧹清理Git子仓运行态记录/【WindowsOS】🧹清理Git子仓运行态记录.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Gits/WindowsOS/【WindowsOS】🧾更新gitmodules/【WindowsOS】🧾更新gitmodules.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "168a48bb33fda5c988bcdea7deee140609df33898c91dcef3fde42986bd2099b",
+      "after_sha256": "e4d50cb7bf8297ddc2b728f889a19fd24493aff426e21168ac5b8f51bf17c8e4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】Caddy本地域名映射.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "10d04561d5f23aa971924933f94e3294f6d760c92946538b7a4e5a389a27aa75",
+      "after_sha256": "c4d93be6a4af619415dc66f5fd30311fa9cebc75dc5ba837683db8c2fcc5acc5",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】JobsKeyboardRecorder.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "69d4c93295dec7d1d14c8cdb4870f0ac0330ef08afe632715fe9ad303bf9feb8",
+      "after_sha256": "d15ae363a2003c8cb156da4e18e0f8a01fdec361ea21c003a63f0a53af7924b4",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】Jobs计划任务.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "fa1fc2cbf088cdd59932faf08c7e51eaf60bad2abc2f30366c9dc142ad522dff",
+      "after_sha256": "c346c9d06a1ddcfeb270e4956b4080dcd8522140e7809831cab785649cc5c509",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】MD5.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2569adf6e253a8d1f2cc8c6a392b10e6603310f6b4de9501d0c43dfb87422ff6",
+      "after_sha256": "ccb4708043bebd8a503796ac4a1a1df154c5acb63b25a5d268fc01f1c9592c0c",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】Mock服务.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "78bb5045a8e5ae607078b6d032cf1fc057b8cb8243f43e6dd8e940942d03e0ce",
+      "after_sha256": "4266ec815f9206f8a6813901fe098f225411c281f647a605e0463e85727432d2",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】StirlingPDF.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "55b5bc07d15ae0866d32e0208cb688c755e44969412099df5361311af30942e3",
+      "after_sha256": "74326c12f9c08073c5f7aa5fa5bf527c13b3ac46d31187976414b1a188069edb",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】URL去乱码.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "033263a42c67816d9d160b0a5f297f0ed19faf2c21f07b592f90d1fe58ad42a5",
+      "after_sha256": "e960e2ed356190f77e4d4bcd5be68bd1c3792b78161c69f2dbb4ebc01eea5f07",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】下载Mock数据.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "bdef313ce61196760185625a649d117367951ae1a956d3edf03102a0c5e942b6",
+      "after_sha256": "05ae7ce2689715dc83008efa0689a8e7d2cf3cb55a56ba891c861260d6622e05",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】全文件搜索文字替换.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "5bff4216d8bd192c23ccbae37746995bd07721066a04d03c0aeaaf4b86e74df0",
+      "after_sha256": "bea379ae4075e7ea9adbd65d35c1f0a46c163fe0b709c16bfcc345e0afa6011d",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】唯一字符串写入.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "343623023ad651cf55a45546a6305a1fc4b6f83641bd747db797f463c6b11f51",
+      "after_sha256": "8935013bb7cb155d4685c2b0bcb79c60daaab81ca1bb61e51f9a84de13d66bd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】子卷合并.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "3e3da1908790bc58bf5225aa6a5a203e040c7ef9291bf3a7b33a871d3ae48b40",
+      "after_sha256": "a31189ddd845e4fb9caa852aa358fd78f61d529fad71f4750995b3591fbb6ab9",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】打开当前路径终端.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "3fa1aae3c4cb7b896342c02bf0a27634eb64d56b16b66eaeb0d40aacd1f6ad50",
+      "after_sha256": "cb45cd205904a4696dad837149658cf1d8efc235ba4c7a68673e9fd40a45cb46",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】文件数统计.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "49fb0a02aac955732ef0d0a3eaeb5341aaa4420c92ae5a3f7404ccf0eff12b13",
+      "after_sha256": "26ee6a263d96d77a6d0a6a1875ce27c05c63fb36ba3018cefda600c6434e74cf",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】时间戳转换工具.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "23acd297f5793e40e570937b83cefbab4d0a9bb4fdf913b33de2151ab39cda8a",
+      "after_sha256": "b9ee400e9b9d95e72c260c46f04d86d143d6a86685a21a779d0721a2110e972d",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】源文件压缩分卷.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "b906859c43b5094dce259a99e971e17d6257bed20ac26d907f40e6988e6c7565",
+      "after_sha256": "cdf6d0f93fcbd37deb8242450220034dfed1c27ababc263420cf48d3129350b2",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】软件包安装升级.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "04d897b89238cae6c2727d713280002595bc41a80c998b1e18fcd43236199e7b",
+      "after_sha256": "9d4d446ad97bb5b8bfe080a5cc2de1bf167ef2b72a80eebb042f9d1a9d046d78",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsCommand@Others/WindowsOS/【WindowsOS】静态网页截全图.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "49ed54717281c0bb702f8f635bf3ac02d66a7efd365cc450a68c653b8398b100",
+      "after_sha256": "d4fbbea83c3831ee42902ad58898e73fccedf3d02c7427e92fad32f3e9b114e2",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】Docker配置.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "817db6c4729afe23de56b1adb4c97640f7cf069094d28e16c733a1630b5f9ede",
+      "after_sha256": "7c76b9ccf3dc2a7a51b61b72895188d731f8efda5c3ab3081cbedb9f95d48fea",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】GoProject.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "47007ca4bf8421416393aa7de2580d84dbcef064a708c824a8f3075736997851",
+      "after_sha256": "6c5ad90892ac55622378870e7f9db2c8b31d6337397febf7151413f09860ab9e",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】HEIC2Jpg.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "66f990ec2098584730b1d4655ce7bb675a959dd5ea1590f59db2497ef367f784",
+      "after_sha256": "ec8e1575cc1635434b8e0d4d27385dd7256149e0d5998b9aa0e5db78f0fa5b41",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】Java环境配置.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "452547e6e7bb2ea19eb4ce84221e734951d3617e89fab280a10de641585341b5",
+      "after_sha256": "3692a9b03599382cb2e578b1e88fdaa0b2b593facbeac04542acc348ad3d8208",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL卸载.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "1e1b616eb389261dec4e3f344d601b3215b7d8343ccae4079fd76b455cc63458",
+      "after_sha256": "06dc80c7ea00500fea43fc6f1335b3b4f395bceb77a297e312c2d31296568b26",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL管理.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "470687bd6b13c096e62e08517b175b41ef291b61e7e11d4ea8a6ac91a7615b5d",
+      "after_sha256": "4f2ec6ebbf889f6775f456b77f6ecaeff3eb43a633724172d1ca52a721d12e2a",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL配置.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "ee1591be5fa957fc7883683b547f8c32cac987828e6a3654bbdebd248e618127",
+      "after_sha256": "11cbe2e741e251d4d25d2bb29624bac76702f46f654fb9537423ac10d0340205",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】MySQL重建空密码.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "b4939dbaa0c83f5de3c0e94fb0b603e38b4a9096a0ee5cec35434f1c90976176",
+      "after_sha256": "9eb2643583d915850b5dba6769d698817c4e9349db60c9c06be50c1c9ac06da8",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】PHP与Apache.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "82ac916c8c78c56616c51e868f0abd35851d2d41f6746ff0851758f16033e2e4",
+      "after_sha256": "b9a3d3811dbc2852dfa68a3882f930cf784580af6d131f288204cef5d853509d",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】RubyGems.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "a1b38925ff32e34f4b9acfc650f7f8dd07f16f5d1c61302386f2305c1504481a",
+      "after_sha256": "a143312a09073714889628c5d4a3ba1b9dcc9ea3aaebf73062f9077e497c7298",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】Ruby环境升级.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "bd084f9eda6921258e3833bd76ae2c72ebd397834e2bdbc6d128472d2052123b",
+      "after_sha256": "b182390877dc64f7b45ff2950fec6634ca1fe4dd1cf77cd15f5194888e7f30b0",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】Tomcat.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "75dace47ee63304283ceaa0a76256cdc6f11175a699cf56486f3bb90c7f147f4",
+      "after_sha256": "4288405a6d0f5bffec4a6932a6a233f07423957a5406476f0e05c811d1788961",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】受保护文件追加.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "6848e365da29042906b2d27bec89b9da8829187251e6a8680b13374ab4e12b1b",
+      "after_sha256": "f5c34691cc8782cf2106c2c2b7ef1c6c2699bd3972700259b61e3597e1218a05",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】文件扩展名显示.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "f40e2b7e6edff037274b5c84a3e7eb8f964db1bc6d5b71301bf2fcbc1c67ca29",
+      "after_sha256": "933449638a959c8ee74a983b10b27041198c141c092387bd2a7a6f8accda34d1",
+      "bytes_added": 24
+    },
+    {
+      "path": "JobsSh.sh/WindowsOS/【WindowsOS】网页视频下载.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "d06325102cc06a56c1c4ffee354cc6500787f598afb9d402950aa0ae9534e189",
+      "after_sha256": "0762402d5b832f58fcaaff08a181e16e19259139d6fdd1404fcb9a488d275cad",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/Install-Menu.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "f11db1de46c554fdd9feed0107d66f5593c707544fe64fd69bc7814c99ce1efd",
+      "after_sha256": "66855833cabe7970e106e746352d9c564671a61aa9c4f1012970acdf30c4aa54",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本/【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⏬只拉取远程代码/【WindowsOS@SourceTree】⏬只拉取远程代码.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️修复Flutter项目中文路径/【WindowsOS@SourceTree】♻️修复Flutter项目中文路径.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】♻️双击Git（识别子Git） 提交回退/【WindowsOS@SourceTree】♻️双击Git（识别子Git） 提交回退.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️收集当前Flutter工程的依赖/【WindowsOS@SourceTree】⚙️收集当前Flutter工程的依赖.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】⚙️运行授权/【WindowsOS@SourceTree】⚙️运行授权.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】同步edgetunnel代码后手动升级/【WindowsOS@SourceTree】同步edgetunnel代码后手动升级.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开/【WindowsOS@SourceTree】用Android Studio打开.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Android Studio打开openjdk64-17.0.16/【WindowsOS@SourceTree】用Android Studio打开openjdk64-17.0.16.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trae打开@openjdk64-17.0.16/【WindowsOS@SourceTree】用Trae打开@openjdk64-17.0.16.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用Trea打开/【WindowsOS@SourceTree】用Trea打开.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开/【WindowsOS@SourceTree】用VSCode打开.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用VSCode打开@openjdk64-17.0.16/【WindowsOS@SourceTree】用VSCode打开@openjdk64-17.0.16.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】用终端打开/【WindowsOS@SourceTree】用终端打开.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】获取目标绝对地址/【WindowsOS@SourceTree】获取目标绝对地址.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🌐获取远程仓库地址/【WindowsOS@SourceTree】🌐获取远程仓库地址.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter自动化生产代码/【WindowsOS@SourceTree】🐦Flutter自动化生产代码.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter重新拉取第三方依赖/【WindowsOS@SourceTree】🐦Flutter重新拉取第三方依赖.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦Flutter项目体检/【WindowsOS@SourceTree】🐦Flutter项目体检.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🐦打开：运行Flutter项目/【WindowsOS@SourceTree】🐦打开：运行Flutter项目.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📘用Typora打开蓝皮书/【WindowsOS@SourceTree】📘用Typora打开蓝皮书.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Commit/【WindowsOS@SourceTree】📥修复Git无法Commit.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📥修复Git无法Fetch/【WindowsOS@SourceTree】📥修复Git无法Fetch.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.android/【WindowsOS@SourceTree】📦双击打包Flutter.android.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】📦双击打包Flutter.ohos/【WindowsOS@SourceTree】📦双击打包Flutter.ohos.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🚀逐层空白提交并Push/【WindowsOS@SourceTree】🚀逐层空白提交并Push.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "SourceTree.command/WindowsOS/【WindowsOS@SourceTree】🪄配置并运行Magic Resume/【WindowsOS@SourceTree】🪄配置并运行Magic Resume.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "304eea8b06875142a575138e10f4b9fc7ab1f6fe93ce3bfde34e1c6f4ac94756",
+      "after_sha256": "e5031ce35701b56701712a1bb2958bf189d0938d7a26c3f0d8027263823136b5",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/Configure.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "a7f69badd7a137016313b9e6613a826490e742124d077dad2261fa06e5ca14cb",
+      "after_sha256": "c73926ff389c983c95325494ba08250f8dfd73a23186e36256e8771a28109d99",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "26b6ec0463a88566710899fa81cfc603d85579f0c350551f1b32c8ae9c7a6150",
+      "after_sha256": "6d7279d14c3f427f0c41cc62706d736c339946a0d546e6a2eccb591cf9db731c",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Run.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2d51cf9938258caac0f8591461a1f0f509d2c3228475541d09594586624757d3",
+      "after_sha256": "b68aab45e64a2593f4d33013e073842db7b282880e4374517c8e9ce03089ad6a",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorCreator/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Run.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "ad1966c508ec5beb6fa9c5d0f62b114b0f4137cd56bf757f3af0081f970816ad",
+      "after_sha256": "4e580628d13b06743f95310587015954f95339889fa813342bb8c174373ea1c0",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidSimulatorRepairer/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsAndroidStudioOpener/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsBuildArtifactCleaner/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsCodeGraphUpdater/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterCodegen/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterDependencyExtractor/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "ff06c572a63e37df053a046b74f668e9234ece808501e0fa3d393c5dd2b80139",
+      "after_sha256": "1b96ab97f6eb8427a54907654ffb013110125ee2aa750d4f21cff1acbc5329ca",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterDoctor/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterPackager/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterPubGet/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterRunner/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterSdkInspector/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "58e6623a9f7bb9286ffd9407d626217f29abc7f196b8fe8612133663f49f85d8",
+      "after_sha256": "84169c8800f1e034e6bcc9ea1989627e05e7d9d5ad49308ed5929bcd039e8ee8",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterTools/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "302846b65a7203fafa9014862aacace362661440cbc263a6fe06fa287245afdb",
+      "after_sha256": "81947f084883b76f924802e64e78a9325a947a12d7ce10c4c79fd149d8c44ff3",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "9a1c2b219cfe5697096e06d46797d65b8207905e2f44b546d9c97f68c9761fcc",
+      "after_sha256": "b12505d5e38655ab586b7728fc888749e608549c8c5c4c3b9a4a94f24601067b",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsFlutterVersionMgr/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitEmptyCommitPusher/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/ConfigureGit.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "f341ca5f6856cd841929d625122e1c96cc7049de27e34ea7f5ae11f4046b1a57",
+      "after_sha256": "744f5baae51f54f6ee36b59bb88ce043fd6b6422c08e669f02c15ea2b8caeaf3",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "1f3a73e0237eee0184144ac90587303a1933f2b8d8395612b48dee3dceb8aa10",
+      "after_sha256": "21b6a02485a520ac1056ca379d9a30bc9c6b6e36039f63a46611d046dbc3d6d5",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "a7cd8a050f1547379a96f6d5377d14298fb002b0ddbce97d4fff8960d2a470d2",
+      "after_sha256": "f80bb7a4497e65d6ea982518809128b9acada94ca6191a4760076cdfdf634bb3",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/【Windows】卸载配置Git动态代理右键菜单.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "a7cd8a050f1547379a96f6d5377d14298fb002b0ddbce97d4fff8960d2a470d2",
+      "after_sha256": "f80bb7a4497e65d6ea982518809128b9acada94ca6191a4760076cdfdf634bb3",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/【Windows】安装配置Git动态代理右键菜单.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "1f3a73e0237eee0184144ac90587303a1933f2b8d8395612b48dee3dceb8aa10",
+      "after_sha256": "21b6a02485a520ac1056ca379d9a30bc9c6b6e36039f63a46611d046dbc3d6d5",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitProxyConfigurator/【Windows】配置Git动态代理.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "f341ca5f6856cd841929d625122e1c96cc7049de27e34ea7f5ae11f4046b1a57",
+      "after_sha256": "744f5baae51f54f6ee36b59bb88ce043fd6b6422c08e669f02c15ea2b8caeaf3",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "275d3cfc8b1ba93b13dfc96ca40d26dc8dbfa8467bef399beaaef4232d4c4c0e",
+      "after_sha256": "d477a8a316f757f5de826c1f03a8603953d212a4fa874b327a246efdad0ca510",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitPuller/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "ff06c572a63e37df053a046b74f668e9234ece808501e0fa3d393c5dd2b80139",
+      "after_sha256": "1b96ab97f6eb8427a54907654ffb013110125ee2aa750d4f21cff1acbc5329ca",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteCopier/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsGitRemoteOpener/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Run.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "6744a96afcc8d7abf227de21166f7165b3f3fbd3dcc1db499c08d3a8fe30c925",
+      "after_sha256": "7af74d855f246542b94dd0080ad5d923959cadbe032c42dac35b0104e7c1ed20",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorCreator/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Run.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "0788623f7a2f193717d5c17769238f4e5be377e271f7b4769d8501d323d1becf",
+      "after_sha256": "d4bc52b67221ccaf1b87d42acd9b26b86f546e0a226561d17ce76d16ef230952",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsHarmonySimulatorRepairer/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsPathCopier/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Run.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "ad5b110836bebda9407999a924a9bdb311b96f77296caccea34f35ded93f16ae",
+      "after_sha256": "70bd836d47c7c526d042cb0599d35745aa62f3caf6c321bf4956c14272fbf888",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizationRevoker/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Run.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "ad5b110836bebda9407999a924a9bdb311b96f77296caccea34f35ded93f16ae",
+      "after_sha256": "70bd836d47c7c526d042cb0599d35745aa62f3caf6c321bf4956c14272fbf888",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsRunAuthorizer/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsTerminalOpener/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsVSCodeOpener/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Install.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "8d34e67e8e64d8465942b85afdb61c0886e994c4dda79ec338c01126798153ca",
+      "after_sha256": "023137df98cf814435d48fe1e44defd81c29f15bc96a9ba5c098b7862a8fd067",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/JobsVisualStudioOpener/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "2f688e348c5dbb32964b914f477f2788be1f0136ccdff39fe6196e83ebff92e9",
+      "after_sha256": "9e56becd8531ff43b608c2c8b6395157f49759a8a600f11dc7faa96d15d8fbd7",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/Uninstall.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "02780342b7a71e3635d6ea1471c5cfc77fbb2dbb97f807b0223fd822832bd856",
+      "after_sha256": "6f79a8b4a3382b00cf0ea6fe25969d737cd64557036bf691c6b7116dd06d0ac5",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/【Windows】🧩卸载资源管理器扩展.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "02780342b7a71e3635d6ea1471c5cfc77fbb2dbb97f807b0223fd822832bd856",
+      "after_sha256": "6f79a8b4a3382b00cf0ea6fe25969d737cd64557036bf691c6b7116dd06d0ac5",
+      "bytes_added": 24
+    },
+    {
+      "path": "OS@Extension/WindowsOS@Extension/【Windows】🧩安装资源管理器扩展.cmd",
+      "operation": "replace-setlocal",
+      "before_sha256": "26b6ec0463a88566710899fa81cfc603d85579f0c350551f1b32c8ae9c7a6150",
+      "after_sha256": "6d7279d14c3f427f0c41cc62706d736c339946a0d546e6a2eccb591cf9db731c",
+      "bytes_added": 24
+    }
+  ]
+}
