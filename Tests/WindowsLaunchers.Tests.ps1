@@ -194,7 +194,7 @@ try {
         Write-Host ('SKIP：企业策略优先，真实 -Check 代表不运行；MachinePolicy=' + $machinePolicy + '，UserPolicy=' + $userPolicy + '。')
     } else {
         Invoke-JobsLauncherReadOnlyCheck 'JobsSh.sh/WindowsOS/【WindowsOS】GoProject.cmd' 'JobsSh.GoProject'
-        Invoke-JobsLauncherReadOnlyCheck 'JobsCommand@Others/WindowsOS/【WindowsOS】MD5.cmd' 'Others.MD5'
+        Invoke-JobsLauncherReadOnlyCheck 'JobsCommand@Others/WindowsOS/【WindowsOS】MD5/【WindowsOS】MD5.cmd' 'Others.MD5'
     }
     Write-Host ('PASS：' + $script:assertions + ' 项断言；190 个静态入口，' + $caseIndex + ' 种真实 CMD 形态及 Legacy 缺目标门禁。')
 } finally {
