@@ -32,11 +32,13 @@
 
 **Windows 版本限制：** 资源管理器扩展当前以 Windows 10 / 11 图形桌面及系统 PowerShell 5.1 Desktop 为目标，完整实机验收尚未完成；XP / Vista / Windows 8 不支持当前入口。Windows 7 SP1 / 8.1 补装 WMF 5.1 后仅可探索基础静态菜单，不能视为支持承诺。Windows 11 在“显示更多选项”内使用；x86 / ARM64、原生菜单编译及 SDK / 模拟器业务另有限制，无统一最低 build 保证。测试前阅读 [Windows 版本矩阵与虚拟机边界](./WindowsOS@Extension/README.md#windows-compatibility)。
 
+两端右键菜单统一在名称前加入与功能含义相近的 emoji；不同功能使用不同标识，同一功能的两端与兼容入口保持一致。例如“📋 复制绝对路径”“📦 Flutter打包”“⏪ Git 提交回退”。
+
 两端安装面板均展开可执行的 Flutter 子菜单，支持逐项勾选及组内全选 / 全不选；同包只安装一次，重装时按本次 Flutter 选择更新菜单。macOS 提供十九项叶子功能；Windows 按其已实现的功能列出，平台差异见各自说明。
 
 两端的“Git操作 → Git 提交回退”仅对有效 Git 工作树内的普通文件夹显示，支持独立仓库、嵌套子 Git、子模块和 linked worktree。点击后在终端选择 upstream soft / hard、历史提交 soft / hard、tag hard 或 reflog hard，共六种模式；hard 必须精确输入 `YES`。功能自包含，不要求安装 SourceTree 脚本仓库。安装与运行细节见 [macOS 回退说明](./MacOS@Extension/JobsGitRollback/README.md)和 [Windows 回退说明](./WindowsOS@Extension/JobsGitRollback/README.md)。
 
-两端桌面空白菜单均提供“Harmony 模拟器检测与修复”，仅操作精确选中的本机实例；普通单文件菜单同时提供“运行授权”和“解除运行授权”。macOS 清除 POSIX 执行位，Windows 按当前用户的文件执行权限处理，详细确认、回滚与限制见各包说明。
+两端桌面空白菜单均提供“Harmony 模拟器检测与修复”，仅操作精确选中的本机实例；单个可执行格式文件同时显示“🔓 运行授权”和“🔒 解除运行授权”，根据当前执行权限互斥置灰；README、文本等普通文档不显示这两项。macOS 清除 POSIX 执行位，Windows 按当前用户的文件执行权限处理，详细确认、回滚与限制见各包说明。
 
 ## <span id="jobs-toc-heading-3" data-jobs-toc="v2">二、目录与运行入口 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
