@@ -1,0 +1,15 @@
+EXIT=1
+
+Traceback (most recent call last):
+  File "C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\JobsPythonTools.py\JobsAppTrafficMonitor.py\JobsAppTrafficMonitor\tests\windows_etw_smoke.py", line 91, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\JobsPythonTools.py\JobsAppTrafficMonitor.py\JobsAppTrafficMonitor\tests\windows_etw_smoke.py", line 21, in main
+    collector.start()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\JobsPythonTools.py\JobsAppTrafficMonitor.py\JobsAppTrafficMonitor\src\jobs_app_traffic_monitor\collectors\windows_etw.py", line 247, in start
+    session.open()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\JobsPythonTools.py\JobsAppTrafficMonitor.py\JobsAppTrafficMonitor\src\jobs_app_traffic_monitor\collectors\windows_etw.py", line 146, in open
+    raise _etw_error("StartTraceW", code)
+OSError: [Errno 5] StartTraceW: 网络采集需要管理员权限；请退出后以管理员身份重新运行。（错误 5）

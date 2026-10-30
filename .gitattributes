@@ -6,4 +6,5 @@
 "/OS@Extension/README.md" filter=jobs-markdown-toc
 "/Tests/README.md" filter=jobs-markdown-toc
 "/脚本审计与升级报告.md" filter=jobs-markdown-toc
+"/Tests/Reports/windows11-arm64-2026-10-30/README.md" filter=jobs-markdown-toc
 # jobs-markdown-toc:end

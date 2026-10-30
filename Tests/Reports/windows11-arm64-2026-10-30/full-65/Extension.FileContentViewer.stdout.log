@@ -1,0 +1,2 @@
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsViewer-c62a5a1a39ab4abf90f0951124da862c\link.txt
+PASS: FileContentViewer.Tests.ps1 (38 assertions)

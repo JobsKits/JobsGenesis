@@ -1,0 +1,4 @@
+[Jobs] 来源：官方 Flutter Windows 发布清单 https://storage.googleapis.com/flutter_infra_release/releases/releases_windows.json
+[Jobs] 安装完成，将此目录加入用户 Path：C:\Users\lg295\AppData\Local\Temp\JobsFlutterBootstrap-35989db89cfa43c89859a03b07682821\flutter\bin
+[Jobs] 来源：官方 Flutter Windows 发布清单 https://storage.googleapis.com/flutter_infra_release/releases/releases_windows.json
+PASS：7 项 Flutter 首次安装断言；未联网或安装真实 SDK。

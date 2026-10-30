@@ -1,0 +1,62 @@
+项目精确备份：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\UserData\Jobs\WindowsExtension\extensions\flutter-version-manager\backups\project-2026-10-29-23-43-50-c907fd5a5d334b26bc9d74d854164b88；SDK 链接仅记录目标，不复制 SDK 缓存。
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\guard-project\.fvm\fvm_config.json
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\guard-project\.fvm\version
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\guard-project\.fvm\release
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\guard-project\.fvm\.gitignore
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\guard-project\unsafe.code-workspace
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\guard-project\.fvm\version
+官方历史/最新版本查询失败；仅提供已完成初始化的本机缓存，不能据此判断最新版本。
+官方历史/最新版本查询失败；仅提供已完成初始化的本机缓存，不能据此判断最新版本。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+已取消选择，项目未修改。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+已取消，项目未修改。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+已取消，项目未修改。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+已取消，项目未修改。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+项目精确备份：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\UserData\Jobs\WindowsExtension\extensions\flutter-version-manager\backups\project-2026-10-29-23-43-50-b70c5be540cf4cf5a929935eddb3198d；SDK 链接仅记录目标，不复制 SDK 缓存。
+执行：fvm use 3.22.0 --skip-pub-get --skip-setup
+成功：项目已绑定 Flutter 3.22.0；实际 SDK 已复核。备份：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\UserData\Jobs\WindowsExtension\extensions\flutter-version-manager\backups\project-2026-10-29-23-43-50-b70c5be540cf4cf5a929935eddb3198d
+后续终端命令使用 FVM：& 'fixture.exe' flutter pub get；IDE SDK 指向项目 .fvm/flutter_sdk。请审阅 Git 差异，将 .fvmrc 纳入版本控制并忽略 .fvm/。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；uncached fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+项目精确备份：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\UserData\Jobs\WindowsExtension\extensions\flutter-version-manager\backups\project-2026-10-29-23-43-50-b7e48a89fede42a2b6b00a524b6cf22a；SDK 链接仅记录目标，不复制 SDK 缓存。
+执行：fvm install 3.22.0 --skip-pub-get；来源由以上 FVM 配置决定。
+执行：fvm use 3.22.0 --skip-pub-get --skip-setup
+成功：项目已绑定 Flutter 3.22.0；实际 SDK 已复核。备份：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\UserData\Jobs\WindowsExtension\extensions\flutter-version-manager\backups\project-2026-10-29-23-43-50-b7e48a89fede42a2b6b00a524b6cf22a
+后续终端命令使用 FVM：& 'fixture.exe' flutter pub get；IDE SDK 指向项目 .fvm/flutter_sdk。请审阅 Git 差异，将 .fvmrc 纳入版本控制并忽略 .fvm/。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；uncached fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+当前项目 .fvmrc：3.22.0
+计划：3.22.0 → 3.22.0；uncached fixture
+写入范围：当前根 .fvmrc（保留其它字段、关闭向父 Melos 同步）、.fvm/、可能的 .gitignore、.vscode/settings.json 和根 *.code-workspace；不获取项目 pub 依赖。未缓存版本将下载 SDK。
+项目精确备份：C:\Users\lg295\AppData\Local\Temp\JobsFvm [中文] & 100% ' 0b0136a4874747d58c35d3c8b72b8be8\UserData\Jobs\WindowsExtension\extensions\flutter-version-manager\backups\project-2026-10-29-23-43-50-21fef0596b98405784f0396286bbf66f；SDK 链接仅记录目标，不复制 SDK 缓存。
+PASS: FlutterVersionMgr.Tests.ps1 (63 assertions; fixtures only)

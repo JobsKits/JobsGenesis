@@ -6,7 +6,8 @@
 param(
     [string]$OutputDirectory,
     [ValidateRange(1, 86400)][int]$TimeoutSeconds = 300,
-    [hashtable]$SuiteTimeoutSeconds = @{}
+    [hashtable]$SuiteTimeoutSeconds = @{},
+    [string[]]$SuiteIds = @()
 )
 
 Set-StrictMode -Version 2.0
@@ -22,7 +23,15 @@ function Get-JobsWindowsTestSuites {
         @{ Id = 'JobsSh.Regression'; Path = 'JobsSh.sh/WindowsOS/Tests/Regression.ps1' },
         @{ Id = 'Others.Regression'; Path = 'JobsCommand@Others/WindowsOS/Tests/Regression.ps1' },
         @{ Id = 'Flutter.Portable'; Path = 'JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1' },
-        @{ Id = 'Doctor.Build'; Path = 'Tests/DoctorBuild.Tests.ps1' }
+        @{ Id = 'Doctor.Build'; Path = 'Tests/DoctorBuild.Tests.ps1' },
+        @{ Id = 'Python.BAT'; Path = 'Tests/PythonBat.Tests.ps1' },
+        @{ Id = 'Others.FileVolumes'; Path = 'JobsCommand@Others/WindowsOS/Tests/FileVolumes.Tests.ps1' },
+        @{ Id = 'Flutter.HarmonyBuild'; Path = 'JobsCommand@Flutter/WindowsOS/Tests/HarmonyBuild.Tests.ps1' },
+        @{ Id = 'Flutter.Bootstrap'; Path = 'JobsCommand@Flutter/WindowsOS/Tests/Bootstrap.Tests.ps1' },
+        @{ Id = 'Flutter.SimulatorEntries'; Path = 'JobsCommand@Flutter/WindowsOS/Tests/SimulatorEntries.Tests.ps1' },
+        @{ Id = 'SourceTree.Remote'; Path = 'SourceTree.command/WindowsOS/Tests/Remote.Tests.ps1' },
+        @{ Id = 'SourceTree.FlutterRunner'; Path = 'SourceTree.command/WindowsOS/Tests/FlutterRunner.Tests.ps1' },
+        @{ Id = 'SourceTree.HarmonyBuild'; Path = 'SourceTree.command/WindowsOS/Tests/HarmonyBuild.Tests.ps1' }
     )
     foreach ($name in @(
         'Core', 'Catalog', 'Architecture', 'Installer', 'PackageInstaller',
@@ -32,7 +41,13 @@ function Get-JobsWindowsTestSuites {
         'FlutterPackager', 'FlutterDoctorCodegen', 'BuildArtifactCleaner',
         'AndroidSimulatorCreator', 'AndroidSimulatorRepair', 'AndroidSimulatorRepairer',
         'AndroidSimulatorBootstrap', 'GitProxyConfigurator', 'HarmonySimulatorCreator',
-        'HarmonySimulatorRepairer', 'HarmonySimulatorBootstrap', 'HarmonySimulatorImages'
+        'HarmonySimulatorRepairer', 'HarmonySimulatorBootstrap', 'HarmonySimulatorImages',
+        'FileContentViewer', 'FileVolumes', 'FlutterDependencyArchiveEndToEnd',
+        'FlutterDependencyArchiveShell', 'FlutterDependencyImporter', 'FlutterDependencyIntros',
+        'FlutterHarmonyPackage', 'FlutterProjectDependencies', 'FlutterProjectSetup',
+        'FlutterProjectSetupDashboard', 'FlutterProjectSetupLogTail', 'FlutterProjectSetupVersion',
+        'FlutterRunnerAndroid', 'GitRollback', 'HiddenFiles', 'IDEProject',
+        'ManagementExecution', 'ManagementLogTerminal', 'SourcetreeOpener'
     )) {
         $suites += @{ Id = 'Extension.' + $name; Path = 'OS@Extension/WindowsOS@Extension/Tests/' + $name + '.Tests.ps1' }
     }
@@ -170,6 +185,7 @@ try {
     $process.StartInfo.CreateNoWindow = $true
     $process.StartInfo.RedirectStandardOutput = $true
     $process.StartInfo.RedirectStandardError = $true
+    $process.StartInfo.RedirectStandardInput = $true
     $process.StartInfo.EnvironmentVariables['GIT_TERMINAL_PROMPT'] = '0'
     $process.StartInfo.EnvironmentVariables['GIT_ALLOW_PROTOCOL'] = 'file'
     $clock = [Diagnostics.Stopwatch]::StartNew()
@@ -184,6 +200,8 @@ try {
         $stderrFile = [IO.File]::Open($stderrPath, [IO.FileMode]::CreateNew, [IO.FileAccess]::Write, [IO.FileShare]::Read)
         [void]$process.Start()
         $started = $true
+        # Console.ReadLine 也必须看到 EOF，不能继承桌面控制台等待输入。
+        $process.StandardInput.Close()
         # 两条流直接异步落盘，失败和超时也保留已经产生的输出。
         $stdoutCopy = $process.StandardOutput.BaseStream.CopyToAsync($stdoutFile)
         $stderrCopy = $process.StandardError.BaseStream.CopyToAsync($stderrFile)
@@ -220,12 +238,19 @@ try {
 
 function Invoke-JobsWindowsRegression {
     Write-Host 'Jobs | Windows 脚本隔离回归'
-    Write-Host '范围：六个 Windows 源码根及四个指定文件的语法 / BOM 检查，以及 38 套临时夹具测试。'
+    Write-Host '范围：六个 Windows 源码根及指定文件的语法 / BOM 检查，以及显式清单中的临时夹具测试。'
     Write-Host '测试逐套使用独立 PowerShell 5.1；Ctrl+C 停止。跳过项单独记为 Partial。'
     if ([Environment]::OSVersion.Platform -ne [PlatformID]::Win32NT) { throw '此编排器仅在 Windows 执行；请在虚拟机中使用 Windows PowerShell 5.1。' }
     if ($PSVersionTable.PSEdition -ne 'Desktop' -or $PSVersionTable.PSVersion.Major -ne 5 -or $PSVersionTable.PSVersion.Minor -ne 1) { throw '请使用系统 Windows PowerShell 5.1（powershell.exe），不能用 pwsh 代替目标运行时。' }
     $repositoryRoot = Split-Path -Parent $PSScriptRoot
     $suites = @(Get-JobsWindowsTestSuites)
+    if ($SuiteIds.Count) {
+        foreach ($id in $SuiteIds) {
+            if ($id -notin @($suites.Id)) { throw ('未知测试套件：' + $id) }
+        }
+        $suites = @($suites | Where-Object { $_.Id -in $SuiteIds })
+    }
+    Write-Host ('本次计划：' + $suites.Count + ' 套；' + $(if ($SuiteIds.Count) { '指定套件回归' } else { '完整清单回归' }))
     foreach ($key in $SuiteTimeoutSeconds.Keys) {
         if ($key -notin @($suites.Id) -or [int]$SuiteTimeoutSeconds[$key] -lt 1 -or [int]$SuiteTimeoutSeconds[$key] -gt 86400) { throw ('无效套件超时配置：' + $key) }
     }
@@ -239,7 +264,7 @@ function Invoke-JobsWindowsRegression {
     if ([Environment]::Is64BitOperatingSystem -and -not [Environment]::Is64BitProcess) { $systemDirectory = 'Sysnative' }
     $powerShell = Join-Path $env:SystemRoot ($systemDirectory + '/WindowsPowerShell/v1.0/powershell.exe')
     $roots = @('JobsCommand@Gits/WindowsOS', 'SourceTree.command/WindowsOS', 'JobsSh.sh/WindowsOS', 'JobsCommand@Others/WindowsOS', 'JobsCommand@Flutter/WindowsOS', 'OS@Extension/WindowsOS@Extension')
-    $extraFiles = @('Tests/WindowsRegression.ps1', 'Tests/WindowsLaunchers.Tests.ps1', 'Tests/DoctorBuild.Tests.ps1', 'JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1')
+    $extraFiles = @('Tests/WindowsRegression.ps1', 'Tests/WindowsLaunchers.Tests.ps1', 'Tests/DoctorBuild.Tests.ps1', 'Tests/PythonBat.Tests.ps1', 'JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1')
     $report = [ordered]@{
         SchemaVersion = 1; StartedUtc = [DateTime]::UtcNow.ToString('o'); FinishedUtc = $null; Status = 'Running'
         RepositoryRoot = $repositoryRoot; PowerShellVersion = $PSVersionTable.PSVersion.ToString()

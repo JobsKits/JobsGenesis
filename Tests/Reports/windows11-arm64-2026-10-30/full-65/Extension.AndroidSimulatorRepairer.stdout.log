@@ -1,0 +1,22 @@
+安装位置：0（自动），复测通过。
+完整 AVD 备份（请保留）：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepairer 中文 & 100% ' cb015ebf34e14dc89c5fedea778d038f\avd\.jobs-repair-backup-20261029-234740-db61cbb776d3479aae3199bbecd38cb8
+复测 /data：总量 2097152 KB，可用 1000 MB；备份：fixture-backup
+复测 /data：总量 6291456 KB，可用 1 MB；备份：fixture-backup
+复测 /data：总量 6291456 KB，可用 2048 MB；备份：fixture-backup
+实际分区容量增加且空间达到阈值，复测通过。
+Jobs Android 模拟器检测与修复 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorRepairer\Scripts
+用途：检查 INSTALL_FAILED_INSUFFICIENT_STORAGE；仅正在运行的本机 Android Emulator。
+影响：默认恢复所选模拟器安装位置为自动，并复测 /data；可选编译缓存重置、单一精确包名卸载、完整备份后调整 AVD 配置并冷启动。
+危险行为另需精确 YES；不操作真机、不自动卸载内置应用、不执行 wipe-data、不安装工具、不修改代理或全局环境。
+阈值：800 MB；扩容目标：8G；日志：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepairer 中文 & 100% ' cb015ebf34e14dc89c5fedea778d038f\user-data\Jobs\WindowsExtension\extensions\android-simulator-repair\logs
+emulator-5554 / Demo：安装位置 0；/data 总量 2097152 KB，可用 1000 MB。
+配置：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepairer 中文 & 100% ' cb015ebf34e14dc89c5fedea778d038f\avd\Demo.avd\config.ini
+只读检测通过；未执行设备写入、备份、配置修改或冷启动。
+Jobs Android 模拟器检测与修复 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorRepairer\Scripts
+用途：检查 INSTALL_FAILED_INSUFFICIENT_STORAGE；仅正在运行的本机 Android Emulator。
+影响：默认恢复所选模拟器安装位置为自动，并复测 /data；可选编译缓存重置、单一精确包名卸载、完整备份后调整 AVD 配置并冷启动。
+危险行为另需精确 YES；不操作真机、不自动卸载内置应用、不执行 wipe-data、不安装工具、不修改代理或全局环境。
+阈值：800 MB；扩容目标：8G；日志：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepairer 中文 & 100% ' cb015ebf34e14dc89c5fedea778d038f\user-data\Jobs\WindowsExtension\extensions\android-simulator-repair\logs
+emulator-5554 / Demo：安装位置 0；/data 总量 2097152 KB，可用 1 MB。
+配置：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepairer 中文 & 100% ' cb015ebf34e14dc89c5fedea778d038f\avd\Demo.avd\config.ini
+PASS: AndroidSimulatorRepairer.Tests.ps1 (100 assertions)

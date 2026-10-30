@@ -1,0 +1,30 @@
+当前没有生效中的 Git 动态配置。
+Git 动态入口：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前会话不会更新；新终端仍可能继承旧环境。请优先使用 OpenGitCmd.cmd / OpenGitPowerShell.cmd，并用 C 核对实际路径。
+Sourcetree 请保存工作并退出后，将 System Git 指向上述真实 git.exe；本工具不修改不确定的应用偏好。
+配置完整；真实 shim：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前进程解析的 Git：C:\Users\lg295\AppData\Local\Temp\JW 中 2cbd094d73\g\cmd\git.exe
+PATH 与应用选择不等于联网成功；Windows 桌面和远端需另行验证。
+当前版本及配置已完整安装，无需重复修改。
+Git 动态入口：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前会话不会更新；新终端仍可能继承旧环境。请优先使用 OpenGitCmd.cmd / OpenGitPowerShell.cmd，并用 C 核对实际路径。
+Sourcetree 请保存工作并退出后，将 System Git 指向上述真实 git.exe；本工具不修改不确定的应用偏好。
+已精确恢复最新配置前的用户 PATH 与运行态；现有进程仍可能保留旧环境，需刷新环境或重新登录；Sourcetree 请恢复原 Git 选择。
+配置完整；真实 shim：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前进程解析的 Git：C:\Users\lg295\AppData\Local\Temp\JW 中 2cbd094d73\g\cmd\git.exe
+PATH 与应用选择不等于联网成功；Windows 桌面和远端需另行验证。
+没有需要恢复的最新配置。
+Git 动态入口：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前会话不会更新；新终端仍可能继承旧环境。请优先使用 OpenGitCmd.cmd / OpenGitPowerShell.cmd，并用 C 核对实际路径。
+Sourcetree 请保存工作并退出后，将 System Git 指向上述真实 git.exe；本工具不修改不确定的应用偏好。
+配置完整；真实 shim：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前进程解析的 Git：C:\Users\lg295\AppData\Local\Temp\JW 中 2cbd094d73\g\cmd\git.exe
+PATH 与应用选择不等于联网成功；Windows 桌面和远端需另行验证。
+配置完整；真实 shim：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前进程解析的 Git：C:\Users\lg295\AppData\Local\Temp\JW 中 2cbd094d73\g\cmd\git.exe
+PATH 与应用选择不等于联网成功；Windows 桌面和远端需另行验证。
+已精确恢复最新配置前的用户 PATH 与运行态；现有进程仍可能保留旧环境，需刷新环境或重新登录；Sourcetree 请恢复原 Git 选择。
+配置完整；真实 shim：C:\Users\lg295\AppData\Local\Temp\JobsGitProxy-e871b2ab22a34b3db064e58869ff7f97\UserData\JobsGitNetworkStrategy\runtime\bin\git.exe
+当前进程解析的 Git：C:\Users\lg295\AppData\Local\Temp\JW 中 2cbd094d73\g\cmd\git.exe
+PATH 与应用选择不等于联网成功；Windows 桌面和远端需另行验证。
+PASS: GitProxyConfigurator.Tests.ps1 (81 assertions)

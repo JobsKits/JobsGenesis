@@ -1,0 +1,16 @@
+备份：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\中文 [file].txt.jobs-backup-20261029-234219-039-3e643d
+已写入：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\中文 [file].txt
+已有相同非注释行，跳过。
+命中：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\replace tree\中文 [text].txt
+备份：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\replace tree\中文 [text].txt.jobs-backup-20261029-234219-114-03329b
+已替换 1 个文件。
+命中：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\replace tree\中文 [text].txt
+备份：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\replace tree\中文 [text].txt.jobs-backup-20261029-234219-126-416f25
+已替换 1 个文件。
+命中：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\replace tree\中文 [text].txt
+已生成 3 卷：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\parts-plain；合并选择 manifest.json。
+已核对 SHA-256：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\parts-plain.bin
+已生成 1 卷：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\parts-gzip；合并选择 manifest.json。
+已核对 SHA-256：C:\Users\lg295\AppData\Local\Temp\JobsOthersTest-2585b3e7af894be88a738b9870b8e66b\parts-gzip.bin
+fixture stderr
+PASS：57 项断言；只使用临时夹具。

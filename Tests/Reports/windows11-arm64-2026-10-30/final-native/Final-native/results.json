@@ -1,0 +1,115 @@
+﻿{
+    "SchemaVersion":  1,
+    "StartedUtc":  "2026-10-29T17:37:06.0192631Z",
+    "FinishedUtc":  "2026-10-29T17:37:31.4071129Z",
+    "Status":  "Passed",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\source",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  5,
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 2cbd094d73\\g\\cmd\\git.exe",
+                      "GitVersion":  "git version 2.56.0.windows.3",
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ParsedFiles":  576,
+                      "Issues":  [
+
+                                 ]
+                  },
+    "Suites":  [
+                   {
+                       "Id":  "Python.BAT",
+                       "Path":  "Tests/PythonBat.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  90,
+                       "DurationSeconds":  3.333,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Python.BAT.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Python.BAT.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Architecture",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Architecture.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  90,
+                       "DurationSeconds":  7.385,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.Architecture.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.Architecture.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.SelectionPanel",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/SelectionPanel.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  90,
+                       "DurationSeconds":  2.606,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.SelectionPanel.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.SelectionPanel.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterFeatureSelection",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterFeatureSelection.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  90,
+                       "DurationSeconds":  1.637,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.FlutterFeatureSelection.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.FlutterFeatureSelection.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.ManagementExecution",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/ManagementExecution.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  90,
+                       "DurationSeconds":  9.149,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.ManagementExecution.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFinal-4abf4cfbef434f148ecf4395ae1a9d0f\\evidence\\Final-native\\Extension.ManagementExecution.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   }
+               ],
+    "Summary":  {
+                    "Passed":  5,
+                    "Partial":  0,
+                    "Failed":  0,
+                    "TimedOut":  0,
+                    "Completed":  5,
+                    "Planned":  5
+                }
+}

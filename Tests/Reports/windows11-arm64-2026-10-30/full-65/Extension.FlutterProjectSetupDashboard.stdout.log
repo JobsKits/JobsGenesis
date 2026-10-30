@@ -1,0 +1,4 @@
+doctor 与匹配设备只读检查通过。
+运行前另须核对项目入口 lib/main*.dart、flavor、dart-define、私库凭证及 Android applicationId；依赖准备可能已执行 debug 构建，仍未安装或启动应用；SDK 许可证必须由本人处理。
+原始 stdout <&> 字符
+PASS: FlutterProjectSetupDashboard.Tests.ps1 (37 assertions; native WinForms/conhost embedding not exercised here)

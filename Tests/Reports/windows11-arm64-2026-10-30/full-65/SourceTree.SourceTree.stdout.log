@@ -1,0 +1,49 @@
+PASS CP437 native Git preserves Unicode repository path
+PASS CP437 restores both encodings after success
+PASS CP437 native Git failure propagates
+PASS CP437 restores both encodings after failure
+PASS CP437 allowed failure preserves exit code and encodings
+PASS CP936 native Git preserves Unicode repository path
+PASS CP936 restores both encodings after success
+PASS CP936 native Git failure propagates
+PASS CP936 restores both encodings after failure
+PASS CP936 allowed failure preserves exit code and encodings
+修复 1 个自有 Dart 文件；备份：C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\中文 space [x]\.import_backup\20261029-234206-772801e15ec04a9ea505318ba58d600a
+PASS Unicode import decoded
+PASS normal string untouched
+PASS ASCII escape retained
+PASS exact source backup
+修复 0 个自有 Dart 文件；备份：C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\中文 space [x]\.import_backup\20261029-234206-5f6c8896b7934687b2d2a7f662d162bf
+PASS vendor skipped
+PASS soft returns upstream
+PASS soft retains working content
+PASS soft retains staging
+将对子仓到父仓依次暂存全部修改、空消息提交、推送各明确线路：
+C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\repo [a]
+来源：gitee C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\mirror.git；仓库：C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\repo [a]；分支：gitee
+From C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\mirror
+ * branch            gitee      -> FETCH_HEAD
+来源：origin C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\upstream.git；仓库：C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\repo [a]；分支：main
+From C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\upstream
+ * branch            main       -> FETCH_HEAD
+[main a7a25d5] 
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Already up to date.
+Already up to date.
+To C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\mirror.git
+   9d3df1d..a7a25d5  HEAD -> gitee
+To C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\upstream.git
+   9d3df1d..a7a25d5  HEAD -> main
+PASS origin main same HEAD
+PASS gitee branch same HEAD
+PASS no extra local branches
+PASS checkpoint cleared on success
+将对子仓到父仓依次暂存全部修改、空消息提交、推送各明确线路：
+C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\repo [a]
+来源：gitee C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\mirror.git；仓库：C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\repo [a]；分支：gitee
+From C:\Users\lg295\AppData\Local\Temp\jobs-st-tests-b702138c4a09448e812f4db864f771cd\mirror
+ * branch            gitee      -> FETCH_HEAD
+PASS different pushurl rejected
+PASS pushurl rejection before commit
+PASS nested repositories ordered child before parent
+25 checks passed

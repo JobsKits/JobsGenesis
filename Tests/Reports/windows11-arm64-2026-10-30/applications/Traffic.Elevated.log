@@ -1,0 +1,4 @@
+EXIT=0
+{"status": "PASS", "pid": 11968, "exe": "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\python\\python.exe", "bytes_in": 2141952, "bytes_out": 2141952, "udp_bytes_in": 44800, "udp_bytes_out": 44800, "session": "JobsAppTrafficMonitor.Network"}
+PASS: owned ETW session removed; local TCP/UDP sockets closed
+

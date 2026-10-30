@@ -1,0 +1,20 @@
+Jobs | Windows 脚本隔离回归
+范围：六个 Windows 源码根及指定文件的语法 / BOM 检查，以及显式清单中的临时夹具测试。
+测试逐套使用独立 PowerShell 5.1；Ctrl+C 停止。跳过项单独记为 Partial。
+本次计划：7 套；指定套件回归
+报告目录：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 3b559e7c1a\evidence
+RUN Extension.Architecture（超时 90 秒）
+Passed Extension.Architecture；退出码=0
+RUN Extension.Installer（超时 90 秒）
+Passed Extension.Installer；退出码=0
+RUN Extension.SelectionPanel（超时 90 秒）
+Passed Extension.SelectionPanel；退出码=0
+RUN Extension.FlutterFeatureSelection（超时 90 秒）
+Passed Extension.FlutterFeatureSelection；退出码=0
+RUN Extension.FlutterDependencyImporter（超时 90 秒）
+Failed Extension.FlutterDependencyImporter；退出码=1
+RUN Extension.ManagementExecution（超时 90 秒）
+Passed Extension.ManagementExecution；退出码=0
+RUN Extension.ManagementLogTerminal（超时 90 秒）
+Passed Extension.ManagementLogTerminal；退出码=0
+结果：Failed；JSON：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 3b559e7c1a\evidence\results.json

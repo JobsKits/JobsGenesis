@@ -1,0 +1,41 @@
+EXIT=0
+缺少或不兼容的依赖：PySide6>=6.8,<7、psutil>=6、cryptography>=43、PyInstaller>=6.10,<7
+缺少或不兼容的依赖：PySide6>=6.8,<7
+缺少或不兼容的依赖：PySide6>=6.8,<7
+缂哄皯鎴栦笉鍏煎鐨勪緷璧栵細PySide6>=6.8,<7銆乸sutil>=6銆乧ryptography>=43銆丳yInstaller>=6.10,<7
+
+test_actual_script_location_anchors_output_after_renaming_clone (test_build_safety.BuildSafetyTests.test_actual_script_location_anchors_output_after_renaming_clone) ... ok
+test_child_environment_removes_host_qt_and_frozen_app_paths (test_build_safety.BuildSafetyTests.test_child_environment_removes_host_qt_and_frozen_app_paths) ... ok
+test_child_python_output_is_utf8_for_redirected_build_logs (test_build_safety.BuildSafetyTests.test_child_python_output_is_utf8_for_redirected_build_logs) ... ok
+test_cleanup_failure_stops (test_build_safety.BuildSafetyTests.test_cleanup_failure_stops) ... ok
+test_clone_directory_can_have_any_name_including_spaces_and_chinese (test_build_safety.BuildSafetyTests.test_clone_directory_can_have_any_name_including_spaces_and_chinese) ... ok
+test_confirmation_rejects_space_eof_and_noninteractive (test_build_safety.BuildSafetyTests.test_confirmation_rejects_space_eof_and_noninteractive) ... ok
+test_current_healthy_interpreter_is_reused_without_writes (test_build_safety.BuildSafetyTests.test_current_healthy_interpreter_is_reused_without_writes) ... ok
+test_dependency_cancellation_precedes_environment_creation (test_build_safety.BuildSafetyTests.test_dependency_cancellation_precedes_environment_creation) ... ok
+test_dependency_install_failure_stops_before_recheck (test_build_safety.BuildSafetyTests.test_dependency_install_failure_stops_before_recheck) ... ok
+test_dependency_postinstall_failure_is_blocking (test_build_safety.BuildSafetyTests.test_dependency_postinstall_failure_is_blocking) ... ok
+test_direct_old_python_reports_version_requirement_before_tomllib_import (test_build_safety.BuildSafetyTests.test_direct_old_python_reports_version_requirement_before_tomllib_import) ... ok
+test_fixed_dist_non_directory_is_rejected (test_build_safety.BuildSafetyTests.test_fixed_dist_non_directory_is_rejected) ... ok
+test_layout_and_filesystem_root_are_rejected (test_build_safety.BuildSafetyTests.test_layout_and_filesystem_root_are_rejected) ... ok
+test_linked_dist_is_rejected_without_touching_target (test_build_safety.BuildSafetyTests.test_linked_dist_is_rejected_without_touching_target) ... skipped 'Windows symlink privileges vary.'
+test_linked_source_directory_is_rejected (test_build_safety.BuildSafetyTests.test_linked_source_directory_is_rejected) ... skipped 'Windows symlink privileges vary.'
+test_main_missing_dependencies_never_clear_old_dist_before_confirmation (test_build_safety.BuildSafetyTests.test_main_missing_dependencies_never_clear_old_dist_before_confirmation) ... ok
+test_main_prepares_output_before_help_without_build_mutation (test_build_safety.BuildSafetyTests.test_main_prepares_output_before_help_without_build_mutation) ... ok
+test_only_fixed_dist_can_be_deleted (test_build_safety.BuildSafetyTests.test_only_fixed_dist_can_be_deleted) ... ok
+test_prepared_mode_requires_healthy_dependencies_without_install_or_cleanup (test_build_safety.BuildSafetyTests.test_prepared_mode_requires_healthy_dependencies_without_install_or_cleanup) ... ok
+test_prepared_mode_reuses_current_interpreter_after_confirmation (test_build_safety.BuildSafetyTests.test_prepared_mode_reuses_current_interpreter_after_confirmation) ... ok
+test_publication_preflights_all_name_collisions (test_build_safety.BuildSafetyTests.test_publication_preflights_all_name_collisions) ... skipped 'macOS relative-link behavior.'
+test_pyinstaller_minimum_matches_project (test_build_safety.BuildSafetyTests.test_pyinstaller_minimum_matches_project) ... ok
+test_relative_shortcuts_and_selective_cleanup (test_build_safety.BuildSafetyTests.test_relative_shortcuts_and_selective_cleanup) ... skipped 'macOS relative-link behavior.'
+test_removing_dist_does_not_follow_internal_links (test_build_safety.BuildSafetyTests.test_removing_dist_does_not_follow_internal_links) ... skipped 'Windows symlink privileges vary.'
+test_spec_embeds_local_icon_and_stable_identity (test_build_safety.BuildSafetyTests.test_spec_embeds_local_icon_and_stable_identity) ... ok
+test_unsupported_platform_is_rejected_before_build (test_build_safety.BuildSafetyTests.test_unsupported_platform_is_rejected_before_build) ... ok
+test_windows_gbk_redirect_is_reconfigured_before_unicode_build_output (test_build_safety.BuildSafetyTests.test_windows_gbk_redirect_is_reconfigured_before_unicode_build_output) ... ok
+test_windows_launch_has_no_monitor_or_account_switch_mode_argument (test_build_safety.BuildSafetyTests.test_windows_launch_has_no_monitor_or_account_switch_mode_argument) ... ok
+test_windows_zip_contains_complete_onedir_runtime (test_build_safety.BuildSafetyTests.test_windows_zip_contains_complete_onedir_runtime) ... ok
+test_work_symlink_is_rejected (test_build_safety.BuildSafetyTests.test_work_symlink_is_rejected) ... skipped 'Windows symlink privileges vary.'
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.126s
+
+OK (skipped=6)

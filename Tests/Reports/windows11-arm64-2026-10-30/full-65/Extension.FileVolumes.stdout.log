@@ -1,0 +1,4 @@
+✔ 拆分完成：C:\Users\lg295\AppData\Local\Temp\JobsVolumes-88785fa2e56e424ea1b90e5974499eea\中文 & %TEMP% ' $() [x]@extra.bin.chunks；源文件保留。
+✔ 合并完成：C:\Users\lg295\AppData\Local\Temp\JobsVolumes-88785fa2e56e424ea1b90e5974499eea\中文 & %TEMP% ' $() [x]@extra.bin.chunks\中文 & %TEMP% ' $() [x]@extra.bin；全部分卷保留。
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsVolumes-88785fa2e56e424ea1b90e5974499eea\linked@1of2
+PASS: FileVolumes.Tests.ps1 (63 assertions)

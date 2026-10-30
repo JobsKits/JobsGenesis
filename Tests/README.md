@@ -31,7 +31,8 @@
 | [test_cache_cleanup.py](./test_cache_cleanup.py) | 扫描 / 预览 / 删除过程中的目标消失、快照变化、权限失败、符号链接替换、仅缓存模式，以及不支持安全删除的运行时拒绝执行 |
 | [test_installer_safety.py](./test_installer_safety.py) | Homebrew 卸载入口的取消与下载失败、VS Code 配置的备份 / 发布失败恢复、下载辅助函数、fzf 初始化和日志符号链接保护 |
 | [test_text_replacement.py](./test_text_replacement.py) | 文本字面量替换、失败退出、已有备份与失败时原文件保留、二进制 / 链接 / 构建目录排除，以及输入结束取消 |
-| [WindowsRegression.ps1](./WindowsRegression.ps1) | Windows PowerShell 5.1 原生测试编排：源码 Parser / BOM、Git 健康检查、38 套隔离回归、逐套超时与 JSON / 分离日志 |
+| [test_portable_app_templates.py](./test_portable_app_templates.py) | Python 构建配置与入口搬迁、临时 spec 与源码隔离、计时 App 随包 Hook 和当前用户按需准备，使用构建 / 桌面替身，不实际打包或修改用户 Scheme |
+| [WindowsRegression.ps1](./WindowsRegression.ps1) | Windows PowerShell 5.1 原生测试编排：源码 Parser / BOM、Git 健康检查、65 套隔离回归、逐套超时与 JSON / 分离日志 |
 | [WindowsLaunchers.Tests.ps1](./WindowsLaunchers.Tests.ps1) | 六个 Windows 源码根的 CMD 转发入口检查，以及延迟展开开启时含中文、空格、`!`、`[]` 路径和参数的真实假命令回归 |
 | [DoctorBuild.Tests.ps1](./DoctorBuild.Tests.ps1) | 假 Python 验证体检 EXE 构建的各步骤失败即停，以及缺失、空产物与有效产物六种分支 |
 | [PythonBat.Tests.ps1](./PythonBat.Tests.ps1) | 独立补充回归：检查十个 Python BAT，并以实际片段和假命令验证 `!` 路径、虚拟环境失败停止、空行 / EOF 及精确 `YES` 门禁 |
@@ -87,7 +88,7 @@ PowerShell 的跨平台夹具通过不等于 Windows 实机通过；CMD 原生�
 
 ## 五、<span id="windows-native-regression">Windows 虚拟机原生回归</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-[WindowsRegression.ps1](./WindowsRegression.ps1) 只接受系统 [**Windows PowerShell**](https://learn.microsoft.com/powershell/) 5.1，使用已安装的 [**Git for Windows**](https://gitforwindows.org/)，不会安装依赖。在虚拟机中保留完整源码和相关子仓，从当前 `Tests/` 目录执行：
+[WindowsRegression.ps1](./WindowsRegression.ps1) 只接受系统 [**Windows PowerShell**](https://learn.microsoft.com/powershell/) 5.1，使用已安装的 [**Git for Windows**](https://gitforwindows.org/)，不会安装依赖。归档端到端套件还需要已有 [**Dart**](https://dart.dev/) SDK，可通过进程环境变量 `JOBS_TEST_DART` 指定实际 `dart.exe`；缺少运行时会报告失败，不能当作通过。在虚拟机中保留完整源码和相关子仓，从当前 `Tests/` 目录执行：
 
 ```powershell
 powershell.exe `
@@ -98,18 +99,21 @@ powershell.exe `
   -File '.\WindowsRegression.ps1'
 ```
 
-先检查六个 Windows 源码根和四个指定文件的 Parser / UTF-8 BOM，并运行 `git --version`；预检失败停止。随后分别启动独立 5.1 进程，执行五个脚本仓、右键扩展、CMD 转发及体检构建的 38 套夹具。Git 仅允许本地 file 传输，代理 / 安装 / 构建业务使用替身；注册表和 ACL 用例只操作测试专属临时对象。进程级执行策略不持久修改系统策略，企业组策略限制仍须遵守。
+先检查六个 Windows 源码根和五个指定文件的 Parser / UTF-8 BOM，并运行 `git --version`；预检失败停止。随后分别启动独立 5.1 进程，执行五个脚本仓、右键扩展、CMD 转发及体检构建的 65 套夹具。Git 仅允许本地 file 传输，代理 / 安装 / 构建业务使用替身；注册表和 ACL 用例只操作测试专属临时对象。进程级执行策略不持久修改系统策略，企业组策略限制仍须遵守。
 
 | 参数 | 默认值与作用 |
 | --- | --- |
 | `-OutputDirectory` | 省略时创建系统临时目录中的唯一 `JobsWindowsRegression-*`；指定时必须为空目录，避免覆盖报告 |
 | `-TimeoutSeconds` | 每套 300 秒，支持 1–86400 秒 |
+| `-SuiteIds` | 省略时执行完整 65 套；指定套件 ID 数组时只回归所选项，未知 ID 立即停止，不把定向结果当成完整回归 |
 | `-SuiteTimeoutSeconds` | 在 PowerShell 内通过哈希表按套件 ID 覆写，如 `@{'Flutter.Portable'=600}`；ID 以脚本显式清单为准 |
 
-每套保存独立 `*.stdout.log`、`*.stderr.log`，并更新 `results.json`，记录系统、架构、实际 PowerShell / Git 版本、检查文件数、真实退出码和耗时；5.1 的信息流转换为可读文本，保留 `SKIP` 证据。超时只终止本轮测试进程树并保留已有日志；`Ctrl+C` 可中止。退出码 `0` 表示全部套件通过，`1` 表示预检阻塞、失败或超时，`2` 表示无失败但有明确 `SKIP` 的部分验证，不能把跳过算成通过。符号链接权限不足时只跳过对应链接断言，其余检查继续；未选择的原生编译分支也明确跳过。结果仅适用于记录的系统与架构；Windows 11 ARM 不能替代 x64、旧系统或真实菜单安装、工具链构建验收。
+每套保存独立 `*.stdout.log`、`*.stderr.log`，并更新 `results.json`，记录系统、架构、实际 PowerShell / Git 版本、检查文件数、真实退出码和耗时；5.1 的信息流转换为可读文本，保留 `SKIP` 证据。每套关闭标准输入，`Read-Host` 和 `Console.ReadLine()` 都无法读取桌面控制台，EOF 不代表用户确认。超时只终止本轮测试进程树并保留已有日志；`Ctrl+C` 可中止。退出码 `0` 表示全部套件通过，`1` 表示预检阻塞、失败或超时，`2` 表示无失败但有明确 `SKIP` 的部分验证，不能把跳过算成通过。符号链接权限不足时只跳过对应链接断言，其余检查继续；未选择的原生编译分支也明确跳过。结果仅适用于记录的系统与架构；Windows 11 ARM 不能替代 x64、旧系统或真实菜单安装、工具链构建验收。
 
-Python BAT 补充测试独立运行，不计入上述 38 套：`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\PythonBat.Tests.ps1`。它只执行受控片段和临时替身，不运行完整打包脚本、Python 安装器或真实构建。中文 BAT 保留 UTF-8 并使用 CRLF；对应应用目录的 Git 属性保证检出行尾。片段在真实隐藏控制台中运行，异常 stderr 或命令解析错误均使测试失败。
+Python BAT 已收入完整 65 套，也可单独运行：`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\PythonBat.Tests.ps1`。它只执行受控片段和临时替身，不运行完整打包脚本、Python 安装器或真实构建。中文 BAT 保留 UTF-8 并使用 CRLF；对应应用目录的 Git 属性保证检出行尾。片段在真实隐藏控制台中运行，异常 stderr 或命令解析错误均使测试失败。
 
-2026-10-26 在 Windows 11 ARM64 / 系统 PowerShell 5.1 中的完整回归、定向重测、跳过项与源码哈希见[本轮原生报告](./Reports/windows11-arm64-2026-10-26/summary.json)。报告保留各轮原始结果，汇总采用各套最近一次有效原生结果，不表示最终快照重新执行全部 38 套。
+当前 Windows 11 ARM64 原生结果、源码哈希与未验范围见[原生验收记录](./Reports/windows11-arm64-2026-10-30/README.md)。
+
+2026-10-26 的历史 Windows 11 ARM64 / 系统 PowerShell 5.1 回归、定向重测、跳过项与源码哈希见[历史原生报告](./Reports/windows11-arm64-2026-10-26/summary.json)。报告保留各轮原始结果，汇总采用各套最近一次有效原生结果，不表示最终快照重新执行全部 38 套。
 
 <a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>

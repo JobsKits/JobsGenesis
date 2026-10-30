@@ -1,0 +1,176 @@
+关联计划：子仓 (一)；section=子仓 (一)；URL=../Child.git；登记当前指针=True
+只读计划：没有写入配置、索引或元数据。
+关联计划：子仓 (一)；section=子仓 (一)；URL=../Child.git；登记当前指针=True
+关联备份：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\父仓 空格\.git\jobs-submodule-backups\2026.10.29 23-41-13-a9936010021d482ebee6b49a82a98e28
+Submodule '子仓 (一)' (https://code.example/team/Child.git) registered for path '子仓 (一)'
+Migrating git directory of '子仓 (一)' from
+'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/父仓 空格/子仓 (一)/.git' to
+'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/父仓 空格/.git/modules/子仓 (一)'
+关联已完成，保留本地差异供审查。
+关联计划：子仓 (一)；section=子仓 (一)；URL=../Child.git；登记当前指针=False
+关联备份：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\父仓 空格\.git\jobs-submodule-backups\2026.10.29 23-41-18-5c5f98d09c4d47fa9eb594c05db26be4
+关联已完成，保留本地差异供审查。
+关联计划：子仓 (一)；section=子仓 (一)；URL=../Child.git；登记当前指针=True
+关联备份：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\父仓 空格\.git\jobs-submodule-backups\2026.10.29 23-41-22-2023279f4dc245d5911e25f66a4fb348
+关联已完成，保留本地差异供审查。
+Git 来源｜子仓
+对象：分类/子仓
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\同步父仓\分类\子仓
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\同步父仓\分类\子仓
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+From C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓
+   b3beda7..324a489  main       -> origin/main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Updating b3beda7..324a489
+Fast-forward
+ remote-later.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 remote-later.txt
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\同步父仓\分类\子仓
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\同步父仓\分类\子仓
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+Git 来源｜子仓
+对象：分类/子仓
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\同步父仓\分类\子仓
+只读计划：分支=；递归=True
+Git 来源｜子仓
+对象：新子仓
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+Cloning into 'C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓'...
+done.
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Submodule '新子仓' (C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git) registered for path '新子仓'
+Migrating git directory of '新子仓' from
+'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/首次下载父仓/新子仓/.git' to
+'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/首次下载父仓/.git/modules/新子仓'
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+Git 来源｜子仓
+对象：新子仓
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+分支：branch-does-not-exist
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+fatal: couldn't find remote ref refs/heads/branch-does-not-exist
+将备份并重建关联：JobsGenesis@JobsCommand.Flutter → C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Flutter.git
+关联备份：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\.git\jobs-submodule-backups\2026.10.29 23-41-43-2f46953a44d34ecd801fa015aea286e8
+原工作树与元数据按原始字节分开备份；恢复时按 worktree-metadata-map.json 还原原位置：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\.git\jobs-submodule-backups\2026.10.29 23-41-43-2f46953a44d34ecd801fa015aea286e8
+来源：../JobsCommand-Flutter.git → JobsGenesis@JobsCommand.Flutter
+Cloning into 'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/重建父仓/JobsGenesis@JobsCommand.Flutter'...
+done.
+来源：../JobsCommand-iOS.git → JobsGenesis@JobsCommand.iOS
+Cloning into 'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/重建父仓/JobsGenesis@JobsCommand.iOS'...
+done.
+来源：../JobsCommand-Gits.git → JobsGenesis@JobsCommand.Gits
+Cloning into 'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/重建父仓/JobsGenesis@JobsCommand.Gits'...
+done.
+来源：../JobsCommand-Others.git → JobsGenesis@JobsCommand.Others
+Cloning into 'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/重建父仓/JobsGenesis@JobsCommand.Others'...
+done.
+Cloning into 'C:/Users/lg295/AppData/Local/Temp/Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17/重建父仓/JobsGenesis@JobsSh'...
+done.
+Git 来源｜子仓
+对象：JobsGenesis@JobsCommand.Flutter
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Flutter.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Flutter
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Flutter
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Flutter.git
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Flutter
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Flutter.git
+Git 来源｜子仓
+对象：JobsGenesis@JobsCommand.iOS
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-iOS.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.iOS
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.iOS
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-iOS.git
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.iOS
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-iOS.git
+Git 来源｜子仓
+对象：JobsGenesis@JobsCommand.Gits
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Gits.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Gits
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Gits
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Gits.git
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Gits
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Gits.git
+Git 来源｜子仓
+对象：JobsGenesis@JobsCommand.Others
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Others.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Others
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Others
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Others.git
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsCommand.Others
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsCommand-Others.git
+Git 来源｜子仓
+对象：JobsGenesis@JobsSh
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsSh.git
+目标：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsSh
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsSh
+分支：main
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsSh.git
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\JobsGenesis@JobsSh
+同步成功：main → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建远端\JobsSh.git
+重建完成，尚未提交或推送；备份：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\重建父仓\.git\jobs-submodule-backups\2026.10.29 23-41-43-2f46953a44d34ecd801fa015aea286e8
+Git 来源｜拉取
+仓库：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+分支：feature
+来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+From C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓
+ * [new branch]      feature    -> origin/feature
+Switched to a new branch 'feature'
+branch 'feature' set up to track 'origin/feature'.
+无目录过滤器，跳过：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\首次下载父仓\新子仓
+同步成功：feature → 324a4894281b4eb95bfc3520e93cb468a79c3070；来源：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17\远端仓.git
+同步完成；子仓保持本地跟踪分支，gitlink 差异留待审查，未提交或推送。
+PASS：48 项断言；隔离夹具：C:\Users\lg295\AppData\Local\Temp\Jobs Gits 中文 (fixture) c2cd0c1bc9bf457f9b5458f18427ae17

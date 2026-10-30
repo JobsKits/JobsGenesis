@@ -1,0 +1,19 @@
+自动补齐 Java 21；元数据来源：https://api.adoptium.net/v3/assets/latest/21/hotspot?architecture=x64&image_type=jdk&os=windows&vendor=eclipse
+安装目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidBootstrap 中文 & 100% ' 16db23edae3044b59c0fba4a4e8f66a3\user-java-on-SDK-independent-volume
+Java 归档来源：https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21-fixture/OpenJDK21U-jdk_x64_windows_hotspot_21-fixture.zip
+自动补齐 Java 21；元数据来源：https://api.adoptium.net/v3/assets/latest/21/hotspot?architecture=x64&image_type=jdk&os=windows&vendor=eclipse
+安装目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidBootstrap 中文 & 100% ' 16db23edae3044b59c0fba4a4e8f66a3\user-java-on-SDK-independent-volume
+自动补齐 Java 21；元数据来源：https://api.adoptium.net/v3/assets/latest/21/hotspot?architecture=x64&image_type=jdk&os=windows&vendor=eclipse
+安装目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidBootstrap 中文 & 100% ' 16db23edae3044b59c0fba4a4e8f66a3\user-java-on-SDK-independent-volume
+Java 归档来源：https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21-fixture/OpenJDK21U-jdk_x64_windows_hotspot_21-fixture.zip
+自动补齐 Java 21；元数据来源：https://api.adoptium.net/v3/assets/latest/21/hotspot?architecture=x64&image_type=jdk&os=windows&vendor=eclipse
+安装目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidBootstrap 中文 & 100% ' 16db23edae3044b59c0fba4a4e8f66a3\user-java-on-SDK-independent-volume
+Java 归档来源：https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21-fixture/OpenJDK21U-jdk_x64_windows_hotspot_21-fixture.zip
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidBootstrap 中文 & 100% ' 16db23edae3044b59c0fba4a4e8f66a3\cancel-before-ensure-sdk
+缺失 Java 安装到当前用户目录：user-java-fixture
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+PASS: AndroidSimulatorBootstrap.Tests.ps1 (26 assertions)

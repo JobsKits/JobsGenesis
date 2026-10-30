@@ -1,0 +1,59 @@
+EXIT=1
+缺少或不兼容的依赖：PySide6>=6.8,<7、psutil>=6、cryptography>=43、PyInstaller>=6.10,<7
+缺少或不兼容的依赖：PySide6>=6.8,<7
+缺少或不兼容的依赖：PySide6>=6.8,<7
+缺少或不兼容的依赖：PySide6>=6.8,<7、psutil>=6、cryptography>=43、PyInstaller>=6.10,<7
+
+test_actual_script_location_anchors_output_after_renaming_clone (test_build_safety.BuildSafetyTests.test_actual_script_location_anchors_output_after_renaming_clone) ... ok
+test_child_environment_removes_host_qt_and_frozen_app_paths (test_build_safety.BuildSafetyTests.test_child_environment_removes_host_qt_and_frozen_app_paths) ... ok
+test_cleanup_failure_stops (test_build_safety.BuildSafetyTests.test_cleanup_failure_stops) ... ok
+test_clone_directory_can_have_any_name_including_spaces_and_chinese (test_build_safety.BuildSafetyTests.test_clone_directory_can_have_any_name_including_spaces_and_chinese) ... ok
+test_confirmation_rejects_space_eof_and_noninteractive (test_build_safety.BuildSafetyTests.test_confirmation_rejects_space_eof_and_noninteractive) ... ok
+test_current_healthy_interpreter_is_reused_without_writes (test_build_safety.BuildSafetyTests.test_current_healthy_interpreter_is_reused_without_writes) ... ERROR
+test_dependency_cancellation_precedes_environment_creation (test_build_safety.BuildSafetyTests.test_dependency_cancellation_precedes_environment_creation) ... ok
+test_dependency_install_failure_stops_before_recheck (test_build_safety.BuildSafetyTests.test_dependency_install_failure_stops_before_recheck) ... ok
+test_dependency_postinstall_failure_is_blocking (test_build_safety.BuildSafetyTests.test_dependency_postinstall_failure_is_blocking) ... ok
+test_direct_old_python_reports_version_requirement_before_tomllib_import (test_build_safety.BuildSafetyTests.test_direct_old_python_reports_version_requirement_before_tomllib_import) ... ok
+test_fixed_dist_non_directory_is_rejected (test_build_safety.BuildSafetyTests.test_fixed_dist_non_directory_is_rejected) ... ok
+test_layout_and_filesystem_root_are_rejected (test_build_safety.BuildSafetyTests.test_layout_and_filesystem_root_are_rejected) ... ok
+test_linked_dist_is_rejected_without_touching_target (test_build_safety.BuildSafetyTests.test_linked_dist_is_rejected_without_touching_target) ... skipped 'Windows symlink privileges vary.'
+test_linked_source_directory_is_rejected (test_build_safety.BuildSafetyTests.test_linked_source_directory_is_rejected) ... skipped 'Windows symlink privileges vary.'
+test_main_missing_dependencies_never_clear_old_dist_before_confirmation (test_build_safety.BuildSafetyTests.test_main_missing_dependencies_never_clear_old_dist_before_confirmation) ... ok
+test_only_fixed_dist_can_be_deleted (test_build_safety.BuildSafetyTests.test_only_fixed_dist_can_be_deleted) ... ok
+test_prepared_mode_requires_healthy_dependencies_without_install_or_cleanup (test_build_safety.BuildSafetyTests.test_prepared_mode_requires_healthy_dependencies_without_install_or_cleanup) ... ok
+test_prepared_mode_reuses_current_interpreter_after_confirmation (test_build_safety.BuildSafetyTests.test_prepared_mode_reuses_current_interpreter_after_confirmation) ... ok
+test_publication_preflights_all_name_collisions (test_build_safety.BuildSafetyTests.test_publication_preflights_all_name_collisions) ... skipped 'macOS relative-link behavior.'
+test_pyinstaller_minimum_matches_project (test_build_safety.BuildSafetyTests.test_pyinstaller_minimum_matches_project) ... ok
+test_relative_shortcuts_and_selective_cleanup (test_build_safety.BuildSafetyTests.test_relative_shortcuts_and_selective_cleanup) ... skipped 'macOS relative-link behavior.'
+test_removing_dist_does_not_follow_internal_links (test_build_safety.BuildSafetyTests.test_removing_dist_does_not_follow_internal_links) ... skipped 'Windows symlink privileges vary.'
+test_spec_embeds_local_icon_and_stable_identity (test_build_safety.BuildSafetyTests.test_spec_embeds_local_icon_and_stable_identity) ... FAIL
+test_unsupported_platform_is_rejected_before_build (test_build_safety.BuildSafetyTests.test_unsupported_platform_is_rejected_before_build) ... ok
+test_windows_launch_has_no_monitor_or_account_switch_mode_argument (test_build_safety.BuildSafetyTests.test_windows_launch_has_no_monitor_or_account_switch_mode_argument) ... ok
+test_windows_zip_contains_complete_onedir_runtime (test_build_safety.BuildSafetyTests.test_windows_zip_contains_complete_onedir_runtime) ... ok
+test_work_symlink_is_rejected (test_build_safety.BuildSafetyTests.test_work_symlink_is_rejected) ... skipped 'Windows symlink privileges vary.'
+
+======================================================================
+ERROR: test_current_healthy_interpreter_is_reused_without_writes (test_build_safety.BuildSafetyTests.test_current_healthy_interpreter_is_reused_without_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\lg295\AppData\Local\Temp\JobsEtw-e90c8026a51246b4b738ad7e05202480\source\JobsPythonTools.py\JobsCodexAccountSwitcher.py\JobsCodexAccountSwitcher\tests\test_build_safety.py", line 153, in test_current_healthy_interpreter_is_reused_without_writes
+    self.assertEqual(build.bootstrap(), Path(sys.executable))
+                     ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lg295\AppData\Local\Temp\JobsEtw-e90c8026a51246b4b738ad7e05202480\source\JobsPythonTools.py\JobsCodexAccountSwitcher.py\JobsCodexAccountSwitcher\scripts\build.py", line 139, in bootstrap
+    print('\u2714 复用当前解释器的健康构建依赖；不安装、不升级依赖。')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2714' in position 0: illegal multibyte sequence
+
+======================================================================
+FAIL: test_spec_embeds_local_icon_and_stable_identity (test_build_safety.BuildSafetyTests.test_spec_embeds_local_icon_and_stable_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\lg295\AppData\Local\Temp\JobsEtw-e90c8026a51246b4b738ad7e05202480\source\JobsPythonTools.py\JobsCodexAccountSwitcher.py\JobsCodexAccountSwitcher\tests\test_build_safety.py", line 326, in test_spec_embeds_local_icon_and_stable_identity
+    self.assertIn(str(self.root / 'scripts/launch.py'), text)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'C:\\Users\\lg295\\AppData\\Local\\Temp\\tmpmbnnvp2v\\JobsCodexAccountSwitcher.py\\JobsCodexAccountSwitcher\\scripts\\launch.py' not found in "# Generated locally by Jobs Codex Account Switcher build.py.\na = Analysis(['C:\\\\Users\\\\lg295\\\\AppData\\\\Local\\\\Temp\\\\tmpmbnnvp2v\\\\JobsCodexAccountSwitcher.py\\\\JobsCodexAccountSwitcher\\\\scripts\\\\launch.py'], pathex=['C:\\\\Users\\\\lg295\\\\AppData\\\\Local\\\\Temp\\\\tmpmbnnvp2v\\\\JobsCodexAccountSwitcher.py\\\\JobsCodexAccountSwitcher\\\\src'],\n             binaries=[], datas=[('C:\\\\Users\\\\lg295\\\\AppData\\\\Local\\\\Temp\\\\tmpmbnnvp2v\\\\JobsCodexAccountSwitcher.py\\\\icon.png', 'assets')],\n             hiddenimports=['PySide6.QtNetwork'], hookspath=[], hooksconfig={},\n             runtime_hooks=[], excludes=[], noarchive=False)\npyz = PYZ(a.pure)\nexe = EXE(pyz, a.scripts, [], exclude_binaries=True, name='JobsCodexAccountSwitcher',\n          debug=False, bootloader_ignore_signals=False, strip=False, upx=False,\n          console=False, disable_windowed_traceback=False, argv_emulation=False,\n          target_arch=None, codesign_identity=None, entitlements_file=None)\ncoll = COLLECT(exe, a.binaries, a.datas, strip=False, upx=False, name='JobsCodexAccountSwitcher')\napp = BUNDLE(coll, name='JobsCodexAccountSwitcher.app', icon=None,\n             bundle_identifier='com.jobs.codexaccountswitcher',\n             info_plist={'LSUIElement': False, 'NSHighResolutionCapable': True,\n                         'CFBundleDisplayName': 'Jobs Codex Account Switcher',\n                         'CFBundleShortVersionString': '0.3.0', 'CFBundleVersion': '0.3.0'})\n"
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.200s
+
+FAILED (failures=1, errors=1, skipped=6)

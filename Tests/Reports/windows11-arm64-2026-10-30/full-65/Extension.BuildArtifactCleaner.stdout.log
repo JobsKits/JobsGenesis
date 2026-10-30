@@ -1,0 +1,36 @@
+工程类型：Flutter
+工程目录：C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project
+将删除以下工程内的构建产物（请先停止正在进行的构建）：
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\build\windows
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\.dart_tool
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\android\build
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\android\.gradle
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\android\app\build
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\android\feature\chat\build
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project\windows\flutter\ephemeral
+构建产物清理完成。源码、锁文件、依赖与全局缓存保留。
+工程类型：Flutter
+工程目录：C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter project
+没有可清理的构建产物。
+工程类型：Android
+工程目录：C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project
+将删除以下工程内的构建产物（请先停止正在进行的构建）：
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\build
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\.gradle
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\.kotlin
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\app\build
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\app\.externalNativeBuild
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\feature\chat\build
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Android project\feature\chat\.cxx
+构建产物清理完成。源码、锁文件、依赖与全局缓存保留。
+工程类型：Flutter
+工程目录：C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter link project
+将删除以下工程内的构建产物（请先停止正在进行的构建）：
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter link project\build
+已取消，未删除任何文件。
+工程类型：Flutter
+工程目录：C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter link project
+将删除以下工程内的构建产物（请先停止正在进行的构建）：
+  C:\Users\lg295\AppData\Local\Temp\JobsClean [中文] ' & 5fe3c3d9474d43fd80236817ec122dab\Flutter link project\build
+构建产物清理完成。源码、锁文件、依赖与全局缓存保留。
+PASS: BuildArtifactCleaner.Tests.ps1 (56 assertions)

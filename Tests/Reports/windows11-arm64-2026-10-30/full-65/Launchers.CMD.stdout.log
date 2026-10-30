@@ -1,0 +1,36 @@
+清单：JobsCommand@Flutter/WindowsOS，46 个 CMD。
+清单：JobsCommand@Gits/WindowsOS，21 个 CMD。
+清单：JobsCommand@Others/WindowsOS，17 个 CMD。
+清单：JobsSh.sh/WindowsOS，15 个 CMD。
+清单：SourceTree.command/WindowsOS，29 个 CMD。
+清单：OS@Extension/WindowsOS@Extension，45 个 CMD。
+原生验证：bare/dp0-installer/True，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\SourceTree.command\WindowsOS\Install-Menu.cmd
+原生验证：bare/dp0-named/True，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\JobsCommand@Others\WindowsOS\【WindowsOS】Caddy本地域名映射\【WindowsOS】Caddy本地域名映射.cmd
+原生验证：bare/dp0-run/True，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\SourceTree.command\WindowsOS\【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本\【WindowsOS@SourceTree】⏬双击下载SourceTree效率脚本.cmd
+原生验证：bare/dpn0/True，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\JobsCommand@Flutter\WindowsOS\【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.ps1\【WindowsOS】⚙️Git拉取Flutter项目到本地以后的必要配置.cmd
+原生验证：system-root/dp0-named/False，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Run.cmd
+原生验证：system-root/dp0-named/True，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorRepairer\Run.cmd
+原生验证：wscript-system-root/dpn0-vbs/，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\【Windows】🧩管理资源管理器扩展.cmd
+原生验证：wscript-system-root/manage-vbs/，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\Infrastructure\Manage.cmd
+原生验证：wscript-system-root/manage-vbs/-Mode Install，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsFlutterDependencyExtractor\Install.cmd
+原生验证：wscript-system-root/manage-vbs/-Mode Uninstall，源=C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsFlutterDependencyExtractor\Uninstall.cmd
+真实 -Check｜JobsSh.GoProject｜PSExecutionPolicyPreference 已从子环境移除。
+子 stdout｜JobsSh.GoProject
+Jobs Windows｜GoProject
+用途与影响：可选安装Go，创建新的Gin工程；依赖下载、测试、运行分别确认。
+确认后显示实际日志位置；Ctrl+C 取消，危险变更精确 YES。
+只读检查：入口与模块加载成功；只查询命令是否存在，不启动或写业务文件。
+go.exe: 未发现
+
+子 stderr｜JobsSh.GoProject
+
+真实 -Check｜Others.MD5｜PSExecutionPolicyPreference 已从子环境移除。
+子 stdout｜Others.MD5
+Jobs Windows｜MD5
+用途与影响：读取指定普通文件并显示 MD5，不修改原文件。
+确认后显示实际日志位置；Ctrl+C 取消，危险变更精确 YES。
+只读检查：入口与模块加载成功；只查询命令是否存在，不启动或写业务文件。
+
+子 stderr｜Others.MD5
+
+PASS：1531 项断言；173 个静态入口（137 PS / 36 VBS），10 种真实 CMD 形态；GUI 未启动。

@@ -1,0 +1,16 @@
+{
+  "Python": {
+    "Source": "https://www.python.org/ftp/python/3.13.9/python-3.13.9-embed-arm64.zip",
+    "SHA256": "cba392bd5c7aed68b26d1b523822cc3d80802c085481dfde79262ebfc7179d26"
+  },
+  "Dart": {
+    "Source": "https://storage.flutter-io.cn/dart-archive/channels/stable/release/3.9.2/sdk/dartsdk-windows-x64-release.zip",
+    "OfficialChecksum": "https://storage.googleapis.com/dart-archive/channels/stable/release/3.9.2/sdk/dartsdk-windows-x64-release.zip.sha256sum",
+    "SHA256": "f46190c90cb0842f7274c71b42db07c51607291c8fdb0c078f05b6fbc23b2da3"
+  },
+  "PythonStdlibSupport": {
+    "Source": "https://raw.githubusercontent.com/python/cpython/v3.13.9/Lib/venv/__init__.py",
+    "SHA256": "f81321cf6a81493c94dc92921b1de3bb7cdcdf5f4530d5973f129885173b9a70",
+    "Scope": "仅测试临时支持目录；现有回归替身化 EnvBuilder，不创建真实构建虚拟环境。"
+  }
+}

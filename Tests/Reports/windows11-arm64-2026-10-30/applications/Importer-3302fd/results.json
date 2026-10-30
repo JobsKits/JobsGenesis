@@ -1,0 +1,59 @@
+﻿{
+    "SchemaVersion":  1,
+    "StartedUtc":  "2026-10-29T17:19:56.6655284Z",
+    "FinishedUtc":  "2026-10-29T17:20:00.8613475Z",
+    "Status":  "Passed",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsEtw-e90c8026a51246b4b738ad7e05202480\\source",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  1,
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 2cbd094d73\\g\\cmd\\git.exe",
+                      "GitVersion":  "git version 2.56.0.windows.3",
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ParsedFiles":  576,
+                      "Issues":  [
+
+                                 ]
+                  },
+    "Suites":  [
+                   {
+                       "Id":  "Extension.FlutterDependencyImporter",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyImporter.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  60,
+                       "DurationSeconds":  2.815,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsEtw-e90c8026a51246b4b738ad7e05202480\\evidence\\Importer-3302fd\\Extension.FlutterDependencyImporter.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsEtw-e90c8026a51246b4b738ad7e05202480\\evidence\\Importer-3302fd\\Extension.FlutterDependencyImporter.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   }
+               ],
+    "Summary":  {
+                    "Passed":  1,
+                    "Partial":  0,
+                    "Failed":  0,
+                    "TimedOut":  0,
+                    "Completed":  1,
+                    "Planned":  1
+                }
+}

@@ -1,0 +1,19 @@
+SKIP symbolic link fixture creation (host privilege)
+soft 本地回退到 base [a157a1a40303ed4c41e84674108dcbb39eedcd0b]；保留工作区和索引，其它远端可能已经包含这些提交。
+soft 回退完成。
+待提交差异： 1 file changed, 1 insertion(+), 1 deletion(-)
+仓库：C:\Users\lg295\AppData\Local\Temp\JobsRollback 中文 & b4dacb46976b4fefb13f8eb6ddfe129a\hard；hard 回退到 base [df70376f7f3f07b00af2067229df755f58e9c1af]。已跟踪修改会丢失；阻挡目标检出的未跟踪路径也可能被 Git 删除。子模块工作树不递归重置。
+已取消 hard 回退。
+仓库：C:\Users\lg295\AppData\Local\Temp\JobsRollback 中文 & b4dacb46976b4fefb13f8eb6ddfe129a\hard；hard 回退到 base [df70376f7f3f07b00af2067229df755f58e9c1af]。已跟踪修改会丢失；阻挡目标检出的未跟踪路径也可能被 Git 删除。子模块工作树不递归重置。
+已取消 hard 回退。
+仓库：C:\Users\lg295\AppData\Local\Temp\JobsRollback 中文 & b4dacb46976b4fefb13f8eb6ddfe129a\hard；hard 回退到 base [df70376f7f3f07b00af2067229df755f58e9c1af]。已跟踪修改会丢失；阻挡目标检出的未跟踪路径也可能被 Git 删除。子模块工作树不递归重置。
+仓库：C:\Users\lg295\AppData\Local\Temp\JobsRollback 中文 & b4dacb46976b4fefb13f8eb6ddfe129a\hard；hard 回退到 base [df70376f7f3f07b00af2067229df755f58e9c1af]。已跟踪修改会丢失；阻挡目标检出的未跟踪路径也可能被 Git 删除。子模块工作树不递归重置。
+hard 回退完成：df70376f7f3f07b00af2067229df755f58e9c1af
+soft 本地回退到 detached base [78970d12e399850a623670893b53fd7639c99040]；保留工作区和索引，其它远端可能已经包含这些提交。
+soft 回退完成。
+待提交差异： 1 file changed, 1 insertion(+), 1 deletion(-)
+仓库：C:\Users\lg295\AppData\Local\Temp\JobsRollback 中文 & b4dacb46976b4fefb13f8eb6ddfe129a\normal；hard 回退到 same parent [c317f7c87a327137f2720352149a056abc0122cc]。已跟踪修改会丢失；阻挡目标检出的未跟踪路径也可能被 Git 删除。子模块工作树不递归重置。
+hard 回退完成：c317f7c87a327137f2720352149a056abc0122cc
+已取消回退。
+SKIP optional native encoding shim: compile GitRollbackFzfProbe.cpp and pass -FzfProbeExecutable.
+PASS GitRollback: 40 assertions; temporary repositories only.

@@ -1,0 +1,41 @@
+Flutter 项目体检；项目：C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\Project 中文 & 100% ! [test] '
+只读项目检查：执行当前 SDK 的 --version 与 doctor -v，不获取依赖、不 clean、不安装或升级工具。Flutter 自身可能检查网络并更新 SDK 缓存。
+Flutter SDK：fake-flutter
+同源 Dart：fake-dart
+体检完成；doctor 提示的缺失组件请按需手动处理。
+跳过 pigeon：messages.dart 缺少 @ConfigurePigeon 输出配置。
+跳过 flutter_launcher_icons：只有依赖，没有明确配置。
+Flutter 自动化生产代码；项目：C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\Project 中文 & 100% ! [test] '
+跳过 flutter_launcher_icons：只有依赖，没有明确配置。
+将运行 flutter pub get（可能联网并修改 pubspec.lock / .dart_tool），随后按项目配置改写生成文件；生成器可运行项目自己的构建逻辑。
+计划：build_runner → run build_runner build
+已取消；未执行 pub get 或生成。
+Flutter 自动化生产代码；项目：C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\Project 中文 & 100% ! [test] '
+跳过 flutter_launcher_icons：只有依赖，没有明确配置。
+将运行 flutter pub get（可能联网并修改 pubspec.lock / .dart_tool），随后按项目配置改写生成文件；生成器可运行项目自己的构建逻辑。
+计划：build_runner → run build_runner build
+全部生成步骤完成。请审查项目 diff 后再提交。
+Flutter 自动化生产代码；项目：C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\Project 中文 & 100% ! [test] '
+跳过 flutter_launcher_icons：只有依赖，没有明确配置。
+将运行 flutter pub get（可能联网并修改 pubspec.lock / .dart_tool），随后按项目配置改写生成文件；生成器可运行项目自己的构建逻辑。
+计划：build_runner → run build_runner build
+全部生成步骤完成。请审查项目 diff 后再提交。
+Flutter 自动化生产代码；项目：C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\Project 中文 & 100% ! [test] '
+跳过 flutter_launcher_icons：只有依赖，没有明确配置。
+将运行 flutter pub get（可能联网并修改 pubspec.lock / .dart_tool），随后按项目配置改写生成文件；生成器可运行项目自己的构建逻辑。
+计划：build_runner → run build_runner build
+执行：C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -File C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\FakeTool.ps1
+fake stdout
+fake stderr
+执行：C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -File C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\FakeTool.ps1
+[!] Android toolchain missing
+Doctor found issues in 1 category.
+执行：C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -File C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\FakeTool.ps1
+[!] Android toolchain missing
+Doctor found issues in 1 category.
+只读检查：C:\Users\lg295\AppData\Local\Temp\JobsDoctorCodegen-f32c14ba09e74eebab2a25d1c2d9a187\Project 中文 & 100% ! [test] '
+计划：flutter pub get（真实执行前需确认）。
+跳过 flutter_launcher_icons：只有依赖，没有明确配置。
+build_runner → run build_runner build
+未启动 SDK、未获取依赖、未写生成文件。
+PASS: FlutterDoctorCodegen.Tests.ps1 (117 assertions)

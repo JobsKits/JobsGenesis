@@ -1,0 +1,10 @@
+当前文件已处于所选权限状态，没有重复写入。
+已验证当前用户的 ExecuteFile：Grant；精确恢复记录：C:\Users\lg295\AppData\Local\Temp\JobsRunPermissions-018f748d0a2c4d35bb943d0ad2d15cf4\fixture.json
+当前文件已处于所选权限状态，没有重复写入。
+已验证当前用户的 ExecuteFile：Revoke；精确恢复记录：C:\Users\lg295\AppData\Local\Temp\JobsRunPermissions-018f748d0a2c4d35bb943d0ad2d15cf4\fixture.json
+已验证当前用户的 ExecuteFile：Grant；精确恢复记录：C:\Users\lg295\AppData\Local\Temp\JobsRunPermissions-018f748d0a2c4d35bb943d0ad2d15cf4\fixture.json
+已验证当前用户的 ExecuteFile：Grant；精确恢复记录：C:\Users\lg295\AppData\Local\Temp\JobsRunPermissions-018f748d0a2c4d35bb943d0ad2d15cf4\prepared.json
+已验证当前用户的 ExecuteFile：Revoke；精确恢复记录：C:\Users\lg295\AppData\Local\Temp\JobsRunPermissions-018f748d0a2c4d35bb943d0ad2d15cf4\real.json
+已验证当前用户的 ExecuteFile：Grant；精确恢复记录：C:\Users\lg295\AppData\Local\Temp\JobsRunPermissions-018f748d0a2c4d35bb943d0ad2d15cf4\real.json
+Windows temporary NTFS ACL behavior verified; no user file or executable launch.
+PASS: RunPermissions (68 assertions)

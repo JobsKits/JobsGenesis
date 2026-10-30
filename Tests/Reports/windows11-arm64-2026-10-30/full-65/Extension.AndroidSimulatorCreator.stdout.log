@@ -1,0 +1,95 @@
+  1. first
+  2. second
+  1. first
+  2. second
+  1. first
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：sdk-fixture
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：sdk-fixture
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+SDK 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Java 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4\jbr\bin\java.exe
+即将创建：Jobs_pixel_9_API36_594e92e4
+机型：pixel_9
+系统：system-images;android-36;google_apis;x86_64
+AVD 目录：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+SDK 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Java 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4\jbr\bin\java.exe
+即将创建：Jobs_pixel_9_API36_e37c9dc2
+机型：pixel_9
+系统：system-images;android-36;google_apis;x86_64
+AVD 目录：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+SDK 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Java 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4\jbr\bin\java.exe
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+SDK 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Java 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4\jbr\bin\java.exe
+即将创建：Jobs_pixel_9_API36_66f44294
+机型：pixel_9
+系统：system-images;android-36;google_apis;x86_64
+AVD 目录：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+SDK 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Java 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4\jbr\bin\java.exe
+没有本机 x86_64 镜像，自动查询 Google 官方稳定镜像清单。
+自动安装选中的镜像：system-images;android-36;google_apis;x86_64；目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4，可能下载数 GB。
+healthy
+healthy
+即将创建：Jobs_pixel_9_API36_3b802675
+机型：pixel_9
+系统：system-images;android-36;google_apis;x86_64
+AVD 目录：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Jobs Android 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsAndroidSimulatorCreator\Scripts
+继续后自动体检并补齐 SDK 根目录、Java 21、Command-Line Tools、Emulator 和 ADB；健康依赖直接复用，损坏工具自动修复一次并复检。
+SDK 目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+缺失 Java 安装到当前用户目录：C:\Users\lg295\AppData\Local\Jobs\AndroidToolchain\java
+下载来源：Google Android SDK 官方源、Adoptium 官方 API / Temurin 21；归档校验后使用。
+缺少镜像时自动查询官方稳定清单，选择后直接安装；SDK 许可证由官方工具交给本人确认，不自动回答 yes。
+保留已有 AVD、镜像及健康工具，不修改全局 PATH / JAVA_HOME、代理或系统功能；损坏工具替换失败时会停止。
+SDK 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4
+Java 来源：C:\Users\lg295\AppData\Local\Temp\JobsAndroid 中文 & 100% ' a5bb8ce7cfa446b8bedace0887c4a4b4\jbr\bin\java.exe
+没有本机 x86_64 镜像，自动查询 Google 官方稳定镜像清单。
+PASS: AndroidSimulatorCreator.Tests.ps1 (41 assertions)

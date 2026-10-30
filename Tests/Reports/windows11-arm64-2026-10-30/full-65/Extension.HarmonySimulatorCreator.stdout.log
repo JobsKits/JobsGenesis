@@ -1,0 +1,99 @@
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-46-650359f6965e4fe1996a8a2a065e800b.log
+没有本地 Release 镜像，正在读取官方可下载清单（最长 60 秒）…
+已为新实例配置 CLT SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\CLT 中文 & 100%\sdk
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-49-60b053c1e7d94648a4ace37907248e45.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -create TestNew -deviceType phone -osVersion HarmonyOS 6.0.1(21)
+已验证新实例：TestNew
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-51-5a9c05263a18432fb3b42d41231256ae.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -create TestNew -deviceType phone -osVersion HarmonyOS 6.0.1(21)
+已验证新实例：TestNew
+官方许可原文：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\agreement\HarmonyOS_SDK_Agreement.txt
+Official agreement fixture
+官方许可原文：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\agreement\HarmonyOS_Software_Service_Agreement.txt
+Official agreement fixture
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -license accept
+fixture-license
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -start TestNew
+fixture-start
+启动命令已成功执行；设备启动就绪情况请查看模拟器窗口。
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-53-65e6a2aa512f4b8d8caffad1b327c789.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-54-3901dc27bb7c4a9cafae725ffadf2ac7.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -create TestNew -deviceType phone -osVersion HarmonyOS 6.0.1(21)
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-55-93a29e4dd5ea424995a62aaf738fdd02.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -create TestNew -deviceType phone -osVersion HarmonyOS 6.0.1(21)
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-56-7aa7049962a5426ebc5fb6c011428ef5.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -create TestNew -deviceType phone -osVersion HarmonyOS 6.0.1(21)
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-58-b3cbff2852ad46208f21190de810532a.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+执行官方工具：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\DevEco 中文 & 100%\tools\emulator\Emulator.exe -create TestNew -deviceType phone -osVersion HarmonyOS 6.0.1(21)
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+Jobs 新建 Harmony 模拟器 · 来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsHarmonySimulatorCreator\Scripts
+仅支持 x64 Windows 10 / 11 物理机；缺少兼容工具时从 SDL 镜像免登录下载 CLT 6.1.1.280（约 2.60 GB）。
+回车授权校验并安装缺失工具依赖到独立目录；健康工具不升级。缺镜像时读取官方清单，回车下载最新稳定版手机镜像，再创建唯一实例并启动。
+华为官网下载工具需登录；SDL 是工具包的替代下载源，不含系统镜像。下载或启动前展示随附许可原文，回车表示本人同意；非空输入取消。不覆盖旧实例、不改代理或 PATH。
+手机等模拟器受官方中国大陆使用区域限制；需要账号授权的镜像请在 DevEco Studio 操作，不绕过限制。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySimulator-61001690a3b94a0293fad79d7030a480\Local\Jobs\WindowsExtension\extensions\harmony-simulator-create\logs\create-2026-10-29-23-47-59-321ee7ddf78642e887f38bdd945ba58e.log
+即将创建：TestNew；镜像：phone | HarmonyOS 6.0.1(21)
+实例与镜像路径沿用 DevEco 既有配置；机型使用官方最新默认模板。
+  1、手机中文
+  2、平板
+  1、手机
+PASS: HarmonySimulatorCreator.Tests.ps1 (64 assertions)
+SKIP: Windows PowerShell 5.1、真实 Emulator.exe/详情格式、MSVC/Explorer、许可与真实创建启动需 Windows 实机。

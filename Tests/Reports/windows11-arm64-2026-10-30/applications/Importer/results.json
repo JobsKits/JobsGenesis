@@ -1,0 +1,46 @@
+﻿{
+    "SchemaVersion":  1,
+    "StartedUtc":  "2026-10-29T17:14:02.2787002Z",
+    "FinishedUtc":  "2026-10-29T17:14:03.3248145Z",
+    "Status":  "Blocked",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsEtw-e90c8026a51246b4b738ad7e05202480\\source",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  1,
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  null,
+                      "GitVersion":  null,
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ParsedFiles":  576,
+                      "Issues":  [
+                                     "缺少已有 git.exe；请先准备 Git for Windows，再重新运行。"
+                                 ]
+                  },
+    "Suites":  [
+
+               ],
+    "Summary":  {
+                    "Passed":  0,
+                    "Partial":  0,
+                    "Failed":  0,
+                    "TimedOut":  0,
+                    "Completed":  0,
+                    "Planned":  1
+                }
+}

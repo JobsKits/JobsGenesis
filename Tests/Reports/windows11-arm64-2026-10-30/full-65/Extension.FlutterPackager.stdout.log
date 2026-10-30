@@ -1,0 +1,346 @@
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\fake-build.cmd build apk
+fixture-output
+fixture-error 
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\.fvm\flutter_sdk\bin\flutter.bat
+产物：all；模式：profile；Flavor：demo
+产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\build\app\outputs\flutter-apk\app-demo-profile.apk
+产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\build\app\outputs\bundle\demoprofile\app-demo-profile.aab
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\.fvm\flutter_sdk\bin\flutter.bat
+产物：all；模式：release；Flavor：
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\.fvm\flutter_sdk\bin\flutter.bat
+产物：all；模式：release；Flavor：
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\.fvm\flutter_sdk\bin\flutter.bat
+产物：apk；模式：debug；Flavor：
+Flutter打包：仅处理所选 Flutter 根目录，用 fzf 选择 Android / iOS / OpenHarmony 及产物。
+Android / OpenHarmony 会执行 pub get / build 并写入工程；OpenHarmony 须已有 ohos 平台和适配 SDK，iOS 需要 macOS + Xcode。
+模式默认 release，BUILD_MODE 可设 debug / profile，FLAVOR 指定 flavor；Esc / Ctrl+C 取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Local\Jobs\WindowsExtension\extensions\flutter-package\logs\package-2026-10-29-23-46-44-40014a40e7b84cc08a44165e30cc74e5.log
+Flutter打包：仅处理所选 Flutter 根目录，用 fzf 选择 Android / iOS / OpenHarmony 及产物。
+Android / OpenHarmony 会执行 pub get / build 并写入工程；OpenHarmony 须已有 ohos 平台和适配 SDK，iOS 需要 macOS + Xcode。
+模式默认 release，BUILD_MODE 可设 debug / profile，FLAVOR 指定 flavor；Esc / Ctrl+C 取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Local\Jobs\WindowsExtension\extensions\flutter-package\logs\package-2026-10-29-23-46-44-017766b8773947eb80dc612a1a00073f.log
+已取消，没有开始打包。
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：hap；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\entry\build\default\outputs\default\entry-default-signed.hap
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：all；模式：profile；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --profile
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\entry\build\default\outputs\default\entry-default-signed.hap
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build app --profile
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\build\outputs\default\ohos-default-signed.app
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：app；模式：debug；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build app --debug
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\build\outputs\default\ohos-default-signed.app
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+Usage: flutter build <command>
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：all；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：all；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：all；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\entry\build\default\outputs\default\entry-default-signed.hap
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build app --release
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+Usage: flutter build <command>
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：all；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\entry\build\default\outputs\default\entry-default-signed.hap
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build app --release
+fixture flutter literal
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：all；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\entry\build\default\outputs\default\entry-default-signed.hap
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build app --release
+fixture flutter literal
+OpenHarmony 产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\build\outputs\default\ohos-default-signed.app
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：hap；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：hap；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\node.exe
+fixture node literal
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\node\npm.cmd
+fixture npm literal
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\ohpm\bin\ohpm.bat
+fixture ohpm literal
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\tools\hvigor\bin\hvigorw.bat
+fixture hvigorw literal
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\jbr\bin\java.exe
+fixture java literal
+fixture flutter literal
+已确认 SDK 能力：flutter build hap
+工程：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat
+OpenHarmony 产物：hap；模式：release；签名沿用工程现有配置。
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat pub get
+fixture flutter literal
+执行：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Harmony SDK 中文 & 100%\bin\flutter.bat build hap --release
+fixture flutter literal
+未签名 OpenHarmony 产物：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Project 中文 & 100%\ohos\entry\build\default\outputs\default\custom-unsigned.hap；安装或上架前必须完成签名。
+HarmonyOS SDK：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\DevEco Studio 中文\sdk
+Flutter打包：仅处理所选 Flutter 根目录，用 fzf 选择 Android / iOS / OpenHarmony 及产物。
+Android / OpenHarmony 会执行 pub get / build 并写入工程；OpenHarmony 须已有 ohos 平台和适配 SDK，iOS 需要 macOS + Xcode。
+模式默认 release，BUILD_MODE 可设 debug / profile，FLAVOR 指定 flavor；Esc / Ctrl+C 取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Local\Jobs\WindowsExtension\extensions\flutter-package\logs\package-2026-10-29-23-47-32-4d04c93ecd8a41afb25a344901ad7a53.log
+Flutter HarmonyOS 打包完成；发布要求请结合工程签名配置核对。
+Flutter打包：仅处理所选 Flutter 根目录，用 fzf 选择 Android / iOS / OpenHarmony 及产物。
+Android / OpenHarmony 会执行 pub get / build 并写入工程；OpenHarmony 须已有 ohos 平台和适配 SDK，iOS 需要 macOS + Xcode。
+模式默认 release，BUILD_MODE 可设 debug / profile，FLAVOR 指定 flavor；Esc / Ctrl+C 取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsFlutterPackage-d217318d0fa74da4b5ff1ea30014111b\Local\Jobs\WindowsExtension\extensions\flutter-package\logs\package-2026-10-29-23-47-32-5e7e1c8350174886a57b3989f784652c.log
+已取消，没有开始打包。
+PASS: FlutterPackager.Tests.ps1 (172 assertions)
+SKIP: Windows PowerShell 5.1、MSVC DLL、真实 Explorer / CMD / fzf 与 Android / HarmonyOS 构建需 Windows 实机。

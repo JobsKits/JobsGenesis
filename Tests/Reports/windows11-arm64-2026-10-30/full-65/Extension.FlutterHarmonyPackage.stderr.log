@@ -1,0 +1,9 @@
+Remove-Item : Windows PowerShell 处于非交互模式。朗读和提示功能不可用。
+所在位置 C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\Tests\FlutterHarmon
+yPackage.Tests.ps1:98 字符: 5
++     Remove-Item -LiteralPath $moduleLink -Force
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Remove-Item]，PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.RemoveItemCommand
+ 
+

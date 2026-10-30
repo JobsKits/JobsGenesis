@@ -1,0 +1,51 @@
+只读计划：android-dependencies；工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；Windows可处理已有平台：
+未运行工具、联网、安装、写日志或修改工程。Apple 平台须 macOS，Linux 须 Linux 宿主。
+Flutter 分层依赖准备：pub-get
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+Flutter 分层依赖准备：pub-get
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；动作：pub-get；日志：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\logs\dependencies-e0d0edf45673470f88498b90d9905dd0.log
+Flutter 分层依赖准备：pub-get
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；动作：pub-get；日志：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\logs\dependencies-9d6cfc9b27c9436fa93b4ba67dcd4c3b.log
+Flutter 分层依赖准备：web-dependencies
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+Web/JS 依赖不适用：工程根和 web/ 均无 package.json；Flutter Web 的 Dart 包仍由 Pub 管理。
+Flutter 分层依赖准备：android-dependencies
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；动作：android-dependencies；日志：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\logs\dependencies-da1fb3a4a01745d5aa696d15902081d0.log
+所选依赖阶段已完成；其它平台与应用运行未作保证。
+Flutter 分层依赖准备：android-dependencies
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；动作：android-dependencies；日志：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\logs\dependencies-ff9ab60569b34faca6ef4316e5b0172f.log
+Flutter 分层依赖准备：android-dependencies
+仅处理当前工程及工具缓存；可下载/执行锁定依赖的生命周期脚本或原生构建钩子，native 可能编译但不启动应用。缺少 SDK 时进入现有安装/切换。保留版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；动作：android-dependencies；日志：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\logs\dependencies-d9bb7139c75b4786bbd4beda91cc2bc5.log
+Flutter 分层依赖准备：flutter-precache
+本项：下载Flutter平台资源（flutter precache）
+  1、调用：使用当前项目 SDK 执行 flutter precache --所选目标。
+  2、下载对象：当前 Flutter SDK 所选目标的引擎和工具。
+      Android：引擎二进制，也可能包含 Flutter 自身的 android_maven 制品。
+      Web：对应的渲染资源与工具。
+      Apple：例如 iOS Flutter.xcframework 仅 macOS 入口提供；Windows 不提供 iOS 目标。
+  3、范围：不解析工程全部 Maven / 第三方包，不替代 Pub / Pods 拉取。
+  4、前提：不等于安装完整 Android SDK 或 Xcode。
+  5、结果：只准备所选平台的 Flutter SDK 缓存，不编译、安装或启动应用。
+  SDK 前提：缺少可用绑定时进入现有安装/切换，复检成功后继续；保留工程版本、认证、仓库和全局代理。
+Esc/Ctrl+C 取消；取消只停止后续，保留已完成的安装或缓存。Apple/Linux 平台需对应宿主，本动作不保证完全离线。
+工程：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal；动作：flutter-precache；日志：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\logs\dependencies-2205a40a198044be8c90db2f6f86c09c.log
+按工程锁文件安装 JS 依赖；保留生命周期脚本：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal
+按工程锁文件安装 JS 依赖；保留生命周期脚本：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal
+按工程锁文件安装 JS 依赖；保留生命周期脚本：C:\Users\lg295\AppData\Local\Temp\jobs-dependency-layers-b8cb53370c764852a33395dad9ac575a\项目 空格 & $literal
+将以所选入口/flavor/define 执行 debug 构建，触发 CMake/NuGet/FFI hooks 与平台库准备；可能编译并生成产物，不安装或启动应用，不保证后续完全离线。
+项目 SDK 尚未就绪：目标工程没有已确认的 Flutter SDK 绑定。；进入现有安装/切换流程，成功后复检。
+项目 SDK 尚未就绪：fixture broken runtime；进入现有安装/切换流程，成功后复检。
+项目 SDK 尚未就绪：fixture broken runtime；进入现有安装/切换流程，成功后复检。
+PASS: FlutterProjectDependencies.Tests.ps1 (43 assertions; mock tools only, no install/network/native build/registry)

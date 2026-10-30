@@ -1,0 +1,2 @@
+SKIP: MSVC/.NET 编译、Win32 detached / Job 与真实菜单需要 Windows。可在 Windows 使用 -Native。
+PASS: FlutterRunner.Tests.ps1 (54 assertions)

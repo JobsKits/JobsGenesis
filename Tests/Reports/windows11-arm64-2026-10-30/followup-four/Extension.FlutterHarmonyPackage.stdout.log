@@ -1,0 +1,30 @@
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+已取消，没有开始打包。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+已取消，没有开始打包。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyPackage-bbda93c6a6d84b18bbd027c99f7070e1\Local\Jobs\WindowsExtension\extensions\flutter-tools\logs\harmony-2026-10-30-00-34-48-844ae991c7e645c0826350d94f69d5d6.log
+鸿蒙 HAP + APP 打包完成；两种产物均已检查，未签名产物需要先完成签名才能安装。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyPackage-bbda93c6a6d84b18bbd027c99f7070e1\Local\Jobs\WindowsExtension\extensions\flutter-tools\logs\harmony-2026-10-30-00-34-48-880bd6a4ec7e475aa611c25f1c2ebf7e.log
+PASS: FlutterHarmonyPackage.Tests.ps1 (22 assertions; isolated workers, no SDK or registry writes)

@@ -1,0 +1,19 @@
+✔ 拆分完成：C:\Users\lg295\AppData\Local\Temp\JobsPortableVolumes-4fdf940fd19e42a2aa63e52ff43df863\中文 & %TEMP% ' $() [literal]@extra.bin.chunks；源文件保留。
+✔ 合并完成：C:\Users\lg295\AppData\Local\Temp\JobsPortableVolumes-4fdf940fd19e42a2aa63e52ff43df863\restored\中文 & %TEMP% ' $() [literal]@extra.bin；全部分卷保留。
+已取消，没有生成分卷。
+已取消，没有合并。
+======== Jobs 跨平台原始分卷 ========
+用途：原文件名@序号of总数，大小与 SHA-256 校验，无覆盖发布；原件始终保留。
+单文件 / 目录输入；目录只扫描当前层或合并时一级子目录。需要可用 fzf；Ctrl+C 取消。
+旧 JobsSplit-1 清单及 gzip 通过 -LegacyManifest 使用；日志在系统临时目录。
+只读加载通过；fzf：未发现，交互选择前需准备。
+======== Jobs 跨平台原始分卷 ========
+用途：原文件名@序号of总数，大小与 SHA-256 校验，无覆盖发布；原件始终保留。
+单文件 / 目录输入；目录只扫描当前层或合并时一级子目录。需要可用 fzf；Ctrl+C 取消。
+旧 JobsSplit-1 清单及 gzip 通过 -LegacyManifest 使用；日志在系统临时目录。
+只读加载通过；fzf：未发现，交互选择前需准备。
+已生成 2 卷：C:\Users\lg295\AppData\Local\Temp\JobsPortableVolumes-4fdf940fd19e42a2aa63e52ff43df863\legacy-none；合并选择 manifest.json。
+已核对 SHA-256：C:\Users\lg295\AppData\Local\Temp\JobsPortableVolumes-4fdf940fd19e42a2aa63e52ff43df863\restored-none.bin
+已生成 2 卷：C:\Users\lg295\AppData\Local\Temp\JobsPortableVolumes-4fdf940fd19e42a2aa63e52ff43df863\legacy-gzip；合并选择 manifest.json。
+已核对 SHA-256：C:\Users\lg295\AppData\Local\Temp\JobsPortableVolumes-4fdf940fd19e42a2aa63e52ff43df863\restored-gzip.bin
+PASS: FileVolumes.Tests.ps1 (31 assertions)

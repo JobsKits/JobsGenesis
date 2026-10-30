@@ -1,0 +1,5 @@
+Jobs | Git 提交回退（识别子Git）
+仅处理目标所属最近工作树，支持子模块 / 嵌套仓库 / worktree；不递归重置子仓。
+soft 保留索引与工作区；hard 丢弃已跟踪变化，需另输入 YES。只读本地快照，不 fetch、不推送。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsFeatureModules [中文] '& 895153f9bfc3417494ee812179042368\Jobs\WindowsExtension\extensions\git-rollback\logs；Ctrl+C 随时取消。
+ActionModules tests passed: 170 assertions.

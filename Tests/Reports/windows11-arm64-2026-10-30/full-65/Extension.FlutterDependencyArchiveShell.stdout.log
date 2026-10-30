@@ -1,0 +1,38 @@
+只读归档计划：export / native；工程：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal
+实际运行会选择缓存根和快照目录，核对宿主/目标/工具版本/锁指纹及全部校验；当前未运行工具、联网、复制或写文件。
+原生依赖归档：export / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+原生依赖归档：export / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\logs\native-archive-263dcf3e58404b8e85a8f839a00a2529.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\snapshot；版本：Flutter 3.29.3 arch windows_x64
+所选缓存层归档操作已完成；没有安装依赖或启动应用。
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\logs\native-archive-1528951127dd4123b36c3647c3064ae8.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\snapshot；版本：Flutter 3.29.3 arch windows_x64
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\logs\native-archive-99c2779b98db4748aa6cebdfa0092293.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\snapshot；版本：Flutter 3.29.3 arch windows_x64
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\logs\native-archive-2bb5407f7d2c43458b933c5d0b4b6c54.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\snapshot；版本：Flutter 3.29.3 arch windows_x64
+所选缓存层归档操作已完成；没有安装依赖或启动应用。
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\logs\native-archive-9666f1dc0d984c6e99df26adfb305ff5.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\snapshot；版本：Flutter 3.29.3 arch windows_x64
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\logs\native-archive-c2a546a7c55b4e86858b5b519ebd38ff.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\工程 with spaces & literal\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-native-archive-wrapper-1a63077818564a58b8d31362b988f289\snapshot；版本：Flutter 3.29.3 arch windows_x64
+PASS: FlutterDependencyArchiveShell.Tests.ps1 (33 assertions; isolated shell protocol only)

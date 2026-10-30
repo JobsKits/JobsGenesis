@@ -1,0 +1,11 @@
+Remove-Item : 未能找到路径“C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-a3bd998f2407478b93a70e99c8eb5a77\ 名称边界保留”的一部
+分。
+所在位置 C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\Tests\FlutterDepend
+encyImporter.Tests.ps1:225 字符: 47
++ ... ($temporary)) { Remove-Item -LiteralPath $temporary -Recurse -Force }
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\lg295\...3a70e99c8eb5a77:String) [Remove-Item], DirectoryNotFoundE 
+   xception
+    + FullyQualifiedErrorId : RemoveItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+ 
+

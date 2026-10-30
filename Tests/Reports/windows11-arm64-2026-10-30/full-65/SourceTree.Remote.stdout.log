@@ -1,0 +1,61 @@
+PASS 无 remote 停止
+PASS 单fetch及隐式push按原始URL合并
+PASS 合并行保留fetch与push来源
+PASS 全部remote、多fetch及独立push URL均被枚举
+PASS 跨remote原始URL去重
+PASS 去重后保留全部来源标签
+PASS 网页转换 http://example.invalid:8080/a/b.git/
+PASS 网页转换 ssh://git@gitlab.example.invalid:22/group/sub/repo.git
+PASS 网页转换 git://git.example.invalid:9418/team/repo.git
+PASS 网页转换 https://user:secret@example.invalid:8443/a/b.git?q=private#fragment
+PASS 网页转换 git@[2001:db8::1]:team/repo.git
+PASS 网页转换 git@github.com:JobsKits/SourceTree.sh.git
+PASS 拒绝不安全或不明确的网页 file:///tmp/repo.git
+PASS 拒绝不安全或不明确的网页 javascript:alert(1)
+PASS 拒绝不安全或不明确的网页 data:text/html,x
+PASS 拒绝不安全或不明确的网页 ext::git x
+PASS 拒绝不安全或不明确的网页 C:/repo.git
+PASS 拒绝不安全或不明确的网页 ../repo.git
+PASS 拒绝不安全或不明确的网页 /tmp/repo.git
+PASS 拒绝不安全或不明确的网页 ssh://git@example.invalid:2222/team/repo.git
+PASS 拒绝不安全或不明确的网页 git://example.invalid:1234/team/repo.git
+PASS 拒绝不安全或不明确的网页 https://example.invalid/
+PASS fzf按返回原行定位正确地址
+PASS fzf和日志展示不含凭据或查询内容
+PASS fzf后恢复原进程选项
+已取消或没有匹配地址，未复制、未打开。
+PASS fzf取消/空选 1
+已取消或没有匹配地址，未复制、未打开。
+PASS fzf取消/空选 130
+PASS fzf失败/未知选项停止 2
+PASS fzf失败/未知选项停止 0
+PASS SSH/git查询和片段脱敏
+PASS SSH/git查询和片段脱敏
+PASS URL配置换行不能伪造成多个合法候选
+远程：mirror/fetch, mirror/push, origin/fetch；地址：https://***@example.invalid/team/repo.git?[已省略]
+已复制原始远程地址到剪贴板。
+PASS 单地址Sourcetree直接复制原值，无终端无fzf
+远程：mirror/fetch, mirror/push, origin/fetch；地址：https://***@example.invalid/team/repo.git?[已省略]
+已打开仓库网页：https://example.invalid/team/repo
+PASS 单地址Sourcetree直接打开脱敏网页
+PASS 多地址Sourcetree只转交终端
+远程：origin/push；地址：ssh://***@example.invalid/team/push.git
+已打开仓库网页：https://example.invalid/team/push
+PASS 终端选择后只打开所选地址
+PASS 取消选择没有剪贴板或浏览器副作用
+PASS Sourcetree缺Git只转终端不原地安装
+远程：mirror/fetch, mirror/push, origin/fetch；地址：https://***@example.invalid/team/repo.git?[已省略]
+已复制原始远程地址到剪贴板。
+PASS 成功路径隔离继承Git寻址变量并逐一恢复
+远程：origin/fetch；地址：file:///tmp/fixture
+PASS 失败路径仍恢复继承Git寻址变量
+PASS 全链健康不探WinGet不安装
+依赖来源：WinGet 官方 winget 源；包：junegunn.fzf；范围：当前用户。会联网安装/修复，不主动提权。
+PASS 末端缺失，上游健康，一次安装刷新复检
+PASS 多层缺失停在WinGet，不带病继续
+依赖来源：WinGet 官方 winget 源；包：junegunn.fzf；范围：当前用户。会联网安装/修复，不主动提权。
+PASS 安装失败传播且不重试
+依赖来源：WinGet 官方 winget 源；包：junegunn.fzf；范围：当前用户。会联网安装/修复，不主动提权。
+PASS 安装后体检失败停止且不重试
+PASS 全部远程动作不改Git配置
+PASS：46 项远程动作断言。

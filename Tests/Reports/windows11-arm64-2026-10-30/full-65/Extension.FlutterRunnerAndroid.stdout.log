@@ -1,0 +1,44 @@
+fixture license output
+模拟器已运行：Pixel_existing
+Android SDK：C:\Users\lg295\AppData\Local\Temp\JobsRunnerAndroid-1af007a8bb9a4200b9646f2584886bbe\cancelled-sdk
+初始化会复用健康工具；缺失 / 损坏时从 Google 官方源补齐 Command-Line Tools、Emulator / ADB，并按需从 Adoptium 下载 Java 21。系统镜像可能数 GB。
+只影响选定 SDK、用户 Java / AVD 目录；不修改全局 PATH、代理或系统虚拟化设置。
+Android SDK：C:\Users\lg295\AppData\Local\Temp\JobsRunnerAndroid-1af007a8bb9a4200b9646f2584886bbe\sdk
+初始化会复用健康工具；缺失 / 损坏时从 Google 官方源补齐 Command-Line Tools、Emulator / ADB，并按需从 Adoptium 下载 Java 21。系统镜像可能数 GB。
+只影响选定 SDK、用户 Java / AVD 目录；不修改全局 PATH、代理或系统虚拟化设置。
+创建：Jobs_pixel_8_API35_41d54bf9
+型号：pixel_8
+系统镜像：system-images;android-35;google_apis;x86_64
+AVD 目标：/fixture/avd-home
+Android SDK：C:\Users\lg295\AppData\Local\Temp\JobsRunnerAndroid-1af007a8bb9a4200b9646f2584886bbe\sdk
+初始化会复用健康工具；缺失 / 损坏时从 Google 官方源补齐 Command-Line Tools、Emulator / ADB，并按需从 Adoptium 下载 Java 21。系统镜像可能数 GB。
+只影响选定 SDK、用户 Java / AVD 目录；不修改全局 PATH、代理或系统虚拟化设置。
+尚无当前宿主可用系统镜像，查询 Google 官方稳定镜像清单：https://dl.google.com/android/repository/
+创建：Jobs_pixel_8_API35_9183387d
+型号：pixel_8
+系统镜像：system-images;android-35;google_apis;x86_64
+AVD 目标：/fixture/avd-home
+将从 Google 官方 SDK 源下载选定镜像到 C:\Users\lg295\AppData\Local\Temp\JobsRunnerAndroid-1af007a8bb9a4200b9646f2584886bbe\sdk，可能数 GB；许可证由本人确认。
+Android SDK：C:\Users\lg295\AppData\Local\Temp\JobsRunnerAndroid-1af007a8bb9a4200b9646f2584886bbe\sdk
+初始化会复用健康工具；缺失 / 损坏时从 Google 官方源补齐 Command-Line Tools、Emulator / ADB，并按需从 Adoptium 下载 Java 21。系统镜像可能数 GB。
+只影响选定 SDK、用户 Java / AVD 目录；不修改全局 PATH、代理或系统虚拟化设置。
+尚无当前宿主可用系统镜像，查询 Google 官方稳定镜像清单：https://dl.google.com/android/repository/
+创建：Jobs_pixel_8_API35_0e17afed
+型号：pixel_8
+系统镜像：system-images;android-35;google_apis;x86_64
+AVD 目标：/fixture/avd-home
+将从 Google 官方 SDK 源下载选定镜像到 C:\Users\lg295\AppData\Local\Temp\JobsRunnerAndroid-1af007a8bb9a4200b9646f2584886bbe\sdk，可能数 GB；许可证由本人确认。
+尚无 Android AVD，进入内置初始化流程。
+Flutter 尚未发现所选 AVD（emulator-5558），正在重新加载……
+正在读取 Flutter 运行设备……
+暂无可用设备；可连接手机、选择 Android 模拟器或重新加载。
+Jobs · 从终端运行 Flutter 项目（CMD）
+来源：C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\JobsFlutterRunner\Scripts
+项目：/fixture/project
+设备选择后启动 flutter run --machine；运行日志进入 CMD 和本功能日志目录。
+Android 模拟器可启动已有 AVD；缺失时确认后补齐工具、选择型号与系统镜像并创建启动。
+设备选择使用 fzf，上下键及输入筛选，← 返回上一层，Esc 取消。
+关闭 CMD 不停止项目；重新右键可重连日志，r / R 热重载 / 热重启，s 停止。
+Flutter：/fixture/flutter
+版本：fixture
+PASS: FlutterRunnerAndroid.Tests.ps1 (29 assertions)

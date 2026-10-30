@@ -1,0 +1,9 @@
+CHECKPOINT: entering management execution suite
+CHECKPOINT: management process type initialized
+CHECKPOINT: starting isolated workers
+CHECKPOINT: isolated workers completed, checking launchers
+CHECKPOINT: starting real CMD and WScript fixture
+CHECKPOINT: CMD and WScript fixture completed, creating form
+CHECKPOINT: starting form background transaction
+CHECKPOINT: pumping form events and output
+PASS: ManagementExecution.Tests.ps1 (121 assertions)

@@ -1,0 +1,3 @@
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsSdkInspector [中文] '& 100% 9286b284105e49dead7a92c671d89600\Linked project
+SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\Users\lg295\AppData\Local\Temp\JobsSdkInspector [中文] '& 100% 9286b284105e49dead7a92c671d89600\linked-config.json
+PASS: FlutterSdkInspector.Tests.ps1 (70 assertions; fixtures only)

@@ -1,0 +1,29 @@
+原生依赖归档：export / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\logs\native-archive-86b537e0ea324abbaf5a11e7eed88040.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\项目 with spaces\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\exported；版本：Flutter 3.29.3 arch windows_x64
+{"operation":"export","kind":"native","platform":"windows","hostOS":"windows","toolVersion":"Flutter 3.29.3 arch windows_x64","fileCount":1,"bytes":256,"reuseCount":0,"writeCount":1,"check":true}
+{"operation":"export","kind":"native","platform":"windows","hostOS":"windows","toolVersion":"Flutter 3.29.3 arch windows_x64","fileCount":1,"bytes":256,"reuseCount":0,"writeCount":1,"check":false}
+ARCHIVE_DIRECTORY=C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\exported\Jobs-native-dependencies-20261029154811019880-4b2858c
+所选缓存层归档操作已完成；没有安装依赖或启动应用。
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\logs\native-archive-8cae5c522dd64549a45fd9bf3b61e02d.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\项目 with spaces\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\exported\Jobs-native-dependencies-20261029154811019880-4b2858c；版本：Flutter 3.29.3 arch windows_x64
+{"operation":"import","kind":"native","platform":"windows","hostOS":"windows","toolVersion":"Flutter 3.29.3 arch windows_x64","fileCount":1,"bytes":256,"reuseCount":0,"writeCount":1,"check":true}
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\logs\native-archive-271d698457904137b6c93e136141d16d.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\项目 with spaces\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\exported\Jobs-native-dependencies-20261029154811019880-4b2858c；版本：Flutter 3.29.3 arch windows_x64
+{"operation":"import","kind":"native","platform":"windows","hostOS":"windows","toolVersion":"Flutter 3.29.3 arch windows_x64","fileCount":1,"bytes":256,"reuseCount":0,"writeCount":1,"check":true}
+{"operation":"import","kind":"native","platform":"windows","hostOS":"windows","toolVersion":"Flutter 3.29.3 arch windows_x64","fileCount":1,"bytes":256,"reuseCount":0,"writeCount":1,"check":false}
+所选缓存层归档操作已完成；没有安装依赖或启动应用。
+原生依赖归档：import / native
+只复制所选层；Gradle modules-2 可能含其它工程的共享包，OHPM/Hvigor分开，native是本机目标构建缓存，precache不含SDK源码/Dart，JS不执行归档脚本。
+仅相同宿主、目标、工具版本与工程锁指纹允许导入；同名不同内容拒绝，导入前精确YES。不保证跨系统或完全离线；分享前检查缓存中的私有内容。
+归档审计日志：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\logs\native-archive-0fd49b380f654e4fbbaae2dc08440c3c.log
+缓存层：native；根：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\项目 with spaces\build\windows；快照目录：C:\Users\lg295\AppData\Local\Temp\jobs-archive-published-chain-b00d972cfcab47439f809e9781708b17\exported\Jobs-native-dependencies-20261029154811019880-4b2858c；版本：Flutter 3.29.3 arch windows_x64
+PASS: FlutterDependencyArchiveEndToEnd.Tests.ps1 (16 assertions; published Windows wrapper and real Dart on Win32NT; not Windows native UI)

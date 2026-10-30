@@ -1,0 +1,2 @@
+开始解析项目原有 AGP/Kotlin/构建插件；不改仓库地址或插件版本。
+PASS: FlutterProjectSetupVersion.Tests.ps1 (30 assertions; fixture-only, no SDK installation or native GUI)

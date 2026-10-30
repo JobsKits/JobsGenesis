@@ -1,0 +1,27 @@
+EXIT=0
+
+test_aggregation_delta_and_idle_rate (test_windows_etw.WindowsEtwTests.test_aggregation_delta_and_idle_rate) ... ok
+test_callback_uses_payload_pid_instead_of_system_header_pid (test_windows_etw.WindowsEtwTests.test_callback_uses_payload_pid_instead_of_system_header_pid) ... ok
+test_dropped_events_are_reported_instead_of_returning_zero_traffic (test_windows_etw.WindowsEtwTests.test_dropped_events_are_reported_instead_of_returning_zero_traffic) ... ok
+test_exe_total_survives_old_process_inactivity_and_new_process_start (test_windows_etw.WindowsEtwTests.test_exe_total_survives_old_process_inactivity_and_new_process_start) ... ok
+test_existing_or_denied_session_is_never_stopped (test_windows_etw.WindowsEtwTests.test_existing_or_denied_session_is_never_stopped) ... ok
+test_first_buffered_event_before_current_birth_is_not_given_to_new_exe (test_windows_etw.WindowsEtwTests.test_first_buffered_event_before_current_birth_is_not_given_to_new_exe) ... ok
+test_identity_binds_creation_and_exe_to_one_handle_ignoring_undefined_live_exit_time (test_windows_etw.WindowsEtwTests.test_identity_binds_creation_and_exe_to_one_handle_ignoring_undefined_live_exit_time) ... ok
+test_idle_row_hides_without_resetting_session_ledger (test_windows_etw.WindowsEtwTests.test_idle_row_hides_without_resetting_session_ledger) ... ok
+test_native_api_open_failure_stops_only_owned_handle (test_windows_etw.WindowsEtwTests.test_native_api_open_failure_stops_only_owned_handle) ... ok
+test_open_and_cleanup_failure_keep_both_errors_and_retryable_owner (test_windows_etw.WindowsEtwTests.test_open_and_cleanup_failure_keep_both_errors_and_retryable_owner) ... ok
+test_overlapping_lifetime_clock_intervals_are_not_guessed (test_windows_etw.WindowsEtwTests.test_overlapping_lifetime_clock_intervals_are_not_guessed) ... ok
+test_permission_failure_never_starts_consumer (test_windows_etw.WindowsEtwTests.test_permission_failure_never_starts_consumer) ... ok
+test_pid_reuse_preserves_old_exe_and_uses_event_lifetime (test_windows_etw.WindowsEtwTests.test_pid_reuse_preserves_old_exe_and_uses_event_lifetime) ... ok
+test_queue_overflow_is_visible_instead_of_silently_dropping_traffic (test_windows_etw.WindowsEtwTests.test_queue_overflow_is_visible_instead_of_silently_dropping_traffic) ... ok
+test_session_lifecycle_is_idempotent_and_background_failure_is_visible (test_windows_etw.WindowsEtwTests.test_session_lifecycle_is_idempotent_and_background_failure_is_visible) ... ok
+test_tcp_udp_ipv4_ipv6_directions (test_windows_etw.WindowsEtwTests.test_tcp_udp_ipv4_ipv6_directions) ... ok
+test_unknown_processes_are_not_combined (test_windows_etw.WindowsEtwTests.test_unknown_processes_are_not_combined) ... ok
+test_unknown_versions_retransmissions_and_malformed_events_are_not_counted (test_windows_etw.WindowsEtwTests.test_unknown_versions_retransmissions_and_malformed_events_are_not_counted) ... ok
+test_unverifiable_creation_never_exposes_current_exe_as_verified_identity (test_windows_etw.WindowsEtwTests.test_unverifiable_creation_never_exposes_current_exe_as_verified_identity) ... ok
+test_win64_abi_sizes_and_callback_offset (test_windows_etw.WindowsEtwTests.test_win64_abi_sizes_and_callback_offset) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.006s
+
+OK

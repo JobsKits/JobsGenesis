@@ -1,0 +1,29 @@
+只读计划：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\parent\app
+来源：https://gitcode.com/CPF-Flutter/flutter_flutter.git；缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\harmony
+当前项目版本：3.38.5；本工具 CPF 绑定：False
+安装模式将从远端 tag 选择并锁定 commit；本次未联网、未运行 Git/FVM/Flutter、未写项目。
+项目绑定备份：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\Jobs\WindowsExtension\extensions\flutter-tools\backups\openharmony-655272768e7f42bfa467e6f3d17da234
+安装/切换 Flutter@OpenHarmony SDK；项目：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\parent\app
+选择 CPF-Flutter 的 ohos tag，锁定 commit 后安装到隔离缓存，再绑定当前项目 FVM。不会生成 ohos/、安装 DevEco 或运行构建。
+计划：3.35.7+ohos-1.0.5 → 0123456789abcdef0123456789abcdef01234567；缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\harmony
+FVM 先在影子项目初始化并核验；真实项目仅更新 .fvmrc 和 .fvm/flutter_sdk。IDE、ignore、业务源码及其它元数据保持原样。
+安装/切换 Flutter@OpenHarmony SDK；项目：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\parent\app
+选择 CPF-Flutter 的 ohos tag，锁定 commit 后安装到隔离缓存，再绑定当前项目 FVM。不会生成 ohos/、安装 DevEco 或运行构建。
+计划：3.35.7+ohos-1.0.5 → 0123456789abcdef0123456789abcdef01234567；缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\harmony
+FVM 先在影子项目初始化并核验；真实项目仅更新 .fvmrc 和 .fvm/flutter_sdk。IDE、ignore、业务源码及其它元数据保持原样。
+项目绑定备份：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\Jobs\WindowsExtension\extensions\flutter-tools\backups\openharmony-0e8213ad08d44c9aa591d93c90b8d3a0
+成功：当前项目绑定 3.35.7+ohos-1.0.5 / 0123456789abcdef0123456789abcdef01234567
+接下来可执行鸿蒙 Flutter 环境体检；SDK 切换不代表插件、DevEco、签名或 HAP 构建已通过。
+从 OpenHarmony 切回原生 Flutter；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\parent\app
+官方 SDK 来源：https://github.com/flutter/flutter.git；隔离缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\official
+先在影子项目选择并验证官方 SDK，成功后仅发布 .fvmrc 与 SDK 联接；保留 IDE、ignore、源码和其它元数据。
+计划：OpenHarmony → 官方 Flutter 3.38.5；来源：https://github.com/flutter/flutter.git；缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\official
+从 OpenHarmony 切回原生 Flutter；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\parent\app
+官方 SDK 来源：https://github.com/flutter/flutter.git；隔离缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\official
+先在影子项目选择并验证官方 SDK，成功后仅发布 .fvmrc 与 SDK 联接；保留 IDE、ignore、源码和其它元数据。
+计划：OpenHarmony → 官方 Flutter 3.38.5；来源：https://github.com/flutter/flutter.git；缓存：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\JobsFlutter\fvm\official
+项目绑定备份：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\local\Jobs\WindowsExtension\extensions\flutter-tools\backups\openharmony-f4639de668964aeebbc1ca376237df61
+成功：当前项目已切回官方 Flutter 3.38.5；OpenHarmony SDK 缓存保留，可从相邻菜单切回。
+Flutter SDK 安装/切换（FVM）；精确项目：C:\Users\lg295\AppData\Local\Temp\JobsHarmonySdk [中文] & 100% 14981520536d4b3e8878528f3b1d64c9\parent\app
+流程：项目校验 → 健康工具链 → 官方历史/最新版本 → fzf → 最终确认 → 备份 → 安装/切换。工具安装会分别确认。
+PASS: 49 OpenHarmony SDK assertions; no network or registry changes

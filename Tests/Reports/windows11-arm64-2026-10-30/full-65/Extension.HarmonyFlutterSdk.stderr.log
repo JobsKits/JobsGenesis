@@ -1,0 +1,9 @@
+FAIL: native menus consume the shared hierarchy while retaining leaf indices
+所在位置 C:\Users\lg295\AppData\Local\Temp\JobsWin 中 5b3a201d97\source\OS@Extension\WindowsOS@Extension\Tests\HarmonyFlutte
+rSdk.Tests.ps1:7 字符: 92
++ ... { $script:count++; if (-not $Value) { throw ('FAIL: ' + $Message) } }
++                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (FAIL: native me...ng leaf indices:String) [], RuntimeException
+    + FullyQualifiedErrorId : FAIL: native menus consume the shared hierarchy while retaining leaf indices
+ 
+

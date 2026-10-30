@@ -1,0 +1,17 @@
+缺少 SDK Command-Line Tools。自动补齐 Command-Line Tools。来源：https://dl.google.com/android/repository/；目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepair 中文 & 100% ' 1bead207a7bc447e9828f88c012f2ceb\SDK-on-independent-volume。SDK 条款：https://developer.android.com/studio/terms 。不覆盖已有目录。
+下载来源：https://dl.google.com/android/repository/commandlinetools-win-123_latest.zip
+缺少 SDK Command-Line Tools。自动补齐 Command-Line Tools。来源：https://dl.google.com/android/repository/；目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepair 中文 & 100% ' 1bead207a7bc447e9828f88c012f2ceb\SDK-on-independent-volume。SDK 条款：https://developer.android.com/studio/terms 。不覆盖已有目录。
+下载来源：https://dl.google.com/android/repository/commandlinetools-win-123_latest.zip
+缺少 SDK Command-Line Tools。自动补齐 Command-Line Tools。来源：https://dl.google.com/android/repository/；目标：C:\Users\lg295\AppData\Local\Temp\JobsAndroidRepair 中文 & 100% ' 1bead207a7bc447e9828f88c012f2ceb\SDK-on-independent-volume。SDK 条款：https://developer.android.com/studio/terms 。不覆盖已有目录。
+SDK 工具缺失或损坏：
+emulator：fixture bad version
+从 Google 官方源修复一次到 sdk。损坏的已有工具包会先卸载再安装；下载失败时可能暂时缺失该工具。AVD、系统镜像及其它工具包保留。
+SDK 工具缺失或损坏：
+emulator：fixture bad version
+platform-tools：fixture bad version
+从 Google 官方源修复一次到 sdk。损坏的已有工具包会先卸载再安装；下载失败时可能暂时缺失该工具。AVD、系统镜像及其它工具包保留。
+SDK 工具缺失或损坏：
+emulator：fixture bad version
+platform-tools：fixture bad version
+从 Google 官方源修复一次到 sdk。损坏的已有工具包会先卸载再安装；下载失败时可能暂时缺失该工具。AVD、系统镜像及其它工具包保留。
+PASS: AndroidSimulatorRepair.Tests.ps1 (37 assertions)

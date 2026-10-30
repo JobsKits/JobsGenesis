@@ -1,0 +1,14 @@
+日志：C:\Users\lg295\AppData\Local\Temp\Jobs Extract [中文] & 100% ! ' 722724a970b44070856f1e3d4937352b\State\Jobs\WindowsExtension\extensions\flutter-dependency-extract\logs\extract-2026-10-29-23-46-40-68fdee14cbae462d889c4c28721db2c8.log
+来源：项目已解析的第三方 Pub 包；项目：C:\Users\lg295\AppData\Local\Temp\Jobs Extract [中文] & 100% ! ' 722724a970b44070856f1e3d4937352b\Flutter 工程 & 100% ! '
+输出父目录：C:\Users\lg295\AppData\Local\Temp\Jobs Extract [中文] & 100% ! ' 722724a970b44070856f1e3d4937352b
+复用 Dart：dart-native.exe
+正在核对锁定依赖并复制源码，请等待完成提示。
+fixture complete
+提取完成。
+日志：C:\Users\lg295\AppData\Local\Temp\Jobs Extract [中文] & 100% ! ' 722724a970b44070856f1e3d4937352b\State\Jobs\WindowsExtension\extensions\flutter-dependency-extract\logs\extract-2026-10-29-23-46-40-615e210e1b614b49a1074461df9848e2.log
+来源：项目已解析的第三方 Pub 包；项目：C:\Users\lg295\AppData\Local\Temp\Jobs Extract [中文] & 100% ! ' 722724a970b44070856f1e3d4937352b\Flutter 工程 & 100% ! '
+输出父目录：C:\Users\lg295\AppData\Local\Temp\Jobs Extract [中文] & 100% ! ' 722724a970b44070856f1e3d4937352b
+复用 Dart：dart-native.exe
+正在核对锁定依赖并复制源码，请等待完成提示。
+fixture failure
+PASS: FlutterDependencyExtractor.Tests.ps1 (38 assertions)

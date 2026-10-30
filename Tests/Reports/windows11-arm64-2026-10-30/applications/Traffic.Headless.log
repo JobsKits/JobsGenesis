@@ -1,0 +1,10 @@
+EXIT=0
+
+test_final_cleanup_failure_retains_start_error_as_context (test_headless.HeadlessCleanupTests.test_final_cleanup_failure_retains_start_error_as_context) ... ok
+test_keyboard_interrupt_stops_collector (test_headless.HeadlessCleanupTests.test_keyboard_interrupt_stops_collector) ... ok
+test_start_failure_still_retries_owned_session_cleanup (test_headless.HeadlessCleanupTests.test_start_failure_still_retries_owned_session_cleanup) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

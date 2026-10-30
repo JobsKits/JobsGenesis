@@ -1,0 +1,29 @@
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+已取消，没有开始打包。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+已取消，没有开始打包。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyPackage-f024b01cc5a743b8b21a08cc46ba1a0d\Local\Jobs\WindowsExtension\extensions\flutter-tools\logs\harmony-2026-10-29-23-48-22-d1ce7a7bfe744de7a42b4e76913d1b43.log
+鸿蒙 HAP + APP 打包完成；两种产物均已检查，未签名产物需要先完成签名才能安装。
+打包鸿蒙 HAP + APP：只处理所选 Flutter 根目录，固定 release，使用项目 FVM 适配 SDK。
+会运行 pub get、build hap --release、build app --release 并写入工程；签名沿用工程配置，不安装或切换 SDK。
+不读取 BUILD_MODE / OHOS_BUILD_TARGET / FLAVOR；Ctrl+C 或任意非空输入取消。
+日志：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyPackage-f024b01cc5a743b8b21a08cc46ba1a0d\Local\Jobs\WindowsExtension\extensions\flutter-tools\logs\harmony-2026-10-29-23-48-22-586e6f182ac34de7bf7eeea579843b67.log

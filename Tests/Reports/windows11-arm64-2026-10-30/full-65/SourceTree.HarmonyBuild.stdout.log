@@ -1,0 +1,53 @@
+执行：JobsFixtureExitSeven 
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+fixture version
+已确认 SDK 能力：flutter build hap
+已确认 SDK 能力：flutter build app
+检查 Node.js：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 npm：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 ohpm：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 Hvigor：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+检查 Java：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\fake-tool
+fixture version
+fixture version
+已确认 SDK 能力：flutter build hap
+Usage: flutter build <subcommand>
+工程：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\SDK with 空格\bin\flutter.bat
+鸿蒙产物：all；模式：release；签名沿用工程现有配置。
+鸿蒙产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project\build\ohos\entry-default-signed.hap
+鸿蒙产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project\build\ohos\entry-default-signed.app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\SDK with 空格\bin\flutter.bat
+鸿蒙产物：all；模式：release；签名沿用工程现有配置。
+工程：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\SDK with 空格\bin\flutter.bat
+鸿蒙产物：all；模式：release；签名沿用工程现有配置。
+工程：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\SDK with 空格\bin\flutter.bat
+鸿蒙产物：all；模式：release；签名沿用工程现有配置。
+鸿蒙产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project\build\ohos\entry-default-signed.hap
+工程：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\SDK with 空格\bin\flutter.bat
+鸿蒙产物：all；模式：release；签名沿用工程现有配置。
+鸿蒙产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project\build\ohos\entry-default-signed.hap
+鸿蒙产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project\build\ohos\entry-default-signed.app
+工程：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project
+Flutter SDK：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\SDK with 空格\bin\flutter.bat
+鸿蒙产物：all；模式：release；签名沿用工程现有配置。
+鸿蒙产物已验证：C:\Users\lg295\AppData\Local\Temp\JobsHarmonyBuildTest-a89f23333aa746e49b3732592e8a070f\中文 Flutter project\build\ohos\entry-default-signed.hap
+SKIP：本机无创建链接权限；保留其它产物检查。
+PASS：41 项鸿蒙双产物断言；没有执行真实 SDK 或构建。

@@ -1,0 +1,122 @@
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+尚未输入依赖目录，请输入或拖入后按回车。
+尚未输入依赖目录，请输入或拖入后按回车。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+尚未输入依赖目录，请输入或拖入后按回车。
+尚未输入依赖目录，请输入或拖入后按回车。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-f301d52054714facb2535969e70db9ca.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+导入停止：依赖识别/校验失败（退出码 3），请按上方说明处理。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-35181b97033a4572b8f8096d9cb8bc0b.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+已取消，项目未写入。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-e45e12579e8947a5889982c823b04fab.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+已取消，项目未写入。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-5da180f3a0c2444599bf53526d895e52.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+已取消，项目未写入。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-503d49d630dd4ffc97075cfb640c70d2.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+已取消，项目未写入。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-d4700632d8d448efbb43ca88a893f50f.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+fixture plan/result
+导入完成；请核对结果后按需手动运行 flutter pub get。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-035cd876390243008e649602abe5bcca.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\ 名称边界保留 
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+fixture plan/result
+导入完成；请核对结果后按需手动运行 flutter pub get。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-46-63b869aa75d54d5ea3884c78e3e2b479.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：fixture-native-dart.exe
+fixture plan/result
+fixture plan/result
+导入停止：导入失败（退出码 7），请按上方说明处理。
+Jobs · 导入 Flutter 第三方依赖
+1、输入或拖入本工具导出的完整依赖目录（包含 manifest.json、pubspec.yaml、pubspec.lock、packages/）。
+2、先完整校验清单、包名、版本、文件与当前项目；通过后显示计划，精确输入 YES 才写入。
+3、源码原样复制到当前项目 vendor/flutter_dependencies/ 的独立目录，并备份、增量合并 pubspec_overrides.yaml。已有同名覆盖冲突时停止。
+4、不联网、不运行依赖源码、不自动 pub get、不修改全局缓存或 SDK。当前仅支持独立 Flutter 项目，Pub workspace 根和成员均暂不支持。
+日志在本功能安装目录的 logs/import-*.log；运行时显示精确位置。路径留空会继续询问，按 Ctrl+C 或输入结束取消。
+日志：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\state\Jobs\WindowsExtension\extensions\flutter-tools\logs\import-2026-10-30-00-52-47-eae8d593fbdf4f5e9ae917bd0c8b430b.log
+来源：本地 Flutter 第三方 Pub 依赖导出；目录：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\依赖 $(whoami); & %PATH% !
+目标项目：C:\Users\lg295\AppData\Local\Temp\jobs-flutter-import-18e1ff0587e241018038a8c85e756883\目标 工程
+复用项目 Dart：release-native-dart.exe
+release fixture plan/result
+release fixture plan/result
+导入完成；请核对结果后按需手动运行 flutter pub get。

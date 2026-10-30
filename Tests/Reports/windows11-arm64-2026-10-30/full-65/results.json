@@ -1,0 +1,962 @@
+﻿{
+    "SchemaVersion":  1,
+    "StartedUtc":  "2026-10-29T15:41:05.4642425Z",
+    "FinishedUtc":  "2026-10-29T15:52:06.2366424Z",
+    "Status":  "Failed",
+    "RepositoryRoot":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\source",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "OperatingSystem":  "Microsoft Windows NT 10.0.26300.0",
+    "Architecture":  "ARM64",
+    "PlannedSuites":  65,
+    "Preflight":  {
+                      "PowerShellPath":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "GitPath":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JW 中 2cbd094d73\\g\\cmd\\git.exe",
+                      "GitVersion":  "git version 2.56.0.windows.3",
+                      "ParserRoots":  [
+                                          "JobsCommand@Gits/WindowsOS",
+                                          "SourceTree.command/WindowsOS",
+                                          "JobsSh.sh/WindowsOS",
+                                          "JobsCommand@Others/WindowsOS",
+                                          "JobsCommand@Flutter/WindowsOS",
+                                          "OS@Extension/WindowsOS@Extension"
+                                      ],
+                      "ParserFiles":  [
+                                          "Tests/WindowsRegression.ps1",
+                                          "Tests/WindowsLaunchers.Tests.ps1",
+                                          "Tests/DoctorBuild.Tests.ps1",
+                                          "Tests/PythonBat.Tests.ps1",
+                                          "JobsPythonTools.py/JobsReverseIPA.py/JobsReverseIPA/doctor/windows/build_doctor_exe.ps1"
+                                      ],
+                      "ParsedFiles":  576,
+                      "Issues":  [
+
+                                 ]
+                  },
+    "Suites":  [
+                   {
+                       "Id":  "Launchers.CMD",
+                       "Path":  "Tests/WindowsLaunchers.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  2.991,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Launchers.CMD.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Launchers.CMD.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Gits.Regression",
+                       "Path":  "JobsCommand@Gits/WindowsOS/Tests/Regression.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  52.997,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Gits.Regression.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Gits.Regression.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Gits.GitProxyConfigurator",
+                       "Path":  "JobsCommand@Gits/WindowsOS/Tests/GitProxyConfigurator.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.551,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Gits.GitProxyConfigurator.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Gits.GitProxyConfigurator.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "SourceTree.Safety",
+                       "Path":  "SourceTree.command/WindowsOS/Tests/Safety.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.015,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.Safety.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.Safety.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "SourceTree.SourceTree",
+                       "Path":  "SourceTree.command/WindowsOS/Tests/SourceTree.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  7.371,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.SourceTree.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.SourceTree.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "JobsSh.Regression",
+                       "Path":  "JobsSh.sh/WindowsOS/Tests/Regression.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  5.375,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\JobsSh.Regression.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\JobsSh.Regression.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Others.Regression",
+                       "Path":  "JobsCommand@Others/WindowsOS/Tests/Regression.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  8.663,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Others.Regression.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Others.Regression.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Flutter.Portable",
+                       "Path":  "JobsCommand@Flutter/WindowsOS/Tests/Portable.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  30.834,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.Portable.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.Portable.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Doctor.Build",
+                       "Path":  "Tests/DoctorBuild.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.415,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Doctor.Build.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Doctor.Build.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Python.BAT",
+                       "Path":  "Tests/PythonBat.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  3.206,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Python.BAT.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Python.BAT.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Others.FileVolumes",
+                       "Path":  "JobsCommand@Others/WindowsOS/Tests/FileVolumes.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.064,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Others.FileVolumes.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Others.FileVolumes.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Flutter.HarmonyBuild",
+                       "Path":  "JobsCommand@Flutter/WindowsOS/Tests/HarmonyBuild.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.707,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.HarmonyBuild.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.HarmonyBuild.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP：本机无创建链接权限；保留其它产物检查。"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Flutter.Bootstrap",
+                       "Path":  "JobsCommand@Flutter/WindowsOS/Tests/Bootstrap.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.447,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.Bootstrap.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.Bootstrap.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Flutter.SimulatorEntries",
+                       "Path":  "JobsCommand@Flutter/WindowsOS/Tests/SimulatorEntries.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.667,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.SimulatorEntries.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Flutter.SimulatorEntries.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "SourceTree.Remote",
+                       "Path":  "SourceTree.command/WindowsOS/Tests/Remote.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  2.617,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.Remote.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.Remote.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "SourceTree.FlutterRunner",
+                       "Path":  "SourceTree.command/WindowsOS/Tests/FlutterRunner.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.454,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.FlutterRunner.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.FlutterRunner.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "SourceTree.HarmonyBuild",
+                       "Path":  "SourceTree.command/WindowsOS/Tests/HarmonyBuild.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.696,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.HarmonyBuild.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\SourceTree.HarmonyBuild.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP：本机无创建链接权限；保留其它产物检查。"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Core",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Core.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  13.204,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Core.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Core.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Catalog",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Catalog.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.93,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Catalog.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Catalog.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Architecture",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Architecture.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  8.447,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Architecture.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Architecture.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Installer",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Installer.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.374,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Installer.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Installer.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.PackageInstaller",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/PackageInstaller.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.254,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.PackageInstaller.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.PackageInstaller.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.SelectionPanel",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/SelectionPanel.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  2.81,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.SelectionPanel.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.SelectionPanel.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterFeatureSelection",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterFeatureSelection.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.597,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterFeatureSelection.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterFeatureSelection.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.ActionModules",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/ActionModules.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  2.047,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.ActionModules.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.ActionModules.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.Worker",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/Worker.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  5.352,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Worker.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.Worker.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.RunPermissions",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/RunPermissions.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.073,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.RunPermissions.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.RunPermissions.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterTools",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterTools.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.47,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterTools.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterTools.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterSdkInspector",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterSdkInspector.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.152,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterSdkInspector.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterSdkInspector.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsSdkInspector [中文] \u0027\u0026 100% 9286b284105e49dead7a92c671d89600\\Linked project",
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsSdkInspector [中文] \u0027\u0026 100% 9286b284105e49dead7a92c671d89600\\linked-config.json"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterVersionMgr",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterVersionMgr.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.588,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterVersionMgr.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterVersionMgr.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] \u0026 100% \u0027 0b0136a4874747d58c35d3c8b72b8be8\\guard-project\\.fvm\\fvm_config.json",
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] \u0026 100% \u0027 0b0136a4874747d58c35d3c8b72b8be8\\guard-project\\.fvm\\version",
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] \u0026 100% \u0027 0b0136a4874747d58c35d3c8b72b8be8\\guard-project\\.fvm\\release",
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] \u0026 100% \u0027 0b0136a4874747d58c35d3c8b72b8be8\\guard-project\\.fvm\\.gitignore",
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] \u0026 100% \u0027 0b0136a4874747d58c35d3c8b72b8be8\\guard-project\\unsafe.code-workspace",
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsFvm [中文] \u0026 100% \u0027 0b0136a4874747d58c35d3c8b72b8be8\\guard-project\\.fvm\\version"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HarmonyFlutterSdk",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HarmonyFlutterSdk.Tests.ps1",
+                       "Status":  "Failed",
+                       "ExitCode":  1,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.391,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonyFlutterSdk.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonyFlutterSdk.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.GitPuller",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/GitPuller.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  167.095,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.GitPuller.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.GitPuller.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDependencyExtractor",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyExtractor.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  2.336,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyExtractor.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyExtractor.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterRunner",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterRunner.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.082,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterRunner.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterRunner.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: MSVC/.NET 编译、Win32 detached / Job 与真实菜单需要 Windows。可在 Windows 使用 -Native。"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterPackager",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterPackager.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  50.029,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterPackager.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterPackager.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: Windows PowerShell 5.1、MSVC DLL、真实 Explorer / CMD / fzf 与 Android / HarmonyOS 构建需 Windows 实机。"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDoctorCodegen",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDoctorCodegen.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  3.675,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDoctorCodegen.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDoctorCodegen.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.BuildArtifactCleaner",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/BuildArtifactCleaner.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.021,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.BuildArtifactCleaner.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.BuildArtifactCleaner.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.AndroidSimulatorCreator",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorCreator.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.349,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorCreator.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorCreator.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.AndroidSimulatorRepair",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorRepair.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.765,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorRepair.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorRepair.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.AndroidSimulatorRepairer",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorRepairer.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.226,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorRepairer.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorRepairer.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.AndroidSimulatorBootstrap",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/AndroidSimulatorBootstrap.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.706,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorBootstrap.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.AndroidSimulatorBootstrap.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.GitProxyConfigurator",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/GitProxyConfigurator.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.766,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.GitProxyConfigurator.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.GitProxyConfigurator.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HarmonySimulatorCreator",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorCreator.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  17.305,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorCreator.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorCreator.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: Windows PowerShell 5.1、真实 Emulator.exe/详情格式、MSVC/Explorer、许可与真实创建启动需 Windows 实机。"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HarmonySimulatorRepairer",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorRepairer.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.67,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorRepairer.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorRepairer.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HarmonySimulatorBootstrap",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorBootstrap.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.768,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorBootstrap.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorBootstrap.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HarmonySimulatorImages",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HarmonySimulatorImages.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.619,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorImages.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HarmonySimulatorImages.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FileContentViewer",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FileContentViewer.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.578,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FileContentViewer.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FileContentViewer.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsViewer-c62a5a1a39ab4abf90f0951124da862c\\link.txt"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FileVolumes",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FileVolumes.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.17,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FileVolumes.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FileVolumes.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP: 当前 Windows 用户缺少符号链接权限，仅跳过此真实链接夹具：C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsVolumes-88785fa2e56e424ea1b90e5974499eea\\linked@1of2"
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDependencyArchiveEndToEnd",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyArchiveEndToEnd.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  13.797,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyArchiveEndToEnd.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyArchiveEndToEnd.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDependencyArchiveShell",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyArchiveShell.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.177,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyArchiveShell.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyArchiveShell.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDependencyImporter",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyImporter.Tests.ps1",
+                       "Status":  "Failed",
+                       "ExitCode":  1,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.642,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyImporter.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyImporter.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterDependencyIntros",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterDependencyIntros.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.623,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyIntros.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterDependencyIntros.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterHarmonyPackage",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterHarmonyPackage.Tests.ps1",
+                       "Status":  "Failed",
+                       "ExitCode":  1,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.805,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterHarmonyPackage.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterHarmonyPackage.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterProjectDependencies",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterProjectDependencies.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.962,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectDependencies.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectDependencies.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterProjectSetup",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterProjectSetup.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.528,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetup.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetup.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterProjectSetupDashboard",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterProjectSetupDashboard.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.483,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetupDashboard.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetupDashboard.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterProjectSetupLogTail",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterProjectSetupLogTail.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.57,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetupLogTail.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetupLogTail.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterProjectSetupVersion",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterProjectSetupVersion.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.675,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetupVersion.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterProjectSetupVersion.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.FlutterRunnerAndroid",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/FlutterRunnerAndroid.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.683,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterRunnerAndroid.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.FlutterRunnerAndroid.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.GitRollback",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/GitRollback.Tests.ps1",
+                       "Status":  "Partial",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  31.705,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.GitRollback.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.GitRollback.stderr.log",
+                       "SkipEvidence":  [
+                                            "SKIP symbolic link fixture creation (host privilege)",
+                                            "SKIP optional native encoding shim: compile GitRollbackFzfProbe.cpp and pass -FzfProbeExecutable."
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.HiddenFiles",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/HiddenFiles.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.804,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HiddenFiles.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.HiddenFiles.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.IDEProject",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/IDEProject.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.251,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.IDEProject.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.IDEProject.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.ManagementExecution",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/ManagementExecution.Tests.ps1",
+                       "Status":  "TimedOut",
+                       "ExitCode":  1,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  180.333,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.ManagementExecution.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.ManagementExecution.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.ManagementLogTerminal",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/ManagementLogTerminal.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  1.697,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.ManagementLogTerminal.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.ManagementLogTerminal.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   },
+                   {
+                       "Id":  "Extension.SourcetreeOpener",
+                       "Path":  "OS@Extension/WindowsOS@Extension/Tests/SourcetreeOpener.Tests.ps1",
+                       "Status":  "Passed",
+                       "ExitCode":  0,
+                       "TimeoutSeconds":  180,
+                       "DurationSeconds":  0.611,
+                       "StdoutLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.SourcetreeOpener.stdout.log",
+                       "StderrLog":  "C:\\Users\\lg295\\AppData\\Local\\Temp\\JobsWin 中 5b3a201d97\\evidence\\Extension.SourcetreeOpener.stderr.log",
+                       "SkipEvidence":  [
+
+                                        ],
+                       "Error":  ""
+                   }
+               ],
+    "Summary":  {
+                    "Passed":  51,
+                    "Partial":  10,
+                    "Failed":  3,
+                    "TimedOut":  1,
+                    "Completed":  65,
+                    "Planned":  65
+                }
+}
