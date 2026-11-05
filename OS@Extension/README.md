@@ -23,6 +23,12 @@
 
 面向开发工作的桌面右键扩展分类目录；本目录没有独立 Git，各平台源码由各自仓库管理。
 
+**macOS 安装位置可选：** 管理面板默认使用现有构建目录；勾选“使用「应用程序」文件夹安装 / 卸载”后，安装、更新与卸载统一处理 `/Applications/Jobs自定义右键菜单.app` 内的功能模块。共享宿主按叶功能保留，最后一项卸载后移除该模块，最后一个模块卸载后才删除联合 App。应用程序安装模式另提供默认关闭的本轮构建产物清理选项，成功部署后才清理；构建目录模式隐藏该选项。联合 App 可脱离仓库构建输出运行；Windows 保持现有部署方式。详见 [macOS 安装说明](./MacOS@Extension/README.md)。
+
+**双端管理一致性：** 两端均提供安装位置与本地构建目录两条路线，只有安装位置路线允许自动或独立清理构建产物，独立按钮统一为红底白字“🧹 清除构建产物”。安装位置选择、显示中的自动清理复选框与红色“🧹 清除构建产物”按钮排在同一行，垂直居中、间隔统一。安装中可请求“停止安装”，完成当前共享 App / 包事务后不再开始下一单元，未执行项不计失败。macOS 默认沿用构建目录、可安装联合 App；Windows 默认沿用当前用户程序安装位置，也可选择本地构建目录。各端系统路径与授权按本端机制处理，不照搬另一平台的目录或程序格式。
+
+**主题与语言：** 双端安装 / 卸载面板右上角均提供“黑夜 / 白天 / 跟随系统”和“简体中文 / 繁体中文 / 英文 / 跟随系统”，初次使用默认跟随系统。选择即时生效并保存到当前用户偏好，同一端的总面板与随包面板共用设置；切换保留已有勾选、任务进度及日志。界面语言覆盖功能清单、操作、状态与对话框，后台工具原始日志保留原文。各端保存位置与系统跟随方式见 [MacOS 面板说明](./MacOS@Extension/Scripts/README.md)和 [Windows 面板说明](./WindowsOS@Extension/Scripts/README.md)。
+
 ## <span id="jobs-toc-heading-2" data-jobs-toc="v2">一、平台与能力 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 
 | 平台 | 当前功能覆盖 |
@@ -38,7 +44,9 @@ macOS 的“📃 新建文件…”由独立的 [JobsFileCreator](./MacOS@Extens
 
 Flutter 工具组以“拉取Flutter项目工程相关依赖”处理联网解析，以“提取Flutter项目工程依赖”读取本机已具备的内容，以“导入Flutter项目工程依赖”恢复快照。“📤 导入 Flutter Pub 依赖”位于导入组，提取组中有对应的 Pub 叶子。选中目标项目后在终端输入或拖入完整依赖快照；先验证清单、包源码、版本和目标声明，通过后输入 `YES` 才复制本地依赖并生成覆盖配置，原配置保留备份。普通目录、不完整快照和覆盖冲突会停止；不自动执行 `pub get`。用法与恢复见 [macOS 说明](./MacOS@Extension/JobsFlutterTools/README.md#dependency-import)及 [Windows 说明](./WindowsOS@Extension/JobsFlutterTools/README.md)。
 
-私库迁移使用独立的“🔐 提取Flutter项目工程私库依赖”和“📥 导入Flutter项目工程私库依赖”入口，覆盖 Git、path、自建 hosted Pub 包及其间接依赖。导出保留必要源码与文件级 SHA-256；导入先核对快照类型、包名、版本和声明，精确输入 `YES` 才写入当前项目并保留原配置备份。私库与普通 Pub 快照不能混用入口；不迁移机器凭据、Git 历史或原生私服二进制，也不自动运行 `pub get`。两端的具体边界见上述 Flutter 工具说明。
+提取 / 导入组首项分别提供“🧳 一键提取 Flutter 依赖”和“📥 一键导入 Flutter 依赖”。提取默认只收集私库候选，输入任意非空字符才全提取；提取后回车默认 ZIP，ZIP 成功后回车默认保留原目录，非空才删除。导入既接受完整迁移快照，也按内容识别改名的 `.gradle`、`.pub-cache` 或包含它们的父目录，预检并精确输入 `YES` 后才融合当前缓存及工程依赖，冲突不覆盖。SDK / JDK、凭据和未识别私库另行准备，工程加两个缓存目录不代表完整底稿。范围、限制与底稿清单见 [MacOS 一键迁移](./MacOS@Extension/JobsFlutterTools/README.md#one-click-migration)及 [Windows 工具说明](./WindowsOS@Extension/JobsFlutterTools/README.md)。
+
+专用“🔐 提取Flutter项目工程私库依赖”和“📥 导入Flutter项目工程私库依赖”继续承接 Git、path、自建 hosted Pub 源码及其间接依赖；普通 Pub 导入可识别私库快照。导出保留文件级 SHA-256；导入核对类型、包名、版本和声明，精确输入 `YES` 才写当前项目并备份原配置，不自动运行 `pub get`。来源不能判断访问权限时明确按候选处理，原生制品按一键迁移或各平台专用入口的实际范围收集。
 
 IDE 项目入口先排除空目录；仅有 `.DS_Store`、`Thumbs.db`、`desktop.ini` 也视为空。Android Studio 仅对 Android 原生、Flutter 官方或 Flutter 鸿蒙项目根目录显示；VSCode 对非 iOS 的非空普通目录显示；Xcode 仅在 macOS 对明确的 iOS 工程目录或有效工程包显示。Flutter 根目录包含 `ios/` 子工程时仍优先按 Flutter 处理；纯 macOS 工程和单独的 `Package.swift` 不自动判为 iOS。菜单生成和点击打开前均复核，具体识别依据见 [macOS IDE 说明](./MacOS@Extension/JobsProjectTools/README.md)及 [Windows Android Studio 说明](./WindowsOS@Extension/JobsAndroidStudioOpener/README.md)、[Windows VSCode 说明](./WindowsOS@Extension/JobsVSCodeOpener/README.md)。
 
@@ -68,6 +76,8 @@ Flutter 鸿蒙工程提供“📦 打包鸿蒙（HAP + APP）”，使用工程�
 
 
 两端桌面空白菜单均提供“Harmony 模拟器检测与修复”，仅操作精确选中的本机实例；单个可执行格式文件同时显示“🔒 运行授权”和“🔓 解除运行授权”，根据当前执行权限互斥置灰；README、文本等普通文档不显示这两项。macOS 清除 POSIX 执行位，Windows 按当前用户的文件执行权限处理，详细确认、回滚与限制见各包说明。
+
+所有右键菜单涉及的 SDK 获取都以环境就绪为先决条件：下载、安装中拉取、远程组件清单及首次启动补齐失败后持续自动重试，直到成功或用户主动停止，无须逐次确认。保留真实进度、追加日志和可安全续传的缓存；许可证、权限等需本人处理的条件仍明确提示，构建与设备业务只在环境就绪后继续。源码更新后，使用对应平台管理面板“安装 / 更新”使已安装菜单采用新脚本；已打开终端中的旧快照需重新启动。
 
 ## <span id="jobs-toc-heading-3" data-jobs-toc="v2">二、目录与运行入口 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a></span><!-- jobs-toc:heading-end -->
 

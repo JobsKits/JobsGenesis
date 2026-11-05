@@ -52,7 +52,7 @@
 
 ## 二、<span id="inventory">仓库清单</span> <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
-下表路径相对于本报告所在目录。
+> 下表路径相对于本报告所在目录。
 
 | 配置 | 条数 | 检查与处理 |
 | --- | ---: | --- |
